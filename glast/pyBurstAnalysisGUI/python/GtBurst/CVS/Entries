@@ -1,0 +1,46 @@
+/AutoHideScrollbar.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/CommandPipeline.py/1.1.2.2/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/Configuration.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/ConsoleText.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/Dataset.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/EntryPoint.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/FuncFactory.py/1.1.2.2/Fri Jan  3 20:22:47 2014//TScienceTools-v10r0p5-fssc-20150518
+/GtBurstException.py/1.1.2.3/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/HyperlinkManager.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/IRFS.py/1.1.2.2/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/InteractiveFt1Display.py/1.1.2.3/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/LikelihoodComponent.py/1.1.2.4/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/RSPweight.py/1.1.2.2/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/SubWindow.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/Task.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/TransientSource.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/Treeview.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/TriggerSelector.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/angularDistance.py/1.1.2.2/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/bkge.py/1.1.2.2/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/commandDefiner.py/1.1.2.2/Wed Feb  4 02:01:40 2015//TScienceTools-v10r0p5-fssc-20150518
+/cutout.py/1.1.2.1/Wed Mar 25 16:56:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/dataCollector.py/1.1.2.3/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/dataHandling.py/1.1.2.4/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/do_gbm.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/downloadCallback.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/downloadTransientData.py/1.1.2.3/Wed Mar 25 16:48:43 2015//TScienceTools-v10r0p5-fssc-20150518
+/fancyFileDialogs.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/fontDefinitions.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/getDataPath.py/1.1.2.1/Fri Jan  3 20:22:47 2014//TScienceTools-v10r0p5-fssc-20150518
+/getGBMfiles.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/getLLEfiles.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/html2text.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/interactivePlots.py/1.1.2.2/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/lleProgressBar.py/1.1.2.1/Sun Dec 22 22:28:57 2013//TScienceTools-v10r0p5-fssc-20150518
+/statMethods.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+/sunpos.py/1.1.2.2/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/updater.py/1.1.2.2/Wed Feb  4 02:01:40 2015//TScienceTools-v10r0p5-fssc-20150518
+/version.py/1.1.2.4/Wed Mar 25 16:48:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/xmlModelGUI.py/1.1.2.1/Sun Dec 22 22:28:58 2013//TScienceTools-v10r0p5-fssc-20150518
+D/aplpy////
+D/commands////
+D/gtapps_mp////
+D/scripts////
+D/tasks////

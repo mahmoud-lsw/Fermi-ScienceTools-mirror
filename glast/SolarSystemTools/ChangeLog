@@ -1,0 +1,1520 @@
+------------------------------------------------------------
+User: gudlaugu  Wed Aug 14 06:52:32 PDT 2013
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Aug 14 06:52:32 PDT 2013
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Aug 14 06:51:11 PDT 2013
+SolarSystemTools/src
+
+Modified Files:
+	SolarTemplate.cxx 
+Log Message:
+Now templates can be calculated for AIT projections
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-05, operation: add
+Package: SolarSystemTools
+User: jchiang  Fri Jul 26 21:23:20 2013
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-04, operation: add
+Package: SolarSystemTools
+User: jchiang  Sat Jun 15 21:37:28 2013
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-03, operation: add
+Package: SolarSystemTools
+User: heather  Fri Jun  7 08:54:25 2013
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-02, operation: add
+Package: SolarSystemTools
+User: jchiang  Thu Jun  6 10:10:46 2013
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-01, operation: add
+Package: SolarSystemTools
+User: jchiang  Wed Jun  5 06:00:03 2013
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-00, operation: add
+Package: SolarSystemTools
+User: jchiang  Mon Jun  3 16:35:53 2013
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-02, operation: add
+Package: SolarSystemTools
+User: jchiang  Tue Mar  5 09:59:24 2013
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-01, operation: add
+Package: SolarSystemTools
+User: glastrm  Thu Jan  3 16:54:16 2013
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-00, operation: add
+Package: SolarSystemTools
+User: jchiang  Tue Dec 18 17:03:03 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-30-01, operation: add
+Package: SolarSystemTools
+User: glastrm  Tue Sep 11 11:17:59 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: SolarSystemTools-01-01-01, operation: add
+Package: SolarSystemTools
+User: gudlaugu  Thu Aug 30 13:04:20 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.82
+  SolarSystemTools/SConscript  1.12
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.9
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtltsumsun.par  1.1
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Aug 30 13:04:09 PDT 2012
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Aug 30 13:04:09 PDT 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Aug 30 13:03:20 PDT 2012
+SolarSystemTools/pfiles
+
+Added Files:
+	gtltsumsun.par 
+Log Message:
+Adding gtltsumsun parameter file
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-30-00, operation: add
+Package: SolarSystemTools
+User: jchiang  Wed Aug 29 08:32:34 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.77
+  SolarSystemTools/SConscript  1.11
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.8
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: SolarSystemTools-01-01-00, operation: add
+Package: SolarSystemTools
+User: gudlaugu  Tue Aug 28 04:01:35 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.77
+  SolarSystemTools/SConscript  1.11
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.5
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.2
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.10
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.4
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.8
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.5
+  SolarSystemTools/src/SolarTemplate.cxx  1.4
+  SolarSystemTools/src/LikeExposureSun.cxx  1.4
+  SolarSystemTools/src/SolarProfile.cxx  1.4
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.5
+  SolarSystemTools/src/ExposureSun.cxx  1.12
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.10
+  SolarSystemTools/src/CosineBinner2D.cxx  1.11
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.4
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.2
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.7
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Aug 28 04:01:24 PDT 2012
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Aug 28 04:01:24 PDT 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Aug 28 03:59:26 PDT 2012
+SolarSystemTools/src/gtltsumsun
+
+Modified Files:
+	gtltsumsun.cxx 
+Log Message:
+minor optimization in reading and writing solar ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Aug 28 03:59:25 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	ExposureCubeSun.cxx ExposureSun.cxx 
+Log Message:
+minor optimization in reading and writing solar ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Aug 28 03:59:25 PDT 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	ExposureCubeSun.h 
+Log Message:
+minor optimization in reading and writing solar ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri Aug 24 06:48:49 PDT 2012
+SolarSystemTools/src/makeSolarExposureCube
+
+Modified Files:
+	makeSolarExposureCube.cxx 
+Log Message:
+Added distance modulation to the solar system tools to account for eccentricity of the orbits.  Does not take into account distance variations in the extended solar emission.  Changed the format of the profiles from one value per column to storing the entire profile for each energy bin in an vector. Fixed a bug in the addition of solar ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri Aug 24 06:48:48 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx ExposureCubeSun.cxx ExposureSun.cxx 
+	FitsSolarProfile.cxx HealpixExposureSun.cxx 
+	LikeExposureSun.cxx SolarProfile.cxx SolarTemplate.cxx 
+Log Message:
+Added distance modulation to the solar system tools to account for eccentricity of the orbits.  Does not take into account distance variations in the extended solar emission.  Changed the format of the profiles from one value per column to storing the entire profile for each energy bin in an vector. Fixed a bug in the addition of solar ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri Aug 24 06:48:47 PDT 2012
+SolarSystemTools/pfiles
+
+Modified Files:
+	gtltcubesun.par 
+Log Message:
+Added distance modulation to the solar system tools to account for eccentricity of the orbits.  Does not take into account distance variations in the extended solar emission.  Changed the format of the profiles from one value per column to storing the entire profile for each energy bin in an vector. Fixed a bug in the addition of solar ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri Aug 24 06:48:46 PDT 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	ExposureCubeSun.h ExposureSun.h HealpixExposureSun.h 
+	SolarProfile.h 
+Log Message:
+Added distance modulation to the solar system tools to account for eccentricity of the orbits.  Does not take into account distance variations in the extended solar emission.  Changed the format of the profiles from one value per column to storing the entire profile for each energy bin in an vector. Fixed a bug in the addition of solar ltcubes.
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-29-00, operation: add
+Package: SolarSystemTools
+User: jchiang  Thu Jun 21 21:40:04 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.66
+  SolarSystemTools/SConscript  1.10
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.8
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.3
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.7
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.4
+  SolarSystemTools/src/SolarTemplate.cxx  1.3
+  SolarSystemTools/src/LikeExposureSun.cxx  1.3
+  SolarSystemTools/src/SolarProfile.cxx  1.3
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.4
+  SolarSystemTools/src/ExposureSun.cxx  1.10
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.8
+  SolarSystemTools/src/CosineBinner2D.cxx  1.10
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.3
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.1
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.6
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: SolarSystemTools-01-00-04, operation: add
+Package: SolarSystemTools
+User: gudlaugu  Sat Jun 16 04:31:21 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.66
+  SolarSystemTools/SConscript  1.10
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.8
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.3
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.7
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.4
+  SolarSystemTools/src/SolarTemplate.cxx  1.3
+  SolarSystemTools/src/LikeExposureSun.cxx  1.3
+  SolarSystemTools/src/SolarProfile.cxx  1.3
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.4
+  SolarSystemTools/src/ExposureSun.cxx  1.10
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.8
+  SolarSystemTools/src/CosineBinner2D.cxx  1.10
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.3
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtltsumsun/gtltsumsun.cxx  1.1
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.6
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Sat Jun 16 04:31:10 PDT 2012
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Sat Jun 16 04:31:10 PDT 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Sat Jun 16 04:29:16 PDT 2012
+SolarSystemTools/src/makeSolarExposureCube
+
+Modified Files:
+	makeSolarExposureCube.cxx 
+Log Message:
+Fixed include in solar ltcube and added solar ltcube sum tool.
+    *
+------------------------------------------------------------
+User: gudlaugu  Sat Jun 16 04:29:15 PDT 2012
+SolarSystemTools/src/gtltsumsun
+
+Added Files:
+	gtltsumsun.cxx 
+Log Message:
+Fixed include in solar ltcube and added solar ltcube sum tool.
+    *
+------------------------------------------------------------
+User: gudlaugu  Sat Jun 16 04:27:44 PDT 2012
+SolarSystemTools/src/gtltsumsun
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/SolarSystemTools/src/gtltsumsun added to the repository
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: SolarSystemTools-01-00-03, operation: add
+Package: SolarSystemTools
+User: gudlaugu  Sun Jun 10 06:17:03 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.60
+  SolarSystemTools/SConscript  1.9
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.8
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.3
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.6
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.4
+  SolarSystemTools/src/SolarTemplate.cxx  1.3
+  SolarSystemTools/src/LikeExposureSun.cxx  1.3
+  SolarSystemTools/src/SolarProfile.cxx  1.3
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.4
+  SolarSystemTools/src/ExposureSun.cxx  1.10
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.8
+  SolarSystemTools/src/CosineBinner2D.cxx  1.10
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.3
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.5
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Sun Jun 10 06:16:52 PDT 2012
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Sun Jun 10 06:16:52 PDT 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Sun Jun 10 06:15:53 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	FitsSolarProfile.cxx 
+Log Message:
+Fixed a typo in table name when reading solar profile from fits file.
+    *
+------------------------------------------------------------
+TAG
+Tag name: SolarSystemTools-01-00-02, operation: add
+Package: SolarSystemTools
+User: gudlaugu  Fri May 18 17:02:50 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.56
+  SolarSystemTools/SConscript  1.8
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.8
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.3
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.5
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.4
+  SolarSystemTools/src/SolarTemplate.cxx  1.3
+  SolarSystemTools/src/LikeExposureSun.cxx  1.3
+  SolarSystemTools/src/SolarProfile.cxx  1.3
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.4
+  SolarSystemTools/src/ExposureSun.cxx  1.10
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.8
+  SolarSystemTools/src/CosineBinner2D.cxx  1.10
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.2
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.5
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri May 18 17:02:39 PDT 2012
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri May 18 17:02:39 PDT 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri May 18 17:02:19 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx 
+Log Message:
+Fixed a bug, missing return statement.
+    *
+------------------------------------------------------------
+TAG
+Tag name: SolarSystemTools-01-00-01, operation: add
+Package: SolarSystemTools
+User: gudlaugu  Fri May 18 14:44:38 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.52
+  SolarSystemTools/SConscript  1.7
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.8
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.3
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.4
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.4
+  SolarSystemTools/src/SolarTemplate.cxx  1.3
+  SolarSystemTools/src/LikeExposureSun.cxx  1.3
+  SolarSystemTools/src/SolarProfile.cxx  1.3
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.4
+  SolarSystemTools/src/ExposureSun.cxx  1.10
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.8
+  SolarSystemTools/src/CosineBinner2D.cxx  1.9
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.2
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.5
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri May 18 14:44:27 PDT 2012
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri May 18 14:44:27 PDT 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri May 18 14:33:52 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx 
+Log Message:
+Added algorithm for upper and lower bound in cosinebinner2D
+    *
+------------------------------------------------------------
+TAG
+Tag name: SolarSystemTools-01-00-00, operation: add
+Package: SolarSystemTools
+User: gudlaugu  Thu May 10 15:24:55 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.48
+  SolarSystemTools/SConscript  1.6
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.4
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.8
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.7
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.3
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.2
+  SolarSystemTools/doc/release.notes  1.3
+  SolarSystemTools/pfiles/gtsuntemp.par  1.2
+  SolarSystemTools/pfiles/gtexphpsun.par  1.3
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.4
+  SolarSystemTools/src/SolarTemplate.cxx  1.3
+  SolarSystemTools/src/LikeExposureSun.cxx  1.3
+  SolarSystemTools/src/SolarProfile.cxx  1.3
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.4
+  SolarSystemTools/src/ExposureSun.cxx  1.10
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.8
+  SolarSystemTools/src/CosineBinner2D.cxx  1.8
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.4
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.2
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtexphpsun/gtexphpsun.cxx  1.1
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.5
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu May 10 15:24:44 PDT 2012
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu May 10 15:24:44 PDT 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu May 10 15:21:18 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	FitsSolarProfile.cxx 
+Log Message:
+Changed the name of the profile table to SPECTRUM_FOR_ANGLES_IC_DISK and made some parameters hidden
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu May 10 15:21:17 PDT 2012
+SolarSystemTools/pfiles
+
+Modified Files:
+	gtexphpsun.par gtsuntemp.par 
+Log Message:
+Changed the name of the profile table to SPECTRUM_FOR_ANGLES_IC_DISK and made some parameters hidden
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu May 10 15:21:17 PDT 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	ExposureCubeSun.h 
+Log Message:
+Changed the name of the profile table to SPECTRUM_FOR_ANGLES_IC_DISK and made some parameters hidden
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu May 10 15:17:30 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	ExposureCubeSun.cxx ExposureSun.cxx 
+Log Message:
+Fixed the tests when adding ltcubes.  Also ZENMAX is now the actual angle in degrees rather than its cosine.
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu May 10 15:16:19 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx 
+Log Message:
+Cosinebinner now reserves memory in smaller chunks at a time
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed May  2 10:49:27 PDT 2012
+SolarSystemTools/src/makeSolarExposureCube
+
+Modified Files:
+	makeSolarExposureCube.cxx 
+Log Message:
+Added possibility to calculate templates for other solar system bodies, taking into account the parallax due to satelite position.  Fixed a factor of 2 bug in the solar template tool.  Added checks for binning, zenith cut, and solar system body when summing ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed May  2 10:49:27 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	ExposureCubeSun.cxx ExposureSun.cxx SolarTemplate.cxx 
+Log Message:
+Added possibility to calculate templates for other solar system bodies, taking into account the parallax due to satelite position.  Fixed a factor of 2 bug in the solar template tool.  Added checks for binning, zenith cut, and solar system body when summing ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed May  2 10:49:26 PDT 2012
+SolarSystemTools/pfiles
+
+Modified Files:
+	gtltcubesun.par 
+Log Message:
+Added possibility to calculate templates for other solar system bodies, taking into account the parallax due to satelite position.  Fixed a factor of 2 bug in the solar template tool.  Added checks for binning, zenith cut, and solar system body when summing ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed May  2 10:49:26 PDT 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	ExposureCubeSun.h 
+Log Message:
+Added possibility to calculate templates for other solar system bodies, taking into account the parallax due to satelite position.  Fixed a factor of 2 bug in the solar template tool.  Added checks for binning, zenith cut, and solar system body when summing ltcubes.
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Apr 26 08:03:22 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	SolarProfile.cxx 
+Log Message:
+Fixed a bug in the energy interpolation in SolarProfile.
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Apr 26 08:03:21 PDT 2012
+SolarSystemTools/pfiles
+
+Modified Files:
+	gtexphpsun.par 
+Log Message:
+Fixed a bug in the energy interpolation in SolarProfile.
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Apr 19 16:59:00 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	ExposureCubeSun.cxx ExposureSun.cxx SolarProfile.cxx 
+Log Message:
+Fixed a couple of bugs in the SolarSystemTools package
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Mar 27 15:39:32 PDT 2012
+SolarSystemTools/src/makeSolarExposureCube
+
+Modified Files:
+	makeSolarExposureCube.cxx 
+Log Message:
+Some optimization for the solar system tools, especially with regards to reading and writing ltcubes
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Mar 27 15:39:32 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx ExposureCubeSun.cxx ExposureSun.cxx 
+	HealpixExposureSun.cxx 
+Log Message:
+Some optimization for the solar system tools, especially with regards to reading and writing ltcubes
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Mar 27 15:39:31 PDT 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	CosineBinner2D.h ExposureCubeSun.h 
+Log Message:
+Some optimization for the solar system tools, especially with regards to reading and writing ltcubes
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri Mar 23 07:10:13 PDT 2012
+SolarSystemTools/src/makeSolarExposureCube
+
+Modified Files:
+	makeSolarExposureCube.cxx 
+Log Message:
+Switched back to costhetasun binning with an adjustable power law binning algorithm (possible to switch between cubed and squared and evertthing inbetween).  Changed from map to vector based storage for HealpixExposure and improved the algorithm for a speed up.
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri Mar 23 07:10:13 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx ExposureCubeSun.cxx ExposureSun.cxx 
+	HealpixExposureSun.cxx LikeExposureSun.cxx 
+Log Message:
+Switched back to costhetasun binning with an adjustable power law binning algorithm (possible to switch between cubed and squared and evertthing inbetween).  Changed from map to vector based storage for HealpixExposure and improved the algorithm for a speed up.
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri Mar 23 07:10:12 PDT 2012
+SolarSystemTools/pfiles
+
+Modified Files:
+	gtltcubesun.par 
+Log Message:
+Switched back to costhetasun binning with an adjustable power law binning algorithm (possible to switch between cubed and squared and evertthing inbetween).  Changed from map to vector based storage for HealpixExposure and improved the algorithm for a speed up.
+    *
+------------------------------------------------------------
+User: gudlaugu  Fri Mar 23 07:10:11 PDT 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	CosineBinner2D.h ExposureCubeSun.h ExposureSun.h 
+	HealpixExposureSun.h 
+Log Message:
+Switched back to costhetasun binning with an adjustable power law binning algorithm (possible to switch between cubed and squared and evertthing inbetween).  Changed from map to vector based storage for HealpixExposure and improved the algorithm for a speed up.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Mar 21 15:50:21 PDT 2012
+SolarSystemTools/src/makeSolarExposureCube
+
+Modified Files:
+	makeSolarExposureCube.cxx 
+Log Message:
+Changed binning from sqrt(cosine thetasun) to sqrt(thetatsun).  Reduced the number of classes by one, merged LikeExposureSun and ExposureCubeSun.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Mar 21 15:50:21 PDT 2012
+SolarSystemTools/src
+
+Modified Files:
+	BinnedExposureSun.cxx CosineBinner2D.cxx ExposureCubeSun.cxx 
+	ExposureSun.cxx HealpixExposureSun.cxx LikeExposureSun.cxx 
+	SolarTemplate.cxx 
+Log Message:
+Changed binning from sqrt(cosine thetasun) to sqrt(thetatsun).  Reduced the number of classes by one, merged LikeExposureSun and ExposureCubeSun.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Mar 21 15:50:20 PDT 2012
+SolarSystemTools/pfiles
+
+Modified Files:
+	gtltcubesun.par 
+Log Message:
+Changed binning from sqrt(cosine thetasun) to sqrt(thetatsun).  Reduced the number of classes by one, merged LikeExposureSun and ExposureCubeSun.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Mar 21 15:50:19 PDT 2012
+SolarSystemTools/data
+
+Modified Files:
+	LivetimeCubeSunTemplate 
+Log Message:
+Changed binning from sqrt(cosine thetasun) to sqrt(thetatsun).  Reduced the number of classes by one, merged LikeExposureSun and ExposureCubeSun.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Mar 21 15:50:19 PDT 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	BinnedExposureSun.h CosineBinner2D.h ExposureCubeSun.h 
+	ExposureSun.h HealpixExposureSun.h 
+Log Message:
+Changed binning from sqrt(cosine thetasun) to sqrt(thetatsun).  Reduced the number of classes by one, merged LikeExposureSun and ExposureCubeSun.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Mar 21 15:50:18 PDT 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+Changed binning from sqrt(cosine thetasun) to sqrt(thetatsun).  Reduced the number of classes by one, merged LikeExposureSun and ExposureCubeSun.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Feb 29 03:28:22 PST 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx ExposureSun.cxx 
+Log Message:
+Change implementation of Cosinebinner to sparse vector. Now we have a nice balance between speed and memory consumption.
+    *
+------------------------------------------------------------
+User: gudlaugu  Wed Feb 29 03:28:21 PST 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	CosineBinner2D.h ExposureSun.h 
+Log Message:
+Change implementation of Cosinebinner to sparse vector. Now we have a nice balance between speed and memory consumption.
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Feb 16 17:49:51 PST 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx ExposureSun.cxx 
+Log Message:
+CosineBinner2D now uses vector as storage but filters out 0s for integration and storage
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Feb 16 17:49:51 PST 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	CosineBinner2D.h 
+Log Message:
+CosineBinner2D now uses vector as storage but filters out 0s for integration and storage
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Feb 16 15:19:54 PST 2012
+SolarSystemTools/src/gtexphpsun
+
+Added Files:
+	gtexphpsun.cxx 
+Log Message:
+CosineBinner2D now uses unordered map for storage and gtexphpsun added to the repository
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Feb 16 15:19:53 PST 2012
+SolarSystemTools/src
+
+Modified Files:
+	CosineBinner2D.cxx ExposureSun.cxx 
+Log Message:
+CosineBinner2D now uses unordered map for storage and gtexphpsun added to the repository
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Feb 16 15:19:53 PST 2012
+SolarSystemTools/pfiles
+
+Added Files:
+	gtexphpsun.par 
+Log Message:
+CosineBinner2D now uses unordered map for storage and gtexphpsun added to the repository
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Feb 16 15:19:52 PST 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	CosineBinner2D.h 
+Log Message:
+CosineBinner2D now uses unordered map for storage and gtexphpsun added to the repository
+    *
+------------------------------------------------------------
+User: gudlaugu  Thu Feb 16 15:18:40 PST 2012
+SolarSystemTools/src/gtexphpsun
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/SolarSystemTools/src/gtexphpsun added to the repository
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: SolarSystemTools-00-01-00, operation: add
+Package: SolarSystemTools
+User: gudlaugu  Tue Feb 14 19:05:37 2012
+Files:
+  SolarSystemTools/SolarSystemToolsLib.py  1.1.1.1
+  SolarSystemTools/ChangeLog  1.11
+  SolarSystemTools/SConscript  1.4
+  SolarSystemTools/SolarSystemTools/ExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/SolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/BinnedExposureSun.h  1.3
+  SolarSystemTools/SolarSystemTools/ExposureCubeSun.h  1.3
+  SolarSystemTools/SolarSystemTools/Observation.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/FitsSolarProfile.h  1.1
+  SolarSystemTools/SolarSystemTools/SolarTemplate.h  1.1
+  SolarSystemTools/SolarSystemTools/CosineBinner2D.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/LikeExposureSun.h  1.1.1.1
+  SolarSystemTools/SolarSystemTools/HealpixExposureSun.h  1.1
+  SolarSystemTools/data/LivetimeCubeSunTemplate  1.1.1.1
+  SolarSystemTools/doc/release.notes  1.2
+  SolarSystemTools/pfiles/gtsuntemp.par  1.1
+  SolarSystemTools/pfiles/gtexpcubesun.par  1.1.1.1
+  SolarSystemTools/pfiles/gtltcubesun.par  1.1.1.1
+  SolarSystemTools/src/SolarTemplate.cxx  1.1
+  SolarSystemTools/src/LikeExposureSun.cxx  1.1.1.1
+  SolarSystemTools/src/SolarProfile.cxx  1.1
+  SolarSystemTools/src/HealpixExposureSun.cxx  1.1
+  SolarSystemTools/src/ExposureSun.cxx  1.1.1.1
+  SolarSystemTools/src/ExposureCubeSun.cxx  1.2
+  SolarSystemTools/src/CosineBinner2D.cxx  1.1.1.1
+  SolarSystemTools/src/BinnedExposureSun.cxx  1.3
+  SolarSystemTools/src/FitsSolarProfile.cxx  1.1
+  SolarSystemTools/src/gtexpcubesun/gtexpcubesun.cxx  1.1.1.1
+  SolarSystemTools/src/gtsuntemp/gtsuntemp.cxx  1.1
+  SolarSystemTools/src/makeSolarExposureCube/makeSolarExposureCube.cxx  1.1.1.1
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Feb 14 19:05:26 PST 2012
+SolarSystemTools/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Feb 14 19:05:26 PST 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Feb 14 19:03:53 PST 2012
+SolarSystemTools/src/gtsuntemp
+
+Added Files:
+	gtsuntemp.cxx 
+Log Message:
+Added Healpix binned solar exposure maps and a tool to create a template map from these maps and a binned exposure cube
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Feb 14 19:03:52 PST 2012
+SolarSystemTools/src
+
+Modified Files:
+	BinnedExposureSun.cxx 
+Added Files:
+	FitsSolarProfile.cxx HealpixExposureSun.cxx SolarProfile.cxx 
+	SolarTemplate.cxx 
+Log Message:
+Added Healpix binned solar exposure maps and a tool to create a template map from these maps and a binned exposure cube
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Feb 14 19:03:51 PST 2012
+SolarSystemTools/pfiles
+
+Added Files:
+	gtsuntemp.par 
+Log Message:
+Added Healpix binned solar exposure maps and a tool to create a template map from these maps and a binned exposure cube
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Feb 14 19:03:50 PST 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	BinnedExposureSun.h ExposureCubeSun.h 
+Added Files:
+	FitsSolarProfile.h HealpixExposureSun.h SolarProfile.h 
+	SolarTemplate.h 
+Log Message:
+Added Healpix binned solar exposure maps and a tool to create a template map from these maps and a binned exposure cube
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Feb 14 19:03:49 PST 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+Added Healpix binned solar exposure maps and a tool to create a template map from these maps and a binned exposure cube
+    *
+------------------------------------------------------------
+User: gudlaugu  Tue Feb 14 18:54:59 PST 2012
+SolarSystemTools/src/gtsuntemp
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/SolarSystemTools/src/gtsuntemp added to the repository
+
+    *
+------------------------------------------------------------
+User: gudlaugu  Mon Feb 13 14:24:37 PST 2012
+SolarSystemTools/src
+
+Modified Files:
+	BinnedExposureSun.cxx ExposureCubeSun.cxx 
+Log Message:
+Adding cache to Aeff calculations in BinnedExposureSun
+    *
+------------------------------------------------------------
+User: gudlaugu  Mon Feb 13 14:24:37 PST 2012
+SolarSystemTools/SolarSystemTools
+
+Modified Files:
+	BinnedExposureSun.h ExposureCubeSun.h 
+Log Message:
+Adding cache to Aeff calculations in BinnedExposureSun
+    *
+------------------------------------------------------------
+User: gudlaugu  Mon Feb 13 14:24:36 PST 2012
+SolarSystemTools
+
+Modified Files:
+	SConscript 
+Log Message:
+Adding cache to Aeff calculations in BinnedExposureSun
+    *

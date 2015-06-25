@@ -1,0 +1,36 @@
+/LICENSE.txt/1.1.2.1/Fri Feb 27 05:02:34 2015//TScienceTools-v10r0p5-fssc-20150518
+/README.txt/1.1.2.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_dumb_shelve.py/1.1.2.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/_dumbdbm_patched.py/1.1.2.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/accelerate_tools.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ast_tools.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/base_info.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/base_spec.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/blitz_spec.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/blitz_tools.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/build_tools.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bytecodecompiler.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/c_spec.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/catalog.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/common_info.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/converters.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cpp_namespace_spec.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ext_tools.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/inline_tools.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/numpy_scalar_spec.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/platform_info.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/size_check.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/slice_handler.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/standard_array_spec.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swig2_spec.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swigptr.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swigptr2.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/vtk_spec.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/weave_version.py/1.1.2.1.8.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/blitz////
+D/doc////
+D/examples////
+D/scxx////
+D/tests////

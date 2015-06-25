@@ -1,0 +1,21 @@
+/Channel.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/ConfigParser.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/Data.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/EstimateSummary.h/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/FlexibleInterpVar.h/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistFactoryException.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistFactoryModelUtils.h/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistFactoryNavigation.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistFactorySimultaneous.h/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistoToWorkspaceFactory.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistoToWorkspaceFactoryFast.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/LinInterpVar.h/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/MakeModelAndMeasurementsFast.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/Measurement.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/ParamHistFunc.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/PiecewiseInterpolation.h/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/PreprocessFunction.h/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/RooBarlowBeestonLL.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/Sample.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/Systematics.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+D

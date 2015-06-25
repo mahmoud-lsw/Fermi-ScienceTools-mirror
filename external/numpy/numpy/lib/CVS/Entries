@@ -1,0 +1,27 @@
+/__init__.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/_datasource.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/_iotools.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/_version.py/1.1.2.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/arraypad.py/1.1.2.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/arraysetops.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/arrayterator.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/financial.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/format.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/function_base.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/index_tricks.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/info.py/1.1.1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/nanfunctions.py/1.1.2.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/npyio.py/1.1.6.1/Fri Feb 27 05:02:35 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/polynomial.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/recfunctions.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/scimath.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/shape_base.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/stride_tricks.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/twodim_base.py/1.2.6.1/Fri Feb 27 05:02:35 2015//TScienceTools-v10r0p5-fssc-20150518
+/type_check.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/ufunclike.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/user_array.py/1.1.1.1.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+/utils.py/1.2.6.1/Fri Feb 27 05:02:36 2015//TScienceTools-v10r0p5-fssc-20150518
+D/src////
+D/tests////

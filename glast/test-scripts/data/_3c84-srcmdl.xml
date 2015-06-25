@@ -1,0 +1,32 @@
+<?xml version="1.0" ?><source_library title="source library">
+  <source name="Extragalactic Diffuse" type="DiffuseSource">
+    <spectrum type="PowerLaw">
+      <parameter free="1" max="100.0" min="1e-05" name="Prefactor" scale="1e-07" value="3.9"/>
+      <parameter free="0" max="-1.0" min="-3.5" name="Index" scale="1.0" value="-2.1"/>
+      <parameter free="0" max="200.0" min="50.0" name="Scale" scale="1.0" value="194.0"/>
+    </spectrum>
+    <spatialModel type="ConstantValue">
+      <parameter free="1" max="10.0" min="0.0" name="Value" scale="1.0" value="1.0"/>
+    </spatialModel>
+  </source>
+  <source name="Galpro Diffuse" type="DiffuseSource">
+    <spectrum type="ConstantValue">
+      <parameter free="1" max="10.0" min="0.0" name="Value" scale="1.0" value="5.2905604e-08"/>
+    </spectrum>
+    <spatialModel file="$(FERMI_DIR)/refdata/fermi/galdiffuse/GP_gamma.fits" type="MapCubeFunction">
+      <parameter free="1" max="1000.0" min="0.001" name="Normalization" scale="1.0" value="4.0"/>
+    </spatialModel>
+  </source>
+  <source name="_3c66" type="PointSource">
+    <spectrum type="PowerLaw2">
+      <parameter free="1" max="1000.0" min="1e-05" name="Integral" scale="1e-06" value="1.00"/>
+      <parameter free="1" max="-0.0" min="-5.0" name="Index" scale="1.0" value="-2.0"/>
+      <parameter free="0" max="200000.0" min="20.0" name="LowerLimit" scale="1.0" value="100.0"/>
+      <parameter free="0" max="200000.0" min="20.0" name="UpperLimit" scale="1.0" value="2e5"/>
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="35.797547"/>
+      <parameter free="0" max="90.0" min="-90.0" name="DEC" scale="1.0" value="42.992051"/>
+    </spatialModel>
+  </source>
+</source_library>

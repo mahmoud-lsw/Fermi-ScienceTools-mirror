@@ -1,0 +1,4761 @@
+------------------------------------------------------------
+User: glastrm  Mon May 20 08:49:28 PDT 2013
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: glastrm  Mon May 20 08:49:28 PDT 2013
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: glastrm  Mon May 20 08:49:28 PDT 2013
+catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: tstephen  Mon May 20 08:47:21 PDT 2013
+ScienceTools-scons/catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Fixed typo in test.
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-06, operation: add
+Package: catalogAccess
+User: glastrm  Fri May 17 12:25:40 2013
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.220
+  catalogAccess/SConscript  1.12
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.18
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.24
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.20
+
+    *
+------------------------------------------------------------
+User: glastrm  Fri May 17 12:25:29 PDT 2013
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: glastrm  Fri May 17 12:25:29 PDT 2013
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: glastrm  Fri May 17 12:25:29 PDT 2013
+catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: tstephen  Fri May 17 12:00:19 PDT 2013
+ScienceTools-scons/catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Fixed #ifdef statements around code block setting up the assertion dialog
+override.
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-05, operation: add
+Package: catalogAccess
+User: glastrm  Wed May 15 10:18:21 2013
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.215
+  catalogAccess/SConscript  1.11
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.17
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.23
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.19
+
+    *
+------------------------------------------------------------
+User: glastrm  Wed May 15 10:18:10 PDT 2013
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: glastrm  Wed May 15 10:18:10 PDT 2013
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: glastrm  Wed May 15 10:18:10 PDT 2013
+catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: tstephen  Wed May 15 10:14:26 PDT 2013
+ScienceTools-scons/catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Added in code to the main() function to override the debug assertion dialogs and redirect errors to standard output.
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-02, operation: add
+Package: catalogAccess
+User: jchiang  Tue Mar  5 09:58:14 2013
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.207
+  catalogAccess/SConscript  1.10
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.16
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.22
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.18
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-01, operation: add
+Package: catalogAccess
+User: glastrm  Thu Jan  3 16:53:17 2013
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.207
+  catalogAccess/SConscript  1.10
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.16
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.22
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.18
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-00, operation: add
+Package: catalogAccess
+User: jchiang  Tue Dec 18 17:01:54 2012
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.207
+  catalogAccess/SConscript  1.10
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.16
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.22
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.18
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-04, operation: add
+Package: catalogAccess
+User: jchiang  Sat Nov 10 19:55:10 2012
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.207
+  catalogAccess/SConscript  1.10
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.16
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.22
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.18
+
+    *
+------------------------------------------------------------
+User: jchiang  Sat Nov 10 19:55:04 PST 2012
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Sat Nov 10 19:55:04 PST 2012
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Sat Nov 10 19:55:04 PST 2012
+catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Sat Nov 10 16:15:40 PST 2012
+ScienceTools-scons/catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+fix test program
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-30-01, operation: add
+Package: catalogAccess
+User: glastrm  Tue Sep 11 11:17:06 2012
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-30-00, operation: add
+Package: catalogAccess
+User: jchiang  Wed Aug 29 08:31:41 2012
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-29-00, operation: add
+Package: catalogAccess
+User: jchiang  Thu Jun 21 21:38:54 2012
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-28-00, operation: add
+Package: catalogAccess
+User: jchiang  Fri Apr  6 09:55:37 2012
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-27-01, operation: add
+Package: catalogAccess
+User: jchiang  Wed Feb 15 19:15:43 2012
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-27-00, operation: add
+Package: catalogAccess
+User: jchiang  Thu Jan 26 17:25:09 2012
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-26-02, operation: add
+Package: catalogAccess
+User: jchiang  Fri Dec 16 17:24:17 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-26-01, operation: add
+Package: catalogAccess
+User: jchiang  Tue Dec 13 16:49:19 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-26-00, operation: add
+Package: catalogAccess
+User: jchiang  Mon Dec  5 15:55:05 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-25-02, operation: add
+Package: catalogAccess
+User: jchiang  Sun Oct  9 21:03:08 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-25-01, operation: add
+Package: catalogAccess
+User: jchiang  Sat Sep 10 08:32:41 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-25-00, operation: add
+Package: catalogAccess
+User: jchiang  Sun Aug 14 19:54:35 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-24-00, operation: add
+Package: catalogAccess
+User: jchiang  Thu Jun 30 09:34:16 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-23-01, operation: add
+Package: catalogAccess
+User: jchiang  Fri Apr 15 13:10:58 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-23-00, operation: add
+Package: catalogAccess
+User: jchiang  Mon Apr  4 15:24:36 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-22-00, operation: add
+Package: catalogAccess
+User: jchiang  Sat Mar 19 12:44:52 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-21-00, operation: add
+Package: catalogAccess
+User: glastrm  Sun Jan 30 13:01:21 2011
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-20-00, operation: add
+Package: catalogAccess
+User: glastrm  Wed Dec 15 18:45:09 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-19-00, operation: add
+Package: catalogAccess
+User: glastrm  Fri Nov  5 06:15:54 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-18-06, operation: add
+Package: catalogAccess
+User: glastrm  Tue Oct 19 16:02:31 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-18-05, operation: add
+Package: catalogAccess
+User: glastrm  Tue Oct  5 18:14:10 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-18-04, operation: add
+Package: catalogAccess
+User: glastrm  Tue Sep 28 14:54:27 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-18-03, operation: add
+Package: catalogAccess
+User: glastrm  Mon Aug 30 10:20:34 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-18-02, operation: add
+Package: catalogAccess
+User: glastrm  Sat Aug 28 10:16:41 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-18-01, operation: add
+Package: catalogAccess
+User: glastrm  Thu Aug 19 07:07:18 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-18-00, operation: add
+Package: catalogAccess
+User: glastrm  Mon Aug 16 00:38:46 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-17-00, operation: add
+Package: catalogAccess
+User: glastrm  Thu Jun 17 18:43:45 2010
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-17-00, operation: add
+Package: catalogAccess
+User: glastrm  Mon Jun 14 21:45:02 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-16-01, operation: add
+Package: catalogAccess
+User: glastrm  Mon Apr  5 11:19:57 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-16-00, operation: add
+Package: catalogAccess
+User: glastrm  Fri Feb 26 15:55:51 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-03, operation: add
+Package: catalogAccess
+User: jrb  Mon Feb 22 12:45:23 2010
+Files:
+  catalogAccess/.cvsignore  1.2
+  catalogAccess/ChangeLog  1.172
+  catalogAccess/SConscript  1.9
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.15
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.21
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.16
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.10
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 22 12:45:17 PST 2010
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 22 12:45:17 PST 2010
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 22 12:45:17 PST 2010
+catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jrb  Wed Feb 17 16:51:58 PST 2010
+ScienceTools-scons/catalogAccess
+
+Modified Files:
+	.cvsignore SConscript 
+Log Message:
+Fix library link
+
+    *
+------------------------------------------------------------
+User: elwinter  Wed Dec 16 10:15:30 PST 2009
+catalogAccess/src
+
+Modified Files:
+	catalog_ioText.cxx 
+Log Message:
+Added <cstring> header needed by gcc4.
+
+    *
+------------------------------------------------------------
+User: elwinter  Wed Dec 16 10:14:09 PST 2009
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx 
+Log Message:
+Added <cstring> header needed by gcc4.
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-06, operation: add
+Package: catalogAccess
+User: glastrm  Sun Dec  6 21:13:59 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.153
+  catalogAccess/SConscript  1.7
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.14
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.20
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-05, operation: add
+Package: catalogAccess
+User: glastrm  Sun Sep 27 09:43:42 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.153
+  catalogAccess/SConscript  1.7
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.14
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.20
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-15-01-02, operation: del
+Package: catalogAccess
+User: glastrm  Mon Aug 17 13:32:05 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.153
+  catalogAccess/SConscript  1.7
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.14
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.20
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-15-01-02, operation: add
+Package: catalogAccess
+User: golpa  Mon Aug 17 13:13:11 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.153
+  catalogAccess/SConscript  1.7
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.14
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.20
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-03-gl2, operation: add
+Package: catalogAccess
+User: glastrm  Fri Aug  7 19:12:38 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-00, operation: del
+Package: catalogAccess
+User: glastrm  Fri Aug  7 19:03:45 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-00, operation: add
+Package: catalogAccess
+User: glastrm  Fri Aug  7 18:42:59 2009
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-04, operation: add
+Package: catalogAccess
+User: glastrm  Thu Jul 30 16:21:25 2009
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-04, operation: add
+Package: catalogAccess
+User: glastrm  Thu Jul 30 15:50:32 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.153
+  catalogAccess/SConscript  1.7
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.14
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.20
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-02, operation: add
+Package: catalogAccess
+User: glastrm  Wed Jul 15 10:34:41 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.153
+  catalogAccess/SConscript  1.7
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.14
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.20
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r4p2, operation: mov
+Package: catalogAccess
+User: glastrm  Wed Jul 15 10:34:31 2009
+Files:
+  catalogAccess/SConscript  1.7
+
+    *
+------------------------------------------------------------
+User: glastrm  Wed Jul 15 10:34:25 PDT 2009
+catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r4p2, operation: add
+Package: catalogAccess
+User: jrb  Wed Jul 15 10:06:10 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.153
+  catalogAccess/SConscript  1.6
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.14
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.20
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Jul 15 10:06:03 PDT 2009
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release v0r4p2
+    *
+------------------------------------------------------------
+User: jrb  Wed Jul 15 10:05:32 PDT 2009
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v0r4p2
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-03, operation: add
+Package: catalogAccess
+User: glastrm  Tue Jul 14 16:05:45 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jul 14 10:58:00 PDT 2009
+ScienceTools-scons/catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+Use registerTargets
+
+    *
+------------------------------------------------------------
+User: heather  Wed Jul  1 09:40:29 PDT 2009
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add EOH to release.notes
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-02, operation: add
+Package: catalogAccess
+User: glastrm  Sun Jun 14 10:20:27 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-01, operation: add
+Package: catalogAccess
+User: glastrm  Sun Jun  7 17:29:41 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-15-00, operation: add
+Package: catalogAccess
+User: glastrm  Sat Jun  6 07:58:21 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-14-00, operation: add
+Package: catalogAccess
+User: glastrm  Sun May 31 22:27:02 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-13-00, operation: add
+Package: catalogAccess
+User: glastrm  Sun May 24 20:58:46 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-12-00, operation: add
+Package: catalogAccess
+User: glastrm  Wed May  6 20:55:19 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-11-00, operation: add
+Package: catalogAccess
+User: glastrm  Sun Mar 22 23:23:54 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-10-00, operation: add
+Package: catalogAccess
+User: glastrm  Tue Feb  3 17:30:00 2009
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-09-00, operation: add
+Package: catalogAccess
+User: glastrm  Mon Dec 15 21:29:40 2008
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.5
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-09-00, operation: add
+Package: catalogAccess
+User: glastrm  Thu Dec  4 21:27:04 2008
+Files:
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-08-03, operation: add
+Package: catalogAccess
+User: glastrm  Fri Nov 28 16:13:27 2008
+Files:
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-06-00, operation: del
+Package: catalogAccess
+User: glastrm  Wed Sep 17 13:18:08 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-06-01, operation: del
+Package: catalogAccess
+User: glastrm  Wed Sep 17 13:17:01 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-06-02, operation: del
+Package: catalogAccess
+User: glastrm  Wed Sep 17 13:15:33 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-06-03, operation: del
+Package: catalogAccess
+User: glastrm  Wed Sep 17 13:13:22 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-07-00, operation: del
+Package: catalogAccess
+User: glastrm  Wed Sep 17 13:11:37 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-07-00, operation: add
+Package: catalogAccess
+User: glastrm  Sat Jul 26 20:55:03 2008
+Files:
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-06-03, operation: add
+Package: catalogAccess
+User: glastrm  Tue Jul 15 20:51:11 2008
+Files:
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-06-02, operation: add
+Package: catalogAccess
+User: glastrm  Mon Jul 14 08:44:50 2008
+Files:
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-06-01, operation: add
+Package: catalogAccess
+User: glastrm  Sat Jul 12 11:58:26 2008
+Files:
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-06-00, operation: add
+Package: catalogAccess
+User: glastrm  Wed Jul  9 20:32:25 2008
+Files:
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r4p1, operation: mov
+Package: catalogAccess
+User: glastrm  Thu Jun 19 14:54:08 2008
+Files:
+  catalogAccess/SConscript  1.5
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-01, operation: mov
+Package: catalogAccess
+User: glastrm  Thu Jun 19 14:53:56 2008
+Files:
+  catalogAccess/SConscript  1.5
+
+    *
+------------------------------------------------------------
+User: glastrm  Thu Jun 19 14:53:43 PDT 2008
+ScienceTools-scons/catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+Added Author and Version fields
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-01, operation: mov
+Package: catalogAccess
+User: glast  Wed Mar 19 14:29:48 2008
+Files:
+  catalogAccess/SConscript  1.4
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r4p1, operation: mov
+Package: catalogAccess
+User: glast  Wed Mar 19 14:29:31 2008
+Files:
+  catalogAccess/SConscript  1.4
+
+    *
+------------------------------------------------------------
+User: glastrm  Wed Mar 19 14:29:04 PDT 2008
+ScienceTools-scons/catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+Register data files
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-01, operation: mov
+Package: catalogAccess
+User: glast  Mon Feb 25 19:02:02 2008
+Files:
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/SConscript  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r4p1, operation: mov
+Package: catalogAccess
+User: glast  Mon Feb 25 19:01:44 2008
+Files:
+  catalogAccess/catalogAccessLib.py  1.2
+  catalogAccess/SConscript  1.3
+
+    *
+------------------------------------------------------------
+User: glastrm  Mon Feb 25 19:00:56 PST 2008
+ScienceTools-scons/catalogAccess
+
+Modified Files:
+	catalogAccessLib.py SConscript 
+Log Message:
+Set lib dependencies up for when building libraries
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-01, operation: add
+Package: catalogAccess
+User: glastrm  Mon Feb 25 05:30:47 2008
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.2
+  catalogAccess/catalogAccessLib.py  1.1
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r4p1, operation: add
+Package: catalogAccess
+User: landriu  Mon Feb 25 05:27:14 2008
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.116
+  catalogAccess/SConscript  1.2
+  catalogAccess/catalogAccessLib.py  1.1
+  catalogAccess/catalogAccess/quantity.h  1.2
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.18
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.9
+  catalogAccess/src/test/main_test.cxx  1.17
+
+    *
+------------------------------------------------------------
+User: landriu  Mon Feb 25 05:26:39 PST 2008
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+using quiet_NaN
+    *
+------------------------------------------------------------
+User: landriu  Mon Feb 25 05:26:39 PST 2008
+catalogAccess/src
+
+Modified Files:
+	catalog_ioText.cxx 
+Log Message:
+using quiet_NaN
+    *
+------------------------------------------------------------
+User: landriu  Mon Feb 25 05:26:39 PST 2008
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+using quiet_NaN
+    *
+------------------------------------------------------------
+User: landriu  Mon Feb 25 05:26:39 PST 2008
+catalogAccess/catalogAccess
+
+Modified Files:
+	quantity.h 
+Log Message:
+using quiet_NaN
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-00, operation: mov
+Package: catalogAccess
+User: glast  Fri Feb 22 13:21:05 2008
+Files:
+  catalogAccess/SConscript  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r4, operation: mov
+Package: catalogAccess
+User: glast  Fri Feb 22 13:20:36 2008
+Files:
+  catalogAccess/SConscript  1.2
+
+    *
+------------------------------------------------------------
+User: golpa  Fri Feb 22 13:15:50 PST 2008
+catalogAccess
+
+Modified Files:
+	SConscript 
+Log Message:
+Added catalogAcccess test app
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-04-00, operation: add
+Package: catalogAccess
+User: glastrm  Fri Feb 22 06:01:21 2008
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.107
+  catalogAccess/SConscript  1.1
+  catalogAccess/catalogAccessLib.py  1.1
+  catalogAccess/catalogAccess/quantity.h  1.1
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.17
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.8
+  catalogAccess/src/test/main_test.cxx  1.16
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r4, operation: add
+Package: catalogAccess
+User: landriu  Fri Feb 22 05:49:20 2008
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.107
+  catalogAccess/SConscript  1.1
+  catalogAccess/catalogAccessLib.py  1.1
+  catalogAccess/catalogAccess/quantity.h  1.1
+  catalogAccess/catalogAccess/catalog.h  1.1
+  catalogAccess/cmt/requirements  1.13
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.17
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/quantity.cxx  1.8
+  catalogAccess/src/catalog_io.cxx  1.16
+  catalogAccess/src/catalog_sel.cxx  1.12
+  catalogAccess/src/catalog.cxx  1.15
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.8
+  catalogAccess/src/test/main_test.cxx  1.16
+
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 22 05:48:33 PST 2008
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+moved public headers
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 22 05:48:33 PST 2008
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog_io.cxx catalog_ioText.cxx catalog_sel.cxx 
+	quantity.cxx 
+Removed Files:
+	catalog.h quantity.h 
+Log Message:
+moved public headers
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 22 05:48:32 PST 2008
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+moved public headers
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 22 05:48:32 PST 2008
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+moved public headers
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 22 05:48:32 PST 2008
+catalogAccess/catalogAccess
+
+Added Files:
+	catalog.h quantity.h 
+Log Message:
+moved public headers
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 22 05:45:33 PST 2008
+catalogAccess/catalogAccess
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/catalogAccess/catalogAccess added to the repository
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: catalogAccess-00-03-01, operation: add
+Package: catalogAccess
+User: glastrm  Wed Jan 30 07:15:42 2008
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.99
+  catalogAccess/SConscript  1.1
+  catalogAccess/catalogAccessLib.py  1.1
+  catalogAccess/cmt/requirements  1.12
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.16
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.11
+  catalogAccess/src/catalog.cxx  1.14
+  catalogAccess/src/quantity.h  1.10
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.15
+  catalogAccess/src/catalog.h  1.12
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.7
+  catalogAccess/src/test/main_test.cxx  1.15
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r3p1, operation: add
+Package: catalogAccess
+User: landriu  Wed Jan 30 07:07:40 2008
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.99
+  catalogAccess/SConscript  1.1
+  catalogAccess/catalogAccessLib.py  1.1
+  catalogAccess/cmt/requirements  1.12
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.16
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.11
+  catalogAccess/src/catalog.cxx  1.14
+  catalogAccess/src/quantity.h  1.10
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.15
+  catalogAccess/src/catalog.h  1.12
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.7
+  catalogAccess/src/test/main_test.cxx  1.15
+
+    *
+------------------------------------------------------------
+User: golpa  Mon Dec 10 12:03:19 PST 2007
+catalogAccess
+
+Added Files:
+	SConscript catalogAccessLib.py 
+Log Message:
+Initial import of SCons files
+    *
+------------------------------------------------------------
+User: golpa  Wed Sep 26 12:21:45 PDT 2007
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Use commonUtilities to obtain data path
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r3, operation: add
+Package: catalogAccess
+User: landriu  Fri Mar 10 06:17:35 2006
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.96
+  catalogAccess/cmt/requirements  1.12
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test3L.fits  1.1
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/test1.fits  1.6
+  catalogAccess/data/outref/screenOut.txt  1.14
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.16
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.11
+  catalogAccess/src/catalog.cxx  1.14
+  catalogAccess/src/quantity.h  1.10
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.15
+  catalogAccess/src/catalog.h  1.12
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.7
+  catalogAccess/src/test/main_test.cxx  1.14
+
+    *
+------------------------------------------------------------
+User: landriu  Fri Mar 10 06:16:56 PST 2006
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+new m_type LOGICALS, and read unsigned int without TNULL
+    *
+------------------------------------------------------------
+User: landriu  Fri Mar 10 06:16:56 PST 2006
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog_io.cxx catalog_ioText.cxx catalog_sel.cxx 
+	quantity.h 
+Log Message:
+new m_type LOGICALS, and read unsigned int without TNULL
+    *
+------------------------------------------------------------
+User: landriu  Fri Mar 10 06:16:55 PST 2006
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+new m_type LOGICALS, and read unsigned int without TNULL
+    *
+------------------------------------------------------------
+User: landriu  Fri Mar 10 06:16:55 PST 2006
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+new m_type LOGICALS, and read unsigned int without TNULL
+    *
+------------------------------------------------------------
+User: landriu  Fri Mar 10 06:16:55 PST 2006
+catalogAccess/data
+
+Modified Files:
+	test1.fits 
+Added Files:
+	test3L.fits 
+Log Message:
+new m_type LOGICALS, and read unsigned int without TNULL
+    *
+------------------------------------------------------------
+User: landriu  Fri Mar 10 06:16:54 PST 2006
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+new m_type LOGICALS, and read unsigned int without TNULL
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2p8, operation: add
+Package: catalogAccess
+User: landriu  Fri Feb 24 08:59:08 2006
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.89
+  catalogAccess/cmt/requirements  1.11
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.5
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.13
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.2
+  catalogAccess/doc/release.notes  1.15
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.10
+  catalogAccess/src/catalog.cxx  1.13
+  catalogAccess/src/quantity.h  1.9
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.14
+  catalogAccess/src/catalog.h  1.12
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.6
+  catalogAccess/src/test/main_test.cxx  1.13
+
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 24 08:58:18 PST 2006
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+saveText modified, added GLAST catalog
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 24 08:58:18 PST 2006
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_ioText.cxx 
+Log Message:
+saveText modified, added GLAST catalog
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 24 08:58:17 PST 2006
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+saveText modified, added GLAST catalog
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 24 08:58:17 PST 2006
+catalogAccess/data/outref
+
+Modified Files:
+	1rxs_50.out.fits screenOut.txt 
+Log Message:
+saveText modified, added GLAST catalog
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 24 08:58:17 PST 2006
+catalogAccess/data
+
+Modified Files:
+	test1.fits 
+Log Message:
+saveText modified, added GLAST catalog
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb 24 08:58:17 PST 2006
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+saveText modified, added GLAST catalog
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2p7, operation: add
+Package: catalogAccess
+User: jchiang  Sat Feb  4 07:49:14 2006
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.82
+  catalogAccess/cmt/requirements  1.10
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.4
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.12
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.1
+  catalogAccess/doc/release.notes  1.14
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.10
+  catalogAccess/src/catalog.cxx  1.12
+  catalogAccess/src/quantity.h  1.9
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.13
+  catalogAccess/src/catalog.h  1.11
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.5
+  catalogAccess/src/test/main_test.cxx  1.12
+
+    *
+------------------------------------------------------------
+User: jchiang  Sat Feb  4 07:48:46 PST 2006
+catalogAccess/src
+
+Modified Files:
+	catalog_io.cxx catalog_ioText.cxx 
+Log Message:
+test file.is_open() instead of just file; tagging v0r2p7
+    *
+------------------------------------------------------------
+User: jchiang  Sat Feb  4 07:48:46 PST 2006
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+test file.is_open() instead of just file; tagging v0r2p7
+    *
+------------------------------------------------------------
+User: jchiang  Sat Feb  4 07:48:45 PST 2006
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+test file.is_open() instead of just file; tagging v0r2p7
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2p6, operation: add
+Package: catalogAccess
+User: landriu  Fri Feb  3 08:24:38 2006
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.78
+  catalogAccess/cmt/requirements  1.9
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.4
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.12
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.1
+  catalogAccess/doc/release.notes  1.13
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.10
+  catalogAccess/src/catalog.cxx  1.12
+  catalogAccess/src/quantity.h  1.9
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.12
+  catalogAccess/src/catalog.h  1.11
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.4
+  catalogAccess/src/test/main_test.cxx  1.12
+
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb  3 08:23:11 PST 2006
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Change for Win32 (+ accept fits with vector)
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb  3 08:23:11 PST 2006
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_ioText.cxx 
+	catalog_sel.cxx quantity.h 
+Log Message:
+Change for Win32 (+ accept fits with vector)
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb  3 08:23:09 PST 2006
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Change for Win32 (+ accept fits with vector)
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb  3 08:23:09 PST 2006
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+Change for Win32 (+ accept fits with vector)
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb  3 08:23:08 PST 2006
+catalogAccess/data
+
+Modified Files:
+	test1.fits 
+Log Message:
+Change for Win32 (+ accept fits with vector)
+    *
+------------------------------------------------------------
+User: landriu  Fri Feb  3 08:23:07 PST 2006
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Change for Win32 (+ accept fits with vector)
+    *
+------------------------------------------------------------
+User: landriu  Thu Feb  2 06:49:25 PST 2006
+catalogAccess/doc/doxy-html
+
+Removed Files:
+	annotated.html catalog_8cxx-source.html catalog_8cxx.html 
+	catalog_8cxx__incl.dot catalog_8h-source.html catalog_8h.html 
+	catalog_8h__dep__incl.dot catalog_8h__incl.dot 
+	catalog__io_8cxx-source.html catalog__io_8cxx.html 
+	catalog__io_8cxx__incl.dot catalog__io_text_8cxx-source.html 
+	catalog__io_text_8cxx.html catalog__io_text_8cxx__incl.dot 
+	catalog__sel_8cxx-source.html catalog__sel_8cxx.html 
+	catalog__sel_8cxx__incl.dot 
+	classcatalog_access_1_1_catalog-members.html 
+	classcatalog_access_1_1_catalog.html 
+	classcatalog_access_1_1_quantity-members.html 
+	classcatalog_access_1_1_quantity.html doxygen.css doxygen.png 
+	files.html ftv2blank.png ftv2doc.png ftv2folderclosed.png 
+	ftv2folderopen.png ftv2lastnode.png ftv2link.png 
+	ftv2mlastnode.png ftv2mnode.png ftv2node.png ftv2plastnode.png 
+	ftv2pnode.png ftv2vertline.png functions.html globals.html 
+	graph_legend.dot graph_legend.html index.html main.html 
+	main__test_8cxx-source.html main__test_8cxx.html 
+	main__test_8cxx__incl.dot mainpage_8h-source.html 
+	mainpage_8h.html namespacecatalog_access.html 
+	namespacemembers.html namespaces.html namespacetip.html 
+	quantity_8cxx-source.html quantity_8cxx.html 
+	quantity_8cxx__incl.dot quantity_8h-source.html 
+	quantity_8h.html quantity_8h__dep__incl.dot 
+	quantity_8h__incl.dot release_8notes-source.html 
+	release_8notes.html tree.html tree.js treeview.js 
+Log Message:
+Remove the generated doc files
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2p5, operation: add
+Package: catalogAccess
+User: landriu  Thu Feb  2 06:26:56 2006
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.70
+  catalogAccess/cmt/requirements  1.8
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.3
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.11
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.1
+  catalogAccess/doc/release.notes  1.12
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/namespacemembers.html  1.5
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog-members.html  1.5
+  catalogAccess/doc/doxy-html/quantity_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/ftv2mlastnode.png  1.1
+  catalogAccess/doc/doxy-html/namespacecatalog_access.html  1.5
+  catalogAccess/doc/doxy-html/ftv2pnode.png  1.1
+  catalogAccess/doc/doxy-html/release_8notes-source.html  1.5
+  catalogAccess/doc/doxy-html/catalog__io_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/treeview.js  1.1
+  catalogAccess/doc/doxy-html/ftv2lastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/ftv2mnode.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog.html  1.5
+  catalogAccess/doc/doxy-html/main__test_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/index.html  1.2
+  catalogAccess/doc/doxy-html/ftv2node.png  1.1
+  catalogAccess/doc/doxy-html/ftv2folderclosed.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8h__dep__incl.dot  1.4
+  catalogAccess/doc/doxy-html/quantity_8h__incl.dot  1.4
+  catalogAccess/doc/doxy-html/main.html  1.5
+  catalogAccess/doc/doxy-html/graph_legend.html  1.5
+  catalogAccess/doc/doxy-html/tree.js  1.3
+  catalogAccess/doc/doxy-html/quantity_8h.html  1.5
+  catalogAccess/doc/doxy-html/namespaces.html  1.5
+  catalogAccess/doc/doxy-html/functions.html  1.5
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx__incl.dot  1.2
+  catalogAccess/doc/doxy-html/doxygen.css  1.2
+  catalogAccess/doc/doxy-html/ftv2link.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/quantity_8cxx__incl.dot  1.4
+  catalogAccess/doc/doxy-html/ftv2folderopen.png  1.1
+  catalogAccess/doc/doxy-html/ftv2doc.png  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity.html  1.5
+  catalogAccess/doc/doxy-html/catalog_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/ftv2vertline.png  1.1
+  catalogAccess/doc/doxy-html/ftv2blank.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx__incl.dot  1.4
+  catalogAccess/doc/doxy-html/release_8notes.html  1.5
+  catalogAccess/doc/doxy-html/main__test_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/files.html  1.5
+  catalogAccess/doc/doxy-html/quantity_8h__dep__incl.dot  1.4
+  catalogAccess/doc/doxy-html/graph_legend.dot  1.2
+  catalogAccess/doc/doxy-html/catalog_8h-source.html  1.5
+  catalogAccess/doc/doxy-html/catalog_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity-members.html  1.5
+  catalogAccess/doc/doxy-html/tree.html  1.2
+  catalogAccess/doc/doxy-html/catalog_8h.html  1.5
+  catalogAccess/doc/doxy-html/catalog_8h__incl.dot  1.3
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx.html  1.3
+  catalogAccess/doc/doxy-html/annotated.html  1.5
+  catalogAccess/doc/doxy-html/doxygen.png  1.2
+  catalogAccess/doc/doxy-html/quantity_8h-source.html  1.5
+  catalogAccess/doc/doxy-html/main__test_8cxx__incl.dot  1.4
+  catalogAccess/doc/doxy-html/catalog__io_8cxx__incl.dot  1.4
+  catalogAccess/doc/doxy-html/catalog__io_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/globals.html  1.5
+  catalogAccess/doc/doxy-html/mainpage_8h.html  1.5
+  catalogAccess/doc/doxy-html/ftv2plastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx-source.html  1.3
+  catalogAccess/doc/doxy-html/namespacetip.html  1.5
+  catalogAccess/doc/doxy-html/mainpage_8h-source.html  1.5
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.9
+  catalogAccess/src/catalog.cxx  1.11
+  catalogAccess/src/quantity.h  1.8
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.11
+  catalogAccess/src/catalog.h  1.10
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.3
+  catalogAccess/src/test/main_test.cxx  1.11
+
+    *
+------------------------------------------------------------
+User: landriu  Thu Feb  2 06:26:03 PST 2006
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2p4, operation: add
+Package: catalogAccess
+User: landriu  Wed Feb  1 05:43:30 2006
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.68
+  catalogAccess/cmt/requirements  1.8
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.3
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.11
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.1
+  catalogAccess/doc/release.notes  1.11
+  catalogAccess/doc/used_packages.html  1.4
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/namespacemembers.html  1.5
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog-members.html  1.5
+  catalogAccess/doc/doxy-html/quantity_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/ftv2mlastnode.png  1.1
+  catalogAccess/doc/doxy-html/namespacecatalog_access.html  1.5
+  catalogAccess/doc/doxy-html/ftv2pnode.png  1.1
+  catalogAccess/doc/doxy-html/release_8notes-source.html  1.5
+  catalogAccess/doc/doxy-html/catalog__io_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/treeview.js  1.1
+  catalogAccess/doc/doxy-html/ftv2lastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/ftv2mnode.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog.html  1.5
+  catalogAccess/doc/doxy-html/main__test_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/index.html  1.2
+  catalogAccess/doc/doxy-html/ftv2node.png  1.1
+  catalogAccess/doc/doxy-html/ftv2folderclosed.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8h__dep__incl.dot  1.4
+  catalogAccess/doc/doxy-html/quantity_8h__incl.dot  1.4
+  catalogAccess/doc/doxy-html/main.html  1.5
+  catalogAccess/doc/doxy-html/graph_legend.html  1.5
+  catalogAccess/doc/doxy-html/tree.js  1.3
+  catalogAccess/doc/doxy-html/quantity_8h.html  1.5
+  catalogAccess/doc/doxy-html/namespaces.html  1.5
+  catalogAccess/doc/doxy-html/functions.html  1.5
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx__incl.dot  1.2
+  catalogAccess/doc/doxy-html/doxygen.css  1.2
+  catalogAccess/doc/doxy-html/ftv2link.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/quantity_8cxx__incl.dot  1.4
+  catalogAccess/doc/doxy-html/ftv2folderopen.png  1.1
+  catalogAccess/doc/doxy-html/ftv2doc.png  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity.html  1.5
+  catalogAccess/doc/doxy-html/catalog_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/ftv2vertline.png  1.1
+  catalogAccess/doc/doxy-html/ftv2blank.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx__incl.dot  1.4
+  catalogAccess/doc/doxy-html/release_8notes.html  1.5
+  catalogAccess/doc/doxy-html/main__test_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/files.html  1.5
+  catalogAccess/doc/doxy-html/quantity_8h__dep__incl.dot  1.4
+  catalogAccess/doc/doxy-html/graph_legend.dot  1.2
+  catalogAccess/doc/doxy-html/catalog_8h-source.html  1.5
+  catalogAccess/doc/doxy-html/catalog_8cxx.html  1.5
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity-members.html  1.5
+  catalogAccess/doc/doxy-html/tree.html  1.2
+  catalogAccess/doc/doxy-html/catalog_8h.html  1.5
+  catalogAccess/doc/doxy-html/catalog_8h__incl.dot  1.3
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx.html  1.3
+  catalogAccess/doc/doxy-html/annotated.html  1.5
+  catalogAccess/doc/doxy-html/doxygen.png  1.2
+  catalogAccess/doc/doxy-html/quantity_8h-source.html  1.5
+  catalogAccess/doc/doxy-html/main__test_8cxx__incl.dot  1.4
+  catalogAccess/doc/doxy-html/catalog__io_8cxx__incl.dot  1.4
+  catalogAccess/doc/doxy-html/catalog__io_8cxx-source.html  1.5
+  catalogAccess/doc/doxy-html/globals.html  1.5
+  catalogAccess/doc/doxy-html/mainpage_8h.html  1.5
+  catalogAccess/doc/doxy-html/ftv2plastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx-source.html  1.3
+  catalogAccess/doc/doxy-html/namespacetip.html  1.5
+  catalogAccess/doc/doxy-html/mainpage_8h-source.html  1.5
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.9
+  catalogAccess/src/catalog.cxx  1.11
+  catalogAccess/src/quantity.h  1.8
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.11
+  catalogAccess/src/catalog.h  1.10
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.3
+  catalogAccess/src/test/main_test.cxx  1.11
+
+    *
+------------------------------------------------------------
+User: landriu  Wed Feb  1 05:42:55 PST 2006
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Change for new compiler
+    *
+------------------------------------------------------------
+User: landriu  Wed Feb  1 05:42:55 PST 2006
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog_io.cxx catalog_ioText.cxx catalog_sel.cxx 
+	quantity.h 
+Log Message:
+Change for new compiler
+    *
+------------------------------------------------------------
+User: landriu  Wed Feb  1 05:42:54 PST 2006
+catalogAccess/doc/doxy-html
+
+Modified Files:
+	annotated.html catalog_8cxx-source.html catalog_8cxx.html 
+	catalog_8cxx__incl.dot catalog_8h-source.html catalog_8h.html 
+	catalog_8h__dep__incl.dot catalog_8h__incl.dot 
+	catalog__io_8cxx-source.html catalog__io_8cxx.html 
+	catalog__io_8cxx__incl.dot catalog__io_text_8cxx-source.html 
+	catalog__io_text_8cxx.html catalog__io_text_8cxx__incl.dot 
+	catalog__sel_8cxx-source.html catalog__sel_8cxx.html 
+	catalog__sel_8cxx__incl.dot 
+	classcatalog_access_1_1_catalog-members.html 
+	classcatalog_access_1_1_catalog.html 
+	classcatalog_access_1_1_quantity-members.html 
+	classcatalog_access_1_1_quantity.html doxygen.css doxygen.png 
+	files.html functions.html globals.html graph_legend.dot 
+	graph_legend.html index.html main.html 
+	main__test_8cxx-source.html main__test_8cxx.html 
+	main__test_8cxx__incl.dot mainpage_8h-source.html 
+	mainpage_8h.html namespacecatalog_access.html 
+	namespacemembers.html namespaces.html namespacetip.html 
+	quantity_8cxx-source.html quantity_8cxx.html 
+	quantity_8cxx__incl.dot quantity_8h-source.html 
+	quantity_8h.html quantity_8h__dep__incl.dot 
+	quantity_8h__incl.dot release_8notes-source.html 
+	release_8notes.html tree.html 
+Log Message:
+Change for new compiler
+    *
+------------------------------------------------------------
+User: landriu  Wed Feb  1 05:42:47 PST 2006
+catalogAccess/doc
+
+Modified Files:
+	release.notes used_packages.html 
+Log Message:
+Change for new compiler
+    *
+------------------------------------------------------------
+User: landriu  Wed Feb  1 05:42:46 PST 2006
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+Change for new compiler
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2p3, operation: add
+Package: catalogAccess
+User: landriu  Mon Jul 18 06:05:39 2005
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.62
+  catalogAccess/cmt/requirements  1.8
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.3
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.10
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.1
+  catalogAccess/doc/release.notes  1.10
+  catalogAccess/doc/used_packages.html  1.3
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx.html  1.4
+  catalogAccess/doc/doxy-html/namespacemembers.html  1.4
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog-members.html  1.4
+  catalogAccess/doc/doxy-html/quantity_8cxx.html  1.4
+  catalogAccess/doc/doxy-html/ftv2mlastnode.png  1.1
+  catalogAccess/doc/doxy-html/namespacecatalog_access.html  1.4
+  catalogAccess/doc/doxy-html/ftv2pnode.png  1.1
+  catalogAccess/doc/doxy-html/release_8notes-source.html  1.4
+  catalogAccess/doc/doxy-html/catalog__io_8cxx.html  1.4
+  catalogAccess/doc/doxy-html/treeview.js  1.1
+  catalogAccess/doc/doxy-html/ftv2lastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx-source.html  1.4
+  catalogAccess/doc/doxy-html/ftv2mnode.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx-source.html  1.4
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog.html  1.4
+  catalogAccess/doc/doxy-html/main__test_8cxx.html  1.4
+  catalogAccess/doc/doxy-html/index.html  1.1
+  catalogAccess/doc/doxy-html/ftv2node.png  1.1
+  catalogAccess/doc/doxy-html/ftv2folderclosed.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8h__dep__incl.dot  1.3
+  catalogAccess/doc/doxy-html/quantity_8h__incl.dot  1.3
+  catalogAccess/doc/doxy-html/main.html  1.4
+  catalogAccess/doc/doxy-html/graph_legend.html  1.4
+  catalogAccess/doc/doxy-html/tree.js  1.3
+  catalogAccess/doc/doxy-html/quantity_8h.html  1.4
+  catalogAccess/doc/doxy-html/namespaces.html  1.4
+  catalogAccess/doc/doxy-html/functions.html  1.4
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/doxygen.css  1.1
+  catalogAccess/doc/doxy-html/ftv2link.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8cxx__incl.dot  1.2
+  catalogAccess/doc/doxy-html/quantity_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/ftv2folderopen.png  1.1
+  catalogAccess/doc/doxy-html/ftv2doc.png  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity.html  1.4
+  catalogAccess/doc/doxy-html/catalog_8cxx-source.html  1.4
+  catalogAccess/doc/doxy-html/ftv2vertline.png  1.1
+  catalogAccess/doc/doxy-html/ftv2blank.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/release_8notes.html  1.4
+  catalogAccess/doc/doxy-html/main__test_8cxx-source.html  1.4
+  catalogAccess/doc/doxy-html/files.html  1.4
+  catalogAccess/doc/doxy-html/quantity_8h__dep__incl.dot  1.3
+  catalogAccess/doc/doxy-html/graph_legend.dot  1.1
+  catalogAccess/doc/doxy-html/catalog_8h-source.html  1.4
+  catalogAccess/doc/doxy-html/catalog_8cxx.html  1.4
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity-members.html  1.4
+  catalogAccess/doc/doxy-html/tree.html  1.1
+  catalogAccess/doc/doxy-html/catalog_8h.html  1.4
+  catalogAccess/doc/doxy-html/catalog_8h__incl.dot  1.2
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx.html  1.2
+  catalogAccess/doc/doxy-html/annotated.html  1.4
+  catalogAccess/doc/doxy-html/doxygen.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8h-source.html  1.4
+  catalogAccess/doc/doxy-html/main__test_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/catalog__io_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/catalog__io_8cxx-source.html  1.4
+  catalogAccess/doc/doxy-html/globals.html  1.4
+  catalogAccess/doc/doxy-html/mainpage_8h.html  1.4
+  catalogAccess/doc/doxy-html/ftv2plastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx-source.html  1.2
+  catalogAccess/doc/doxy-html/namespacetip.html  1.4
+  catalogAccess/doc/doxy-html/mainpage_8h-source.html  1.4
+  catalogAccess/src/quantity.cxx  1.7
+  catalogAccess/src/catalog_sel.cxx  1.8
+  catalogAccess/src/catalog.cxx  1.10
+  catalogAccess/src/quantity.h  1.7
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.10
+  catalogAccess/src/catalog.h  1.10
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.2
+  catalogAccess/src/test/main_test.cxx  1.10
+
+    *
+------------------------------------------------------------
+User: landriu  Mon Jul 18 06:05:06 PDT 2005
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+importSelected row selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Jul 18 06:05:06 PDT 2005
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_ioText.cxx 
+	catalog_sel.cxx quantity.cxx quantity.h 
+Log Message:
+importSelected row selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Jul 18 06:05:05 PDT 2005
+catalogAccess/doc/doxy-html
+
+Modified Files:
+	annotated.html catalog_8cxx-source.html catalog_8cxx.html 
+	catalog_8h-source.html catalog_8h.html 
+	catalog__io_8cxx-source.html catalog__io_8cxx.html 
+	catalog__io_text_8cxx-source.html catalog__io_text_8cxx.html 
+	catalog__sel_8cxx-source.html catalog__sel_8cxx.html 
+	classcatalog_access_1_1_catalog-members.html 
+	classcatalog_access_1_1_catalog.html 
+	classcatalog_access_1_1_quantity-members.html 
+	classcatalog_access_1_1_quantity.html files.html 
+	functions.html globals.html graph_legend.html main.html 
+	main__test_8cxx-source.html main__test_8cxx.html 
+	mainpage_8h-source.html mainpage_8h.html 
+	namespacecatalog_access.html namespacemembers.html 
+	namespaces.html namespacetip.html quantity_8cxx-source.html 
+	quantity_8cxx.html quantity_8h-source.html quantity_8h.html 
+	release_8notes-source.html release_8notes.html 
+Log Message:
+importSelected row selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Jul 18 06:05:03 PDT 2005
+catalogAccess/doc
+
+Modified Files:
+	release.notes used_packages.html 
+Log Message:
+importSelected row selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Jul 18 06:05:03 PDT 2005
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+importSelected row selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Jul 18 06:05:03 PDT 2005
+catalogAccess/data
+
+Modified Files:
+	test1.fits 
+Log Message:
+importSelected row selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Jul 18 06:05:02 PDT 2005
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+importSelected row selection
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2p2, operation: add
+Package: catalogAccess
+User: landriu  Tue Jun 28 02:18:59 2005
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.54
+  catalogAccess/cmt/requirements  1.7
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.2
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.9
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.1
+  catalogAccess/doc/release.notes  1.9
+  catalogAccess/doc/used_packages.html  1.2
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx.html  1.3
+  catalogAccess/doc/doxy-html/namespacemembers.html  1.3
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog-members.html  1.3
+  catalogAccess/doc/doxy-html/quantity_8cxx.html  1.3
+  catalogAccess/doc/doxy-html/ftv2mlastnode.png  1.1
+  catalogAccess/doc/doxy-html/namespacecatalog_access.html  1.3
+  catalogAccess/doc/doxy-html/ftv2pnode.png  1.1
+  catalogAccess/doc/doxy-html/release_8notes-source.html  1.3
+  catalogAccess/doc/doxy-html/catalog__io_8cxx.html  1.3
+  catalogAccess/doc/doxy-html/treeview.js  1.1
+  catalogAccess/doc/doxy-html/ftv2lastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx-source.html  1.3
+  catalogAccess/doc/doxy-html/ftv2mnode.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx-source.html  1.3
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog.html  1.3
+  catalogAccess/doc/doxy-html/main__test_8cxx.html  1.3
+  catalogAccess/doc/doxy-html/index.html  1.1
+  catalogAccess/doc/doxy-html/ftv2node.png  1.1
+  catalogAccess/doc/doxy-html/ftv2folderclosed.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8h__dep__incl.dot  1.3
+  catalogAccess/doc/doxy-html/quantity_8h__incl.dot  1.3
+  catalogAccess/doc/doxy-html/main.html  1.3
+  catalogAccess/doc/doxy-html/graph_legend.html  1.3
+  catalogAccess/doc/doxy-html/tree.js  1.3
+  catalogAccess/doc/doxy-html/quantity_8h.html  1.3
+  catalogAccess/doc/doxy-html/namespaces.html  1.3
+  catalogAccess/doc/doxy-html/functions.html  1.3
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/doxygen.css  1.1
+  catalogAccess/doc/doxy-html/ftv2link.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8cxx__incl.dot  1.2
+  catalogAccess/doc/doxy-html/quantity_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/ftv2folderopen.png  1.1
+  catalogAccess/doc/doxy-html/ftv2doc.png  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity.html  1.3
+  catalogAccess/doc/doxy-html/catalog_8cxx-source.html  1.3
+  catalogAccess/doc/doxy-html/ftv2vertline.png  1.1
+  catalogAccess/doc/doxy-html/ftv2blank.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/release_8notes.html  1.3
+  catalogAccess/doc/doxy-html/main__test_8cxx-source.html  1.3
+  catalogAccess/doc/doxy-html/files.html  1.3
+  catalogAccess/doc/doxy-html/quantity_8h__dep__incl.dot  1.3
+  catalogAccess/doc/doxy-html/graph_legend.dot  1.1
+  catalogAccess/doc/doxy-html/catalog_8h-source.html  1.3
+  catalogAccess/doc/doxy-html/catalog_8cxx.html  1.3
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity-members.html  1.3
+  catalogAccess/doc/doxy-html/tree.html  1.1
+  catalogAccess/doc/doxy-html/catalog_8h.html  1.3
+  catalogAccess/doc/doxy-html/catalog_8h__incl.dot  1.2
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx.html  1.1
+  catalogAccess/doc/doxy-html/annotated.html  1.3
+  catalogAccess/doc/doxy-html/doxygen.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8h-source.html  1.3
+  catalogAccess/doc/doxy-html/main__test_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/catalog__io_8cxx__incl.dot  1.3
+  catalogAccess/doc/doxy-html/catalog__io_8cxx-source.html  1.3
+  catalogAccess/doc/doxy-html/globals.html  1.3
+  catalogAccess/doc/doxy-html/mainpage_8h.html  1.3
+  catalogAccess/doc/doxy-html/ftv2plastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__io_text_8cxx-source.html  1.1
+  catalogAccess/doc/doxy-html/namespacetip.html  1.3
+  catalogAccess/doc/doxy-html/mainpage_8h-source.html  1.3
+  catalogAccess/src/quantity.cxx  1.6
+  catalogAccess/src/catalog_sel.cxx  1.7
+  catalogAccess/src/catalog.cxx  1.9
+  catalogAccess/src/quantity.h  1.6
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.9
+  catalogAccess/src/catalog.h  1.9
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/catalog_ioText.cxx  1.1
+  catalogAccess/src/test/main_test.cxx  1.9
+
+    *
+------------------------------------------------------------
+User: landriu  Tue Jun 28 02:18:23 PDT 2005
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+importSelected works only on whole column
+    *
+------------------------------------------------------------
+User: landriu  Tue Jun 28 02:18:23 PDT 2005
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx quantity.cxx quantity.h 
+Added Files:
+	catalog_ioText.cxx 
+Log Message:
+importSelected works only on whole column
+    *
+------------------------------------------------------------
+User: landriu  Tue Jun 28 02:18:23 PDT 2005
+catalogAccess/doc/doxy-html
+
+Modified Files:
+	annotated.html catalog_8cxx-source.html catalog_8cxx.html 
+	catalog_8cxx__incl.dot catalog_8h-source.html catalog_8h.html 
+	catalog_8h__dep__incl.dot catalog_8h__incl.dot 
+	catalog__io_8cxx-source.html catalog__io_8cxx.html 
+	catalog__io_8cxx__incl.dot catalog__sel_8cxx-source.html 
+	catalog__sel_8cxx.html catalog__sel_8cxx__incl.dot 
+	classcatalog_access_1_1_catalog-members.html 
+	classcatalog_access_1_1_catalog.html 
+	classcatalog_access_1_1_quantity-members.html 
+	classcatalog_access_1_1_quantity.html files.html 
+	functions.html globals.html graph_legend.html main.html 
+	main__test_8cxx-source.html main__test_8cxx.html 
+	main__test_8cxx__incl.dot mainpage_8h-source.html 
+	mainpage_8h.html namespacecatalog_access.html 
+	namespacemembers.html namespaces.html namespacetip.html 
+	quantity_8cxx-source.html quantity_8cxx.html 
+	quantity_8cxx__incl.dot quantity_8h-source.html 
+	quantity_8h.html quantity_8h__dep__incl.dot 
+	quantity_8h__incl.dot release_8notes-source.html 
+	release_8notes.html tree.js 
+Added Files:
+	catalog__io_text_8cxx-source.html catalog__io_text_8cxx.html 
+	catalog__io_text_8cxx__incl.dot 
+Log Message:
+importSelected works only on whole column
+    *
+------------------------------------------------------------
+User: landriu  Tue Jun 28 02:18:21 PDT 2005
+catalogAccess/doc
+
+Modified Files:
+	release.notes used_packages.html 
+Log Message:
+importSelected works only on whole column
+    *
+------------------------------------------------------------
+User: landriu  Tue Jun 28 02:18:21 PDT 2005
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+importSelected works only on whole column
+    *
+------------------------------------------------------------
+User: landriu  Tue Jun 28 02:18:21 PDT 2005
+catalogAccess/data
+
+Modified Files:
+	test1.fits 
+Log Message:
+importSelected works only on whole column
+    *
+------------------------------------------------------------
+User: landriu  Tue Jun 28 02:18:21 PDT 2005
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+importSelected works only on whole column
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2p1, operation: add
+Package: catalogAccess
+User: landriu  Mon Jun 20 07:06:11 2005
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.46
+  catalogAccess/cmt/requirements  1.6
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/test.fits  1.1
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.8
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/data/outref/1rxs_50.out.fits  1.1
+  catalogAccess/doc/release.notes  1.8
+  catalogAccess/doc/used_packages.html  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx.html  1.2
+  catalogAccess/doc/doxy-html/namespacemembers.html  1.2
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog-members.html  1.2
+  catalogAccess/doc/doxy-html/quantity_8cxx.html  1.2
+  catalogAccess/doc/doxy-html/ftv2mlastnode.png  1.1
+  catalogAccess/doc/doxy-html/namespacecatalog_access.html  1.2
+  catalogAccess/doc/doxy-html/ftv2pnode.png  1.1
+  catalogAccess/doc/doxy-html/release_8notes-source.html  1.2
+  catalogAccess/doc/doxy-html/catalog__io_8cxx.html  1.2
+  catalogAccess/doc/doxy-html/treeview.js  1.1
+  catalogAccess/doc/doxy-html/ftv2lastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx-source.html  1.2
+  catalogAccess/doc/doxy-html/ftv2mnode.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx-source.html  1.2
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog.html  1.2
+  catalogAccess/doc/doxy-html/main__test_8cxx.html  1.2
+  catalogAccess/doc/doxy-html/index.html  1.1
+  catalogAccess/doc/doxy-html/ftv2node.png  1.1
+  catalogAccess/doc/doxy-html/ftv2folderclosed.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8h__dep__incl.dot  1.2
+  catalogAccess/doc/doxy-html/quantity_8h__incl.dot  1.2
+  catalogAccess/doc/doxy-html/main.html  1.2
+  catalogAccess/doc/doxy-html/graph_legend.html  1.2
+  catalogAccess/doc/doxy-html/tree.js  1.2
+  catalogAccess/doc/doxy-html/quantity_8h.html  1.2
+  catalogAccess/doc/doxy-html/namespaces.html  1.2
+  catalogAccess/doc/doxy-html/functions.html  1.2
+  catalogAccess/doc/doxy-html/doxygen.css  1.1
+  catalogAccess/doc/doxy-html/ftv2link.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx__incl.dot  1.2
+  catalogAccess/doc/doxy-html/ftv2folderopen.png  1.1
+  catalogAccess/doc/doxy-html/ftv2doc.png  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity.html  1.2
+  catalogAccess/doc/doxy-html/catalog_8cxx-source.html  1.2
+  catalogAccess/doc/doxy-html/ftv2blank.png  1.1
+  catalogAccess/doc/doxy-html/ftv2vertline.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx__incl.dot  1.2
+  catalogAccess/doc/doxy-html/release_8notes.html  1.2
+  catalogAccess/doc/doxy-html/main__test_8cxx-source.html  1.2
+  catalogAccess/doc/doxy-html/files.html  1.2
+  catalogAccess/doc/doxy-html/quantity_8h__dep__incl.dot  1.2
+  catalogAccess/doc/doxy-html/graph_legend.dot  1.1
+  catalogAccess/doc/doxy-html/catalog_8h-source.html  1.2
+  catalogAccess/doc/doxy-html/catalog_8cxx.html  1.2
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity-members.html  1.2
+  catalogAccess/doc/doxy-html/tree.html  1.1
+  catalogAccess/doc/doxy-html/catalog_8h.html  1.2
+  catalogAccess/doc/doxy-html/catalog_8h__incl.dot  1.1
+  catalogAccess/doc/doxy-html/annotated.html  1.2
+  catalogAccess/doc/doxy-html/doxygen.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8h-source.html  1.2
+  catalogAccess/doc/doxy-html/main__test_8cxx__incl.dot  1.2
+  catalogAccess/doc/doxy-html/catalog__io_8cxx__incl.dot  1.2
+  catalogAccess/doc/doxy-html/catalog__io_8cxx-source.html  1.2
+  catalogAccess/doc/doxy-html/globals.html  1.2
+  catalogAccess/doc/doxy-html/mainpage_8h.html  1.2
+  catalogAccess/doc/doxy-html/ftv2plastnode.png  1.1
+  catalogAccess/doc/doxy-html/namespacetip.html  1.2
+  catalogAccess/doc/doxy-html/mainpage_8h-source.html  1.2
+  catalogAccess/src/quantity.cxx  1.5
+  catalogAccess/src/catalog_sel.cxx  1.7
+  catalogAccess/src/catalog.cxx  1.8
+  catalogAccess/src/quantity.h  1.5
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.8
+  catalogAccess/src/catalog.h  1.8
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/test/main_test.cxx  1.8
+
+    *
+------------------------------------------------------------
+User: landriu  Mon Jun 20 07:05:38 PDT 2005
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+save with fits format
+    *
+------------------------------------------------------------
+User: landriu  Mon Jun 20 07:05:38 PDT 2005
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx 
+Log Message:
+save with fits format
+    *
+------------------------------------------------------------
+User: landriu  Mon Jun 20 07:05:38 PDT 2005
+catalogAccess/doc/doxy-html
+
+Modified Files:
+	annotated.html catalog_8cxx-source.html catalog_8cxx.html 
+	catalog_8h-source.html catalog_8h.html 
+	catalog_8h__dep__incl.dot catalog__io_8cxx-source.html 
+	catalog__io_8cxx.html catalog__io_8cxx__incl.dot 
+	catalog__sel_8cxx-source.html catalog__sel_8cxx.html 
+	catalog__sel_8cxx__incl.dot 
+	classcatalog_access_1_1_catalog-members.html 
+	classcatalog_access_1_1_catalog.html 
+	classcatalog_access_1_1_quantity-members.html 
+	classcatalog_access_1_1_quantity.html files.html 
+	functions.html globals.html graph_legend.html main.html 
+	main__test_8cxx-source.html main__test_8cxx.html 
+	main__test_8cxx__incl.dot mainpage_8h-source.html 
+	mainpage_8h.html namespacecatalog_access.html 
+	namespacemembers.html namespaces.html namespacetip.html 
+	quantity_8cxx-source.html quantity_8cxx.html 
+	quantity_8cxx__incl.dot quantity_8h-source.html 
+	quantity_8h.html quantity_8h__dep__incl.dot 
+	quantity_8h__incl.dot release_8notes-source.html 
+	release_8notes.html tree.js 
+Removed Files:
+	main__test_8time_8cxx-source.html main__test_8time_8cxx.html 
+	main__test_8time_8cxx__incl.dot 
+Log Message:
+save with fits format
+    *
+------------------------------------------------------------
+User: landriu  Mon Jun 20 07:05:36 PDT 2005
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+save with fits format
+    *
+------------------------------------------------------------
+User: landriu  Mon Jun 20 07:05:36 PDT 2005
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Added Files:
+	1rxs_50.out.fits 
+Log Message:
+save with fits format
+    *
+------------------------------------------------------------
+User: landriu  Mon Jun 20 07:05:36 PDT 2005
+catalogAccess/data
+
+Added Files:
+	test.fits 
+Log Message:
+save with fits format
+    *
+------------------------------------------------------------
+User: landriu  Mon Jun 20 07:05:36 PDT 2005
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+save with fits format
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r2, operation: add
+Package: catalogAccess
+User: landriu  Fri Jun 10 06:16:19 2005
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.38
+  catalogAccess/cmt/requirements  1.5
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.3
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/test1.fits  1.1
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.7
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/doc/release.notes  1.7
+  catalogAccess/doc/used_packages.html  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx.html  1.1
+  catalogAccess/doc/doxy-html/namespacemembers.html  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog-members.html  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx.html  1.1
+  catalogAccess/doc/doxy-html/ftv2mlastnode.png  1.1
+  catalogAccess/doc/doxy-html/namespacecatalog_access.html  1.1
+  catalogAccess/doc/doxy-html/ftv2pnode.png  1.1
+  catalogAccess/doc/doxy-html/release_8notes-source.html  1.1
+  catalogAccess/doc/doxy-html/catalog__io_8cxx.html  1.1
+  catalogAccess/doc/doxy-html/treeview.js  1.1
+  catalogAccess/doc/doxy-html/ftv2lastnode.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx-source.html  1.1
+  catalogAccess/doc/doxy-html/ftv2mnode.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx-source.html  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_catalog.html  1.1
+  catalogAccess/doc/doxy-html/main__test_8cxx.html  1.1
+  catalogAccess/doc/doxy-html/index.html  1.1
+  catalogAccess/doc/doxy-html/ftv2node.png  1.1
+  catalogAccess/doc/doxy-html/ftv2folderclosed.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8h__dep__incl.dot  1.1
+  catalogAccess/doc/doxy-html/quantity_8h__incl.dot  1.1
+  catalogAccess/doc/doxy-html/main.html  1.1
+  catalogAccess/doc/doxy-html/graph_legend.html  1.1
+  catalogAccess/doc/doxy-html/tree.js  1.1
+  catalogAccess/doc/doxy-html/quantity_8h.html  1.1
+  catalogAccess/doc/doxy-html/namespaces.html  1.1
+  catalogAccess/doc/doxy-html/functions.html  1.1
+  catalogAccess/doc/doxy-html/doxygen.css  1.1
+  catalogAccess/doc/doxy-html/ftv2link.png  1.1
+  catalogAccess/doc/doxy-html/catalog_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/quantity_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/ftv2folderopen.png  1.1
+  catalogAccess/doc/doxy-html/main__test_8time_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/ftv2doc.png  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity.html  1.1
+  catalogAccess/doc/doxy-html/catalog_8cxx-source.html  1.1
+  catalogAccess/doc/doxy-html/ftv2blank.png  1.1
+  catalogAccess/doc/doxy-html/ftv2vertline.png  1.1
+  catalogAccess/doc/doxy-html/catalog__sel_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/release_8notes.html  1.1
+  catalogAccess/doc/doxy-html/main__test_8cxx-source.html  1.1
+  catalogAccess/doc/doxy-html/files.html  1.1
+  catalogAccess/doc/doxy-html/quantity_8h__dep__incl.dot  1.1
+  catalogAccess/doc/doxy-html/graph_legend.dot  1.1
+  catalogAccess/doc/doxy-html/catalog_8h-source.html  1.1
+  catalogAccess/doc/doxy-html/catalog_8cxx.html  1.1
+  catalogAccess/doc/doxy-html/classcatalog_access_1_1_quantity-members.html  1.1
+  catalogAccess/doc/doxy-html/tree.html  1.1
+  catalogAccess/doc/doxy-html/catalog_8h.html  1.1
+  catalogAccess/doc/doxy-html/catalog_8h__incl.dot  1.1
+  catalogAccess/doc/doxy-html/annotated.html  1.1
+  catalogAccess/doc/doxy-html/doxygen.png  1.1
+  catalogAccess/doc/doxy-html/quantity_8h-source.html  1.1
+  catalogAccess/doc/doxy-html/main__test_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/catalog__io_8cxx__incl.dot  1.1
+  catalogAccess/doc/doxy-html/catalog__io_8cxx-source.html  1.1
+  catalogAccess/doc/doxy-html/globals.html  1.1
+  catalogAccess/doc/doxy-html/mainpage_8h.html  1.1
+  catalogAccess/doc/doxy-html/main__test_8time_8cxx.html  1.1
+  catalogAccess/doc/doxy-html/ftv2plastnode.png  1.1
+  catalogAccess/doc/doxy-html/namespacetip.html  1.1
+  catalogAccess/doc/doxy-html/mainpage_8h-source.html  1.1
+  catalogAccess/doc/doxy-html/main__test_8time_8cxx-source.html  1.1
+  catalogAccess/src/quantity.cxx  1.5
+  catalogAccess/src/catalog_sel.cxx  1.7
+  catalogAccess/src/catalog.cxx  1.7
+  catalogAccess/src/quantity.h  1.5
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.7
+  catalogAccess/src/catalog.h  1.7
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/test/main_test.cxx  1.7
+
+    *
+------------------------------------------------------------
+User: landriu  Fri Jun 10 06:15:46 PDT 2005
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+read fits (using tip)
+    *
+------------------------------------------------------------
+User: landriu  Fri Jun 10 06:15:46 PDT 2005
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_sel.cxx 
+	quantity.cxx quantity.h 
+Log Message:
+read fits (using tip)
+    *
+------------------------------------------------------------
+User: landriu  Fri Jun 10 06:15:46 PDT 2005
+catalogAccess/doc/doxy-html
+
+Added Files:
+	annotated.html catalog_8cxx-source.html catalog_8cxx.html 
+	catalog_8cxx__incl.dot catalog_8h-source.html catalog_8h.html 
+	catalog_8h__dep__incl.dot catalog_8h__incl.dot 
+	catalog__io_8cxx-source.html catalog__io_8cxx.html 
+	catalog__io_8cxx__incl.dot catalog__sel_8cxx-source.html 
+	catalog__sel_8cxx.html catalog__sel_8cxx__incl.dot 
+	classcatalog_access_1_1_catalog-members.html 
+	classcatalog_access_1_1_catalog.html 
+	classcatalog_access_1_1_quantity-members.html 
+	classcatalog_access_1_1_quantity.html doxygen.css doxygen.png 
+	files.html ftv2blank.png ftv2doc.png ftv2folderclosed.png 
+	ftv2folderopen.png ftv2lastnode.png ftv2link.png 
+	ftv2mlastnode.png ftv2mnode.png ftv2node.png ftv2plastnode.png 
+	ftv2pnode.png ftv2vertline.png functions.html globals.html 
+	graph_legend.dot graph_legend.html index.html main.html 
+	main__test_8cxx-source.html main__test_8cxx.html 
+	main__test_8cxx__incl.dot main__test_8time_8cxx-source.html 
+	main__test_8time_8cxx.html main__test_8time_8cxx__incl.dot 
+	mainpage_8h-source.html mainpage_8h.html 
+	namespacecatalog_access.html namespacemembers.html 
+	namespaces.html namespacetip.html quantity_8cxx-source.html 
+	quantity_8cxx.html quantity_8cxx__incl.dot 
+	quantity_8h-source.html quantity_8h.html 
+	quantity_8h__dep__incl.dot quantity_8h__incl.dot 
+	release_8notes-source.html release_8notes.html tree.html 
+	tree.js treeview.js 
+Log Message:
+read fits (using tip)
+    *
+------------------------------------------------------------
+User: landriu  Fri Jun 10 06:15:44 PDT 2005
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Added Files:
+	used_packages.html 
+Log Message:
+read fits (using tip)
+    *
+------------------------------------------------------------
+User: landriu  Fri Jun 10 06:15:44 PDT 2005
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+read fits (using tip)
+    *
+------------------------------------------------------------
+User: landriu  Fri Jun 10 06:15:44 PDT 2005
+catalogAccess/data
+
+Modified Files:
+	1rxs_50.fits 
+Added Files:
+	test1.fits 
+Log Message:
+read fits (using tip)
+    *
+------------------------------------------------------------
+User: landriu  Fri Jun 10 06:15:44 PDT 2005
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+read fits (using tip)
+    *
+------------------------------------------------------------
+User: landriu  Fri Jun 10 06:09:07 PDT 2005
+catalogAccess/doc/doxy-html
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/catalogAccess/doc/doxy-html added to the repository
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r1p1, operation: add
+Package: catalogAccess
+User: landriu  Mon Apr 18 06:09:34 2005
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.29
+  catalogAccess/cmt/requirements  1.4
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.2
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.6
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/doc/release.notes  1.6
+  catalogAccess/src/quantity.cxx  1.4
+  catalogAccess/src/catalog_sel.cxx  1.6
+  catalogAccess/src/catalog.cxx  1.6
+  catalogAccess/src/quantity.h  1.4
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.6
+  catalogAccess/src/catalog.h  1.6
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/test/main_test.cxx  1.6
+
+    *
+------------------------------------------------------------
+User: landriu  Mon Apr 18 06:08:45 PDT 2005
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+column selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Apr 18 06:08:45 PDT 2005
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_sel.cxx 
+	quantity.cxx quantity.h 
+Log Message:
+column selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Apr 18 06:08:44 PDT 2005
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+column selection
+    *
+------------------------------------------------------------
+User: landriu  Mon Apr 18 06:08:44 PDT 2005
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+column selection
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r1, operation: add
+Package: catalogAccess
+User: landriu  Tue Feb 22 02:00:29 2005
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.24
+  catalogAccess/cmt/requirements  1.4
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.2
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.2
+  catalogAccess/data/3EG_all.tsv  1.3
+  catalogAccess/data/1rxs_50.tsv  1.3
+  catalogAccess/data/outref/screenOut.txt  1.5
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/doc/release.notes  1.5
+  catalogAccess/src/quantity.cxx  1.3
+  catalogAccess/src/catalog_sel.cxx  1.5
+  catalogAccess/src/catalog.cxx  1.5
+  catalogAccess/src/quantity.h  1.3
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.5
+  catalogAccess/src/catalog.h  1.5
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/test/main_test.cxx  1.5
+
+    *
+------------------------------------------------------------
+User: landriu  Tue Feb 22 01:59:13 PST 2005
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Modified generic functions
+    *
+------------------------------------------------------------
+User: landriu  Tue Feb 22 01:59:13 PST 2005
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_sel.cxx 
+	quantity.cxx quantity.h 
+Log Message:
+Modified generic functions
+    *
+------------------------------------------------------------
+User: landriu  Tue Feb 22 01:59:13 PST 2005
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Modified generic functions
+    *
+------------------------------------------------------------
+User: landriu  Tue Feb 22 01:59:13 PST 2005
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+Modified generic functions
+    *
+------------------------------------------------------------
+User: landriu  Tue Feb 22 01:59:12 PST 2005
+catalogAccess/data
+
+Modified Files:
+	1rxs_50.tsv 3EG_all.fits 3EG_all.tsv 
+Log Message:
+Modified generic functions
+    *
+------------------------------------------------------------
+TAG
+Tag name: v0r0p3, operation: add
+Package: catalogAccess
+User: landriu  Thu Dec 23 02:47:17 2004
+Files:
+  catalogAccess/.cvsignore  1.1.1.1
+  catalogAccess/ChangeLog  1.18
+  catalogAccess/cmt/requirements  1.4
+  catalogAccess/data/1rxs_50.out  1.1.1.1
+  catalogAccess/data/1rxs_50.fits  1.2
+  catalogAccess/data/3EG_test.out  1.1.1.1
+  catalogAccess/data/3EG_all.fits  1.1.1.1
+  catalogAccess/data/3EG_all.tsv  1.2
+  catalogAccess/data/1rxs_50.tsv  1.2
+  catalogAccess/data/outref/screenOut.txt  1.4
+  catalogAccess/data/outref/1rxs_50.out.txt  1.2
+  catalogAccess/doc/release.notes  1.4
+  catalogAccess/src/quantity.cxx  1.2
+  catalogAccess/src/catalog_sel.cxx  1.4
+  catalogAccess/src/catalog.cxx  1.4
+  catalogAccess/src/quantity.h  1.2
+  catalogAccess/src/mainpage.h  1.1.1.1
+  catalogAccess/src/catalog_io.cxx  1.4
+  catalogAccess/src/catalog.h  1.4
+  catalogAccess/src/Makefile  1.1.1.1
+  catalogAccess/src/test/main_test.cxx  1.4
+
+    *
+------------------------------------------------------------
+User: landriu  Thu Dec 23 02:45:38 PST 2004
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Add generic functions
+    *
+------------------------------------------------------------
+User: landriu  Thu Dec 23 02:45:38 PST 2004
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_sel.cxx 
+Log Message:
+Add generic functions
+    *
+------------------------------------------------------------
+User: landriu  Thu Dec 23 02:45:38 PST 2004
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Add generic functions
+    *
+------------------------------------------------------------
+User: landriu  Thu Dec 23 02:45:38 PST 2004
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+Add generic functions
+    *
+------------------------------------------------------------
+User: landriu  Thu Dec 23 02:45:38 PST 2004
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add generic functions
+    *
+------------------------------------------------------------
+User: landriu  Tue Oct 12 02:36:39 PDT 2004
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Add numerical list selection
+    *
+------------------------------------------------------------
+User: landriu  Tue Oct 12 02:36:39 PDT 2004
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_sel.cxx 
+Log Message:
+Add numerical list selection
+    *
+------------------------------------------------------------
+User: landriu  Tue Oct 12 02:36:39 PDT 2004
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Add numerical list selection
+    *
+------------------------------------------------------------
+User: landriu  Tue Oct 12 02:36:39 PDT 2004
+catalogAccess/data/outref
+
+Modified Files:
+	screenOut.txt 
+Log Message:
+Add numerical list selection
+    *
+------------------------------------------------------------
+User: landriu  Tue Oct 12 02:36:39 PDT 2004
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add numerical list selection
+    *
+------------------------------------------------------------
+User: landriu  Thu Oct  7 06:31:24 PDT 2004
+catalogAccess/data/outref
+
+Removed Files:
+	1rxs_50.out.DEJ 
+Log Message:
+Add string list selection
+    *
+------------------------------------------------------------
+User: landriu  Thu Oct  7 06:21:57 PDT 2004
+catalogAccess/src/test
+
+Modified Files:
+	main_test.cxx 
+Log Message:
+Add string list selection
+    *
+------------------------------------------------------------
+User: landriu  Thu Oct  7 06:21:57 PDT 2004
+catalogAccess/src
+
+Modified Files:
+	catalog.cxx catalog.h catalog_io.cxx catalog_sel.cxx 
+	quantity.cxx quantity.h 
+Log Message:
+Add string list selection
+    *
+------------------------------------------------------------
+User: landriu  Thu Oct  7 06:21:57 PDT 2004
+catalogAccess/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Add string list selection
+    *
+------------------------------------------------------------
+User: landriu  Thu Oct  7 06:21:57 PDT 2004
+catalogAccess/data/outref
+
+Modified Files:
+	1rxs_50.out.txt screenOut.txt 
+Log Message:
+Add string list selection
+    *
+------------------------------------------------------------
+User: landriu  Thu Oct  7 06:21:57 PDT 2004
+catalogAccess/data
+
+Modified Files:
+	1rxs_50.fits 1rxs_50.tsv 3EG_all.tsv 
+Log Message:
+Add string list selection
+    *
+------------------------------------------------------------
+User: landriu  Thu Oct  7 06:21:56 PDT 2004
+catalogAccess/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add string list selection
+    *
+------------------------------------------------------------
+User: landriu  Wed Sep 29 07:14:15 PDT 2004
+catalogAccess
+
+Log Message:
+Creation
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+N catalogAccess/.cvsignore
+N catalogAccess/cmt/requirements
+N catalogAccess/src/mainpage.h
+N catalogAccess/src/Makefile
+N catalogAccess/src/catalog.h
+N catalogAccess/src/catalog.cxx
+N catalogAccess/src/quantity.cxx
+N catalogAccess/src/quantity.h
+N catalogAccess/src/catalog_io.cxx
+N catalogAccess/src/catalog_sel.cxx
+N catalogAccess/src/test/main_test.cxx
+N catalogAccess/data/1rxs_50.fits
+N catalogAccess/data/3EG_all.fits
+N catalogAccess/data/1rxs_50.out
+N catalogAccess/data/1rxs_50.tsv
+N catalogAccess/data/3EG_test.out
+N catalogAccess/data/3EG_all.tsv
+N catalogAccess/data/outref/screenOut.txt
+N catalogAccess/data/outref/1rxs_50.out.DEJ
+N catalogAccess/data/outref/1rxs_50.out.txt
+N catalogAccess/doc/release.notes
+
+No conflicts created by this import
+
+    *

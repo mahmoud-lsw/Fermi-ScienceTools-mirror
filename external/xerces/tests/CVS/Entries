@@ -1,0 +1,19 @@
+/Makefile.in/1.1.1.2/Sat Oct 24 18:09:27 2009/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Makefile.incl/1.1.1.2/Sat Oct 24 18:09:27 2009/-kb/TScienceTools-v10r0p5-fssc-20150518
+/config.guess/1.1.1.1/Thu Oct 25 19:31:01 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/config.h.in/1.1.1.1/Thu Oct 25 19:31:01 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/config.sub/1.1.1.1/Thu Oct 25 19:31:01 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/configure/1.1.1.2/Sat Oct 24 18:09:27 2009/-kb/TScienceTools-v10r0p5-fssc-20150518
+/configure.in/1.1.1.2/Sat Oct 24 18:09:27 2009/-kb/TScienceTools-v10r0p5-fssc-20150518
+/install-sh/1.1.1.1/Thu Oct 25 19:31:01 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/runConfigure/1.2/Wed Apr 28 22:31:56 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/COMTest////
+D/DOM////
+D/EncodingTest////
+D/InitTermTest////
+D/MemHandlerTest////
+D/ParserTest////
+D/ThreadTest////
+D/UtilTests////
+D/XSValueTest////
+D/XSerializerTest////

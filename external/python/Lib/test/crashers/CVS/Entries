@@ -1,0 +1,27 @@
+/README/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bogus_code_obj.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bogus_sre_bytecode.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/borrowed_ref_1.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/borrowed_ref_2.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/buffer_mutate.py/1.1.2.1/Fri Feb 27 05:02:58 2015//TScienceTools-v10r0p5-fssc-20150518
+/compiler_recursion.py/1.2.2.1/Fri Feb 27 05:02:58 2015//TScienceTools-v10r0p5-fssc-20150518
+/dangerous_subclassing.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/decref_before_assignment.py/1.1.2.1/Fri Feb 27 05:02:58 2015//TScienceTools-v10r0p5-fssc-20150518
+/gc_has_finalizer.py/1.2.2.1/Fri Feb 27 05:02:58 2015//TScienceTools-v10r0p5-fssc-20150518
+/gc_inspection.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/infinite_loop_re.py/1.2.2.1/Fri Feb 27 05:02:57 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/infinite_rec_1.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/infinite_rec_2.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/infinite_rec_4.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/infinite_rec_5.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/iter.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/loosing_dict_ref.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/loosing_mro_ref.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/modify_dict_attr.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/multithreaded_close.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/mutation_inside_cyclegc.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/nasty_eq_vs_dict.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/recursion_limit_too_high.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/recursive_call.py/1.2.2.1/Fri Feb 27 05:02:58 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/weakref_in_del.py/1.2.2.1/Wed Mar  4 17:37:31 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D

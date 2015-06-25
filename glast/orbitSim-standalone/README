@@ -1,0 +1,37 @@
+This is a standalone release of the GLAST Science Tools gtorbsim
+This version was derived from the source code
+in ScienceTools v9r7p1 (with additional patches to bring it up 
+to the latest GSSC version).
+
+For help with each of these tools please see the
+files gtorbsim.txt, in the help subdirectory.
+
+To set up your environment to run these tools in tcsh/csh,
+type:
+
+  setenv ORBITSIMROOT <installed-directory>
+  source $ORBITSIMROOT/orbSim-init.csh
+
+but replace <installed-directory> with the absolute path to
+the directory containing this README file.
+
+To set up your environment to run these tools in bash/sh,
+type:
+
+  export ORBITSIMROOT=<installed-directory>
+  source $ORBITSIMROOT/orbitSim-init.sh
+
+but replace <installed-directory> with the absolute path to
+the directory containing this README file.
+
+Then both tools should be in your path and all environment
+variables should be set as needed.
+
+To run gtbin from the command line type:
+
+$ gtorbsim
+
+at your prompt ($ in the above example). To access the help files for 
+these two tools simply use your favorite pager (e.g. cat, less, more) 
+
+$ more $ORBITSIMROOT/help/gtorbsim.txt 

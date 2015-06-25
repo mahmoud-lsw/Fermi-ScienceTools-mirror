@@ -1,0 +1,23 @@
+/README/1.1.2.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_monotone.py/1.1.2.1/Fri Feb 27 05:03:28 2015//TScienceTools-v10r0p5-fssc-20150518
+/_ppoly.c/1.1.2.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_ppoly.pyx/1.1.2.1/Fri Feb 27 05:03:29 2015//TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/blas_defs.h/1.1.2.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/fitpack.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/fitpack2.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/interpnd.c/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015//TScienceTools-v10r0p5-fssc-20150518
+/interpnd.pyx/1.1.2.1/Fri Feb 27 05:03:28 2015//TScienceTools-v10r0p5-fssc-20150518
+/interpnd_info.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/interpolate.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/interpolate_wrapper.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ndgriddata.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/polyint.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/rbf.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:03:28 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/benchmarks////
+D/fitpack////
+D/src////
+D/tests////

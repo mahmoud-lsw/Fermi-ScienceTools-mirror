@@ -1,0 +1,193 @@
+Building the Fermi Science Tools from source code
+-------------------------------------------------
+
+0. You will need to make sure that your system has the development 
+   packages available to build and link software. If you are unsure 
+   about this please see your local system administrator or guru for
+   additional guidance. 
+
+1. Download the source code tarball from the FSSC Science Tools
+website:
+
+    http://fermi.gsfc.nasa.gov/ssc/data/analysis/software/
+
+This should give you a file with a name like:
+
+    ScienceTools-<version>.tar.gz
+
+The <version> string has the form:
+
+    vVrRpP-fssc-YYYYMMDD
+
+where:
+
+    vVrRpP - V is the major version number, R is the release number,
+    and P is the patch level.
+
+    YYYYMMDD - Year (YYYY), month (MM), and day (DD) of the tool
+    release.
+
+2. Unpack the tarball in the directory where you would like the
+software installed.
+
+...
+tar xvzf ScienceTools-<version>.tar.gz
+...
+
+You will find a new subdirectory named after the tarball, minus the
+".tar.gz" suffix.
+
+3. Move into the build directory.
+
+...
+cd ScienceTools-<version>/BUILD_DIR/
+...
+
+4. Run the configure script, which will probe your system for
+libraries, header files, compilers, etc., and then generate the main
+Makefile. To produce a default configuration, the configure script may
+simply be invoked by:
+
+...
+./configure
+...
+
+We recommend capturing the output from configure as follows:
+
+Using C Shell or variants, e.g. csh, tcsh:
+
+...
+./configure >& configure.out
+...
+
+Using Bourne shell or variants, e.g. sh, bash:
+
+...
+    ./configure > configure.out 2>&1
+...
+
+Do a quick scan through configure.out to see if there are any error
+messages. They should be fairly obvious - any errors usually result in
+the configure script aborting.
+
+5. Run hmake to build the rest of the software:
+
+...
+./hmake
+...
+
+We recommend capturing the output from hmake as follows:
+
+Using C Shell or variants, e.g. csh, tcsh:
+
+...
+./hmake >& hmake.out
+...
+
+Using Bourne shell or variants, e.g. sh, bash:
+
+...
+./hmake > hmake.out 2>&1
+...
+
+Check your hmake.out for errors! If a problem occurs and is discovered
+at this point, it may be easy to correct (contact the help address:
+fermihelp@milkyway.gsfc.nasa.gov). By contrast, if an error occurs,
+but you continue with the next step, it may make resolving the problem
+more complex or more time-consuming. See step 9 for what information
+to include when contacting the help desk. 
+
+The easiest way to check your build log for errors is to look for
+occurrences of the string ***. (Most UNIX utilities which use regular
+expression matching require these to be "escaped" using backslashes,
+e.g. \*\*\*).
+
+6. Run hmake to install the software:
+
+...
+./hmake install
+...
+
+It is useful to save the output from the hmake program:
+
+In csh/tcsh:
+
+...
+./hmake install >& hmake_install.out
+...
+
+In sh/bash:
+
+...
+./hmake install > hmake_install.out 2>&1
+...
+
+7. Build and install the Science Tools test code:
+
+...
+./hmake test >& hmake_test.out
+./hmake install-test >& install_test.out
+...
+
+8. Set up the environment for your Unix shell. In the commands below,
+replace the string <installed-directory> by the absolute path to the
+subdirectory created by unloading the tarball. The process of building
+the software will create a platform-specific directory under the
+<installed-directory> where <PLATFORM> can be several different
+strings, e.g. "i686-apple-darwin8.11.1" or
+"x86_64-unknown-linux-gnu-libc2.3.4"
+
+For tcsh/csh, type:
+
+...
+setenv FERMI_DIR <installed-directory>/<PLATFORM>
+source $FERMI_DIR/fermi-init.csh
+...
+
+For bash/sh, type:
+
+...
+export FERMI_DIR=<installed-directory>/<PLATFORM>
+source $FERMI_DIR/fermi-init.sh
+...
+
+After running these commands the Fermi Science Tools will be in your
+path and all environment variables will be set as needed.
+
+To verify proper operation of the tools, run the test scripts that you
+built and installed in Step 8. To do so, execute the following
+commands in an empty testing directory:
+
+...
+ST-unit-test
+ST-AGN-thread-test
+ST-pulsar-test
+...
+
+Note: To run the ST-AGN-thread-test you must have the gll_iem_v05_rev1.fit diffuse background file in <installed-directory>/<PLATFORM>/refdata/fermi/galdiffuse.
+The file can be obtained here: http://fermi.gsfc.nasa.gov/ssc/data/access/lat/BackgroundModels.html 
+
+The help files for individual tools can be accessed in two ways:
+
+    * By typing fhelp <tool>
+    * Through the Reference Manual
+
+9. When contacting the Fermi help desk with an issue or problem
+   in installing or building the Fermi science tools please include
+   the following information
+   a) The version of the operating system you are using e.g.
+      Scientific Linux release 6.5 (Carbon)
+      and
+      uname -a
+      Linux xxxxx 2.6.32-504.1.3.el6.x86_64 #1 SMP Tue Nov 11 14:19:04 CST 2014 x86_64 x86_64 x86_64 GNU/Linux
+
+   b) The version of the compiler
+      gcc --version
+      gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)
+
+   c) the results of the env command e.g. 
+      env > env.txt
+
+   d) the log files captured in the configure and hmake steps. 
+
+

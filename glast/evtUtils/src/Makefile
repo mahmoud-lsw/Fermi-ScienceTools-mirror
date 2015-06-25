@@ -1,0 +1,16 @@
+HD_COMPONENT_NAME       = glast
+
+HD_COMPONENT_VERS       =
+
+HD_LIBRARY_ROOT         = evtUtils
+
+HD_LIBRARY_SRC_cxx      = AliasDict.cxx \
+                          EventCategory.cxx \
+                          EventClass.cxx \
+                          EventMap.cxx
+
+HD_CXXFLAGS             = ${HD_STD_CXXFLAGS}
+
+HD_INSTALL_LIBRARIES    = ${HD_LIBRARY_ROOT}
+
+include ${HD_STD_MAKEFILE}

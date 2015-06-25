@@ -1,0 +1,28 @@
+$Id: README,v 1.1 2008/08/13 22:06:42 elwinter Exp $
+
+This code was imported into the HEASARC CVS repository on 13 August
+2008. It was obtained from Giuseppe Romeo, as part of the code for his
+PyPSF tool, which I will be working on in the future. The code was
+copied (using the -r flag to preserve file modification dates) from:
+
+/software/glast/gssc/local/orbit_simulator/ScienceTools-v7r6p1/GSSCUtils/v0/src/gtobspsf
+
+After archiving the directory, I deleted temporary files in it, then
+imported the code into CVS as follows:
+
+...
+export CVSROOT=":pserver:elwinter@daria:/glast"
+cvs login
+cvs import \
+  -m "Import of code from Giuseppe Romeo, dated 24 April 2008." \
+  ScienceTools/glast/gtobspsf \
+  giuseppe \
+  start
+...
+
+This puts Giuseppe's original code on a vendor branch in CVS, so we
+can always get back to the starting point. All local changes will go
+on the trunk.
+
+Eric Winter (Eric.L.Winter@nasa.gov)
+Wednesday 13 August 2008

@@ -1,0 +1,16 @@
+/Grammar.txt/1.1.1.2.6.1/Fri Feb 27 05:02:27 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/PatternGrammar.txt/1.1.1.1/Thu Sep 16 14:47:34 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.1.1/Thu Sep 16 14:47:34 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/__main__.py/1.1.1.1/Wed Feb 22 19:03:09 2012//TScienceTools-v10r0p5-fssc-20150518
+/btm_matcher.py/1.1.1.1/Wed Feb 22 19:03:09 2012//TScienceTools-v10r0p5-fssc-20150518
+/btm_utils.py/1.1.1.1/Wed Feb 22 19:03:09 2012//TScienceTools-v10r0p5-fssc-20150518
+/fixer_base.py/1.1.1.2/Wed Feb 22 19:03:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/fixer_util.py/1.1.1.2.6.1/Fri Feb 27 05:02:27 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/main.py/1.1.1.2.6.1/Fri Feb 27 05:02:27 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/patcomp.py/1.1.1.2/Wed Feb 22 19:03:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/pygram.py/1.1.1.2/Wed Feb 22 19:03:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/pytree.py/1.1.1.2/Wed Feb 22 19:03:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/refactor.py/1.1.1.2.6.1/Fri Feb 27 05:02:27 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/fixes////
+D/pgen2////
+D/tests////

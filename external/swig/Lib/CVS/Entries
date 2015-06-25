@@ -1,0 +1,51 @@
+/allkw.swg/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/attribute.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/carrays.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cdata.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cmalloc.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/constraints.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cpointer.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cstring.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cwstring.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/exception.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/inttypes.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/linkruntime.c/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/math.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/pointer.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/runtime.swg/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/std_except.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/stdint.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/stl.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swig.swg/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swigarch.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swigerrors.swg/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swiginit.swg/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swiglabels.swg/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swigrun.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swigrun.swg/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/swigwarnings.swg/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/wchar.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/windows.i/1.1.1.1/Thu Oct 25 19:28:16 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/allegrocl////
+D/cffi////
+D/chicken////
+D/clisp////
+D/csharp////
+D/gcj////
+D/guile////
+D/java////
+D/lua////
+D/modula3////
+D/mzscheme////
+D/ocaml////
+D/perl5////
+D/php4////
+D/pike////
+D/python////
+D/r////
+D/ruby////
+D/std////
+D/tcl////
+D/typemaps////
+D/uffi////
+D/xml////

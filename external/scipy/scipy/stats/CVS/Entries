@@ -1,0 +1,32 @@
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_binned_statistic.py/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/_constants.py/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/_continuous_distns.py/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/_discrete_distns.py/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/_distn_infrastructure.py/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/_distr_params.py/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/_multivariate.py/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/_rank.c/1.1.2.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_rank.pyx/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/_tukeylambda_stats.py/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/contingency.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/distributions.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/futil.f/1.1.2.1/Tue Oct 16 19:22:06 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/kde.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/morestats.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/mstats.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/mstats_basic.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/mstats_extras.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/mvn.pyf/1.1.2.1/Tue Oct 16 19:22:07 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/mvndst.f/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/rv.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/statlib.pyf/1.1.2.1/Tue Oct 16 19:22:07 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/stats.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/vonmises.py/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/vonmises_cython.c/1.1.2.1.8.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+/vonmises_cython.pyx/1.1.2.1/Fri Feb 27 05:02:42 2015//TScienceTools-v10r0p5-fssc-20150518
+D/statlib////
+D/tests////

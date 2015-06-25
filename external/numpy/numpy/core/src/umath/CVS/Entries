@@ -1,0 +1,17 @@
+/funcs.inc.src/1.2.6.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/loops.c.src/1.2.6.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/loops.h.src/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/operand_flag_tests.c.src/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/reduction.c/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/reduction.h/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/simd.inc.src/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/struct_ufunc_test.c.src/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/test_rational.c.src/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ufunc_object.c/1.2.6.1/Fri Feb 27 05:02:37 2015//TScienceTools-v10r0p5-fssc-20150518
+/ufunc_object.h/1.1.1.1.6.1/Fri Feb 27 05:02:37 2015//TScienceTools-v10r0p5-fssc-20150518
+/ufunc_type_resolution.c/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ufunc_type_resolution.h/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/umath_tests.c.src/1.2.6.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/umathmodule.c/1.1.4.1/Fri Feb 27 05:02:37 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/umathmodule_onefile.c/1.1.1.1.6.1/Fri Feb 27 05:02:37 2015//TScienceTools-v10r0p5-fssc-20150518
+D

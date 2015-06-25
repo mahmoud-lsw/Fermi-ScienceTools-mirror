@@ -1,0 +1,80 @@
+.TH "SurProf" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SurProf \- 
+.PP
+Structure that contains parameters for the profile survey\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <orbitSimStruct\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBepoch\fP"
+.br
+.RI "\fIthis is the ROCKSTART in mjd, or when the profile survey cycle is sopposed to begin \fP"
+.ti -1c
+.RI "double \fBdefofst\fP"
+.br
+.RI "\fIdefault offset when ROCKSTART is in the future \fP"
+.ti -1c
+.RI "double \fBofsts\fP [17]"
+.br
+.RI "\fIarray containing 17 angles in degrees for the offset \fP"
+.ti -1c
+.RI "double \fBtimes\fP [17]"
+.br
+.RI "\fIarray containing 17 time in seconds \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure that contains parameters for the profile survey\&. 
+
+This structure contains all the parameters that specify a profiled survey
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 87 of file orbitSimStruct\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double \fBSurProf::defofst\fP"
+.PP
+default offset when ROCKSTART is in the future 
+.PP
+Definition at line 91 of file orbitSimStruct\&.h\&.
+.SS "double \fBSurProf::epoch\fP"
+.PP
+this is the ROCKSTART in mjd, or when the profile survey cycle is sopposed to begin 
+.PP
+Definition at line 89 of file orbitSimStruct\&.h\&.
+.SS "double \fBSurProf::ofsts\fP[17]"
+.PP
+array containing 17 angles in degrees for the offset 
+.PP
+Definition at line 93 of file orbitSimStruct\&.h\&.
+.SS "double \fBSurProf::times\fP[17]"
+.PP
+array containing 17 time in seconds 
+.PP
+Definition at line 95 of file orbitSimStruct\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

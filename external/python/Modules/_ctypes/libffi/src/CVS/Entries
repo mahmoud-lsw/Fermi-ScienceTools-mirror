@@ -1,0 +1,31 @@
+/closures.c/1.1.1.1.6.1/Fri Feb 27 05:02:47 2015//TScienceTools-v10r0p5-fssc-20150518
+/debug.c/1.1.1.1/Wed Feb 22 19:03:22 2012//TScienceTools-v10r0p5-fssc-20150518
+/dlmalloc.c/1.1.1.1.6.1/Fri Feb 27 05:02:47 2015//TScienceTools-v10r0p5-fssc-20150518
+/java_raw_api.c/1.1.1.1.6.1/Fri Feb 27 05:02:47 2015//TScienceTools-v10r0p5-fssc-20150518
+/prep_cif.c/1.1.1.3.6.1/Fri Feb 27 05:02:47 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/raw_api.c/1.1.1.1/Wed Feb 22 19:03:22 2012//TScienceTools-v10r0p5-fssc-20150518
+/types.c/1.1.1.1/Wed Feb 22 19:03:22 2012//TScienceTools-v10r0p5-fssc-20150518
+D/aarch64////
+D/alpha////
+D/arm////
+D/avr32////
+D/bfin////
+D/cris////
+D/darwin////
+D/frv////
+D/ia64////
+D/m32r////
+D/m68k////
+D/metag////
+D/microblaze////
+D/mips////
+D/moxie////
+D/pa////
+D/powerpc////
+D/s390////
+D/sh////
+D/sh64////
+D/sparc////
+D/tile////
+D/x86////
+D/xtensa////

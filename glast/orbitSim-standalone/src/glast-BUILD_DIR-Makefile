@@ -1,0 +1,66 @@
+HD_COMPONENT_NAME	= glast
+
+HD_COMPONENT_VERS	=
+
+# NOTE: These package subdirectories are in dependency order. That is,
+# packages later in the list depend upon successful builds of packages
+# earlier in the list. As new packages are added, this ordering should
+# be maintained.
+HD_SUBDIRS		= \
+                          f2c \
+                          facilities \
+                          tip \
+                          astro \
+                          xmlBase \
+                          flux \
+                          st_facilities \
+                          st_stream \
+                          st_graph \
+                          st_app \
+                          orbitSim \
+
+HD_DISTCLEAN		= config.cache \
+                          config.log \
+                          config.status \
+                          f77test.out \
+			  hd_install \
+                          headas-setup \
+                          hmakerc \
+                          configure.lineno
+
+HD_CLEAN		= ${HD_BLD_EXEC_PFX} ${HD_BLD_PFX}
+
+HD_CTASK		= hd_install
+
+HD_CTASK_SRC_c		= hd_install.c
+
+HD_INSTALL_TASKS	= hd_install
+
+HD_INSTALL_SHELL_SCRIPTS = hd_scanenv hmake
+
+HD_INSTALL_EXTRA	= install-BUILD_DIR install-headas-init
+
+include ${HD_STD_MAKEFILE}
+
+# Install BUILD_DIR; tap dance needed because the built tools live in BUILD_DIR
+#-------------------------------------------------------------------------------
+install-BUILD_DIR:
+	@${HD_INSTALL} ${HD_BUILD_DIR} ${HD_EXEC_PFX}/BUILD_DIR
+
+# Install initialization scripts
+#-------------------------------------------------------------------------------
+install-headas-init:
+	@${HD_INSTALL} ${HD_EXEC_PFX}/BUILD_DIR/headas-init.csh \
+	    ${HD_EXEC_PFX}/headas-init.csh ${HD_LN_S}
+	@${HD_INSTALL} ${HD_EXEC_PFX}/BUILD_DIR/headas-init.sh \
+	    ${HD_EXEC_PFX}/headas-init.sh ${HD_LN_S}
+	@${HD_INSTALL} ${HD_EXEC_PFX}/BUILD_DIR/scitools_setup_beta.csh \
+	    ${HD_EXEC_PFX}/scitools_setup_beta.csh ${HD_LN_S}
+	@${HD_INSTALL} ${HD_EXEC_PFX}/BUILD_DIR/scitools_setup_beta.sh \
+	    ${HD_EXEC_PFX}/scitools_setup_beta.sh ${HD_LN_S}
+	@${HD_INSTALL} ${HD_EXEC_PFX}/scitools_setup_beta.csh \
+	    ${HD_TOP_EXEC_PFX}/scitools_setup_beta.csh ${HD_LN_S}
+	@${HD_INSTALL} ${HD_EXEC_PFX}/scitools_setup_beta.sh \
+	    ${HD_TOP_EXEC_PFX}/scitools_setup_beta.sh ${HD_LN_S}
+
+#-------------------------------------------------------------------------------

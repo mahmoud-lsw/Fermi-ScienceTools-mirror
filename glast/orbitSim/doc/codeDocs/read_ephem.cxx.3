@@ -1,0 +1,911 @@
+.TH "orbitSim/src/read_ephem.cxx" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+orbitSim/src/read_ephem.cxx \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cstdio>\fP
+.br
+\fC#include 'orbitSim/read_ephem\&.h'\fP
+.br
+\fC#include 'orbitSim/functions\&.h'\fP
+.br
+\fC#include 'orbitSim/atFunctions\&.h'\fP
+.br
+\fC#include 'orbitSim/GLAST_slew_estimate\&.h'\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <stdexcept>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <iomanip>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include 'st_stream/Stream\&.h'\fP
+.br
+\fC#include 'st_stream/StreamFormatter\&.h'\fP
+.br
+\fC#include 'st_stream/st_stream\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "st_stream::StreamFormatter \fBosf\fP ('read_ephem','', 2)"
+.br
+.RI "\fIStream to control output through verbosity level\&. \fP"
+.ti -1c
+.RI "\fBEphemData\fP * \fBallocateEphem\fP (int num)"
+.br
+.RI "\fIFunction that allocates dynamically memory\&. \fP"
+.ti -1c
+.RI "\fBEphemData\fP * \fBdeallocateEphem\fP (\fBEphemData\fP *eph)"
+.br
+.RI "\fIFunction that deallocates dynamically memory\&. \fP"
+.ti -1c
+.RI "\fBAttitude\fP * \fBdeallocateAttitude\fP (\fBAttitude\fP *att)"
+.br
+.RI "\fIFunction that frees dynamically allocated memory\&. \fP"
+.ti -1c
+.RI "\fBAttitude\fP * \fBallocateAttitude\fP (int num)"
+.br
+.RI "\fIFunction that allocates dynamically memory\&. \fP"
+.ti -1c
+.RI "\fBAttitude\fP * \fBreallocateAttitude\fP (int num, \fBAttitude\fP *att)"
+.br
+.RI "\fIFunction that re-allocates dynamically memory\&. \fP"
+.ti -1c
+.RI "\fBEphemData\fP * \fByyyy_eph\fP (FILE *ifp, double StartTime, double EndTime, double Units, double Resolution)"
+.br
+.RI "\fIFunction that NASA FDF ephemeredis file\&. \fP"
+.ti -1c
+.RI "\fBEphemData\fP * \fBxyzll_eph\fP (FILE *ifp, double StartTime, double EndTime, double Units, double Resolution)"
+.br
+.RI "\fIFunction that STK format ephemeredis file\&. \fP"
+.ti -1c
+.RI "\fBEphemData\fP * \fBtlederive\fP (FILE *ifp, double StartTime, double EndTime, double Units, double Resolution)"
+.br
+.RI "\fIFunction that propagate ephemeredis based on a NORAD Two Line Elements\&. \fP"
+.ti -1c
+.RI "void \fBMakeAtt\fP (double start, double mjde, double mjds, double pra, double pdec, double offset, double ra, double dec, int mode, double res, \fBEphemData\fP *ephem, double *lpos, \fBAttitude\fP *OAtt, double TS)"
+.br
+.RI "\fIFunction that calculates attitude profile\&. \fP"
+.ti -1c
+.RI "void \fBMakeAtt2\fP (double start, double mjde, double pra, double pdec, double offset, double ra, double dec, int mode, double res, \fBEphemData\fP *ephem, double *lpos, \fBAttitude\fP *OAtt, double TS)"
+.br
+.RI "\fIFunction that calculates attitude profile\&. \fP"
+.ti -1c
+.RI "void \fBMakeSurvey\fP (double start, double \fBend\fP, double res, double offset, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt, double *rd, int mode, double TS)"
+.br
+.RI "\fIFunction that calculates attitude profile for survey observations\&. \fP"
+.ti -1c
+.RI "void \fBDoSlew\fP (double start, double mjds, double pra, double pdec, double ra, double dec, double res, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt, double TS)"
+.br
+.RI "\fIFunction that calculates slew profile for any observation mode\&. \fP"
+.ti -1c
+.RI "void \fBMakePointed\fP (double start, double \fBend\fP, double res, double ra, double dec, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt, double TS)"
+.br
+.RI "\fIFunction that calculates attitude profile for any pointed observation\&. \fP"
+.ti -1c
+.RI "void \fBsaa\fP (\fBEphemData\fP *EphemPtr, const char *filename, double StartTime, double EndTime, double Resolution, \fBAttitude\fP *att)"
+.br
+.RI "\fIFunction that calculates if the spacecraft is within the SAA region\&. \fP"
+.ti -1c
+.RI "void \fBdoSurvey\fP (double start, double \fBend\fP, double res, double ira, double idec, double offset, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt)"
+.br
+.RI "\fIFunction that calculates attitude profile for survey observations\&. \fP"
+.ti -1c
+.RI "int \fBgetEndPoint\fP (double mjdi, double *mjds, double ira, double idec, \fBAttitude\fP *LAtt, int idx, double start, double res)"
+.br
+.RI "\fIFunction that calculates the time needed to slew from a fixed, known location, to another location during survey mode observation\&. \fP"
+.ti -1c
+.RI "void \fBMakeProfiled\fP (double start, double \fBend\fP, double res, double ira, double idec, double epoch, double *tms, double *ofst, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt, double begin)"
+.br
+.RI "\fIFunction that calculates attitude profile for profiled survey observations\&. \fP"
+.ti -1c
+.RI "void \fBdoProfiled\fP (double start, double \fBend\fP, double res, double *tms, double *ofst, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt)"
+.br
+.RI "\fIFunction that calculates attitude profile for profiled survey observations\&. \fP"
+.ti -1c
+.RI "double \fBInterpProfile\fP (double *tms, double *ofst, double res)"
+.br
+.ti -1c
+.RI "void \fBoccult\fP (\fBEphemData\fP *EphemPtr, double StartTime, double EndTime, double Resolution, \fBAttitude\fP *att, double EAA, double start_ELT_OFF, double stop_ELT_OFF)"
+.br
+.RI "\fIFunction that calculates if the spacecraft is Earth occulted\&. \fP"
+.ti -1c
+.RI "void \fBdoLimbTrace\fP (\fBEphemData\fP *EphemPtr, double StartTime, double EndTime, double Resolution, \fBAttitude\fP *att)"
+.br
+.RI "\fIFunction that perfoms Earth limb tracing\&. \fP"
+.ti -1c
+.RI "void \fBgetPhase\fP (\fBEphemData\fP *EphemPtr, double Resolution, \fBAttitude\fP *att, int js, int jep, double *phase)"
+.br
+.RI "\fIFunction that calculates the angle between the y-axis and the target\&. \fP"
+.ti -1c
+.RI "void \fBdoLocation\fP (\fBEphemData\fP *EphemPtr, double Resolution, \fBAttitude\fP *att, int k, int js, int jep, double phase, double incr)"
+.br
+.RI "\fIFunction that calculates where along the Earth limb the spacecraft should be pointing\&. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBAttitude\fP* \fBallocateAttitude\fP (intnum)"
+.PP
+Function that allocates dynamically memory\&. This routine allocates dynamically memory for the attitude structure
+.PP
+\fBParameters:\fP
+.RS 4
+\fInum\fP - size of each array in the structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 102 of file read_ephem\&.cxx\&.
+.SS "\fBEphemData\fP* \fBallocateEphem\fP (intnum)"
+.PP
+Function that allocates dynamically memory\&. This function allocates dynamically memory for the ephemeredis structure\&. This function returns the pointer to the newly allocated ephemeredis structure\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fInum\fP - size or each array in the ephemeredis structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file read_ephem\&.cxx\&.
+.SS "\fBAttitude\fP* \fBdeallocateAttitude\fP (\fBAttitude\fP *att)"
+.PP
+Function that frees dynamically allocated memory\&. This routine frees dynamically allocated memory for the attitude structure
+.PP
+\fBParameters:\fP
+.RS 4
+\fIatt\fP - attitude pointer
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 70 of file read_ephem\&.cxx\&.
+.SS "\fBEphemData\fP* \fBdeallocateEphem\fP (\fBEphemData\fP *eph)"
+.PP
+Function that deallocates dynamically memory\&. This function frees dynamically allocated memory for the ephemeredis structure\&. This function returns the pointer to the newly allocated ephemeredis structure\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIeph\fP - pointer to the ephemeredis structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file read_ephem\&.cxx\&.
+.SS "void \fBdoLimbTrace\fP (\fBEphemData\fP *EphemPtr, doubleStartTime, doubleEndTime, doubleResolution, \fBAttitude\fP *att)"
+.PP
+Function that perfoms Earth limb tracing\&. This routine perfoms Earth limb tracing manuevering for every time interval during which he spacecraft is Earth occulted\&. The routine initially finds those intervals, then by calling getPhase gets the angles or phases between the vector from the center of Earth to the target and the local z-axis both at the beginning and at the end of the occultation, finally by calling doLocation, the spacecraft will cover equal angles in equal times in its pointing along the Earth limb\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEphemPtr\fP - Pointer to the Ephemeredis structure 
+.br
+\fIStartTime\fP - start time of the interval of interest in mjd format 
+.br
+\fIEndTime\fP - End time of the interval of interest in mjd format 
+.br
+\fIResolution\fP - Time resolution for the Ephem and \fBAttitude\fP structures 
+.br
+\fIatt\fP - attitude structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 2880 of file read_ephem\&.cxx\&.
+.SS "void \fBdoLocation\fP (\fBEphemData\fP *EphemPtr, doubleResolution, \fBAttitude\fP *att, intk, intjs, intjep, doublephase, doubleincr)"
+.PP
+Function that calculates where along the Earth limb the spacecraft should be pointing\&. This routine calculates the location along the Earth limb where the spacecraft is pointing during the Earth limb tracing manuevering\&. The main idea is that along the Earth limb, the spacecraft covers equal angles in equal times\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEphemPtr\fP - Pointer to the Ephemeredis structure 
+.br
+\fIResolution\fP - Time resolution for the Ephem and \fBAttitude\fP structures 
+.br
+\fIatt\fP - attitude structure 
+.br
+\fIk\fP - index of the array containing the occulted data points\&. 
+.br
+\fIjs\fP - index of the arrays in the attitude structure during occultation 
+.br
+\fIjep\fP - index of the arrays in the ephemeredis structure during occultation 
+.br
+\fIphase\fP - the calculated angle at the start of the occultation 
+.br
+\fIincr\fP - angular increment
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 3084 of file read_ephem\&.cxx\&.
+.SS "void \fBdoProfiled\fP (doublestart, doubleend, doubleres, double *tms, double *ofst, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt)"
+.PP
+Function that calculates attitude profile for profiled survey observations\&. This routine calculates the attitude profile for any Profiled Survey mode observation\&. \fBAttitude\fP is calculated so that the rocking offset will change equal amounts in equal times by calling MakeSurvey with the appropriate offset\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstart\fP - start time for the interval of interest in mjd format 
+.br
+\fIend\fP - end time for the interval of interest in mjd format 
+.br
+\fIres\fP - time resolution as given at the input process 
+.br
+\fItms\fP - array containing times for the survey profile 
+.br
+\fIofst\fP - array containing offsets for the survey profile 
+.br
+\fIephem\fP - pointer to an ephemeredis structure 
+.br
+\fIOAtt\fP - temporary attitude structure\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 2559 of file read_ephem\&.cxx\&.
+.SS "void \fBDoSlew\fP (doublestart, doublemjds, doublepra, doublepdec, doublera, doubledec, doubleres, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt, doubleTS)"
+.PP
+Function that calculates slew profile for any observation mode\&. This routine calculates the slew profile for any observation mode\&. The angular separation between the two specified points is calculated; then slew time is calculated using a specified slew rate\&. Finally, the profile is obtained by finding the great circle passing for the two points, nad making the spacecraft move along this circle while covering equal angle in equal times\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstart\fP - start slew time in mjd format 
+.br
+\fImjds\fP - end slew time in mjd format 
+.br
+\fIpra\fP - initial RA position 
+.br
+\fIpdec\fP - final DEC position 
+.br
+\fIra\fP - final RA position 
+.br
+\fIdec\fP - final DEC position 
+.br
+\fIres\fP - time resolution as given at the input process 
+.br
+\fIephem\fP - pointer to an ephemeredis structure 
+.br
+\fIOAtt\fP - Overall attitude structure\&. 
+.br
+\fITS\fP - start time in mjd for the Overall \fBAttitude\fP structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1500 of file read_ephem\&.cxx\&.
+.SS "void \fBdoSurvey\fP (doublestart, doubleend, doubleres, doubleira, doubleidec, doubleoffset, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt)"
+.PP
+Function that calculates attitude profile for survey observations\&. This routine is used to calculate the attitude profile during a Survey mode observation, but it also does the switch in the rocking offset\&. \fBAttitude\fP is calculated by making calls to MakeSurvey, and the code does the rocking offset change when the spacecraft goes from -z to +z\&. This routine is called from doCmd, when calculating the attitude profile in a "SINGLE" timeline type for SURVEY mode observations\&. The routine calculates also slew profile from a specified initial position\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstart\fP - start time for the interval of interest in mjd format 
+.br
+\fIend\fP - end time for the interval of interest in mjd format 
+.br
+\fIres\fP - time resolution as given at the input process 
+.br
+\fIira\fP - previous ra position used to calculate slew profile 
+.br
+\fIidec\fP - previous dec position used to calculate slew profile 
+.br
+\fIoffset\fP - rocking angle offset used for SURVEY observations 
+.br
+\fIephem\fP - pointer to an ephemeredis structure 
+.br
+\fIOAtt\fP - Overall attitude structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 2035 of file read_ephem\&.cxx\&.
+.SS "int \fBgetEndPoint\fP (doublemjdi, double *mjds, doubleira, doubleidec, \fBAttitude\fP *LAtt, intidx, doublestart, doubleres)"
+.PP
+Function that calculates the time needed to slew from a fixed, known location, to another location during survey mode observation\&. This routine is used to calculate the time needed for the spacecraft to slew from a well known location to another location in the sky that will be reached during fixed survey observation
+.PP
+\fBParameters:\fP
+.RS 4
+\fImjdi\fP - Initial start time for the slew, in MJD format 
+.br
+\fImjds\fP - refernce to a slew time in mjd format 
+.br
+\fIira\fP - initial ra position used to calculate slew profile 
+.br
+\fIidec\fP - initial dec position used to calculate slew profile 
+.br
+\fILAtt\fP - Pointer to a local attitude structure 
+.br
+\fIidx\fP - Index corresponding to mjdi for the attitude structure 
+.br
+\fIstart\fP - Overall start time in MJD format 
+.br
+\fIres\fP - Time resolution in fraction of a day
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 2256 of file read_ephem\&.cxx\&.
+.SS "void \fBgetPhase\fP (\fBEphemData\fP *EphemPtr, doubleResolution, \fBAttitude\fP *att, intjs, intjep, double *phase)"
+.PP
+Function that calculates the angle between the y-axis and the target\&. This routine calculates the angle between the vector for the Earth center to the target and the y-axis in the spacecraft system of reference\&. Transformations from one system of reference to another is done using Euler angles\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEphemPtr\fP - Pointer to the Ephemeredis structure 
+.br
+\fIResolution\fP - Time resolution for the Ephem and \fBAttitude\fP structures 
+.br
+\fIatt\fP - attitude structure 
+.br
+\fIjs\fP - index of the arrays in the attitude structure for either start or end of occultation 
+.br
+\fIjep\fP - index of the arrays in the ephemeredis structure for either start or end of occultation 
+.br
+\fIphase\fP - the calculated angle\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 2985 of file read_ephem\&.cxx\&.
+.SS "double \fBInterpProfile\fP (double *tms, double *ofst, doubleres)"
+.PP
+Definition at line 2688 of file read_ephem\&.cxx\&.
+.SS "void \fBMakeAtt\fP (doublemjdt, doublemjde, doublemjds, doublepra, doublepdec, doubleoffset, doublera, doubledec, intmode, doubleres, \fBEphemData\fP *ephem, double *lpos, \fBAttitude\fP *OAtt, doubleTS)"
+.PP
+Function that calculates attitude profile\&. This routine is called by makeAttTako to calculate the attitude profile for Pointed and Fixed Survey mode observation\&. As first step, the routine calculates the slew time and slew profile by calling DoSlew\&. The calculated slew time is compared with the passed one\&. Then, depending on the observing mode, the routine calls MakeSurvey, for Survey observations, or MakePointed for Pointed observations\&. The attitude data are written to the passed attitude structure\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fImjdt\fP - start time for the interval of interest in mjd format 
+.br
+\fImjde\fP - end time for the interval of interest in mjd format 
+.br
+\fImjds\fP - end of slew time in mjd format 
+.br
+\fIpra\fP - previous RA, used to calculate slew profile 
+.br
+\fIpdec\fP - previous DEC, used to calculate slew profile 
+.br
+\fIpra\fP - previous RA, used to calculate slew profile 
+.br
+\fIoffset\fP - rocking angle offset used for SURVEY observations 
+.br
+\fIra\fP - current RA, used to calculate slew profile and for Pointed observations 
+.br
+\fIdec\fP - current DEC, used to calculate slew profile and for Pointed observations 
+.br
+\fImode\fP - observation mode, 1 for Fixed Survey, 2 for Pointed observation 
+.br
+\fIres\fP - time resolution as given at the input process 
+.br
+\fIephem\fP - pointer to an ephemeredis structure 
+.br
+\fIlpos\fP - array that contains RA and DEC at mjde time; this will be used for the next round\&. 
+.br
+\fIOAtt\fP - Overall attitude structure 
+.br
+\fITS\fP - start time in mjd for the attitude structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 733 of file read_ephem\&.cxx\&.
+.SS "void \fBMakeAtt2\fP (doublemjdt, doublemjde, doublepra, doublepdec, doubleoffset, doublera, doubledec, intmode, doubleres, \fBEphemData\fP *ephem, double *lpos, \fBAttitude\fP *OAtt, doubleTS)"
+.PP
+Function that calculates attitude profile\&. This routine is called by makeAttTako to calculate the attitude profile for Pointed and Fixed Survey mode observation\&. As first step, the routine calculates the slew time and slew profile by calling DoSlew\&. Then, depending on the observing mode, the routine calls MakeSurvey, for Survey observations, or MakePointed for Pointed observations\&. The attitude data are written to the passed attitude structure\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fImjdt\fP - start time for the interval of interest in mjd format 
+.br
+\fImjde\fP - end time for the interval of interest in mjd format 
+.br
+\fIpra\fP - previous RA, used to calculate slew profile 
+.br
+\fIpdec\fP - previous DEC, used to calculate slew profile 
+.br
+\fIoffset\fP - rocking angle offset used for SURVEY observations 
+.br
+\fIra\fP - current RA, used to calculate slew profile and for Pointed observations 
+.br
+\fIdec\fP - current DEC, used to calculate slew profile and for Pointed observations 
+.br
+\fImode\fP - observation mode, 1 for Fixed Survey, 2 for Pointed observation 
+.br
+\fIres\fP - time resolution as given at the input process 
+.br
+\fIephem\fP - pointer to an ephemeredis structure 
+.br
+\fIlpos\fP - array that contains RA and DEC at mjde time; this will be used for the next round\&. 
+.br
+\fIOAtt\fP - Overall attitude structure 
+.br
+\fITS\fP - start time in mjd for the attitude structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 926 of file read_ephem\&.cxx\&.
+.SS "void \fBMakePointed\fP (doublemjds, doublemjde, doubleres, doublera, doubledec, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt, doubleTS)"
+.PP
+Function that calculates attitude profile for any pointed observation\&. This routine calculates the attitude profile for any pointed observation\&. \fBAttitude\fP is calculated by calling GePointedtPos, which does most of the transformations using Euler angles\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fImjds\fP - start time in mjd format for the interval of interest 
+.br
+\fImjde\fP - end time in mjd format for the interval of interest 
+.br
+\fIres\fP - time resolution as given at the input process 
+.br
+\fIra\fP - final RA position 
+.br
+\fIdec\fP - final DEC position 
+.br
+\fIephem\fP - pointer to an ephemeredis structure 
+.br
+\fIOAtt\fP - Overall attitude structure\&. 
+.br
+\fITS\fP - start time in mjd for the Overall \fBAttitude\fP structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1723 of file read_ephem\&.cxx\&.
+.SS "void \fBMakeProfiled\fP (doublestart, doubleend, doubleres, doubleira, doubleidec, doubleepoch, double *tms, double *ofst, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt, doublebegin)"
+.PP
+Function that calculates attitude profile for profiled survey observations\&. This routine is used to calculate the attitude profile for any Profiled Survey mode observation\&. \fBAttitude\fP is calculated by calling doProfiled, and stored in a temporary attitude structure\&. This temp attitude structure is used to calculate slew profile from a previous specified location\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstart\fP - start time for the interval of interest in mjd format 
+.br
+\fIend\fP - end time for the interval of interest in mjd format 
+.br
+\fIres\fP - time resolution as given at the input process 
+.br
+\fIira\fP - previous ra position used to calculate slew profile 
+.br
+\fIidec\fP - previous dec position used to calculate slew profile 
+.br
+\fIepoch\fP - this is the beginning of the profile, or ROCKSTART 
+.br
+\fItms\fP - array containing times for the survey profile 
+.br
+\fIofst\fP - array containing offsets for the survey profile 
+.br
+\fIephem\fP - pointer to an ephemeredis structure 
+.br
+\fIOAtt\fP - Overall attitude structure 
+.br
+\fIbegin\fP - start time in mjd for the attitude structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 2332 of file read_ephem\&.cxx\&.
+.SS "void \fBMakeSurvey\fP (doublestart, doubleend, doubleres, doubleoffset, \fBEphemData\fP *ephem, \fBAttitude\fP *OAtt, double *rd, intmode, doubleTS)"
+.PP
+Function that calculates attitude profile for survey observations\&. This routine is used to calculate the attitude profile any Survey mode observation\&. \fBAttitude\fP is calculated by calling GetPos, which does most of the transformations using Euler angles\&. The routine also does a Sun Avoidance manuevering if the Sun angle is smaller than 10 degrees or greater than 170\&. Called with mode=0, the routine simply calculates the RA and DEC for the Z-axis at any specified time\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstart\fP - start time for the interval of interest in mjd format 
+.br
+\fIend\fP - end time for the interval of interest in mjd format 
+.br
+\fIres\fP - time resolution as given at the input process 
+.br
+\fIoffset\fP - rocking angle offset used for SURVEY observations 
+.br
+\fIephem\fP - pointer to an ephemeredis structure 
+.br
+\fIrd\fP - array that contains RA and DEC at end time; this will be used for the next round\&. 
+.br
+\fImode\fP - if only RA and DEC at time t, the mode should be 0, 1 otherwise 
+.br
+\fIOAtt\fP - Overall attitude structure 
+.br
+\fITS\fP - start time in mjd for the attitude structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 999 of file read_ephem\&.cxx\&.
+.SS "void \fBoccult\fP (\fBEphemData\fP *EphemPtr, doubleStartTime, doubleEndTime, doubleResolution, \fBAttitude\fP *att, doubleEAA, doublestart_ELT, doublestop_ELT)"
+.PP
+Function that calculates if the spacecraft is Earth occulted\&. This routine determines if the spacecraft is Earth occulted\&. atSun and atEarthOccult are doing all the calculations\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEphemPtr\fP - Pointer to the Ephemeredis structure 
+.br
+\fIStartTime\fP - start time of the interval of interest in mjd format 
+.br
+\fIEndTime\fP - End time of the interval of interest in mjd format 
+.br
+\fIResolution\fP - Time resolution for the Ephem and \fBAttitude\fP structures 
+.br
+\fIatt\fP - attitude structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 2766 of file read_ephem\&.cxx\&.
+.SS "st_stream::StreamFormatter \fBosf\fP ('read_ephem', '', 2)"
+.PP
+Stream to control output through verbosity level\&. 
+.SS "\fBAttitude\fP* \fBreallocateAttitude\fP (intnum, \fBAttitude\fP *att)"
+.PP
+Function that re-allocates dynamically memory\&. This routine re-allocates dynamically memory for the attitude structure\&. It is used to resize the structure if needed\&. This is achieved by using realloc
+.PP
+\fBParameters:\fP
+.RS 4
+\fInum\fP - size of each array in the structure 
+.br
+\fIatt\fP - attitude pointer
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 139 of file read_ephem\&.cxx\&.
+.SS "void \fBsaa\fP (\fBEphemData\fP *EphemPtr, const char *filename, doubleStartTime, doubleEndTime, doubleResolution, \fBAttitude\fP *att)"
+.PP
+Function that calculates if the spacecraft is within the SAA region\&. This routine determines if each ephemeris point is in or out of the SAA polygon\&. A filename should be passed which defines SAA polygon (longitude/latitude pairs)\&. In addition to an ephemeris point being in the SAA polynomial, the ephem point prior will also be included as in the SAA polynomial,because somewhere between the two points is when the actual SAA is entered (we're rounding by one resolution)\&. The end of an SAA already rounds to next resolution (the value remains true for full resolution)\&. For this routine to work, the last latitude/longitude pair must be the same as the first\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIEphemPtr\fP - Pointer to the Ephemeredis structure 
+.br
+\fIfilename\fP - name of the file containing the SAA polygon definition 
+.br
+\fIStartTime\fP - start time of the interval of interest in mjd format 
+.br
+\fIEndTime\fP - End time of the interval of interest in mjd format 
+.br
+\fIResolution\fP - Time resolution for the Ephem and \fBAttitude\fP structures 
+.br
+\fIatt\fP - attitude structure
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: May 04, 2009 
+.RE
+.PP
+
+.PP
+Definition at line 1870 of file read_ephem\&.cxx\&.
+.SS "\fBEphemData\fP* \fBtlederive\fP (FILE *ifp, doubleStartTime, doubleEndTime, doubleUnits, doubleResolution)"
+.PP
+Function that propagate ephemeredis based on a NORAD Two Line Elements\&. This routine uses a provided NORAD Two Line Elements file to calculate the Ephemeredis, that is satellite position and Latitude and Longitude\&. The routine uses readtle to read in the needed parameters from the TLE file, and sgp4 to calculate the satellite position with the specified time resolution\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIifp\fP - FILE pointer for the ephemeredis 
+.br
+\fIStartTime\fP - start time for the interval of interest\&. It is in mjd 
+.br
+\fIEndTime\fP - end time for the interval of interest\&. It is in mjd 
+.br
+\fIUnits\fP - conversion factor to km 
+.br
+\fIResolution\fP - time resolution in minutes, or fraction of minutes
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 532 of file read_ephem\&.cxx\&.
+.SS "\fBEphemData\fP* \fBxyzll_eph\fP (FILE *ifp, doubleStartTime, doubleEndTime, doubleUnits, doubleResolution)"
+.PP
+Function that STK format ephemeredis file\&. The xyzll_eph routine was written to ingest the STK generated ephemeris for Swift\&. It is similiar to the yyyy_eph routine\&. The differences include a comment line as the first line of data from STK and the latitude and longitude will be used directly from the STK data\&. The altitude will be calculated, but is not currently planned to be used\&. xyzll_eph expects an ephemeredis file input of this format: %d\\/%d %d\\:%d\\:%lf %lf %lf %lf %lf %lf %lf %lf which are respectively day of the year, year, hour, minute, seconds, fraction of a second, X, Y, Z, (in km) Latitude, Longitude, RA and DEC component velocity (degrees)\&. This function returns a pointer to an \fBEphemData\fP structure\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIifp\fP - FILE pointer for the ephemeredis 
+.br
+\fIStartTime\fP - start time for the interval of interest\&. It is in mjd 
+.br
+\fIEndTime\fP - end time for the interval of interest\&. It is in mjd 
+.br
+\fIUnits\fP - conversion factor to km 
+.br
+\fIResolution\fP - time resolution in minutes, or fraction of minutes
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 346 of file read_ephem\&.cxx\&.
+.SS "\fBEphemData\fP* \fByyyy_eph\fP (FILE *ifp, doubleStartTime, doubleEndTime, doubleUnits, doubleResolution)"
+.PP
+Function that NASA FDF ephemeredis file\&. This function expects an ephemeredis file input of this format: %d %d %d %d %d %d %lf %lf %lf %lf %lf where the integers are year, month, day of the month, hours minutes and seconds; while the remaining doubles are respectively X, Y, Z, Latitude and Longitude in EC\&. X, Y, Z are in decimegamters and get converted to km, and Lat and Long are calculated (not used from the file)\&. yyyy_eph returns a pointer to an \fBEphemData\fP structure\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIifp\fP - FILE pointer for the ephemeredis 
+.br
+\fIStartTime\fP - start time for the interval of interest\&. It is in mjd 
+.br
+\fIEndTime\fP - end time for the interval of interest\&. It is in mjd 
+.br
+\fIUnits\fP - conversion factor to km 
+.br
+\fIResolution\fP - time resolution in minutes, or fraction of minutes
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 169 of file read_ephem\&.cxx\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

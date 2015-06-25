@@ -1,0 +1,22 @@
+/README.txt/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/htest.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/mock_idle.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/mock_tk.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_autocomplete.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_autoexpand.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_calltips.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_config_name.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_delegator.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_formatparagraph.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_grep.py/1.1.2.1/Fri Feb 27 05:02:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_hyperparser.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_idlehistory.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_parenmatch.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_pathbrowser.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_rstrip.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_searchengine.py/1.1.2.1/Fri Feb 27 05:02:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_text.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_textview.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/test_warning.py/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+D

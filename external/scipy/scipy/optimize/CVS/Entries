@@ -1,0 +1,36 @@
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/__minpack.h/1.1.2.2.8.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/_basinhopping.py/1.1.2.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/_minimize.py/1.1.2.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/_minpackmodule.c/1.1.2.1/Tue Oct 16 19:21:25 2012//TScienceTools-v10r0p5-fssc-20150518
+/_root.py/1.1.2.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/_trustregion.py/1.1.2.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/_trustregion_dogleg.py/1.1.2.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/_trustregion_ncg.py/1.1.2.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/_tstutils.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/anneal.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cobyla.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/lbfgsb.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/linesearch.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/minpack.h/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/minpack.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/nnls.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/nonlin.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/optimize.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/slsqp.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/tnc.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/zeros.c/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015//TScienceTools-v10r0p5-fssc-20150518
+/zeros.py/1.1.2.1.8.1/Fri Feb 27 05:00:46 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/Zeros////
+D/benchmarks////
+D/cobyla////
+D/lbfgsb////
+D/minpack////
+D/minpack2////
+D/nnls////
+D/slsqp////
+D/tests////
+D/tnc////

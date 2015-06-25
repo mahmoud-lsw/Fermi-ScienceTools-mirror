@@ -1,0 +1,4 @@
+2000  Extragalactic_diffuse  4720404  2943
+3000  Galactic_diffuse  5431181  6409
+1000  _3c66b  9714  135
+0  _3c84  14445  115

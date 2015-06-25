@@ -1,0 +1,188 @@
+.TH "atElemTle" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+atElemTle \- 
+.PP
+Structure that contains Two Line Elements (TLE) parameters\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <orbitSimStruct\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAtTime\fP \fBtm\fP"
+.br
+.RI "\fITime structure\&. \fP"
+.ti -1c
+.RI "double \fBmjd\fP"
+.br
+.RI "\fITime stamp in MJD when the parameters are good from\&. \fP"
+.ti -1c
+.RI "double \fBisc\fP"
+.br
+.RI "\fIFraction of second of the time stamp\&. \fP"
+.ti -1c
+.RI "int \fBSatNum\fP"
+.br
+.RI "\fISatellite Number\&. \fP"
+.ti -1c
+.RI "int \fBEpochRev\fP"
+.br
+.RI "\fIRevolution number at epoch\&. \fP"
+.ti -1c
+.RI "double \fBxndt2o\fP"
+.br
+.RI "\fIFirst time derivative of mean motion\&. \fP"
+.ti -1c
+.RI "double \fBxndd6o\fP"
+.br
+.RI "\fISecond time derivative of mean motion\&. \fP"
+.ti -1c
+.RI "double \fBbstar\fP"
+.br
+.RI "\fIBSTAR drag term\&. \fP"
+.ti -1c
+.RI "double \fBxincl\fP"
+.br
+.RI "\fIInclination in the xplane\&. \fP"
+.ti -1c
+.RI "double \fBxnodeo\fP"
+.br
+.RI "\fIRight ascension of the ascending node\&. \fP"
+.ti -1c
+.RI "double \fBeo\fP"
+.br
+.RI "\fIEccentricity\&. \fP"
+.ti -1c
+.RI "double \fBomegao\fP"
+.br
+.RI "\fIArgument of perigee\&. \fP"
+.ti -1c
+.RI "double \fBxmo\fP"
+.br
+.RI "\fIMean anomaly\&. \fP"
+.ti -1c
+.RI "double \fBxno\fP"
+.br
+.RI "\fIMean motion\&. \fP"
+.ti -1c
+.RI "int \fBiexp\fP"
+.br
+.RI "\fIexponential part of xndd6o \fP"
+.ti -1c
+.RI "int \fBibexp\fP"
+.br
+.RI "\fIexponential part of bstar \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure that contains Two Line Elements (TLE) parameters\&. 
+
+This structure contains all the parameters contained in the NORAD Two Line Element file
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 141 of file orbitSimStruct\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double \fBatElemTle::bstar\fP"
+.PP
+BSTAR drag term\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::eo\fP"
+.PP
+Eccentricity\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+.SS "int \fBatElemTle::EpochRev\fP"
+.PP
+Revolution number at epoch\&. 
+.PP
+Definition at line 149 of file orbitSimStruct\&.h\&.
+.SS "int \fBatElemTle::ibexp\fP"
+.PP
+exponential part of bstar 
+.PP
+Definition at line 171 of file orbitSimStruct\&.h\&.
+.SS "int \fBatElemTle::iexp\fP"
+.PP
+exponential part of xndd6o 
+.PP
+Definition at line 171 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::isc\fP"
+.PP
+Fraction of second of the time stamp\&. 
+.PP
+Definition at line 147 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::mjd\fP"
+.PP
+Time stamp in MJD when the parameters are good from\&. 
+.PP
+Definition at line 145 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::omegao\fP"
+.PP
+Argument of perigee\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+.SS "int \fBatElemTle::SatNum\fP"
+.PP
+Satellite Number\&. 
+.PP
+Definition at line 149 of file orbitSimStruct\&.h\&.
+.SS "\fBAtTime\fP \fBatElemTle::tm\fP"
+.PP
+Time structure\&. 
+.PP
+Definition at line 143 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::xincl\fP"
+.PP
+Inclination in the xplane\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::xmo\fP"
+.PP
+Mean anomaly\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::xndd6o\fP"
+.PP
+Second time derivative of mean motion\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::xndt2o\fP"
+.PP
+First time derivative of mean motion\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::xno\fP"
+.PP
+Mean motion\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+.SS "double \fBatElemTle::xnodeo\fP"
+.PP
+Right ascension of the ascending node\&. 
+.PP
+Definition at line 153 of file orbitSimStruct\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

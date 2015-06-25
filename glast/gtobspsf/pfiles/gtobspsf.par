@@ -1,0 +1,27 @@
+# General parameters.
+evfile,f,a,"",,,"Event data file name (FT1 FITS file)"
+evtable,s,h,"EVENTS",,,"Table containing event data"
+effarea,r,a,8000.0,,,"Constant detector effective area (cm^2)"
+bgflux,r,a,0.0,,,"Constant background flux (photons/cm^2/s)"
+outfile,f,a,"gtobspsf_out.fits",,,"Output FITS file for observed PSF"
+outtable,s,h,"PSF",,,"Name of FITS extension in output file to hold PSF"
+
+# Coordinates of PSF center.
+src_ra,r,a,0.0,,,"Center right ascension (degrees)"
+src_dec,r,a,0.0,,,"Center declination (degrees)"
+
+# Angular bin parameters
+maxangle,r,a,4.0,,,"Maximum angle from source (degrees) for PSF"
+nangles,i,a,20,,,"Number of angle bins"
+
+# Energy bin parameters.
+emin,r,a,20.0,,,"Minimum energy in MeV"
+emax,r,a,200000.0,,,"Maximum energy in MeV"
+nenergies,i,a,20,,,"Number of logarithmically-spaced energy bins"
+
+# Hidden parameters.
+chatter,i, h, 2, 0, 4, "Chattiness of output"
+clobber,b, h, yes, , , "Overwrite existing output files with new output files"
+debug,b, h, no, , , "Debugging mode activated"
+gui,b, h, no, , , "GUI mode activated"
+mode,s, h, "ql", , ,"Mode of automatic parameters"

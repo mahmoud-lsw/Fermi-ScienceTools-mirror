@@ -1,0 +1,793 @@
+Source:  ATT
+running source: TimeTick(0.2), point(0,0,1000), (use_spectrum frame="zenith")
+ Total rate is: 6 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (8.17674e-18,-9.38648e-17,-1), Flux=1, Interval=0.16	Elapsed time= 0.16
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-4.99327e-17,5.86011e-17,-1), Flux=1, Interval=0.2	Elapsed time= 0.36
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (5.19026e-17,-1.48536e-17,-1), Flux=1, Interval=0.2	Elapsed time= 0.56
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-8.92981e-18,1.24141e-17,-1), Flux=1, Interval=0.2	Elapsed time= 0.76
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.34846e-17,-1.65341e-17,-1), Flux=1, Interval=0.2	Elapsed time= 0.96
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-2.51715e-17,3.70255e-17,-1), Flux=1, Interval=0.2	Elapsed time= 1.16
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (3.17231e-17,9.46508e-17,-1), Flux=1, Interval=0.2	Elapsed time= 1.36
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (2.53213e-17,-3.52908e-17,-1), Flux=1, Interval=0.2	Elapsed time= 1.56
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-5.13119e-17,3.65105e-17,-1), Flux=1, Interval=0.2	Elapsed time= 1.76
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.15353e-16,-2.52077e-17,-1), Flux=1, Interval=0.2	Elapsed time= 1.96
+------------------------------------------------------
+
+Average Interval=0.196 , Average rate = 5.10204
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  Earth
+running source: Earth, radius(1381.98), (use_spectrum frame="zenith")
+ Total rate is: 5002.31 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(32.9871 MeV), Launch: (-1436.79,-1611.07,-906.728), Dir (0.126315,0.794332,0.594206), Flux=205.607, Interval=6.73635e-05	Elapsed time= 6.73635e-05
+gamma(45.331 MeV), Launch: (-451.439,-753.421,-1972.43), Dir (0.383689,0.610319,0.693033), Flux=205.607, Interval=0.000243447	Elapsed time= 0.00031081
+gamma(38.4872 MeV), Launch: (-578.791,764.5,-1911.93), Dir (0.173296,-0.662588,0.72866), Flux=205.607, Interval=9.28877e-05	Elapsed time= 0.000403698
+gamma(22.5888 MeV), Launch: (-1874.56,-303.483,-1132.47), Dir (0.885787,-0.275322,0.373603), Flux=205.607, Interval=0.000104066	Elapsed time= 0.000507763
+gamma(24.7643 MeV), Launch: (1562.13,-1098.63,-1054.89), Dir (-0.445221,0.798678,0.404835), Flux=205.607, Interval=2.15081e-05	Elapsed time= 0.000529271
+gamma(48.2136 MeV), Launch: (729.051,2228.23,-638.418), Dir (0.245531,-0.838569,0.48633), Flux=205.607, Interval=0.000205341	Elapsed time= 0.000734612
+gamma(114.58 MeV), Launch: (134.74,-1586.1,-1370.42), Dir (-0.288229,0.574681,0.765941), Flux=205.607, Interval=0.000175867	Elapsed time= 0.00091048
+gamma(51.8084 MeV), Launch: (-469.267,1389.84,-1698.16), Dir (-0.250795,-0.552311,0.795019), Flux=205.607, Interval=0.000220727	Elapsed time= 0.00113121
+gamma(454.095 MeV), Launch: (-1140.99,-1967.21,-857.068), Dir (0.758322,0.332571,0.560664), Flux=205.607, Interval=0.000899913	Elapsed time= 0.00203112
+gamma(25.1528 MeV), Launch: (2011.86,869.532,-274.321), Dir (-0.727344,-0.455181,0.513597), Flux=205.607, Interval=0.000265938	Elapsed time= 0.00229706
+------------------------------------------------------
+
+Average Interval=0.000229706 , Average rate = 4353.39
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  Earth10
+running source: Earth, radius(1381.98), (use_spectrum frame="zenith")
+ Total rate is: 10862.4 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(31.1833 MeV), Launch: (-2098.33,-1189.65,262.217), Dir (0.854139,0.272279,0.44307), Flux=446.47, Interval=9.3483e-05	Elapsed time= 9.3483e-05
+gamma(19.4819 MeV), Launch: (-278.149,-648.192,-2301.3), Dir (0.289938,-0.283852,0.913983), Flux=446.47, Interval=8.07562e-05	Elapsed time= 0.000174239
+gamma(56.6947 MeV), Launch: (-1669.92,1241.13,-579.705), Dir (0.525255,-0.646008,0.553877), Flux=446.47, Interval=0.000252598	Elapsed time= 0.000426837
+gamma(13.8934 MeV), Launch: (304.966,-918.292,-2146.91), Dir (0.352195,0.582819,0.732312), Flux=446.47, Interval=0.000176281	Elapsed time= 0.000603118
+gamma(50.6723 MeV), Launch: (-1914.33,-483.069,-945.058), Dir (0.773514,-0.136099,0.618994), Flux=446.47, Interval=3.02959e-05	Elapsed time= 0.000633414
+gamma(53.6455 MeV), Launch: (-1991.36,-811.055,-181.805), Dir (0.810064,0.376177,0.449764), Flux=446.47, Interval=8.86689e-06	Elapsed time= 0.000642281
+gamma(10.1166 MeV), Launch: (1927.3,521.357,-696.827), Dir (-0.729874,-0.448404,0.515962), Flux=446.47, Interval=3.38718e-05	Elapsed time= 0.000676153
+gamma(27.0964 MeV), Launch: (-565.334,1686.96,-1595.37), Dir (-0.13316,-0.355144,0.925279), Flux=446.47, Interval=0.000229209	Elapsed time= 0.000905361
+gamma(28.1996 MeV), Launch: (-1902.72,-155.526,-754.997), Dir (0.881699,-0.129568,0.453673), Flux=446.47, Interval=0.000211118	Elapsed time= 0.00111648
+gamma(10.9091 MeV), Launch: (1686.73,661.98,-1274.53), Dir (-0.474751,-0.138006,0.869233), Flux=446.47, Interval=1.76304e-05	Elapsed time= 0.00113411
+------------------------------------------------------
+
+Average Interval=0.000113411 , Average rate = 8817.49
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  ORB
+running source: TimeTick(1), point(0,0,1000), (use_spectrum frame="Sun")
+ Total rate is: 6 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926532,0.344558,0.151055), Flux=1, Interval=0.8	Elapsed time= 0.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926571,0.344008,0.152067), Flux=1, Interval=1	Elapsed time= 1.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926608,0.343459,0.153079), Flux=1, Interval=1	Elapsed time= 2.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926644,0.342909,0.154091), Flux=1, Interval=1	Elapsed time= 3.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926678,0.34236,0.155103), Flux=1, Interval=1	Elapsed time= 4.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926711,0.34181,0.156115), Flux=1, Interval=1	Elapsed time= 5.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926743,0.341261,0.157127), Flux=1, Interval=1	Elapsed time= 6.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926773,0.340712,0.158138), Flux=1, Interval=1	Elapsed time= 7.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926802,0.340162,0.159149), Flux=1, Interval=1	Elapsed time= 8.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (0.926829,0.339613,0.16016), Flux=1, Interval=1	Elapsed time= 9.8
+------------------------------------------------------
+
+Average Interval=0.98 , Average rate = 1.02041
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  all_gamma
+running source: gamma(0.01778 GeV,1,17.78,0), radius(1381.98), range(0,1) 
+ Total rate is: 37.6991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(2219.09 MeV), Launch: (-84.2138,1004.03,2210.1), Dir (-0.189739,0.133332,-0.972739), Flux=1, Interval=0.024979	Elapsed time= 0.024979
+gamma(3008.32 MeV), Launch: (-1273.34,-1792.7,858.526), Dir (0.150857,0.987593,-0.04362), Flux=1, Interval=0.00310078	Elapsed time= 0.0280798
+gamma(17678 MeV), Launch: (2285.97,779.444,154.694), Dir (-0.710227,-0.363285,-0.602993), Flux=1, Interval=0.0673223	Elapsed time= 0.0954021
+gamma(998.871 MeV), Launch: (193.266,1215.02,1825.3), Dir (0.33139,-0.574899,-0.748112), Flux=1, Interval=0.0343152	Elapsed time= 0.129717
+gamma(4749.88 MeV), Launch: (-1744.16,218.055,1381.88), Dir (0.685922,0.351683,-0.637048), Flux=1, Interval=0.00896277	Elapsed time= 0.13868
+gamma(11882.3 MeV), Launch: (-1034.74,245.972,2068.69), Dir (0.0885892,-0.49662,-0.863435), Flux=1, Interval=0.022097	Elapsed time= 0.160777
+gamma(12011.5 MeV), Launch: (-549.083,1909.43,685.309), Dir (0.364378,-0.739509,-0.565999), Flux=1, Interval=0.0180787	Elapsed time= 0.178856
+gamma(603.917 MeV), Launch: (2033.6,-564.424,-1102.46), Dir (-0.966452,0.240008,-0.0914689), Flux=1, Interval=0.00137431	Elapsed time= 0.18023
+gamma(2707.09 MeV), Launch: (1682.4,1157.66,899.495), Dir (-0.416162,-0.823882,-0.384743), Flux=1, Interval=0.061624	Elapsed time= 0.241854
+gamma(2076.84 MeV), Launch: (-1040.19,1929.55,634.365), Dir (0.789961,-0.489069,-0.36983), Flux=1, Interval=0.0187118	Elapsed time= 0.260566
+------------------------------------------------------
+
+Average Interval=0.0260566 , Average rate = 38.378
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  all_gamma_180GeV
+running source: gamma(0.01778 GeV,1,177.8,0), radius(1381.98), range(0,1) 
+ Total rate is: 37.6991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(2271.62 MeV), Launch: (-1025.59,1615.02,919.586), Dir (0.703856,-0.685615,-0.18579), Flux=1, Interval=0.0202768	Elapsed time= 0.0202768
+gamma(965.262 MeV), Launch: (550.842,-545.154,2112.77), Dir (0.193816,0.0730174,-0.978317), Flux=1, Interval=0.0112937	Elapsed time= 0.0315705
+gamma(104.68 MeV), Launch: (-1323.03,-1045.19,1507.4), Dir (0.625029,-0.00344426,-0.780594), Flux=1, Interval=0.0216182	Elapsed time= 0.0531886
+gamma(1607.9 MeV), Launch: (516.171,1942.67,702.77), Dir (-0.0513892,-0.799226,-0.59883), Flux=1, Interval=0.0767688	Elapsed time= 0.129957
+gamma(14229.4 MeV), Launch: (1536.3,-5.83027,1426.2), Dir (-0.862074,-0.178169,-0.47443), Flux=1, Interval=0.0310979	Elapsed time= 0.161055
+gamma(602.393 MeV), Launch: (1390.85,-1581.17,580.329), Dir (-0.521592,0.574591,-0.630704), Flux=1, Interval=0.115166	Elapsed time= 0.276221
+gamma(46.4146 MeV), Launch: (1652.23,-210.465,1574.76), Dir (-0.657005,0.558826,-0.506022), Flux=1, Interval=0.028289	Elapsed time= 0.30451
+gamma(72.7951 MeV), Launch: (-525.299,-1928.49,507.838), Dir (0.135959,0.989976,-0.0382509), Flux=1, Interval=0.011408	Elapsed time= 0.315918
+gamma(24251.3 MeV), Launch: (1956.27,-331.585,786.887), Dir (-0.813424,0.490439,-0.312749), Flux=1, Interval=0.035006	Elapsed time= 0.350924
+gamma(45.9345 MeV), Launch: (-2332.28,-246.153,-383.085), Dir (0.811101,0.578124,-0.0888141), Flux=1, Interval=0.00362885	Elapsed time= 0.354553
+------------------------------------------------------
+
+Average Interval=0.0354553 , Average rate = 28.2045
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  all_gamma_562GeV
+running source: gamma(0.01778 GeV,1,562.341,0), radius(1381.98), range(0,1) 
+ Total rate is: 37.6991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(212.773 MeV), Launch: (-1845.69,771.637,1301.78), Dir (0.567547,0.135661,-0.812088), Flux=1, Interval=0.00965735	Elapsed time= 0.00965735
+gamma(158862 MeV), Launch: (-784.158,415.166,1842.61), Dir (0.236446,-0.352983,-0.90526), Flux=1, Interval=0.065954	Elapsed time= 0.0756113
+gamma(55.4372 MeV), Launch: (1400.5,-1638.27,964.508), Dir (-0.920389,0.380163,-0.0914319), Flux=1, Interval=0.018697	Elapsed time= 0.0943083
+gamma(2533.77 MeV), Launch: (752.081,-1694.54,1434.37), Dir (0.00212579,0.967649,-0.252293), Flux=1, Interval=0.0379126	Elapsed time= 0.132221
+gamma(5418.65 MeV), Launch: (-551.833,-425.152,2082.52), Dir (0.627496,0.184796,-0.756373), Flux=1, Interval=0.00826396	Elapsed time= 0.140485
+gamma(464136 MeV), Launch: (171.017,-167.482,2279.6), Dir (0.410249,0.172991,-0.895416), Flux=1, Interval=0.0275872	Elapsed time= 0.168072
+gamma(509986 MeV), Launch: (1150.3,-1433.75,1400.33), Dir (-0.364122,0.910243,-0.197161), Flux=1, Interval=0.0170174	Elapsed time= 0.18509
+gamma(3455.98 MeV), Launch: (1969.85,107.16,794.772), Dir (-0.836846,0.266415,-0.478238), Flux=1, Interval=0.0352464	Elapsed time= 0.220336
+gamma(79292.4 MeV), Launch: (1981.99,145.846,766.666), Dir (-0.897494,0.278989,-0.34157), Flux=1, Interval=0.0502905	Elapsed time= 0.270626
+gamma(497.002 MeV), Launch: (125.433,1618.77,1491.87), Dir (-0.416482,-0.508967,-0.753323), Flux=1, Interval=0.0580448	Elapsed time= 0.328671
+------------------------------------------------------
+
+Average Interval=0.0328671 , Average rate = 30.4255
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  caprice94_surface_muons
+running source: SurfaceMuons, radius(1381.98), (use_spectrum frame="zenith")
+ Total rate is: 1256.64 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu+(2661.13 MeV), Launch: (-1257.61,882.353,1471.68), Dir (0.283582,-0.450803,-0.846379), Flux=33.3333, Interval=0.000127995	Elapsed time= 0.000127995
+mu+(10415.3 MeV), Launch: (-1425.32,122.968,1542.18), Dir (0.81891,-0.241203,-0.520776), Flux=33.3333, Interval=0.000565902	Elapsed time= 0.000693898
+mu+(14227.4 MeV), Launch: (1093.79,-252.088,2022.01), Dir (-0.837393,-0.0586562,-0.543446), Flux=33.3333, Interval=0.00121964	Elapsed time= 0.00191354
+mu-(4644.4 MeV), Launch: (-407.836,1189.91,1906.27), Dir (-0.0162702,-0.0912413,-0.995696), Flux=33.3333, Interval=0.000870994	Elapsed time= 0.00278453
+mu+(2389.55 MeV), Launch: (407.414,1733.4,1427.4), Dir (-0.589673,-0.48087,-0.648884), Flux=33.3333, Interval=0.00186481	Elapsed time= 0.00464934
+mu-(2111.92 MeV), Launch: (-1891.84,425.459,1176.4), Dir (0.478557,-0.36602,-0.79813), Flux=33.3333, Interval=0.00122246	Elapsed time= 0.00587179
+mu+(5546.28 MeV), Launch: (407.348,1165.24,1604.99), Dir (-0.0578768,-0.634311,-0.770909), Flux=33.3333, Interval=0.000465332	Elapsed time= 0.00633713
+mu-(655.451 MeV), Launch: (-224.099,461.466,2175.08), Dir (-0.120216,-0.57374,-0.810167), Flux=33.3333, Interval=0.000672722	Elapsed time= 0.00700985
+mu-(1625.72 MeV), Launch: (-1760.79,477.104,1066.46), Dir (0.615341,-0.390814,-0.684559), Flux=33.3333, Interval=0.00198016	Elapsed time= 0.00899001
+mu+(1520.68 MeV), Launch: (-1119.17,1255.16,1368.9), Dir (0.253183,-0.41416,-0.874283), Flux=33.3333, Interval=8.16575e-05	Elapsed time= 0.00907167
+------------------------------------------------------
+
+Average Interval=0.000907167 , Average rate = 1102.33
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  caprice_surface_muons
+running source: SurfaceMuons, radius(1381.98), (use_spectrum frame="zenith")
+ Total rate is: 1256.64 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu+(1202.8 MeV), Launch: (-742.492,1639.36,1221.64), Dir (0.683382,-0.586278,-0.435048), Flux=33.3333, Interval=0.00113425	Elapsed time= 0.00113425
+mu-(2013.97 MeV), Launch: (-802.774,1010.95,1835.97), Dir (0.0741587,-0.121959,-0.989761), Flux=33.3333, Interval=0.00047616	Elapsed time= 0.00161041
+mu+(8318.79 MeV), Launch: (-1020.49,1973.75,919.06), Dir (0.854989,-0.45735,-0.244591), Flux=33.3333, Interval=0.000165466	Elapsed time= 0.00177587
+mu+(2310.35 MeV), Launch: (866.338,1256.11,1443.15), Dir (-0.123774,-0.707778,-0.695507), Flux=33.3333, Interval=0.000438191	Elapsed time= 0.00221407
+mu-(20178.8 MeV), Launch: (1655.04,269.962,1260.23), Dir (-0.582411,-0.286297,-0.76081), Flux=33.3333, Interval=0.000180401	Elapsed time= 0.00239447
+mu+(3118.34 MeV), Launch: (-1138.72,1.30626,1972.27), Dir (0.209841,0.397761,-0.89317), Flux=33.3333, Interval=0.000661223	Elapsed time= 0.00305569
+mu-(821.775 MeV), Launch: (-235.227,-524.403,2288.49), Dir (-0.385189,0.435097,-0.813831), Flux=33.3333, Interval=0.000359111	Elapsed time= 0.0034148
+mu+(170.153 MeV), Launch: (1003.42,-83.28,2108.86), Dir (0.0948677,-0.0346239,-0.994888), Flux=33.3333, Interval=0.000521812	Elapsed time= 0.00393661
+mu-(3546.08 MeV), Launch: (375.626,-239.345,2012.17), Dir (-0.161726,0.352126,-0.921874), Flux=33.3333, Interval=0.000259706	Elapsed time= 0.00419632
+mu-(5075.05 MeV), Launch: (-1067.04,-1824.32,1042.66), Dir (0.47953,0.357897,-0.801225), Flux=33.3333, Interval=0.00202578	Elapsed time= 0.00622209
+------------------------------------------------------
+
+Average Interval=0.000622209 , Average rate = 1607.18
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  clock
+running source: TimeTick(30), point(0,0,1000), (use_spectrum frame="zenith")
+ Total rate is: 6 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (8.17654e-17,-1.41705e-16,-1), Flux=1, Interval=1e-30	Elapsed time= 1e-30
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (8.17654e-17,-1.41705e-16,-1), Flux=1, Interval=30	Elapsed time= 30
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-1.97691e-17,9.28619e-17,-1), Flux=1, Interval=30	Elapsed time= 60
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-4.63341e-17,7.02292e-17,-1), Flux=1, Interval=30	Elapsed time= 90
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.66505e-16,-2.1844e-16,-1), Flux=1, Interval=30	Elapsed time= 120
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-1.52694e-18,3.02221e-17,-1), Flux=1, Interval=30	Elapsed time= 150
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-6.20246e-17,-1.02945e-16,-1), Flux=1, Interval=30	Elapsed time= 180
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-3.6183e-17,-5.78151e-17,-1), Flux=1, Interval=30	Elapsed time= 210
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-6.69284e-17,2.76201e-17,-1), Flux=1, Interval=30	Elapsed time= 240
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (4.01851e-17,-7.78457e-17,-1), Flux=1, Interval=30	Elapsed time= 270
+------------------------------------------------------
+
+Average Interval=27 , Average rate = 0.037037
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  cosmic_muons
+running source: mu+(10 GeV,1.78165e-33,2.38221e-44), radius(1381.98), range(-0.4,1) 
+ Total rate is: 5277.88 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu+(10000 MeV), Launch: (-558.809,1934.81,-1007.32), Dir (-0.0741125,-0.98918,0.126609), Flux=100, Interval=0.000253399	Elapsed time= 0.000253399
+mu+(10000 MeV), Launch: (910.888,-1440.16,1253.03), Dir (-0.129054,0.812582,-0.56838), Flux=100, Interval=0.000136917	Elapsed time= 0.000390316
+mu+(10000 MeV), Launch: (2277.34,-616.693,349.047), Dir (-0.923984,-0.301891,-0.234768), Flux=100, Interval=0.000332445	Elapsed time= 0.000722761
+mu+(10000 MeV), Launch: (-2196.46,-301.765,-773.71), Dir (0.702566,0.620467,0.348456), Flux=100, Interval=0.000210355	Elapsed time= 0.000933116
+mu+(10000 MeV), Launch: (-453.816,-2266.68,355.575), Dir (0.633164,0.769161,0.0865739), Flux=100, Interval=0.00019379	Elapsed time= 0.00112691
+mu+(10000 MeV), Launch: (-1818.22,1187.67,296.154), Dir (0.556373,-0.736077,-0.38554), Flux=100, Interval=0.000196548	Elapsed time= 0.00132345
+mu+(10000 MeV), Launch: (-1147.42,1177.67,1224.93), Dir (0.385235,-0.560073,-0.733425), Flux=100, Interval=0.00012992	Elapsed time= 0.00145337
+mu+(10000 MeV), Launch: (-675.834,-1582.24,1621.96), Dir (-0.0449905,0.941833,-0.333055), Flux=100, Interval=0.000114998	Elapsed time= 0.00156837
+mu+(10000 MeV), Launch: (760.36,-1909.61,69.9721), Dir (-0.497279,0.854773,0.148581), Flux=100, Interval=0.000516781	Elapsed time= 0.00208515
+mu+(10000 MeV), Launch: (-1991.12,85.4598,-581.199), Dir (0.884004,-0.284673,0.370808), Flux=100, Interval=0.000165952	Elapsed time= 0.00225111
+------------------------------------------------------
+
+Average Interval=0.000225111 , Average rate = 4442.26
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  default
+running source: gamma(0.1 GeV,1.78247e-33,2.38221e-44), radius(1381.98),  dir(-0,-0,-1)
+ Total rate is: 2.4 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(100 MeV), Launch: (713.841,-1065.97,2000), Dir (-0,-0,-1), Flux=0.4, Interval=0.221239	Elapsed time= 0.221239
+gamma(100 MeV), Launch: (1024.15,235.869,2000), Dir (-0,-0,-1), Flux=0.4, Interval=0.329357	Elapsed time= 0.550596
+gamma(100 MeV), Launch: (-322.734,-939.913,2000), Dir (-0,-0,-1), Flux=0.4, Interval=0.388266	Elapsed time= 0.938862
+gamma(100 MeV), Launch: (1288.8,50.5459,2000), Dir (-0,-0,-1), Flux=0.4, Interval=0.339458	Elapsed time= 1.27832
+gamma(100 MeV), Launch: (713.379,-682.648,2000), Dir (-0,-0,-1), Flux=0.4, Interval=1.30069	Elapsed time= 2.57901
+gamma(100 MeV), Launch: (249.762,-672.073,2000), Dir (-0,-0,-1), Flux=0.4, Interval=0.032747	Elapsed time= 2.61176
+gamma(100 MeV), Launch: (-445.23,-951.125,2000), Dir (-0,-0,-1), Flux=0.4, Interval=1.0325	Elapsed time= 3.64426
+gamma(100 MeV), Launch: (-1234.86,-611.08,2000), Dir (-0,-0,-1), Flux=0.4, Interval=0.125536	Elapsed time= 3.76979
+gamma(100 MeV), Launch: (557.676,-383.482,2000), Dir (-0,-0,-1), Flux=0.4, Interval=0.0118828	Elapsed time= 3.78168
+gamma(100 MeV), Launch: (639.958,-392.097,2000), Dir (-0,-0,-1), Flux=0.4, Interval=0.0878861	Elapsed time= 3.86956
+------------------------------------------------------
+
+Average Interval=0.386956 , Average rate = 2.58427
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  diffuse
+running source: gamma(0.1 GeV,2.1,100,0), radius(1381.98), range(-0.4,1) 
+ Total rate is: 7.65292 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(188.808 MeV), Launch: (-1678.28,864.577,1041.06), Dir (0.943897,-0.103334,-0.313657), Flux=0.145, Interval=0.0209586	Elapsed time= 0.0209586
+gamma(105.935 MeV), Launch: (-1999.17,-773.217,525.75), Dir (0.678215,0.425815,-0.598921), Flux=0.145, Interval=0.18891	Elapsed time= 0.209868
+gamma(143.056 MeV), Launch: (-806.006,2112.98,246.848), Dir (0.628708,-0.658357,-0.413876), Flux=0.145, Interval=0.0928346	Elapsed time= 0.302703
+gamma(255.202 MeV), Launch: (-1878.22,837.794,445.553), Dir (0.848564,-0.231955,-0.475538), Flux=0.145, Interval=0.109979	Elapsed time= 0.412682
+gamma(201.87 MeV), Launch: (1631.53,1092.49,1021.55), Dir (-0.513752,-0.816166,-0.264446), Flux=0.145, Interval=0.22422	Elapsed time= 0.636903
+gamma(124.157 MeV), Launch: (-261.883,2104.21,-280.244), Dir (0.459839,-0.868759,0.183863), Flux=0.145, Interval=0.000195981	Elapsed time= 0.637099
+gamma(228.096 MeV), Launch: (-1522.93,1824.02,139.278), Dir (0.284261,-0.886938,0.364056), Flux=0.145, Interval=0.32409	Elapsed time= 0.961189
+gamma(110.173 MeV), Launch: (-235.25,-2114.01,487.129), Dir (0.0240629,0.984031,0.176366), Flux=0.145, Interval=0.042453	Elapsed time= 1.00364
+gamma(143.193 MeV), Launch: (1357.41,1857.33,249.451), Dir (-0.912482,-0.409066,-0.00648026), Flux=0.145, Interval=0.556523	Elapsed time= 1.56016
+gamma(1152.38 MeV), Launch: (1474.08,1333.16,1004.96), Dir (-0.294809,-0.859556,-0.417435), Flux=0.145, Interval=0.162731	Elapsed time= 1.7229
+------------------------------------------------------
+
+Average Interval=0.17229 , Average rate = 5.80418
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  diffuse-20mev
+running source: gamma(0.02 GeV,2.1,1000,0), radius(1381.98), range(-0.4,1) 
+ Total rate is: 44.8619 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(22.8578 MeV), Launch: (-746.788,746.87,1862), Dir (0.543759,-0.54671,-0.636737), Flux=0.85, Interval=0.0285955	Elapsed time= 0.0285955
+gamma(32.2847 MeV), Launch: (-2045.82,-1213.19,-46.862), Dir (0.662922,0.550264,-0.507686), Flux=0.85, Interval=0.0195686	Elapsed time= 0.0481641
+gamma(114.484 MeV), Launch: (-174.567,488.99,2022.35), Dir (-0.16803,-0.368263,-0.914412), Flux=0.85, Interval=0.0102119	Elapsed time= 0.058376
+gamma(50.3588 MeV), Launch: (1626.26,852.077,1078.67), Dir (-0.56488,-0.292115,-0.771738), Flux=0.85, Interval=0.0137445	Elapsed time= 0.0721205
+gamma(45.871 MeV), Launch: (-738.498,-1862.8,-345.695), Dir (0.398906,0.853099,0.336297), Flux=0.85, Interval=0.0231992	Elapsed time= 0.0953197
+gamma(31.9898 MeV), Launch: (1975.97,480.842,-1271.6), Dir (-0.661792,-0.694732,0.28174), Flux=0.85, Interval=0.00456535	Elapsed time= 0.099885
+gamma(41.9087 MeV), Launch: (-474.286,-1943.23,603.548), Dir (0.290123,0.956978,-0.00458244), Flux=0.85, Interval=0.0322433	Elapsed time= 0.132128
+gamma(58.6273 MeV), Launch: (1167.1,-954.056,1584.8), Dir (-0.716943,0.0665391,-0.693949), Flux=0.85, Interval=0.0918433	Elapsed time= 0.223972
+gamma(20.5297 MeV), Launch: (27.686,-1998.36,1265.9), Dir (-0.503642,0.600258,-0.621318), Flux=0.85, Interval=0.027008	Elapsed time= 0.25098
+gamma(20.0858 MeV), Launch: (642.146,1975.92,432.964), Dir (0.0313139,-0.984285,-0.173788), Flux=0.85, Interval=0.0209928	Elapsed time= 0.271972
+------------------------------------------------------
+
+Average Interval=0.0271972 , Average rate = 36.7684
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  diffuse-30mev
+running source: gamma(30 MeV,2.1,100000,0), radius(1381.98), range(-0.4,1) 
+ Total rate is: 28.7644 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(41.1441 MeV), Launch: (-2185.63,788.204,-34.8103), Dir (0.923731,0.00710306,-0.382976), Flux=0.545, Interval=0.012773	Elapsed time= 0.012773
+gamma(35.6309 MeV), Launch: (-24.6821,-1599.24,1744.43), Dir (-0.497521,0.448073,-0.742767), Flux=0.545, Interval=0.00996689	Elapsed time= 0.0227399
+gamma(33.746 MeV), Launch: (-795.102,-1891.99,1053.26), Dir (0.309839,0.465293,-0.829158), Flux=0.545, Interval=0.0659306	Elapsed time= 0.0886705
+gamma(32.2431 MeV), Launch: (-824.097,1991.91,890.976), Dir (0.461186,-0.479239,-0.746751), Flux=0.545, Interval=0.0742389	Elapsed time= 0.162909
+gamma(415.897 MeV), Launch: (-789.623,-1808.32,-1352.84), Dir (-0.0764078,0.971501,0.224383), Flux=0.545, Interval=0.00355828	Elapsed time= 0.166468
+gamma(161.878 MeV), Launch: (416.266,2006.42,-1227.75), Dir (-0.684271,-0.627299,0.371846), Flux=0.545, Interval=0.0616382	Elapsed time= 0.228106
+gamma(56.3199 MeV), Launch: (668.759,-83.8757,1918.31), Dir (-0.457687,-0.072141,-0.886182), Flux=0.545, Interval=0.00553206	Elapsed time= 0.233638
+gamma(30.3411 MeV), Launch: (-916.779,571.574,1922.7), Dir (0.111556,-0.561068,-0.820218), Flux=0.545, Interval=0.0162327	Elapsed time= 0.249871
+gamma(5255.81 MeV), Launch: (-1792.65,-1344.74,433.904), Dir (0.705277,0.347742,-0.617786), Flux=0.545, Interval=0.025229	Elapsed time= 0.2751
+gamma(34.2995 MeV), Launch: (237.719,1724.39,-1508.34), Dir (-0.333302,-0.914991,0.227378), Flux=0.545, Interval=0.165102	Elapsed time= 0.440202
+------------------------------------------------------
+
+Average Interval=0.0440202 , Average rate = 22.7169
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  gamma_100_gev_normal
+running source: gamma(100 GeV,2.36943e-38,2.36943e-38), radius(1381.98), range(0.99,1) 
+ Total rate is: 0.376991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(100000 MeV), Launch: (1249.6,837.59,1868.51), Dir (-0.0584127,-0.080988,-0.995002), Flux=1, Interval=4.50589	Elapsed time= 4.50589
+gamma(100000 MeV), Launch: (-172.356,-929.591,2043.51), Dir (0.121896,-0.050222,-0.991271), Flux=1, Interval=14.9786	Elapsed time= 19.4845
+gamma(100000 MeV), Launch: (273.992,-616.745,2086.34), Dir (0.0185499,-0.110465,-0.993707), Flux=1, Interval=3.73252	Elapsed time= 23.217
+gamma(100000 MeV), Launch: (407.153,260.743,2003.19), Dir (0.0413468,-0.0903859,-0.995048), Flux=1, Interval=4.14894	Elapsed time= 27.3659
+gamma(100000 MeV), Launch: (836.529,-928.101,1907.1), Dir (0.00272012,0.116569,-0.993179), Flux=1, Interval=1.45037	Elapsed time= 28.8163
+gamma(100000 MeV), Launch: (426.49,-648.541,2001.37), Dir (-0.109462,-0.0514433,-0.992659), Flux=1, Interval=0.10877	Elapsed time= 28.9251
+gamma(100000 MeV), Launch: (193.003,-113.447,2003.76), Dir (-0.0942436,-0.0705938,-0.993043), Flux=1, Interval=2.90255	Elapsed time= 31.8276
+gamma(100000 MeV), Launch: (-321.234,725.095,1935.05), Dir (0.110875,-0.0620852,-0.991893), Flux=1, Interval=4.22398	Elapsed time= 36.0516
+gamma(100000 MeV), Launch: (-155.886,86.7981,1995.63), Dir (0.0265322,-0.0741847,-0.996892), Flux=1, Interval=7.09294	Elapsed time= 43.1445
+gamma(100000 MeV), Launch: (791.1,-852.496,1978.78), Dir (0.0711491,0.111247,-0.991243), Flux=1, Interval=4.00358	Elapsed time= 47.1481
+------------------------------------------------------
+
+Average Interval=4.71481 , Average rate = 0.212098
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  gamma_100_gev_uniform
+running source: gamma(100 GeV,2.36943e-38,2.36943e-38), radius(1381.98), range(0,1) 
+ Total rate is: 37.6991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(100000 MeV), Launch: (582.392,100.998,2304.87), Dir (0.103756,-0.476429,-0.873069), Flux=1, Interval=0.0790686	Elapsed time= 0.0790686
+gamma(100000 MeV), Launch: (1404.54,800.985,1276.22), Dir (-0.672609,-0.574664,-0.466216), Flux=1, Interval=0.0473302	Elapsed time= 0.126399
+gamma(100000 MeV), Launch: (494.451,-898.12,2076.66), Dir (-0.67229,0.356178,-0.648971), Flux=1, Interval=0.00553223	Elapsed time= 0.131931
+gamma(100000 MeV), Launch: (1673.52,-696.254,1059.57), Dir (-0.586719,0.353673,-0.728475), Flux=1, Interval=0.126133	Elapsed time= 0.258064
+gamma(100000 MeV), Launch: (373.059,-396.904,2344.28), Dir (0.417307,0.0902065,-0.904278), Flux=1, Interval=0.0173677	Elapsed time= 0.275431
+gamma(100000 MeV), Launch: (-1916.04,-1472.1,-61.2675), Dir (0.372207,0.885702,-0.277479), Flux=1, Interval=0.0035582	Elapsed time= 0.278989
+gamma(100000 MeV), Launch: (-1206.14,290.698,1792.44), Dir (0.826043,-0.197271,-0.527955), Flux=1, Interval=0.00799594	Elapsed time= 0.286985
+gamma(100000 MeV), Launch: (118.149,2067.52,1220.41), Dir (0.122247,-0.453087,-0.883045), Flux=1, Interval=0.00934207	Elapsed time= 0.296327
+gamma(100000 MeV), Launch: (-2063.05,177.684,854.981), Dir (0.934303,-0.356319,-0.0107268), Flux=1, Interval=0.0211644	Elapsed time= 0.317492
+gamma(100000 MeV), Launch: (-1216.27,1316.37,1313.18), Dir (0.129459,-0.726635,-0.674716), Flux=1, Interval=0.0768933	Elapsed time= 0.394385
+------------------------------------------------------
+
+Average Interval=0.0394385 , Average rate = 25.3559
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  gamma_100_mev_uniform
+running source: gamma(0.1 GeV,2.36943e-38,2.36943e-38), radius(1381.98), range(0,1) 
+ Total rate is: 37.6991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(100 MeV), Launch: (-1272.67,-750.376,1477.83), Dir (0.770117,0.12868,-0.624789), Flux=1, Interval=0.0662994	Elapsed time= 0.0662994
+gamma(100 MeV), Launch: (-1791.43,293.63,887.031), Dir (0.900816,-0.00379028,-0.434185), Flux=1, Interval=0.00043235	Elapsed time= 0.0667317
+gamma(100 MeV), Launch: (1369.87,-1232.34,895.321), Dir (-0.608438,0.741916,-0.281716), Flux=1, Interval=0.0723635	Elapsed time= 0.139095
+gamma(100 MeV), Launch: (1535.7,-662.51,1522.1), Dir (-0.697078,0.634094,-0.334674), Flux=1, Interval=0.0101792	Elapsed time= 0.149274
+gamma(100 MeV), Launch: (1111.63,1488.17,842.137), Dir (-0.498808,-0.829885,-0.249961), Flux=1, Interval=0.0241043	Elapsed time= 0.173379
+gamma(100 MeV), Launch: (2027.22,-848.987,532.88), Dir (-0.965475,-0.100474,-0.240339), Flux=1, Interval=0.00362197	Elapsed time= 0.177001
+gamma(100 MeV), Launch: (-1402.54,272.134,1939.04), Dir (0.663968,0.430275,-0.611563), Flux=1, Interval=0.0238056	Elapsed time= 0.200806
+gamma(100 MeV), Launch: (131.628,-1182.64,1953.87), Dir (0.433867,0.485708,-0.758846), Flux=1, Interval=0.0383547	Elapsed time= 0.239161
+gamma(100 MeV), Launch: (144.759,-1209.44,2038.76), Dir (0.351082,0.133372,-0.926797), Flux=1, Interval=0.0206897	Elapsed time= 0.259851
+gamma(100 MeV), Launch: (503.902,2080.23,531.308), Dir (-0.510242,-0.716238,-0.476084), Flux=1, Interval=0.0288295	Elapsed time= 0.28868
+------------------------------------------------------
+
+Average Interval=0.028868 , Average rate = 34.6404
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  gamma_10_gev_uniform
+running source: gamma(10 GeV,2.36943e-38,2.36943e-38), radius(1381.98), range(0,1) 
+ Total rate is: 37.6991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(10000 MeV), Launch: (-4.3426,-1074.65,1828.44), Dir (0.325889,0.411922,-0.85095), Flux=1, Interval=0.0446724	Elapsed time= 0.0446724
+gamma(10000 MeV), Launch: (1417.82,-186.126,1497.87), Dir (-0.473452,0.0788684,-0.877282), Flux=1, Interval=0.0198491	Elapsed time= 0.0645215
+gamma(10000 MeV), Launch: (1928.57,-628.758,-488.442), Dir (-0.950784,0.30537,-0.0525226), Flux=1, Interval=0.0606753	Elapsed time= 0.125197
+gamma(10000 MeV), Launch: (-2183.41,664.881,-346.038), Dir (0.912819,-0.196695,-0.357872), Flux=1, Interval=0.00829114	Elapsed time= 0.133488
+gamma(10000 MeV), Launch: (-1607.67,1426.17,733.841), Dir (0.400691,-0.913336,-0.0725593), Flux=1, Interval=0.112915	Elapsed time= 0.246403
+gamma(10000 MeV), Launch: (-239.941,-1067.85,1706.02), Dir (0.277681,0.500091,-0.820245), Flux=1, Interval=0.0686923	Elapsed time= 0.315096
+gamma(10000 MeV), Launch: (-1354.31,-1522.88,94.7096), Dir (0.636739,0.731967,-0.242461), Flux=1, Interval=0.00542706	Elapsed time= 0.320523
+gamma(10000 MeV), Launch: (-1255.76,-175.393,1645), Dir (0.470343,0.319236,-0.822719), Flux=1, Interval=0.03023	Elapsed time= 0.350753
+gamma(10000 MeV), Launch: (-572.923,-1278.3,1435.48), Dir (0.352392,0.601995,-0.716535), Flux=1, Interval=0.121206	Elapsed time= 0.471959
+gamma(10000 MeV), Launch: (-1274,-1016.51,1790.84), Dir (0.160637,0.0280168,-0.986616), Flux=1, Interval=0.0204312	Elapsed time= 0.49239
+------------------------------------------------------
+
+Average Interval=0.049239 , Average rate = 20.3091
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  gamma_1_gev_30deg
+running source: gamma(1 GeV,2.36943e-38,2.36943e-38), radius(1381.98), range(0.866,0.867) 
+ Total rate is: 0.0376991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(1000 MeV), Launch: (45.7593,-468.829,2259.04), Dir (-0.497415,0.0422738,-0.866482), Flux=1, Interval=7.92829	Elapsed time= 7.92829
+gamma(1000 MeV), Launch: (1525.84,-67.3383,1435.02), Dir (-0.492358,0.0855864,-0.866175), Flux=1, Interval=63.7135	Elapsed time= 71.6418
+gamma(1000 MeV), Launch: (68.1938,-1503.59,1564.71), Dir (-0.276864,0.41638,-0.86601), Flux=1, Interval=4.57061	Elapsed time= 76.2124
+gamma(1000 MeV), Launch: (-1362.93,8.11583,2011.27), Dir (0.186282,-0.463506,-0.866292), Flux=1, Interval=36.8252	Elapsed time= 113.038
+gamma(1000 MeV), Launch: (372.47,616.037,2123.44), Dir (-0.496837,0.0417808,-0.866838), Flux=1, Interval=22.973	Elapsed time= 136.011
+gamma(1000 MeV), Launch: (-571.001,-853.193,2030.62), Dir (0.496638,-0.0504989,-0.866488), Flux=1, Interval=12.9843	Elapsed time= 148.995
+gamma(1000 MeV), Launch: (-451.801,70.3426,2282.16), Dir (-0.0301386,-0.497401,-0.866997), Flux=1, Interval=3.19621	Elapsed time= 152.191
+gamma(1000 MeV), Launch: (-1502.77,141.488,1633.96), Dir (0.415291,0.278052,-0.866153), Flux=1, Interval=69.9754	Elapsed time= 222.167
+gamma(1000 MeV), Launch: (-1579.58,326.746,1425.01), Dir (0.433091,-0.247953,-0.866575), Flux=1, Interval=0.805684	Elapsed time= 222.972
+gamma(1000 MeV), Launch: (-388.125,152.709,2152.86), Dir (0.161511,-0.472585,-0.866359), Flux=1, Interval=31.1471	Elapsed time= 254.119
+------------------------------------------------------
+
+Average Interval=25.4119 , Average rate = 0.0393516
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  gamma_1_gev_60deg
+running source: gamma(1 GeV,2.36943e-38,2.36943e-38), radius(1381.98), range(0.4995,0.5005) 
+ Total rate is: 0.0376991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(1000 MeV), Launch: (1978.62,-23.7062,1048.98), Dir (-0.740492,0.449389,-0.499721), Flux=1, Interval=32.0545	Elapsed time= 32.0545
+gamma(1000 MeV), Launch: (-2088.25,749.564,227.758), Dir (0.855672,-0.132339,-0.500313), Flux=1, Interval=62.3801	Elapsed time= 94.4346
+gamma(1000 MeV), Launch: (-1176.08,-1396.63,975.26), Dir (0.3401,0.796204,-0.500392), Flux=1, Interval=1.85722	Elapsed time= 96.2918
+gamma(1000 MeV), Launch: (1935.38,-687.763,855.648), Dir (-0.58557,0.637929,-0.500154), Flux=1, Interval=16.6523	Elapsed time= 112.944
+gamma(1000 MeV), Launch: (-1550.77,-1591.87,176.601), Dir (0.672505,0.54579,-0.49985), Flux=1, Interval=2.26994	Elapsed time= 115.214
+gamma(1000 MeV), Launch: (849.204,1320.59,1280.62), Dir (-0.459177,-0.734127,-0.500213), Flux=1, Interval=6.92069	Elapsed time= 122.135
+gamma(1000 MeV), Launch: (-1493.73,445.127,1331.22), Dir (0.78335,-0.369457,-0.499864), Flux=1, Interval=12.7904	Elapsed time= 134.925
+gamma(1000 MeV), Launch: (-1763.02,494.323,849.784), Dir (0.801262,-0.328155,-0.500293), Flux=1, Interval=1.23326	Elapsed time= 136.158
+gamma(1000 MeV), Launch: (1769.4,-1278.25,659.429), Dir (-0.857783,0.119338,-0.499966), Flux=1, Interval=19.1253	Elapsed time= 155.284
+gamma(1000 MeV), Launch: (-723.66,-1126.53,1700.93), Dir (0.366544,0.784393,-0.500372), Flux=1, Interval=19.922	Elapsed time= 175.206
+------------------------------------------------------
+
+Average Interval=17.5206 , Average rate = 0.0570758
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  gamma_1_gev_normal
+running source: gamma(1 GeV,2.36943e-38,2.36943e-38), radius(1381.98), range(0.99,1) 
+ Total rate is: 0.376991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(1000 MeV), Launch: (-684.535,-965.343,2081.55), Dir (-0.0508477,-0.0435764,-0.997755), Flux=1, Interval=4.65033	Elapsed time= 4.65033
+gamma(1000 MeV), Launch: (-105.212,1179.49,2058.45), Dir (0.0476437,0.0496681,-0.997629), Flux=1, Interval=0.399844	Elapsed time= 5.05017
+gamma(1000 MeV), Launch: (-1313.83,488.304,1983.68), Dir (-0.0110473,-0.0747526,-0.997141), Flux=1, Interval=0.364459	Elapsed time= 5.41463
+gamma(1000 MeV), Launch: (-424.79,112.935,2048.48), Dir (-0.0975376,-0.0356443,-0.994593), Flux=1, Interval=3.92672	Elapsed time= 9.34135
+gamma(1000 MeV), Launch: (-893.925,-571.025,2136.34), Dir (-0.0854152,-0.0794929,-0.993169), Flux=1, Interval=1.69109	Elapsed time= 11.0324
+gamma(1000 MeV), Launch: (954.78,-96.7162,2024.73), Dir (0.0168172,-0.055014,-0.998344), Flux=1, Interval=2.02235	Elapsed time= 13.0548
+gamma(1000 MeV), Launch: (-396.487,-362.629,1989.26), Dir (0.023187,0.00582776,-0.999714), Flux=1, Interval=5.34464	Elapsed time= 18.3994
+gamma(1000 MeV), Launch: (-940.342,835.722,2003.9), Dir (0.101931,0.095782,-0.99017), Flux=1, Interval=1.79437	Elapsed time= 20.1938
+gamma(1000 MeV), Launch: (172.785,-1186.58,1931.87), Dir (0.0025724,0.0608134,-0.998146), Flux=1, Interval=4.72889	Elapsed time= 24.9227
+gamma(1000 MeV), Launch: (-437.959,-848.262,1949.13), Dir (0.0183075,0.0542874,-0.998358), Flux=1, Interval=0.2517	Elapsed time= 25.1744
+------------------------------------------------------
+
+Average Interval=2.51744 , Average rate = 0.397229
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  gamma_1_gev_uniform
+running source: gamma(1 GeV,2.36943e-38,2.36943e-38), radius(1381.98), range(0,1) 
+ Total rate is: 37.6991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(1000 MeV), Launch: (991.752,147.523,2110.77), Dir (-0.596238,-0.49396,-0.632854), Flux=1, Interval=0.0221893	Elapsed time= 0.0221893
+gamma(1000 MeV), Launch: (825.776,-1770.99,984.219), Dir (-0.720459,0.608605,-0.332472), Flux=1, Interval=0.00610034	Elapsed time= 0.0282896
+gamma(1000 MeV), Launch: (2106.61,-102.348,648.303), Dir (-0.884925,-0.379871,-0.269455), Flux=1, Interval=0.00845359	Elapsed time= 0.0367432
+gamma(1000 MeV), Launch: (1110.6,1538.86,638.325), Dir (-0.584016,-0.737507,-0.339129), Flux=1, Interval=0.0139713	Elapsed time= 0.0507145
+gamma(1000 MeV), Launch: (1843.37,1197.5,506.388), Dir (-0.458046,-0.823265,-0.335304), Flux=1, Interval=0.0183873	Elapsed time= 0.0691018
+gamma(1000 MeV), Launch: (-90.9451,1394.61,1433.8), Dir (0.0783709,-0.670346,-0.737899), Flux=1, Interval=0.0361279	Elapsed time= 0.10523
+gamma(1000 MeV), Launch: (107.66,506.094,2161.24), Dir (-0.428829,-0.00278965,-0.903381), Flux=1, Interval=0.0263839	Elapsed time= 0.131614
+gamma(1000 MeV), Launch: (1524.48,-1596.64,-273.421), Dir (-0.925245,0.376781,-0.0442398), Flux=1, Interval=0.0325796	Elapsed time= 0.164193
+gamma(1000 MeV), Launch: (-1482.64,-1569.97,826.803), Dir (0.934313,0.267495,-0.235596), Flux=1, Interval=0.0256345	Elapsed time= 0.189828
+gamma(1000 MeV), Launch: (962.514,1588.17,1140.38), Dir (-0.0571272,-0.857241,-0.511737), Flux=1, Interval=0.00354396	Elapsed time= 0.193372
+------------------------------------------------------
+
+Average Interval=0.0193372 , Average rate = 51.7139
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  high_e_surface_muons
+running source: SurfaceMuons, radius(1381.98), (use_spectrum frame="zenith")
+ Total rate is: 879.646 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu-(3056.22 MeV), Launch: (1783.02,1367.31,651.36), Dir (-0.351478,-0.718427,-0.600271), Flux=23.3333, Interval=0.00224827	Elapsed time= 0.00224827
+mu+(26153 MeV), Launch: (-1682.4,-1111.83,394.018), Dir (0.705497,0.594648,-0.385575), Flux=23.3333, Interval=0.00143291	Elapsed time= 0.00368118
+mu+(2601.01 MeV), Launch: (-148.022,926.419,1783), Dir (-0.000685518,-0.543806,-0.83921), Flux=23.3333, Interval=0.00101363	Elapsed time= 0.0046948
+mu-(23106.9 MeV), Launch: (1293.26,-1003.7,1551.9), Dir (-0.459761,0.0278324,-0.887607), Flux=23.3333, Interval=0.00194767	Elapsed time= 0.00664247
+mu-(2939.05 MeV), Launch: (-599.016,1684.52,1586.82), Dir (0.344842,-0.200933,-0.916902), Flux=23.3333, Interval=0.00390358	Elapsed time= 0.010546
+mu-(1405.3 MeV), Launch: (-122.058,-446.416,1963.31), Dir (0.156701,0.302676,-0.940124), Flux=23.3333, Interval=0.00286907	Elapsed time= 0.0134151
+mu+(5669.06 MeV), Launch: (284.912,-228.235,1977.56), Dir (-0.240975,0.136889,-0.960829), Flux=23.3333, Interval=0.00410068	Elapsed time= 0.0175158
+mu-(19165.5 MeV), Launch: (1011.28,-740.221,1856.21), Dir (-0.665543,-0.0705794,-0.743015), Flux=23.3333, Interval=0.000503492	Elapsed time= 0.0180193
+mu+(3555.65 MeV), Launch: (736.444,-864.958,1676.93), Dir (-0.21863,0.489384,-0.844218), Flux=23.3333, Interval=0.000463126	Elapsed time= 0.0184824
+mu-(7884.91 MeV), Launch: (1678.01,-135.631,1205.1), Dir (-0.683955,0.272944,-0.676541), Flux=23.3333, Interval=0.00110589	Elapsed time= 0.0195883
+------------------------------------------------------
+
+Average Interval=0.00195883 , Average rate = 510.509
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  hiro_surface_muons
+running source: SurfaceMuons, radius(1381.98), (use_spectrum frame="zenith")
+ Total rate is: 1256.64 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu+(3461.56 MeV), Launch: (393.432,-702.895,2035.37), Dir (0.191792,0.139742,-0.971436), Flux=33.3333, Interval=1.1796e-06	Elapsed time= 1.1796e-06
+mu+(2660.58 MeV), Launch: (661.176,916.507,1847.6), Dir (-0.30886,-0.729768,-0.609954), Flux=33.3333, Interval=0.000417193	Elapsed time= 0.000418373
+mu-(3027.47 MeV), Launch: (-1509.86,552.042,1283.87), Dir (0.575101,-0.213041,-0.789856), Flux=33.3333, Interval=0.000394826	Elapsed time= 0.000813199
+mu-(1308.61 MeV), Launch: (412.673,741.93,2142.13), Dir (-0.0191648,0.163054,-0.986431), Flux=33.3333, Interval=0.000563648	Elapsed time= 0.00137685
+mu-(2789.29 MeV), Launch: (-1404.61,1514.52,1245.25), Dir (0.139876,-0.477725,-0.867303), Flux=33.3333, Interval=0.000201804	Elapsed time= 0.00157865
+mu-(16505.1 MeV), Launch: (942.884,688.264,2100.65), Dir (-0.62692,-0.624228,-0.466166), Flux=33.3333, Interval=0.0024661	Elapsed time= 0.00404476
+mu+(3918.71 MeV), Launch: (1754.83,850.293,1282.82), Dir (-0.65124,0.121918,-0.749014), Flux=33.3333, Interval=0.00114168	Elapsed time= 0.00518644
+mu+(2387.75 MeV), Launch: (137.14,1274.86,1656.93), Dir (0.190278,-0.715207,-0.672512), Flux=33.3333, Interval=0.000169238	Elapsed time= 0.00535567
+mu+(761.678 MeV), Launch: (-708.548,-338.695,1875.68), Dir (0.22467,0.299052,-0.927411), Flux=33.3333, Interval=0.00355966	Elapsed time= 0.00891534
+mu+(1344.82 MeV), Launch: (1103.85,-1486.84,1013.56), Dir (-0.327114,0.610667,-0.721167), Flux=33.3333, Interval=0.0019336	Elapsed time= 0.0108489
+------------------------------------------------------
+
+Average Interval=0.00108489 , Average rate = 921.749
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  low_e_surface_muons
+running source: mu+(0.01 GeV,1,0), radius(1381.98), range(0,1) 
+ Total rate is: 113.097 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu+(651.86 MeV), Launch: (-461.526,1446.27,1654.34), Dir (0.0724459,-0.920478,-0.384021), Flux=3, Interval=0.0128047	Elapsed time= 0.0128047
+mu+(519.753 MeV), Launch: (53.4641,-2043.54,1291.26), Dir (0.464652,0.554735,-0.690194), Flux=3, Interval=0.000640115	Elapsed time= 0.0134448
+mu+(297.62 MeV), Launch: (1604.29,-1302.44,1095.2), Dir (-0.55274,0.832951,-0.0259069), Flux=3, Interval=0.00825378	Elapsed time= 0.0216986
+mu+(350.297 MeV), Launch: (-411.92,-813.953,2084.67), Dir (0.620801,0.204865,-0.756728), Flux=3, Interval=0.00337576	Elapsed time= 0.0250743
+mu+(859.103 MeV), Launch: (-596.188,1628.09,998.266), Dir (0.27512,-0.814562,-0.510684), Flux=3, Interval=0.00931418	Elapsed time= 0.0343885
+mu+(431.129 MeV), Launch: (-1318.5,-142.263,1809.23), Dir (0.159951,0.127559,-0.978849), Flux=3, Interval=0.00163578	Elapsed time= 0.0360243
+mu+(483.826 MeV), Launch: (450.714,-223.184,2170.51), Dir (-0.0163692,-0.311569,-0.950083), Flux=3, Interval=0.00339745	Elapsed time= 0.0394218
+mu+(50.7767 MeV), Launch: (-538.286,2105.08,-657.183), Dir (0.407136,-0.898023,-0.166715), Flux=3, Interval=0.00705209	Elapsed time= 0.0464738
+mu+(837.103 MeV), Launch: (-291.561,-448.832,2006.95), Dir (0.0864798,-0.0494205,-0.995027), Flux=3, Interval=0.00523411	Elapsed time= 0.051708
+mu+(427.281 MeV), Launch: (-1263.93,648.269,1418.43), Dir (0.572844,-0.294952,-0.764757), Flux=3, Interval=0.0128226	Elapsed time= 0.0645306
+------------------------------------------------------
+
+Average Interval=0.00645306 , Average rate = 154.965
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  normal_gamma
+running source: gamma(0.01778 GeV,1,17.78,0), radius(1381.98), range(0.99,1) 
+ Total rate is: 0.376991 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(288.547 MeV), Launch: (1132.51,-278.665,2113.72), Dir (0.0843894,-0.0337421,-0.995861), Flux=1, Interval=4.16926	Elapsed time= 4.16926
+gamma(27.82 MeV), Launch: (612.908,-413.329,1948.89), Dir (-0.0631742,0.0439522,-0.997034), Flux=1, Interval=1.41813	Elapsed time= 5.5874
+gamma(2338.61 MeV), Launch: (-1241.36,648.364,1964.98), Dir (0.0943411,0.0983448,-0.990671), Flux=1, Interval=2.90838	Elapsed time= 8.49578
+gamma(1203.35 MeV), Launch: (-77.8896,-315.316,2033.7), Dir (-0.0528236,-0.0693042,-0.996196), Flux=1, Interval=3.10771	Elapsed time= 11.6035
+gamma(65.7578 MeV), Launch: (-853.874,-725.944,1889.55), Dir (0.136982,0.0158875,-0.990446), Flux=1, Interval=0.429403	Elapsed time= 12.0329
+gamma(206.542 MeV), Launch: (-352.78,598.716,1932.59), Dir (0.0607008,-0.0985019,-0.993284), Flux=1, Interval=1.73295	Elapsed time= 13.7658
+gamma(2331.31 MeV), Launch: (639.371,-1036.53,2017.97), Dir (-0.0567202,-0.047035,-0.997282), Flux=1, Interval=0.985299	Elapsed time= 14.7511
+gamma(494.395 MeV), Launch: (-80.1082,-1243.29,2004.57), Dir (-0.0634747,0.00367466,-0.997977), Flux=1, Interval=0.3933	Elapsed time= 15.1444
+gamma(1296.12 MeV), Launch: (112.11,-494.005,2034.81), Dir (0.019544,-0.0582496,-0.998111), Flux=1, Interval=5.27752	Elapsed time= 20.422
+gamma(156.175 MeV), Launch: (827.761,1292.49,1847.11), Dir (-0.0129599,-0.120528,-0.992625), Flux=1, Interval=1.02635	Elapsed time= 21.4483
+------------------------------------------------------
+
+Average Interval=2.14483 , Average rate = 0.466237
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  spread101010
+running source: gamma(110 GeV), radius(1381.98),  dir(-0.119399,-0.957564,-0.262328) radius 0.174533
+ Total rate is: 0.06 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+gamma(110000 MeV), Launch: (-1721.87,-858.126,-908.886), Dir (0.913036,0.0737254,0.40116), Flux=0.01, Interval=9.99736	Elapsed time= 9.99736
+gamma(110000 MeV), Launch: (-1971.7,312.818,-540.282), Dir (0.893752,0.0141944,0.448337), Flux=0.01, Interval=13.8896	Elapsed time= 23.8869
+gamma(110000 MeV), Launch: (-2182.62,375.283,-9.40847), Dir (0.920476,0.0338702,0.38933), Flux=0.01, Interval=18.638	Elapsed time= 42.525
+gamma(110000 MeV), Launch: (-1240.42,508.16,-1831.57), Dir (0.876007,-0.0887486,0.474063), Flux=0.01, Interval=9.41824	Elapsed time= 51.9432
+gamma(110000 MeV), Launch: (-1937.26,-153.763,-553.755), Dir (0.924136,-0.0114835,0.38189), Flux=0.01, Interval=7.40263	Elapsed time= 59.3459
+gamma(110000 MeV), Launch: (-2117.44,114.135,-310.357), Dir (0.869289,-0.0627798,0.4903), Flux=0.01, Interval=7.02797	Elapsed time= 66.3738
+gamma(110000 MeV), Launch: (-1783.49,355.971,-1086.85), Dir (0.872722,0.161156,0.460853), Flux=0.01, Interval=13.3578	Elapsed time= 79.7316
+gamma(110000 MeV), Launch: (-1785.73,-428.298,-903.167), Dir (0.78424,0.113615,0.609966), Flux=0.01, Interval=67.5084	Elapsed time= 147.24
+gamma(110000 MeV), Launch: (-2334.55,-497.915,-268.821), Dir (0.776249,0.0374186,0.629315), Flux=0.01, Interval=10.2463	Elapsed time= 157.486
+gamma(110000 MeV), Launch: (-1990.55,870.864,-689.854), Dir (0.827771,0.0388615,0.559718), Flux=0.01, Interval=4.77669	Elapsed time= 162.263
+------------------------------------------------------
+
+Average Interval=16.2263 , Average rate = 0.0616283
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  surface_muons
+running source: mu+(0.01 GeV,1,0), radius(1381.98), range(0,1)  + SurfaceMuons, radius(1381.98), (use_spectrum frame="zenith") 
+ Total rate is: 992.743 Hz into 6 m^2
+ there are 2 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu-(10438.8 MeV), Launch: (924.718,381.778,2059.98), Dir (0.0457646,-0.392198,-0.918742), Flux=23.3333, Interval=0.00124773, SourceID: 1000	Elapsed time= 0.00124773
+mu+(2687.45 MeV), Launch: (1180.16,1934.87,343.018), Dir (-0.126124,-0.87331,-0.470556), Flux=23.3333, Interval=0.000775155, SourceID: 1000	Elapsed time= 0.00202289
+mu-(2591.33 MeV), Launch: (605.667,-1288.48,1710.91), Dir (-0.385336,0.165693,-0.907778), Flux=23.3333, Interval=0.000217929, SourceID: 1000	Elapsed time= 0.00224081
+mu+(12992.6 MeV), Launch: (1304.88,-1077.43,1136.79), Dir (-0.482598,0.631749,-0.606624), Flux=23.3333, Interval=0.00430228, SourceID: 1000	Elapsed time= 0.0065431
+mu-(4871.34 MeV), Launch: (1757.54,-471.829,1220.39), Dir (-0.493611,0.23279,-0.837948), Flux=23.3333, Interval=0.000571745, SourceID: 1000	Elapsed time= 0.00711484
+mu-(6292.61 MeV), Launch: (1940.93,-698.091,1081.54), Dir (-0.525729,0.0932958,-0.84552), Flux=23.3333, Interval=0.000298568, SourceID: 1000	Elapsed time= 0.00741341
+mu-(7273.08 MeV), Launch: (-1970.22,-156.035,601.741), Dir (0.865,0.273746,-0.420521), Flux=23.3333, Interval=0.00179991, SourceID: 1000	Elapsed time= 0.00921332
+mu+(6324.55 MeV), Launch: (508.95,972.833,1884.11), Dir (-0.572959,-0.236058,-0.784853), Flux=23.3333, Interval=0.00105164, SourceID: 1000	Elapsed time= 0.010265
+mu+(8121.77 MeV), Launch: (-629.653,1638.92,1485.12), Dir (0.712818,-0.518275,-0.472526), Flux=23.3333, Interval=7.42148e-05, SourceID: 1000	Elapsed time= 0.0103392
+mu+(573.484 MeV), Launch: (641.763,2081.18,-836.862), Dir (0.0856934,-0.996088,-0.0215624), Flux=3, Interval=0.00035409, SourceID: 0	Elapsed time= 0.0106933
+------------------------------------------------------
+
+Average Interval=0.00106933 , Average rate = 935.168
+Source Statistics: 
+source #0: 1 events counted.
+source #1000: 9 events counted.
+
+
+
+Source:  timer_1Hz
+running source: TimeTick(1), point(0,0,1000), (use_spectrum frame="zenith")
+ Total rate is: 6 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.70259e-18,6.12032e-17,-1), Flux=1, Interval=1e-30	Elapsed time= 1e-30
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.70259e-18,6.12032e-17,-1), Flux=1, Interval=1	Elapsed time= 1
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (3.32383e-17,5.2123e-17,-1), Flux=1, Interval=1	Elapsed time= 2
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (4.43691e-17,-1.40214e-16,-1), Flux=1, Interval=1	Elapsed time= 3
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (8.79195e-17,-3.90313e-18,-1), Flux=1, Interval=1	Elapsed time= 4
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (7.4281e-18,-6.657e-17,-1), Flux=1, Interval=1	Elapsed time= 5
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-3.52773e-17,-1.27827e-16,-1), Flux=1, Interval=1	Elapsed time= 6
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-6.47113e-17,1.01779e-16,-1), Flux=1, Interval=1	Elapsed time= 7
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-1.07196e-16,-2.60832e-16,-1), Flux=1, Interval=1	Elapsed time= 8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-9.9911e-17,6.48353e-17,-1), Flux=1, Interval=1	Elapsed time= 9
+------------------------------------------------------
+
+Average Interval=0.9 , Average rate = 1.11111
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  timer_5Hz
+running source: TimeTick(0.2), point(0,0,1000), (use_spectrum frame="zenith")
+ Total rate is: 6 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.16648e-16,-5.3397e-18,-1), Flux=1, Interval=1e-30	Elapsed time= 1e-30
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.16648e-16,-5.3397e-18,-1), Flux=1, Interval=0.2	Elapsed time= 0.2
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.60285e-17,1.1769e-16,-1), Flux=1, Interval=0.2	Elapsed time= 0.4
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-5.56936e-17,-6.23687e-17,-1), Flux=1, Interval=0.2	Elapsed time= 0.6
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (1.20102e-16,-1.20184e-16,-1), Flux=1, Interval=0.2	Elapsed time= 0.8
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-1.05884e-17,6.02274e-17,-1), Flux=1, Interval=0.2	Elapsed time= 1
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (4.7539e-18,-1.14085e-16,-1), Flux=1, Interval=0.2	Elapsed time= 1.2
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (2.12325e-17,3.33392e-18,-1), Flux=1, Interval=0.2	Elapsed time= 1.4
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-1.17322e-16,4.38831e-17,-1), Flux=1, Interval=0.2	Elapsed time= 1.6
+TimeTick(0 MeV), Launch: (0,0,1000), Dir (-2.36017e-17,3.80826e-17,-1), Flux=1, Interval=0.2	Elapsed time= 1.8
+------------------------------------------------------
+
+Average Interval=0.18 , Average rate = 5.55556
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  vertical_muons
+running source: mu+(10 GeV), radius(1381.98),  dir(-0,-0,-1)
+ Total rate is: 6 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu+(10000 MeV), Launch: (73.1256,738.062,2000), Dir (-0,-0,-1), Flux=1, Interval=0.204852	Elapsed time= 0.204852
+mu+(10000 MeV), Launch: (-758.808,-890.26,2000), Dir (-0,-0,-1), Flux=1, Interval=0.295252	Elapsed time= 0.500104
+mu+(10000 MeV), Launch: (-73.0557,-1333.68,2000), Dir (-0,-0,-1), Flux=1, Interval=0.0229041	Elapsed time= 0.523008
+mu+(10000 MeV), Launch: (-421.727,559.111,2000), Dir (-0,-0,-1), Flux=1, Interval=0.275667	Elapsed time= 0.798675
+mu+(10000 MeV), Launch: (794.469,645.061,2000), Dir (-0,-0,-1), Flux=1, Interval=0.133631	Elapsed time= 0.932306
+mu+(10000 MeV), Launch: (-297.151,468.426,2000), Dir (-0,-0,-1), Flux=1, Interval=0.00844697	Elapsed time= 0.940753
+mu+(10000 MeV), Launch: (979.581,-102.02,2000), Dir (-0,-0,-1), Flux=1, Interval=0.0350761	Elapsed time= 0.975829
+mu+(10000 MeV), Launch: (-900.768,-1010.99,2000), Dir (-0,-0,-1), Flux=1, Interval=0.137827	Elapsed time= 1.11366
+mu+(10000 MeV), Launch: (414.255,-99.103,2000), Dir (-0,-0,-1), Flux=1, Interval=0.176241	Elapsed time= 1.2899
+mu+(10000 MeV), Launch: (-552.601,349.016,2000), Dir (-0,-0,-1), Flux=1, Interval=0.0400833	Elapsed time= 1.32998
+------------------------------------------------------
+
+Average Interval=0.132998 , Average rate = 7.51891
+Source Statistics: 
+source #0: 10 events counted.
+
+
+
+Source:  vertical_surface_muons
+running source: SurfaceMuons, radius(1381.98), (use_spectrum frame="zenith")
+ Total rate is: 26.1263 Hz into 6 m^2
+ there are 1 Sources total...
+    Generating 10 trials 
+ --------------------------------
+mu+(1419.6 MeV), Launch: (-464.566,-1187.44,2029.68), Dir (0.0222497,-0.0323839,-0.999228), Flux=69.3023, Interval=0.0223934	Elapsed time= 0.0223934
+mu+(5300.6 MeV), Launch: (-874.779,1012.15,1970.33), Dir (0.0977761,0.0439717,-0.994237), Flux=69.3023, Interval=0.0308648	Elapsed time= 0.0532582
+mu-(16345.8 MeV), Launch: (436.039,193.834,1958.01), Dir (-0.109635,-0.0383723,-0.993231), Flux=69.3023, Interval=0.0906572	Elapsed time= 0.143915
+mu+(3581.9 MeV), Launch: (15.6803,123.852,2024.36), Dir (-0.0439226,0.101664,-0.993849), Flux=69.3023, Interval=0.0308941	Elapsed time= 0.174809
+mu-(1188.81 MeV), Launch: (-427.379,724.041,2056.97), Dir (0.0466538,0.0912556,-0.994734), Flux=69.3023, Interval=0.00598939	Elapsed time= 0.180799
+mu+(6715.18 MeV), Launch: (-588.314,-184.849,1992.68), Dir (0.0208686,-0.0218824,-0.999543), Flux=69.3023, Interval=0.0112767	Elapsed time= 0.192076
+mu+(4323.05 MeV), Launch: (63.7146,869.514,2047.02), Dir (0.108256,0.0311598,-0.993635), Flux=69.3023, Interval=0.030206	Elapsed time= 0.222282
+mu-(1034.74 MeV), Launch: (503.164,1353.6,1880.33), Dir (-0.0771537,-0.0669981,-0.994766), Flux=69.3023, Interval=0.0194121	Elapsed time= 0.241694
+mu+(3258.91 MeV), Launch: (180.681,513.316,1983.42), Dir (0.019121,-0.0433675,-0.998876), Flux=69.3023, Interval=0.0315158	Elapsed time= 0.273209
+mu-(1469.84 MeV), Launch: (289.259,-47.4156,2003.77), Dir (0.0136433,0.00959959,-0.999861), Flux=69.3023, Interval=0.0805458	Elapsed time= 0.353755
+------------------------------------------------------
+
+Average Interval=0.0353755 , Average rate = 28.2681
+Source Statistics: 
+source #0: 10 events counted.
+
+
+

@@ -1,0 +1,10 @@
+COMPONENT=glast
+
+VERSION=
+
+CONFIGURE_CMD='cd $h_dir; ./configure --with-heatop=$prefix --with-heacore=$h_config_heacore --enable-shared=$h_shared --enable-symbols=$h_symbols --enable-hera=$h_hera_build --x-libraries=$x_libraries --x-includes=$x_includes --with-copt="$h_copt" --with-cxxopt="$h_cxxopt" --with-fopt="$h_fopt" --enable-mac_32bit=$h_mac_32bit_build --with-root=$h_build_root'
+
+HEACORE=heacore
+EXTERNAL=external
+
+DEPENDENCIES="$HEACORE $EXTERNAL"

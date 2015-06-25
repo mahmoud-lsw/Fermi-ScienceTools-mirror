@@ -1,0 +1,16 @@
+/MANIFEST.in/1.1.2.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/NOTES.txt/1.1.2.1/Fri Feb 27 05:03:18 2015//TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/basic.py/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/convolve.pyf/1.1.2.1/Tue Oct 16 19:22:42 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/fftpack.pyf/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/fftpack_version.py/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/helper.py/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/pseudo_diffs.py/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/realtransforms.py/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:03:18 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/benchmarks////
+D/src////
+D/tests////

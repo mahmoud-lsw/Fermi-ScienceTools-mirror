@@ -1,0 +1,54 @@
+/Faddeeva.cc/1.1.2.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/Faddeeva.hh/1.1.2.2/Wed Mar  4 16:40:11 2015//TScienceTools-v10r0p5-fssc-20150518
+/Makefile/1.1.2.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/README/1.1.2.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 04:59:49 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_boxcox.pxd/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/_complexstuff.h/1.1.2.1/Fri Feb 27 04:59:49 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_complexstuff.pxd/1.1.2.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/_faddeeva.cxx/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/_faddeeva.h/1.1.2.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_legacy.pxd/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/_logit.c.src/1.1.2.1.8.1/Fri Feb 27 04:59:49 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_logit.h/1.1.2.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_testutils.py/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs.c/1.1.2.1/Fri Feb 27 04:59:49 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs.h/1.1.2.1/Fri Feb 27 04:59:49 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs.pyx/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs_cxx.cxx/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs_cxx.h/1.1.2.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs_cxx.pxd/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs_cxx.pyx/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs_cxx_defs.h/1.1.2.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_ufuncs_defs.h/1.1.2.1/Fri Feb 27 04:59:49 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_xlogy.pxd/1.1.2.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/add_newdocs.py/1.1.2.1.8.1/Fri Feb 27 04:59:49 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/amos_wrappers.c/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/amos_wrappers.h/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/basic.py/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cdf_wrappers.c/1.1.2.1.8.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/cdf_wrappers.h/1.1.2.1.8.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/cephes.h/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/generate_ufuncs.py/1.1.2.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/lambertw.pxd/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/lambertw.py/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/orthogonal.py/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/orthogonal_eval.pxd/1.1.2.1/Fri Feb 27 04:59:48 2015//TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/sf_error.c/1.1.2.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/sf_error.h/1.1.2.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/sf_error.pxd/1.1.2.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/specfun.pyf/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/specfun_wrappers.c/1.1.2.1.8.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/specfun_wrappers.h/1.1.2.1.8.1/Fri Feb 27 04:59:49 2015//TScienceTools-v10r0p5-fssc-20150518
+/spfun_stats.py/1.1.2.1.8.1/Fri Feb 27 04:59:48 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/amos////
+D/c_misc////
+D/cdflib////
+D/cephes////
+D/mach////
+D/specfun////
+D/tests////
+D/utils////

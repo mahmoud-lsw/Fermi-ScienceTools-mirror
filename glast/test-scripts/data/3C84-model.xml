@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<source_library title="source library">
+
+  <source name="iso_source_v05" type="DiffuseSource">
+    <spectrum type="FileFunction"
+	      file="$(FERMI_DIR)/refdata/fermi/galdiffuse/iso_source_v05.txt">
+      <parameter free="1" max="10" min="0.01" name="Normalization"
+		 scale="1" value="1"/>
+    </spectrum>
+    <spatialModel type="ConstantValue">
+      <parameter free="0" max="10" min="0" name="Value" scale="1" value="1"/>
+    </spatialModel>
+  </source>
+
+  <source name="gll_iem_v05_rev1" type="DiffuseSource">
+    <spectrum type="PowerLaw">
+      <parameter free="1" max="10" min="0" name="Prefactor" scale="1"
+		 value="1.22"/>
+      <parameter free="0" max="1" min="-1" name="Index" scale="1" value="0"/>
+      <parameter free="0" max="200" min="50" name="Scale" scale="1"
+		 value="100"/>
+    </spectrum>
+    <spatialModel file="$(FERMI_DIR)/refdata/fermi/galdiffuse/gll_iem_v05_rev1.fit"
+		  type="MapCubeFunction">
+      <parameter free="0" max="1e3" min="1e-3" name="Normalization"
+		 scale="1" value="1"/>
+    </spatialModel>
+  </source>
+
+  <source name="_3C84" type="PointSource">
+    <spectrum type="PowerLaw2">
+      <parameter free="1" max="1e4" min="1e-4" name="Integral"
+		 scale="1e-7" value="1"/>
+      <parameter free="1" max="0" min="-5" name="Index" scale="1"
+		 value="-2"/>
+      <parameter free="0" max="5e5" min="30" name="LowerLimit"
+		 scale="1" value="100"/>
+      <parameter free="0" max="5e5" min="30" name="UpperLimit"
+		 scale="1" value="2e5"/>
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="0.0" name="RA" scale="1"
+		 value="49.9507"/>
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1"
+		 value="41.5117"/>
+    </spatialModel>
+  </source>
+
+</source_library>

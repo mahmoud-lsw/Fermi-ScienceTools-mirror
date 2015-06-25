@@ -1,0 +1,17 @@
+/__init__.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/_release.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/card.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/column.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/convenience.py/1.1.2.1/Wed Dec  4 04:08:55 2013//TScienceTools-v10r0p5-fssc-20150518
+/core.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/diff.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/file.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/fitsrec.py/1.1.2.1/Wed Dec  4 04:08:55 2013//TScienceTools-v10r0p5-fssc-20150518
+/header.py/1.1.2.1/Wed Dec  4 04:08:55 2013//TScienceTools-v10r0p5-fssc-20150518
+/py3compat.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/util.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/verify.py/1.1.2.1/Wed Dec  4 04:08:56 2013//TScienceTools-v10r0p5-fssc-20150518
+/version.py/1.1.2.1/Wed Dec  4 04:08:55 2013//TScienceTools-v10r0p5-fssc-20150518
+D/hdu////
+D/scripts////
+D/tests////

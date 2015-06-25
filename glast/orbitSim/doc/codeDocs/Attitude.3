@@ -1,0 +1,227 @@
+.TH "Attitude" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Attitude \- 
+.PP
+Structure that contains all attitude information\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DynamicStruct\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAttitude\fP ()"
+.br
+.RI "\fIDefault Constructor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBmjd\fP"
+.br
+.RI "\fImjd time stamp \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBX\fP"
+.br
+.RI "\fIX position in ECI\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBY\fP"
+.br
+.RI "\fIY position in ECI\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBZ\fP"
+.br
+.RI "\fIZ position in ECI\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBSatRA\fP"
+.br
+.RI "\fIRA for Satellite position\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBSatDEC\fP"
+.br
+.RI "\fIDEC for Satellite position\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBXra\fP"
+.br
+.RI "\fIRA for X-axis\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBXdec\fP"
+.br
+.RI "\fIDEC for X-axis\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBYra\fP"
+.br
+.RI "\fIRA for Y-axis\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBYdec\fP"
+.br
+.RI "\fIDEC for Y-axis\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBZra\fP"
+.br
+.RI "\fIRA for Z-axis\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBZdec\fP"
+.br
+.RI "\fIDEC for Z-axis\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBLat\fP"
+.br
+.RI "\fISpacecraft Latitude\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBLon\fP"
+.br
+.RI "\fISpacecraft Longitude\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBHei\fP"
+.br
+.RI "\fISpacecraft Height\&. \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< int > \fBin_saa\fP"
+.br
+.RI "\fIBoolean to specify if spacecraft is in saa (1) or not (0) \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< int > \fBin_occ\fP"
+.br
+.RI "\fIBoolean to specify if spacecraft is in occultation (1) or not (0) \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBrockAngle\fP"
+.br
+.ti -1c
+.RI "int \fBent\fP"
+.br
+.RI "\fINumber of entries in each array\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure that contains all attitude information\&. 
+
+This structure contains attitude information
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 86 of file DynamicStruct\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBAttitude::Attitude\fP ()\fC [inline]\fP"
+.PP
+Default Constructor\&. 
+.PP
+Definition at line 89 of file DynamicStruct\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBAttitude::ent\fP"
+.PP
+Number of entries in each array\&. 
+.PP
+Definition at line 137 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Hei\fP"
+.PP
+Spacecraft Height\&. 
+.PP
+Definition at line 124 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<int> \fBAttitude::in_occ\fP"
+.PP
+Boolean to specify if spacecraft is in occultation (1) or not (0) 
+.PP
+Definition at line 130 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<int> \fBAttitude::in_saa\fP"
+.PP
+Boolean to specify if spacecraft is in saa (1) or not (0) 
+.PP
+Definition at line 127 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Lat\fP"
+.PP
+Spacecraft Latitude\&. 
+.PP
+Definition at line 120 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Lon\fP"
+.PP
+Spacecraft Longitude\&. 
+.PP
+Definition at line 122 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::mjd\fP"
+.PP
+mjd time stamp 
+.PP
+Definition at line 89 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::rockAngle\fP"
+.PP
+Definition at line 133 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::SatDEC\fP"
+.PP
+DEC for Satellite position\&. 
+.PP
+Definition at line 106 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::SatRA\fP"
+.PP
+RA for Satellite position\&. 
+.PP
+Definition at line 104 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::X\fP"
+.PP
+X position in ECI\&. 
+.PP
+Definition at line 97 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Xdec\fP"
+.PP
+DEC for X-axis\&. 
+.PP
+Definition at line 110 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Xra\fP"
+.PP
+RA for X-axis\&. 
+.PP
+Definition at line 108 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Y\fP"
+.PP
+Y position in ECI\&. 
+.PP
+Definition at line 99 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Ydec\fP"
+.PP
+DEC for Y-axis\&. 
+.PP
+Definition at line 114 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Yra\fP"
+.PP
+RA for Y-axis\&. 
+.PP
+Definition at line 112 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Z\fP"
+.PP
+Z position in ECI\&. 
+.PP
+Definition at line 101 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Zdec\fP"
+.PP
+DEC for Z-axis\&. 
+.PP
+Definition at line 118 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBAttitude::Zra\fP"
+.PP
+RA for Z-axis\&. 
+.PP
+Definition at line 116 of file DynamicStruct\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

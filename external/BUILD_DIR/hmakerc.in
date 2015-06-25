@@ -1,0 +1,319 @@
+#-------------------------------------------------------------------------------
+# Macros which are set by configure.
+#-------------------------------------------------------------------------------
+# Install locations for this component's products.
+HD_PREFIX="@prefix@"
+HD_EXEC_PFX="@exec_prefix@"
+HD_SRC="@HD_SRC@"
+
+# Install locations for top (HEADAS-wide) products.
+HD_TOP_PFX="@HD_TOP_PFX@"
+HD_TOP_EXEC_PFX="@HD_TOP_EXEC_PFX@"
+
+# Locations for heacore products
+HC_EXEC_PFX="@HC_EXEC_PFX@"
+HC_BLD_EXEC_PFX="@HC_BLD_EXEC_PFX@"
+
+# Locations for tcltk products
+TCLTK_EXEC_PFX="@TCLTK_EXEC_PFX@"
+TCLTK_BLD_EXEC_PFX="@TCLTK_BLD_EXEC_PFX@"
+
+# Identify OS/architecture
+HD_HOST="@host@"
+
+# Identifiers for library version numbers.
+CFITSIO="@CFITSIO@"
+HEAINIT="@HEAINIT@"
+HEAIO="@HEAIO@"
+HEAUTILS="@HEAUTILS@"
+PIL="@PIL@"
+READLINE="@READLINE@"
+WCSLIB="@WCSLIB@"
+WCSLIB_DIR="@WCSLIB_DIR@"
+
+CLHEP="@CLHEP@"
+CLHEP_DIR="@CLHEP_DIR@"
+CPPUNIT="@CPPUNIT@"
+CPPUNIT_DIR="@CPPUNIT_DIR@"
+F2C="@F2C@"
+F2C_DIR="@F2C_DIR@"
+FFTW="@FFTW@"
+FFTW_DIR="@FFTW_DIR@"
+GTVERSION="@GTVERSION@"
+GTVERSION_DIR="@GTVERSION_DIR@"
+PYTHON="@PYTHON@"
+PYTHON_DIR="@PYTHON_DIR@"
+DISTRIBUTE="@DISTRIBUTE@"
+DISTRIBUTE_DIR="@DISTRIBUTE_DIR@"
+D2TO1="@D2TO1@"
+D2TO1_DIR="@D2TO1_DIR@"
+STSCIDISTUTILS="@STSCIDISTUTILS@"
+STSCIDISTUTILS_DIR="@STSCIDISTUTILS@"
+PMW="@PMW@"
+PMW_DIR="@PMW_DIR@"
+PYFITS="@PYFITS@"
+PYFITS_DIR="@PYFITS_DIR@"
+PYWCS="@PYWCS@"
+PYWCS_DIR="@PYWCS_DIR@"
+LAPACK="@LAPACK@"
+LAPACK_DIR="@LAPACK_DIR@"
+NUMPY="@NUMPY@"
+NUMPY_DIR="@NUMPY_DIR@"
+SCIPY="@SCIPY@"
+SCIPY_DIR="@SCIPY_DIR@"
+MATPLOTLIB="@MATPLOTLIB@"
+MATPLOTLIB_DIR="@MATPLOTLIB_DIR@"
+ROOT="@ROOT@"
+ROOT_DIR="@ROOT_DIR@"
+MINUIT2="@MINUIT2@"
+MINUIT2_DIR="@MINUIT2_DIR@"
+SWIG="@SWIG@"
+SWIG_DIR="@SWIG_DIR@"
+XERCES="@XERCES@"
+XERCES_DIR="@XERCES_DIR@"
+PYDS9="@PYDS9@"
+PYDS9_DIR="@PYDS9_DIR@"
+
+#-------------------------------------------------------------------------------
+# Build-related macros.
+#-------------------------------------------------------------------------------
+HD_LIB_STYLE="@HD_LIB_STYLE@"
+HD_LIB_STYLE_F77="@HD_LIB_STYLE_F77@"
+AR="@AR@"
+ARCHIVE="@ARCHIVE@"
+ARCHIVE_CXX="@ARCHIVE_CXX@"
+BSUF="@BSUF@"
+BUILD_WITHOUT_ROOT="@BUILD_WITHOUT_ROOT@"
+CC="@CC@"
+CFLAGS="@CFLAGS@"
+COPT="@COPT@"
+CXX="@CXX@"
+CXXFLAGS="@CXXFLAGS@"
+CXXOPT="@CXXOPT@"
+DEFS="@DEFS@"
+DYNPERL_SUFFIX="@DYNPERL_SUFFIX@"
+EXT="@EXT@"
+WCSFLAV="@WCSFLAV@"
+F77LIBS4C="@F77LIBS4C@"
+FC="@FC@"
+FC_BASENAME="@FC_BASENAME@"
+FFLAGS="@FFLAGS@"
+FOPT="@FOPT@"
+G77="@G77@"
+GXX="@GXX@"
+HD_LN_SYM="@HD_LN_SYM@"
+HERA_BUILD="@h_hera_build@"
+MAKE="@MAKE@"
+OSUF="@OSUF@"
+PERL="@PERL@"
+RANLIB="@RANLIB@"
+SIZEOF_LONG="@SIZEOF_LONG@"
+STRIP="@STRIP@"
+SYMBOLS="@SYMBOLS@"
+SYSLIBS="@LIBS@"
+SHLIB_LD="@SHLIB_LD@"
+SHLIB_LD_CXX="@SHLIB_LD_CXX@"
+SHLIB_SUFFIX="@SHLIB_SUFFIX@"
+LDFLAGS_C="@LDFLAGS_C@"
+LDFLAGS_CXX="@LDFLAGS_CXX@"
+LDFLAGS_F="@LDFLAGS_F@"
+XINCLUDES="@XINCLUDES@"
+XLIBPTH="@XLIBPTH@"
+XLIBS="@XLIBS@"
+
+#-------------------------------------------------------------------------------
+# Macros which are hard-wired.
+#-------------------------------------------------------------------------------
+HD_COMPONENT_NAME="@h_comp@"
+HD_COMPONENT_VERS="@h_vers@"
+HMAKE="yes"
+
+#-------------------------------------------------------------------------------
+# Macros which are derived.
+#-------------------------------------------------------------------------------
+HD_BLD_PFX="$HD_SRC/BLD"
+HD_BLD_EXEC_PFX="$HD_BLD_PFX/$HD_HOST"
+HD_BUILD_DIR="$HD_SRC/BUILD_DIR"
+
+HD_MAKE="$MAKE"
+HD_STD_MAKEFILE="$HMAKE_CONF_DIR/Makefile-std"
+
+HD_PATH_INSTALLED="$HD_EXEC_PFX:$HC_EXEC_PFX"
+HD_PATH_LOCAL="$HD_BLD_EXEC_PFX:$HC_BLD_EXEC_PFX"
+HD_PATH="$HD_PATH_LOCAL:$HD_PATH_INSTALLED"
+
+HD_INC_PATH=`echo "$HD_PATH/include" | sed 's%:%/include:%g'`
+HD_LIB_PATH=`echo "$HD_PATH/lib" | sed 's%:%/lib:%g'`
+HD_INC_PATH_LOCAL=`echo "$HD_PATH_LOCAL/include" | sed 's%:%/include:%g'`
+HD_LIB_PATH_LOCAL=`echo "$HD_PATH_LOCAL/lib" | sed 's%:%/lib:%g'`
+
+HD_IFLAGS=`echo "-I./ -I$HD_INC_PATH" | sed 's%:% -I%g'`
+HD_LFLAGS=`echo "-L./ -L$HD_LIB_PATH" | sed 's%:% -L%g'`
+HD_IFLAGS_LOCAL=`echo "-I./ -I$HD_INC_PATH_LOCAL" | sed 's%:% -I%g'`
+HD_LFLAGS_LOCAL=`echo "-L./ -L$HD_LIB_PATH_LOCAL" | sed 's%:% -L%g'`
+
+HD_STD_LIBS="-l${HEAINIT} -l${HEAUTILS} -l${PIL} -l${CFITSIO} -l${READLINE} -l${HEAIO}"
+
+HD_STD_CFLAGS="$COPT $CFLAGS $HD_IFLAGS $DEFS"
+HD_STD_CLIBS="$HD_LFLAGS $HD_STD_LIBS $SYSLIBS"
+HD_STD_CFLAGS_LOCAL="$COPT $CFLAGS $HD_IFLAGS_LOCAL $DEFS"
+HD_STD_CLIBS_LOCAL="$HD_LFLAGS_LOCAL $HD_STD_LIBS $SYSLIBS"
+
+HD_STD_FFLAGS="$FOPT $FFLAGS"
+
+HD_STD_CXXFLAGS="$CXXOPT $CXXFLAGS $HD_IFLAGS $DEFS"
+HD_STD_CXXLIBS="$HD_STD_CLIBS"
+HD_STD_CXXFLAGS_LOCAL="$CXXOPT $CXXFLAGS $HD_IFLAGS_LOCAL $DEFS"
+HD_STD_CXXLIBS_LOCAL="$HD_STD_CLIBS_LOCAL"
+
+VPATH="$HD_INC_PATH:$HD_LIB_PATH"
+VPATH_LOCAL="$HD_INC_PATH_LOCAL:$HD_LIB_PATH_LOCAL"
+
+#-------------------------------------------------------------------------------
+# Export all necessary variables.
+#-------------------------------------------------------------------------------
+export HD_PREFIX
+export HD_EXEC_PFX
+export HD_SRC
+
+export HD_TOP_PFX
+export HD_TOP_EXEC_PFX
+
+export HC_EXEC_PFX
+export HC_BLD_EXEC_PFX
+
+export HD_HOST
+
+export CFITSIO
+export HEAINIT
+export HEAIO
+export HEAUTILS
+export PIL
+export READLINE
+export WCSLIB
+export WCSLIB_DIR
+
+export CLHEP
+export CLHEP_DIR
+export CPPUNIT
+export CPPUNIT_DIR
+export F2C
+export F2C_DIR
+export FFTW
+export FFTW_DIR
+export GTVERSION
+export GTVERSION_DIR
+export PYTHON
+export PYTHON_DIR
+export DISTRIBUTE
+export DISTRIBUTE_DIR
+export D2TO1
+export D2TO1_DIR
+export STSCIDISTUTILS
+export STSCIDISTUTILS_DIR
+export PMW
+export PMW_DIR
+export PYFITS
+export PYFITS_DIR
+export PYWCS
+export PYWCS_DIR
+export LAPACK
+export LAPACK_DIR
+export NUMPY
+export NUMPY_DIR
+export SCIPY
+export SCIPY_DIR
+export MATPLOTLIB
+export MATPLOTLIB_DIR
+export ROOT
+export ROOT_DIR
+export MINUIT2
+export MINUIT2_DIR
+export SWIG
+export SWIG_DIR
+export XERCES
+export XERCES_DIR
+export PYDS9
+export PYDS9_DIR
+
+export HD_LIB_STYLE
+export HD_LIB_STYLE_F77
+export AR
+export ARCHIVE
+export ARCHIVE_CXX
+export BSUF
+export BUILD_WITHOUT_ROOT
+export CC
+export CFLAGS
+export COPT
+export CXX
+export CXXFLAGS
+export CXXOPT
+export DEFS
+export DYNPERL_SUFFIX
+export EXT
+export WCSFLAV
+export F77LIBS4C
+export FC
+export FC_BASENAME
+export FFLAGS
+export FOPT
+export G77
+export GXX
+export HD_LN_SYM
+export HERA_BUILD
+export MAKE
+export OSUF
+export PERL
+export RANLIB
+export SIZEOF_LONG
+export STRIP
+export SYMBOLS
+export SYSLIBS
+export SHLIB_LD
+export SHLIB_LD_CXX
+export SHLIB_SUFFIX
+export LDFLAGS_C
+export LDFLAGS_CXX
+export LDFLAGS_F
+export XINCLUDES
+export XLIBPTH
+export XLIBS
+
+# Note: do NOT export the following:
+#export HD_COMPONENT_NAME
+#export HD_COMPONENT_VERS
+export HMAKE
+
+export HD_MAKE
+export HD_STD_MAKEFILE
+
+export HD_BLD_PFX
+export HD_BLD_EXEC_PFX
+export HD_BUILD_DIR
+
+# No need to export the following; they are used just to compute other macros:
+#export HD_PATH
+#export HD_INC_PATH
+#export HD_LIB_PATH
+
+export HD_IFLAGS
+export HD_LFLAGS
+export HD_IFLAGS_LOCAL
+export HD_LFLAGS_LOCAL
+
+export HD_STD_LIBS
+
+export HD_STD_CFLAGS
+export HD_STD_CLIBS
+export HD_STD_FFLAGS
+export HD_STD_CXXFLAGS
+export HD_STD_CXXLIBS
+
+export HD_STD_CFLAGS_LOCAL
+export HD_STD_CLIBS_LOCAL
+export HD_STD_CXXFLAGS_LOCAL
+export HD_STD_CXXLIBS_LOCAL
+
+export VPATH
+export VPATH_LOCAL

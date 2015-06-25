@@ -1,0 +1,1272 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT
+AC_CONFIG_SRCDIR([hmakerc.in])
+
+AC_REVISION($Revision: 1.1 $)
+
+AC_PREREQ(2.59)
+
+AC_CANONICAL_TARGET([])
+
+libc_version=
+if test `echo $host | grep -c linux` -ne 0; then
+   if test -f /bin/sh; then
+     changequote(,)
+     libc_ldd=`ldd /bin/sh | grep -w libc`
+     if test "x$libc_ldd" != "x"; then
+       libc=`echo $libc_ldd | sed 's:.*=>[ ]::' | sed 's:[ ].*::'`
+       if test "x$libc" != "x"; then
+         if test -x "$libc"; then
+           version=`$libc | grep -i version | grep -i release | grep -i library | sed 's:^[^0-9]*::' | sed 's:[^0-9]*$::' | sed 's:[ ].*::'`
+         fi
+         if test "x$version" != "x"; then
+           libc_version=-libc$version
+         fi
+       fi
+     fi
+     changequote([,])
+   fi
+fi
+if test "x$libc_version" != "x"; then
+  host=$host$libc_version
+  AC_MSG_RESULT(modified Linux system type is $host)
+fi
+
+#-------------------------------------------------------------------------------
+# Option --with-components allows configuration to be specified on command line.
+# Components are selected by the top-level BUILD_DIR/configure.  If configuring
+# by hand here, default to all components if no value is given.
+AC_ARG_WITH(
+  components,
+  ,
+  h_components=$withval,
+  h_components="clhep cppunit fftw python pmw swig xerces"
+)
+# Components whose configure we run:
+h_configurable_components="clhep cppunit fftw python swig xerces"
+
+AC_ARG_WITH(
+  heatop,
+  ,
+  h_heatop=$withval,
+  h_heatop=NONE
+)
+
+if test "x$h_heatop" = x; then
+  h_heatop=NONE
+fi
+
+if test $h_heatop != NONE; then
+  HD_TOP_PFX=$h_heatop
+  HD_TOP_EXEC_PFX=$HD_TOP_PFX/$host
+else
+  HD_TOP_PFX=
+  HD_TOP_EXEC_PFX=
+fi
+
+AC_ARG_WITH(
+  heacore,
+  ,
+  h_heacore=$withval,
+  h_heacore=no
+)
+
+AC_ARG_WITH(
+  tcltk,
+  ,
+  h_tcltk=$withval,
+  h_tcltk=no
+)
+
+AC_ARG_ENABLE(
+  shared,
+  [ --disable-shared Do not build shared libraries ],
+  h_shared=$enableval,
+  h_shared=yes,
+  h_shared=no
+)
+AC_ARG_ENABLE(
+  static,
+  [ --enable-static Do not build shared libraries ],
+  [ if test $enableval = yes; then h_shared=no; fi ]
+)
+if test $h_shared = yes; then
+  HD_LIB_STYLE=shared
+else
+  HD_LIB_STYLE=static
+fi
+AC_SUBST(HD_LIB_STYLE)
+
+SYMBOLS=no
+AC_ARG_ENABLE(
+  symbols,
+  [ --enable-symbols Do not strip symbols from binaries ],
+  [ if test $enableval = yes; then SYMBOLS=yes; fi ],
+)
+AC_SUBST(SYMBOLS)
+
+AC_ARG_ENABLE(
+  perlmods,
+  [ --disable-perlmods Do not build Perl modules ],
+  PERLMODS_BLD=$enableval,
+  PERLMODS_BLD=yes,
+  PERLMODS_BLD=no
+)
+AC_SUBST(PERLMODS_BLD)
+
+h_hera_build=no
+AC_ARG_ENABLE(
+  hera,
+  [ --enable-hera Build for HERA project (GSFC only) ],
+  [ if test $enableval = yes; then h_hera_build=yes; fi ]
+)
+AC_SUBST(h_hera_build)
+
+# configurable optimization
+COPT=
+AC_ARG_WITH(
+  copt,
+  [ --with-copt Specify C compiler optimization e.g. '-O2' ],
+  COPT=$withval
+)
+CXXOPT=
+AC_ARG_WITH(
+  cxxopt,
+  [ --with-cxxopt Specify C++ compiler optimization e.g. '-O2' ],
+  CXXOPT=$withval
+)
+FOPT=
+AC_ARG_WITH(
+  fopt,
+  [ --with-fopt Specify Fortran compiler optimization e.g. '-O2' ],
+  FOPT=$withval
+)
+
+# Set optimization to "none" if symbols are enabled for debugging
+# (will be reset to "" later):
+if test "x$SYMBOLS" = xyes; then
+   COPT="none"
+   CXXOPT="none"
+   FOPT="none"
+fi
+
+#-------------------------------------------------------------------------------
+
+
+# Get details about this script and its location.
+h_this_script=`echo $0 | sed 's%.*/%%'`
+h_this_dir=`echo $0 | sed "s%$h_this_script\$%%"`
+if test "x$h_this_dir" = x; then
+  h_this_dir=`pwd`
+else
+  h_this_dir=`cd $h_this_dir; pwd`
+fi
+
+# Name of the utility which scans configuration files for dependencies
+hd_scanenv="$h_this_dir/hd_scanenv"
+
+hd_conf_file="$h_this_dir/hd_config_info"
+
+# Find name and version of this component
+h_comp=`$hd_scanenv $hd_conf_file COMPONENT`
+h_vers=`$hd_scanenv $hd_conf_file VERSION`
+AC_SUBST(h_comp)
+AC_SUBST(h_vers)
+
+# Set the prefix to use in all recursive configures.
+if test $prefix = NONE; then
+  if test $h_heatop != NONE; then
+    prefix="$h_heatop/$h_comp"
+  else
+    prefix=`cd $h_this_dir/..; pwd`
+  fi
+fi
+
+# Set the exec-prefix to use in all recursive configures.
+if test $exec_prefix = NONE; then
+  exec_prefix="$prefix/$host"
+fi
+
+# Get this directory
+HD_THIS_DIR=$h_this_dir
+
+# Find the top of the source tree
+HD_SRC=`cd ..; pwd | sed "s%/*$h_vers$%%"`
+export HD_SRC
+
+# And the top of the headas source tree
+h_top=`cd $HD_SRC/..; pwd`
+
+# If heacore was not specified on the cmd line, make a search path for it.
+# Otherwise, try to interpret the supplied heacore to determine a directory
+# which contains configuration information.
+if test "x$h_heacore" = xno -o "x$h_heacore" = x; then
+  h_heacore=`$hd_scanenv $hd_conf_file HEACORE`
+  h_corepath=`echo $prefix | sed -ne "s%$h_comp/$host$%$h_heacore/$host%p"`
+  if test "x$h_corepath" != x; then
+    h_corepath="$h_corepath/BUILD_DIR"
+  fi
+  h_corepath="$h_top/$h_heacore/BUILD_DIR $h_corepath"
+elif test -d "$h_top/$h_heacore/BUILD_DIR"; then
+  h_corepath="$h_top/$h_heacore/BUILD_DIR"
+elif test -d "$h_heacore/BUILD_DIR"; then
+  h_corepath="$h_heacore/BUILD_DIR"
+fi
+
+# Search the path for a configuration specification.
+h_coreBUILD_DIR=
+for h_dir in $h_corepath; do
+  if test -f "$h_dir/hmakerc"; then
+    h_coreBUILD_DIR="$h_dir"
+    break
+  fi
+done
+
+if test "x$h_coreBUILD_DIR" = x; then
+  AC_MSG_ERROR(Unable to guess location of heacore/BUILD_DIR directory)
+fi
+
+# If tcltk was not specified on the cmd line, make a search path for it.
+# Otherwise, try to interpret the supplied heatools to determine a directory
+# which contains configuration information.
+if test "x$h_tcltk" = xno -o "x$h_tcltk" = x; then
+  h_tcltk=`$hd_scanenv $hd_conf_file TCLTK`
+  h_tcltkpath=`echo $prefix | sed -ne "s%$h_comp/$host$%$h_tcltk/$host%p"`
+  if test "x$h_tcltkpath" != x; then
+    h_tcltkpath="$h_tcltkpath/BUILD_DIR"
+  fi
+  h_tcltkpath="$h_top/$h_tcltk/BUILD_DIR $h_tcltkpath"
+elif test -d "$h_top/$h_tcltk/BUILD_DIR"; then
+  h_tcltkpath="$h_top/$h_tcltk/BUILD_DIR"
+elif test -d "$h_tcltk/BUILD_DIR"; then
+  h_tcltkpath="$h_tcltk/BUILD_DIR"
+fi
+
+# Search the path for a configuration specification.
+h_tcltkBUILD_DIR=
+for h_dir in $h_tcltkpath; do
+  if test -f "$h_dir/hmakerc"; then
+    h_tcltkBUILD_DIR="$h_dir"
+    break
+  fi
+done
+
+if test "x$h_tcltkBUILD_DIR" = x; then
+  AC_MSG_ERROR(Unable to guess location of tcltk/BUILD_DIR directory)
+fi
+
+# -----------------------------------------------------------------------------
+HC_BLD_EXEC_PFX=`$hd_scanenv $h_coreBUILD_DIR/hmakerc HD_BLD_EXEC_PFX`
+HC_EXEC_PFX=`$hd_scanenv $h_coreBUILD_DIR/hmakerc HD_EXEC_PFX`
+TCLTK_BLD_EXEC_PFX=`$hd_scanenv $h_tcltkBUILD_DIR/hmakerc HD_BLD_EXEC_PFX`
+TCLTK_EXEC_PFX=`$hd_scanenv $h_tcltkBUILD_DIR/hmakerc HD_EXEC_PFX`
+CFITSIO=`$hd_scanenv $h_coreBUILD_DIR/hmakerc CFITSIO`
+PIL=`$hd_scanenv $h_coreBUILD_DIR/hmakerc PIL`
+READLINE=`$hd_scanenv $h_coreBUILD_DIR/hmakerc READLINE`
+READLINE_DIR=`$hd_scanenv $h_coreBUILD_DIR/hmakerc READLINE_DIR`
+TCL=`$hd_scanenv $h_tcltkBUILD_DIR/hmakerc TCL`
+TCL_DIR=`$hd_scanenv $h_tcltkBUILD_DIR/hmakerc TCL_DIR`
+TK=`$hd_scanenv $h_tcltkBUILD_DIR/hmakerc TK`
+TK_DIR=`$hd_scanenv $h_tcltkBUILD_DIR/hmakerc TK_DIR`
+WCSLIB=`$hd_scanenv $h_coreBUILD_DIR/hmakerc WCSLIB`
+WCSLIB_DIR=`$hd_scanenv $h_coreBUILD_DIR/hmakerc WCSLIB_DIR`
+HEAINIT=`$hd_scanenv $h_coreBUILD_DIR/hmakerc HEAINIT`
+HEAIO=`$hd_scanenv $h_coreBUILD_DIR/hmakerc HEAIO`
+HEAUTILS=`$hd_scanenv $h_coreBUILD_DIR/hmakerc HEAUTILS`
+
+AC_SUBST(HC_BLD_EXEC_PFX)
+AC_SUBST(HC_EXEC_PFX)
+AC_SUBST(TCLTK_BLD_EXEC_PFX)
+AC_SUBST(TCLTK_EXEC_PFX)
+AC_SUBST(CFITSIO)
+AC_SUBST(PIL)
+AC_SUBST(READLINE)
+AC_SUBST(WCSLIB)
+AC_SUBST(WCSLIB_DIR)
+AC_SUBST(HEAINIT)
+AC_SUBST(HEAIO)
+AC_SUBST(HEAUTILS)
+AC_SUBST(HD_TOP_EXEC_PFX)
+AC_SUBST(HD_TOP_PFX)
+AC_SUBST(HD_THIS_DIR)
+AC_SUBST(HD_SRC)
+
+CLHEP=`$hd_scanenv $hd_conf_file CLHEP`
+CLHEP_DIR=`$hd_scanenv $hd_conf_file CLHEP_DIR`
+CPPUNIT=`$hd_scanenv $hd_conf_file CPPUNIT`
+CPPUNIT_DIR=`$hd_scanenv $hd_conf_file CPPUNIT_DIR`
+FFTW=`$hd_scanenv $hd_conf_file FFTW`
+FFTW_DIR=`$hd_scanenv $hd_conf_file FFTW_DIR`
+PYTHON=`$hd_scanenv $hd_conf_file PYTHON`
+PYTHON_DIR=`$hd_scanenv $hd_conf_file PYTHON_DIR`
+PMW=`$hd_scanenv $hd_conf_file PMW`
+PMW_DIR=`$hd_scanenv $hd_conf_file PMW_DIR`
+ROOT=`$hd_scanenv $hd_conf_file ROOT`
+ROOT_DIR=`$hd_scanenv $hd_conf_file ROOT_DIR`
+SWIG=`$hd_scanenv $hd_conf_file SWIG`
+SWIG_DIR=`$hd_scanenv $hd_conf_file SWIG_DIR`
+XERCES=`$hd_scanenv $hd_conf_file XERCES`
+XERCES_DIR=`$hd_scanenv $hd_conf_file XERCES_DIR`
+
+AC_SUBST(CLHEP)
+AC_SUBST(CLHEP_DIR)
+AC_SUBST(CPPUNIT)
+AC_SUBST(CPPUNIT_DIR)
+AC_SUBST(FFTW)
+AC_SUBST(FFTW_DIR)
+AC_SUBST(PYTHON)
+AC_SUBST(PYTHON_DIR)
+AC_SUBST(PMW)
+AC_SUBST(PMW_DIR)
+AC_SUBST(ROOT)
+AC_SUBST(ROOT_DIR)
+AC_SUBST(SWIG)
+AC_SUBST(SWIG_DIR)
+AC_SUBST(XERCES)
+AC_SUBST(XERCES_DIR)
+
+#-------------------------------------------------------------------------------
+UNAME_SYSTEM=`(uname -s) 2>/dev/null` || UNAME_SYSTEM=unknown
+
+# -----------------------------------------------------------------------------
+# Handle xercesc idiosyncracies:
+# -----------------------------------------------------------------------------
+
+case ${UNAME_SYSTEM} in
+  CYGWIN*)
+    xerces_platform="cygwin"
+    ;;
+  Darwin*)
+    xerces_platform="macosx"
+    ;;
+  Linux*)
+    xerces_platform="linux"
+    ;;
+  SunOS*)
+    xerces_platform="solaris"
+    ;;
+esac
+
+# -----------------------------------------------------------------------------
+# If we have "third-party" sub-directories (heacore, tcltk, external):
+# -----------------------------------------------------------------------------
+# Handle the --without-components case.
+if test "$h_components" = no; then
+  h_components=""
+fi
+AC_SUBST(h_components)
+
+# Recursively configure all selected components.
+for h_component in $h_components; do
+  if test `echo $h_configurable_components | grep -c $h_component` -ne 0; then
+    if test `echo $h_component | grep -c python` -ne 0; then
+       # Fershlugginer Python requires these to be set:
+       CPPFLAGS="-I$h_top/tcltk/tcl/generic -I$h_top/tcltk/tk/generic"
+       LDFLAGS="-L$h_top/tcltk/tcl/unix -L$h_top/tcltk/tk/unix"
+       export CPPFLAGS
+       export LDFLAGS
+    fi
+    h_config_cmd=`$hd_scanenv $hd_conf_file ${h_component}_CONFIGURE_CMD`
+    if test $? -ne 0 -o "x$h_config_cmd" = x; then
+      AC_MSG_ERROR(Unable to determine how to run configure for $h_component)
+    fi
+    AC_MSG_RESULT(--------------------------------------------------------------------------------)
+    eval echo \"$h_config_cmd\"
+    (eval $h_config_cmd)
+    if test $? -ne 0; then
+       AC_MSG_ERROR(Configure failed for external component $h_component!)
+    fi
+    AC_MSG_RESULT(--------------------------------------------------------------------------------)
+  fi
+done
+
+#-------------------------------------------------------------------------------
+dnl Checks for programs.
+#-------------------------------------------------------------------------------
+# strip (optional)
+AC_CHECK_PROG(STRIP, strip, strip, :)
+if test ${UNAME_SYSTEM} = Darwin; then
+  STRIP="$STRIP -x"
+fi
+if test $SYMBOLS = yes; then
+  STRIP=:
+fi
+AC_SUBST(STRIP)
+
+# ar required
+AC_CHECK_PROG(AR, ar, ar, noar)
+if test $AR = noar; then
+  AC_MSG_ERROR(ar not found in your \$PATH. See your sysdamin.)
+fi
+ARCHIVE="$AR rv"
+AC_SUBST(ARCHIVE)
+
+# ranlib required
+AC_PROG_RANLIB
+# RANLIB on IRIX is flaky
+if test ${UNAME_SYSTEM} = IRIX; then
+  RANLIB=:
+fi
+if test ${UNAME_SYSTEM} = Darwin; then
+  RANLIB="$RANLIB -cs"
+fi
+
+# prefer gmake, but accept any make if set in the with-make option
+if test "x$with_make" = x; then
+  with_make=yes
+fi
+if test $with_make = yes; then
+  AC_CHECK_PROGS(MAKE, gmake make, nomake)
+  if test $MAKE = nomake ; then
+    AC_MSG_ERROR(make was not found in your \$PATH. See your sysadmin.)
+  else
+    AC_MSG_CHECKING(whether $MAKE is GNU make)
+    if test `$MAKE -f non-existent-Makefile --version 2> /dev/null | grep -c GNU` -eq 0 ; then
+      AC_MSG_RESULT(no)
+      AC_MSG_ERROR(HEADAS software requires GNU make)
+    else
+      AC_MSG_RESULT(yes)
+    fi
+  fi
+elif test $with_make = no; then
+  AC_MSG_ERROR(UNIX make is required to install any part of HEADAS!)
+else
+  MAKE=$with_make; export MAKE
+  AC_SUBST(MAKE)
+fi
+
+# Try first to find a proprietary C compiler, then gcc
+if test "x${UNAME_SYSTEM}" = xOSF1 -o "x${UNAME_SYSTEM}" = xSunOS -o "x${UNAME_SYSTEM}" = xIRIX; then
+  if test "x$CC" = x; then
+    AC_CHECK_PROGS(CC, cc)
+  fi
+fi
+# Set up flags to use the selected compiler
+AC_PROG_CC
+if test "$cross_compiling" = yes; then
+  AC_MSG_WARN(Cannot run a simple C executable on your system:)
+  AC_MSG_WARN(There may be something wrong with your compiler,)
+  AC_MSG_WARN(or perhaps you're trying to cross-compile?)
+  AC_MSG_WARN(Cross-compiling is not supported within HEADAS.)
+  AC_MSG_WARN(Please make sure your compiler is working.)
+  AC_MSG_WARN(Contact the FTOOLS help desk for further assistance.)
+  AC_MSG_ERROR(Cross-compiling is not allowed.)
+fi
+if test "x$GCC" = x; then
+  GCC=no
+fi
+AC_SUBST(GCC)
+CC_BASENAME=`basename $CC`
+if test "x$GCC" = xyes; then
+   GCCVERSION="`$CC -dumpversion 2>&1`"
+fi
+
+# command line choice for F77
+if test "x$with_f77" = x; then
+  with_f77=yes
+fi
+if test $with_f77 = no; then
+  AC_MSG_WARN(Skipping check for F77 compiler!)
+  AC_MSG_WARN(Parts of HEADAS will not build without a F77 compiler!)
+  F77=:
+  AC_SUBST(F77)
+  G77=no
+else
+  if test $with_f77 != yes; then
+    F77=$with_f77
+  elif test "x$FC" = x -a "x$F77" = x; then
+    if test "x$GCC" = xyes; then
+      # Only pair up gfortran with GCC 4.x:
+      changequote(,)
+      gcc4_test=`echo $GCCVERSION | grep -c '^[4]\.[0123456789]'`
+      changequote([,])
+      if test ${UNAME_SYSTEM} = Linux; then
+        if test $gcc4_test -ne 0; then
+          AC_CHECK_PROGS(F77, gfortran g77 f77 ifort g95)
+        else
+          AC_CHECK_PROGS(F77, g77 gfortran f77 ifort g95)
+        fi
+      elif test ${UNAME_SYSTEM} = Darwin; then
+        if test $gcc4_test -ne 0; then
+          AC_CHECK_PROGS(F77, g95 gfortran g77 f77 ifort)
+        else
+          AC_CHECK_PROGS(F77, g77 g95 gfortran f77 ifort)
+        fi
+      elif test ${UNAME_SYSTEM} = SunOS; then
+        AC_CHECK_PROGS(F77, gfortran g95 g77 f77 ifort)
+      else
+        AC_CHECK_PROGS(F77, f95 f90 f77)
+      fi
+    else
+      AC_CHECK_PROGS(F77, f95 f90 f77)
+    fi
+  elif test "x$FC" != x; then
+    F77=$FC
+  fi
+  F77_BASENAME=`basename $F77`
+  F77_DIRNAME=`dirname $F77`
+  # if using Solaris Workshop 7.0 compilers or higher, we only have f90
+  if test "x${UNAME_SYSTEM}" = "xSunOS" -a "x${F77_BASENAME}" != "xf90"; then
+    if test `$F77 -V 2> /dev/null | grep -c f90` -ne 0 ; then
+      if test "x${F77_DIRNAME}" != "x" -a "x${F77_DIRNAME}" != "x."; then
+        F77="${F77_DIRNAME}/f90"
+      else
+        F77=f90
+      fi
+      AC_MSG_WARN(f77 is really 'f90 -f77'.  Setting FC=f90)
+    fi
+  fi
+  # SGI/IRIX f90 not currently supported
+  if test "x${UNAME_SYSTEM}" = "xIRIX" -a "x${F77_BASENAME}" = "xf90"; then
+      AC_MSG_ERROR(IRIX Fortran 90 is not currently supported; please use f77)
+  fi
+  AC_PROG_F77
+  if test "x$G77" = x; then
+    G77=no
+  fi
+fi
+FC=$F77
+FC_BASENAME=`basename $FC`
+AC_SUBST(FC)
+AC_SUBST(FC_BASENAME)
+# Additional G77 test for e.g. SuSE 10.x Linux, where the C preprocessor
+# needed for the AC_PROG_F77 test is not packaged with the g77 compiler:
+if test "x${FC_BASENAME}" = xg77 -a $G77 = no; then
+   G77VSTRING=`g77 --version | head -1 | grep -i 'gnu fortran'`
+   if test -z "$G77VSTRING"; then
+      G77=no
+   else
+      G77=yes
+   fi
+fi
+if test $with_f77 != no; then
+  case ${UNAME_SYSTEM} in
+    CYGWIN*)
+      if test $G77 = no; then
+       AC_MSG_ERROR([HEADAS software requires GNU Fortran on Cygwin!])
+      fi
+    ;;
+    Darwin*)
+      if test $G77 = no -a $FC_BASENAME != ifort; then
+       AC_MSG_WARN([HEADAS software prefers GNU Fortran on Darwin!])
+       AC_MSG_WARN(PROCEED AT YOUR OWN RISK!)
+      fi
+    ;;
+    Linux*)
+      if test $G77 = no -a $FC_BASENAME != ifort; then
+       AC_MSG_WARN([HEADAS software prefers GNU Fortran on Linux!])
+       AC_MSG_WARN(PROCEED AT YOUR OWN RISK!)
+      fi
+    ;;
+  esac
+fi
+if test "$cross_compiling" = yes; then
+  AC_MSG_WARN(Cannot run a simple F77 executable on your system:)
+  AC_MSG_WARN(There may be something wrong with your compiler,)
+  AC_MSG_WARN(or perhaps you're trying to cross-compile?)
+  AC_MSG_WARN(Cross-compiling is not supported within HEADAS.)
+  AC_MSG_WARN(Please make sure your compiler is working.)
+  AC_MSG_WARN(Contact the FTOOLS help desk for further assistance.)
+  AC_MSG_ERROR(Cross-compiling is not allowed.)
+fi
+AC_SUBST(G77)
+
+# Require C++ unless explicitly disabled on cmd line
+if test "x$with_cxx" = x; then
+  with_cxx=yes
+fi
+if test $with_cxx = no; then
+  AC_MSG_NOTICE(Not looking for a C++ compiler.  C++ macros disabled.)
+  CXX=:
+  AC_SUBST(CXX)
+  GXX=no
+else
+  if test "x$CXX" = x; then
+    if test "x${UNAME_SYSTEM}" = xSunOS; then
+      AC_CHECK_PROGS(CXX, CC g++ c++)
+    else
+      AC_CHECK_PROGS(CXX, g++ c++ icc cxx)
+    fi
+  fi
+  # Modify LD_LIBRARY_PATH to circumvent problem with g++ 3.0.x:
+  echo "int main(){return(0);}" > /tmp/$$.c
+  $CXX -v -o /tmp/$$.out /tmp/$$.c 2> /tmp/$$.log
+  if test `cat /tmp/$$.log | grep -c collect2` -ne 0; then
+      cxx_lib_path=`grep collect2 /tmp/$$.log | tr " " "\012" | grep "^\-L" | sed 's:-L::' | tr "\012" ":"`
+  else
+      cxx_lib_path=`grep ld /tmp/$$.log | tr " " "\012" | grep "^\-L" | sed 's:-L::' | tr "\012" ":"`
+  fi
+  if test "x$cxx_lib_path" != x; then
+    OLD_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+    LD_LIBRARY_PATH=$cxx_lib_path$LD_LIBRARY_PATH
+    export LD_LIBRARY_PATH
+  fi
+  # Get paths to C++ libraries to add to F77LIBS4C when mixing GNU versions:
+  if test `cat /tmp/$$.log | grep -c collect2` -ne 0; then
+      cxx_lib_paths=`grep collect2 /tmp/$$.log | tr " " "\012" | grep "^\-L" | tr "\012" " "`
+  else
+      cxx_lib_paths=`grep ld /tmp/$$.log | tr " " "\012" | grep "^\-L" | tr "\012" " "`
+  fi
+  rm -f /tmp/$$.*
+  if test "x$with_cxx" != xyes; then
+    CXX=$with_cxx
+  fi
+  AC_PROG_CXX
+  if test "x$GXX" = x; then
+    GXX=no
+  fi
+fi
+if test "$cross_compiling" = yes; then
+  AC_MSG_WARN(Cannot run a simple G++ executable on your system:)
+  AC_MSG_WARN(There may be something wrong with your compiler,)
+  AC_MSG_WARN(or perhaps you're trying to cross-compile?)
+  AC_MSG_WARN(Cross-compiling is not supported within HEADAS.)
+  AC_MSG_WARN(Please make sure your compiler is working.)
+  AC_MSG_WARN(Contact the FTOOLS help desk for further assistance.)
+  AC_MSG_ERROR(Cross-compiling is not allowed.)
+fi
+AC_SUBST(GXX)
+# Reset LD_LIBRARY_PATH:
+if test "x$OLD_LD_LIBRARY_PATH" != x; then
+  LD_LIBRARY_PATH=$OLD_LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH
+fi
+
+CXX_BASENAME=`basename $CXX`
+
+# Use specialized command when archiving C++ code with Solaris CC:
+if test "x${UNAME_SYSTEM}" = "xSunOS" -a "x${CXX_BASENAME}" = "xCC"; then
+  ARCHIVE_CXX="CC -xar -o"
+else
+  ARCHIVE_CXX="$ARCHIVE"
+fi
+AC_SUBST(ARCHIVE_CXX)
+
+
+AC_PATH_PROGS(PERL, perl5 perl)
+$PERL -v 2> /dev/null > /tmp/$$.log
+changequote(,)
+perl_test1=`cat /tmp/$$.log | grep -c '[1234]\.[0123456789]'`
+perl_test2=`cat /tmp/$$.log | grep -c '5\.00[01234]'`
+changequote([,])
+if test $perl_test1 -ne 0 -o $perl_test2 -ne 0; then
+  AC_MSG_ERROR(Perl version 5.005 or better is required!)
+fi
+rm -f /tmp/$$.*
+AC_SUBST(PERL)
+
+# Capture default optimization for use if COPT/CXXOPT/FOPT were not specified:
+changequote(,)
+COPT_DEFAULT=`echo $CFLAGS | tr " " "\012" | grep "^\-O[0-9]"`
+CXXOPT_DEFAULT=`echo $CXXFLAGS | tr " " "\012" | grep "^\-O[0-9]"`
+FOPT_DEFAULT=`echo $FFLAGS | tr " " "\012" | grep "^\-O[0-9]"`
+# Remove existing/default optimization (use *OPT macros instead):
+CFLAGS=`echo $CFLAGS | sed 's:-O[0-9]* *::g'`
+CXXFLAGS=`echo $CXXFLAGS | sed 's:-O[0-9]* *::g'`
+FFLAGS=`echo $FFLAGS | sed 's:-O[0-9]* *::g'`
+changequote([,])
+
+#-------------------------------------------------------------------------------
+dnl Checks for libraries.
+#-------------------------------------------------------------------------------
+
+# Fortran system libraries which must be supplied when linking with C/C++
+echo "      program spud" > /tmp/$$.f
+echo "      end" >> /tmp/$$.f
+$FC -v -o /tmp/$$.out /tmp/$$.f 2> /tmp/$$.log
+F77LIBS4C=$cxx_lib_paths
+if test `cat /tmp/$$.log | grep -c collect2` -ne 0; then
+    # Force linker to find the right libgcc & libg2c on Darwin:
+    case "${host_os}" in
+      darwin6*|darwin7*|darwin8*)
+        if test "x$FC_BASENAME" = xgfortran; then
+          F77LIBS4C="-L/sw/lib/gcc4.2/lib -L/usr/local/gfortran/lib "
+        else
+          F77LIBS4C="-L/sw/lib "
+        fi
+        ;;
+      *)
+        lhea_libfiles=`grep collect2 /tmp/$$.log | tr " " "\012" | grep "\.a$" | tr "\012" " "`
+        if test "x$lhea_libfiles" != x; then
+          F77LIBS4C=$lhea_libfiles
+        fi
+        lhea_paths=`grep collect2 /tmp/$$.log | tr " " "\012" | grep "^\-L" | tr "\012" " "`
+        if test "x$lhea_paths" != x; then
+          F77LIBS4C="$F77LIBS4C$lhea_paths"
+        fi
+        ;;
+    esac
+    # All platforms:
+    lhea_libs=`grep collect2 /tmp/$$.log | tr " " "\012" | grep "^\-l" | tr "\012" " "`
+    if test "x$lhea_libs" != x; then
+      F77LIBS4C="$F77LIBS4C$lhea_libs"
+    fi
+else
+    lhea_libfiles=`grep ld /tmp/$$.log | tr " " "\012" | grep "\.a$" | tr "\012" " "`
+    if test "x$lhea_libfiles" != x; then
+      F77LIBS4C=$lhea_libfiles
+    fi
+    lhea_paths=`grep ld /tmp/$$.log | tr " " "\012" | grep "^\-L" | tr "\012" " "`
+    if test "x$lhea_paths" != x; then
+      F77LIBS4C="$F77LIBS4C$lhea_paths"
+    fi
+    lhea_libs=`grep ld /tmp/$$.log | tr " " "\012" | grep "^\-l" | tr "\012" " "`
+    if test "x$lhea_libs" != x; then
+      F77LIBS4C="$F77LIBS4C$lhea_libs"
+    fi
+fi
+#
+# special-case additions to Fortran libraries on link line:
+case ${UNAME_SYSTEM} in
+  Darwin*)
+      # remove the crt*.o & crtbegin.o references.  They are implictly included
+      F77LIBS4C=`echo $F77LIBS4C | sed 's:-lcrt1.o::' | sed 's:-lcrt2.o::' | sed 's:-lcrtbegin.o::' `
+      # When using Intel Fortran, remove irc libs which cause multiple
+      # definition linker errors:
+      if test "x${FC_BASENAME}" = xifort; then
+         F77LIBS4C=`echo $F77LIBS4C | tr " " "\012" | grep -v "libirc" | tr "\012" " "`
+      fi
+    ;;
+  OSF*)
+      F77LIBS4C=`echo $F77LIBS4C | sed 's:-lc *$::' | sed 's:-lc  *::'`
+    ;;
+  SunOS*)
+    AC_CHECK_LIB(f77compat, main, F77LIBS4C="$F77LIBS4C -lf77compat")
+    AC_CHECK_LIB(fsu, main, F77LIBS4C="$F77LIBS4C -lfsu")
+    # if mixing proprietary Sun Fortran with GNU C or C++,
+    # add path specified by -Y P, flag
+    if test $G77 = no -a \( $GCC = yes -o $GXX = yes \); then
+      lhea_paths=`grep ld /tmp/$$.log | sed 's/.*-Y P,/-L/' | sed 's/ .*/ /' | sed 's/:/ -L/g'`
+      F77LIBS4C="$lhea_paths$F77LIBS4C"
+    fi
+    ;;
+  *)
+    ;;
+esac
+cp /tmp/$$.log f77test.out
+rm -f /tmp/$$.*
+AC_SUBST(F77LIBS4C)
+
+# X
+XLIBS=
+XLIBPTH=
+XINCLUDES=
+
+# socket and nsl libraries -- only if needed
+AC_CHECK_FUNC(gethostbyname, , AC_CHECK_LIB(nsl, gethostbyname))
+AC_CHECK_FUNCS(
+  connect accept,
+  ,
+  AC_CHECK_LIB(socket, main, , , [ $XLIBS ])
+)
+
+# X11:
+# Prepend the standard location X11 bin directory (if it exists) to PATH
+# to assist AC_PATH_X in finding headers & libraries:
+if test -d /usr/X11R6/bin; then
+  if test "x$PATH" != x; then
+    PATH=$PATH:/usr/X11R6/bin
+  else
+    PATH=/usr/X11R6/bin
+  fi
+  export PATH
+fi
+AC_PATH_X
+if test `echo $x_includes | grep -c /` -ne 0; then
+  XINCLUDES="-I$x_includes"
+fi
+if test `echo $x_libraries | grep -c /` -ne 0; then
+  XLIBPTH="-L$x_libraries "
+fi
+XLIBS="$XLIBPTH-lX11"
+AC_SUBST(XINCLUDES)
+AC_SUBST(XLIBPTH)
+AC_SUBST(XLIBS)
+
+# math stuff
+AC_CHECK_LIB(m, frexp)
+
+# dl
+AC_CHECK_LIB(dl, dlopen)
+if test `echo $LIBS | grep -c '\-ldl'` -eq 0; then
+  AC_CHECK_LIB(dld, dlopen)
+fi
+
+# termcap/ncurses/curses
+AC_CHECK_LIB(termcap, tgoto)
+if test `echo $LIBS | grep -c '\-ltermcap'` -eq 0; then
+  AC_CHECK_LIB(ncurses, tgoto)
+  if test `echo $LIBS | grep -c '\-lncurses'` -eq 0; then
+    AC_CHECK_LIB(curses, tgoto)
+    if test `echo $LIBS | grep -c '\-lcurses'` -eq 0; then
+      AC_MSG_ERROR(libtermcap or libncurses or libcurses is required!)
+    fi
+  fi
+fi
+
+# special case system library additions:
+case ${UNAME_SYSTEM} in
+  Darwin*)
+      AC_CHECK_LIB(cc_dynamic, main, LIBS="$LIBS -lcc_dynamic")
+    ;;
+  OSF*)
+      AC_CHECK_LIB(db, vsnprintf, LIBS="$LIBS -ldb")
+    ;;
+  SunOS*)
+      AC_CHECK_LIB(mvec, main, LIBS="$LIBS -lmvec")
+      AC_CHECK_LIB(sunmath, main, LIBS="$LIBS -lsunmath")
+    ;;
+esac
+#-------------------------------------------------------------------------------
+dnl Checks for header files.
+#-------------------------------------------------------------------------------
+AC_HEADER_STDC
+AC_CHECK_HEADERS(
+  dirent.h fcntl.h limits.h malloc.h string.h sys/time.h unistd.h
+)
+AC_HEADER_TIME
+AC_FUNC_ALLOCA
+
+#-------------------------------------------------------------------------------
+dnl Checks for typedefs, structures, and compiler characteristics.
+#-------------------------------------------------------------------------------
+AC_C_CONST
+AC_TYPE_MODE_T
+AC_TYPE_SIZE_T
+AC_STRUCT_TM
+
+AC_CHECK_SIZEOF(long,4)
+SIZEOF_LONG="$ac_cv_sizeof_long"
+AC_SUBST(SIZEOF_LONG)
+#-------------------------------------------------------------------------------
+# Tweak compiler flags as needed
+#-------------------------------------------------------------------------------
+case ${UNAME_SYSTEM} in
+  CYGWIN*)
+    ;;
+  Darwin*)
+    CFLAGS="$CFLAGS -Dunix"
+    ;;
+  Linux*)
+    ;;
+  OSF*)
+    if test $GCC = yes; then
+      # Remove optimization on DEC systems
+      COPT=none
+    else
+      # Standard DEC cc behavior is *STILL* K&R -- force ANSI compliance
+      CFLAGS="$CFLAGS -Dunix"
+    fi
+    ;;
+  IRIX*)
+    AC_DEFINE(HAVE_POSIX_SIGNALS)
+    ;;
+  SunOS*)
+    AC_DEFINE(HAVE_POSIX_SIGNALS)
+    # Set Solaris optimization to "-fast" for non-GNU compilers by default
+    # (unless symbols are enabled). Remove default -g flag if optimizing.
+    if test "x$COPT" != xnone; then
+      if test $GCC = no; then
+        if test "x$COPT" = x; then COPT="-fast"; fi
+        changequote(,)
+        CFLAGS=`echo $CFLAGS | sed 's:-g[ 	][ 	]*::g' | sed 's:-g$::'`
+        changequote([,])
+      fi
+    fi
+    if test "x$CXXOPT" != xnone; then
+      if test $GXX = no; then
+        if test "x$CXXOPT" = x; then CXXOPT="-fast"; fi
+        changequote(,)
+        CXXFLAGS=`echo $CXXFLAGS | sed 's:-g[ 	][ 	]*::g' | sed 's:-g$::'`
+        changequote([,])
+      fi
+    fi
+    if test "x$FOPT" != xnone; then
+      if test $G77 = no; then
+        # Set default f90 optimization to -O3:
+        if test "x$FOPT" = x; then
+          if test "x${FC_BASENAME}" = xf90; then
+            FOPT="-O3"
+          else
+            FOPT="-fast"
+          fi
+        fi
+        changequote(,)
+        FFLAGS=`echo $FFLAGS | sed 's:-g[ 	][ 	]*::g' | sed 's:-g$::'`
+        changequote([,])
+      fi
+    fi
+    ;;
+  *)
+    ;;
+esac
+
+# GNU: use Wall / pedantic / uninitialized / no-second-underscore / fno-f2c
+if test $G77 = yes; then
+      # Turn off --pedantic flag for tcltk component until further notice.
+      # pgplot chokes on pedantic, and is currently the only fortran here.
+      # -fno-f2c is not available for g95/gfortran.
+      if test "x${FC_BASENAME}" = xg95 -o "x${FC_BASENAME}" = xgfortran; then
+         FFLAGS="-Wall -fno-second-underscore $FFLAGS"
+      else
+         FFLAGS="-Wall -fno-second-underscore -fno-f2c $FFLAGS"
+      fi
+fi
+if test $GCC = yes; then
+      if test $CC_BASENAME = icc; then
+         CFLAGS="-Wall $CFLAGS"
+      else
+         CFLAGS="-Wall --pedantic -Wno-long-long $CFLAGS"
+      fi
+fi
+if test $GXX = yes; then
+      if test $CXX_BASENAME = icpc; then
+         CXXFLAGS="-Wall $CXXFLAGS"
+      else
+         CXXFLAGS="-Wall --pedantic -Wno-long-long $CXXFLAGS"
+      fi
+fi
+
+# Remove optimization on all systems for all older gcc
+if test $GCC = yes; then
+  changequote(,)
+  if test `$CC -v 2> /dev/null | grep -c 'version 2\.[45678]'` -ne 0; then
+    COPT=none
+  fi
+  changequote([,])
+fi
+
+# If optimizations have not yet been set, use the defaults:
+if test "x$COPT" = x; then COPT="$COPT_DEFAULT"; fi
+if test "x$CXXOPT" = x; then CXXOPT="$CXXOPT_DEFAULT"; fi
+if test "x$FOPT" = x; then FOPT="$FOPT_DEFAULT"; fi
+
+# If optimization is "none" (either given on command line or because symbols
+# are enabled), remove optimization:
+if test "x$COPT" = xnone; then COPT=; fi
+if test "x$CXXOPT" = xnone; then CXXOPT=; fi
+if test "x$FOPT" = xnone; then FOPT=; fi
+
+#-------------------------------------------------------------------------------
+# Add a definition for cfortran.h which is appropriate for this F77 compiler
+#-------------------------------------------------------------------------------
+#if test $G77 = yes; then
+#  AC_DEFINE(g77Fortran)
+#  CXXFLAGS="$CXXFLAGS -Dg77Fortran"
+#elif test `echo $F77 | grep -c 'f2c$'` -ne 0; then
+#  AC_DEFINE(f2cFortran)
+#  CXXFLAGS="$CXXFLAGS -Df2cFortran"
+#elif test ${UNAME_SYSTEM} = hpu; then
+#  AC_DEFINE(appendus)
+#elif test ${UNAME_SYSTEM} = osf; then
+#  :
+#elif test ${UNAME_SYSTEM} = sgi; then
+#  :
+#elif test ${UNAME_SYSTEM} = sol; then
+#  AC_DEFINE(solaris)
+#else
+#  AC_MSG_WARN(Cannot determine what macro to define for cfortran.h)
+#  AC_MSG_WARN(It may be necessary to edit configured files by hand to)
+#  AC_MSG_WARN(add the necessary -D definition)
+#fi
+#
+## extra flag needed for g++
+#if test $GXX = yes; then
+#  CXXFLAGS="$CXXFLAGS -fwritable-strings";
+#fi
+#
+## Handle static linking flags
+#if test $lhea_shared = no; then
+#  AC_MSG_WARN(Static linking is only marginally supported)
+#  # CSTATLNK
+#  if test ${UNAME_SYSTEM} = hpu; then
+#    CSTATLNK='-Wl,-a,archive'
+#  elif test ${UNAME_SYSTEM} = sgi; then
+#    AC_MSG_WARN(Static linking is not supported at all on IRIX!)
+#    AC_MSG_WARN(disable shared option will be ignored.)
+#    CSTATLNK=
+#  elif test $GCC = yes; then
+#    CSTATLNK='-static'
+#  elif test ${UNAME_SYSTEM} = osf; then
+#    CSTATLNK='-non_shared'
+#  elif test ${UNAME_SYSTEM} = sol; then
+#    CSTATLNK='-Bstatic'
+#  else
+#    AC_MSG_WARN(Do not know how to link statically with C on this system.)
+#    AC_MSG_WARN(Set CSTATLNK to the right flags in the environment.)
+#  fi
+#  # CXXSTATLNK
+#  if test ${UNAME_SYSTEM} = hpu; then
+#    CXXSTATLNK='-Wl,-a,archive'
+#  elif test ${UNAME_SYSTEM} = sgi; then
+#    CXXSTATLNK=
+#  elif test $GXX = yes; then
+#    CXXSTATLNK='-static'
+#  else
+#    AC_MSG_WARN(Do not know how to link statically with C++ on this system.)
+#    AC_MSG_WARN(Set CXXSTATLNK to the right flags in the environment.)
+#  fi
+#  # FSTATLNK
+#  if test ${UNAME_SYSTEM} = hpu; then
+#    FSTATLNK='-Wl,-a,archive'
+#  elif test ${UNAME_SYSTEM} = sgi; then
+#    FSTATLNK=
+#  elif test $G77 = yes; then
+#    FSTATLNK='-static'
+#  elif test ${UNAME_SYSTEM} = osf; then
+#    FSTATLNK='-non_shared'
+#  elif test ${UNAME_SYSTEM} = sol; then
+#    FSTATLNK='-Bstatic'
+#  else
+#    AC_MSG_WARN(Do not know how to link statically with Fortran on this system.)
+#    AC_MSG_WARN(Set FSTATLNK to the right flags in the environment.)
+#  fi
+#fi
+#AC_SUBST(CSTATLNK)
+#AC_SUBST(CXXSTATLNK)
+#AC_SUBST(FSTATLNK)
+
+#-------------------------------------------------------------------------------
+# Shared library section
+#-------------------------------------------------------------------------------
+HD_LIB_STYLE_F77=$HD_LIB_STYLE
+LD_FLAGS=
+SHLIB_SUFFIX=".so"
+DYNPERL_SUFFIX=".so"
+hd_shlib_cflags=
+hd_shlib_cxxflags=
+hd_shlib_fflags=
+case ${UNAME_SYSTEM} in
+  CYGWIN*)
+    SHLIB_LD="${CC} -shared"
+    SHLIB_LD_CXX="${CXX} -shared"
+    SHLIB_SUFFIX=".dll"
+    DYNPERL_SUFFIX=".dll"
+    # Dropped use of HD_LIB_STYLE_CYGWIN since HD_LIB_STYLE_F77 is
+    # starting to trump it.
+    HD_LIB_STYLE_F77=static
+    ;;
+  Darwin)
+    SHLIB_LD="${CC} -dynamiclib -single_module -flat_namespace -undefined suppress"
+    SHLIB_LD_CXX="${CXX} -dynamiclib -flat_namespace -undefined suppress"
+    SHLIB_SUFFIX=".dylib"
+    DYNPERL_SUFFIX=".bundle"
+    hd_shlib_cflags='-fPIC -fno-common'
+    if test $FC_BASENAME = ifort; then
+      hd_shlib_fflags='-fPIC -common-args'
+    else
+      hd_shlib_fflags='-fPIC -fno-common'
+    fi
+    # Fortran libraries with common blocks cannot be built shared under Darwin.
+    # Use HD_LIB_STYLE = ${HD_LIB_STYLE_F77} in library Makefiles to override
+    # HD_LIB_STYLE if this condition applies.
+    HD_LIB_STYLE_F77=static
+    ;;
+  hpu)
+    SHLIB_LD="ld -b"
+    SHLIB_LD_CXX="ld -b"
+    SHLIB_SUFFIX=".sl"
+    ;;
+  Linux)
+    SHLIB_LD=":"
+    SHLIB_LD_CXX=":"
+    if test "x${CC_BASENAME}" = xicc; then
+      SHLIB_LD="icc -shared"
+    fi
+    if test "x${CXX_BASENAME}" = xicc; then
+      SHLIB_LD_CXX="icc -shared"
+    fi
+    ;;
+  OSF1)
+    SHLIB_LD="ld -shared -expect_unresolved '*'"
+    SHLIB_LD_CXX="ld -shared -expect_unresolved '*'"
+    LD_FLAGS="-taso"
+    ;;
+  SunOS)
+    SHLIB_LD='${CC} -G'
+    SHLIB_LD_CXX='${CXX} -G'
+    hd_shlib_cflags="-KPIC"
+    hd_shlib_cxxflags="-KPIC"
+    hd_shlib_fflags="-KPIC"
+    ;;
+  IRIX)
+    SHLIB_LD="ld -shared -rdata_shared"
+    SHLIB_LD_CXX="ld -shared -rdata_shared"
+    ;;
+  *)
+    AC_MSG_WARN(Unable to determine how to make a shared library)
+    ;;
+esac
+# Darwin uses gcc, but uses -dynamiclib flag
+if test $GCC = yes -a ${UNAME_SYSTEM} != Darwin; then
+  SHLIB_LD="${CC} -shared"
+  hd_shlib_cflags='-fPIC'
+fi
+if test $GXX = yes -a ${UNAME_SYSTEM} != Darwin; then
+  SHLIB_LD_CXX="${CXX} -shared"
+  hd_shlib_cxxflags='-fPIC'
+fi
+if test $G77 = yes -a ${UNAME_SYSTEM} != Darwin; then
+  hd_shlib_fflags='-fPIC'
+fi
+# When using Intel Fortran (ifort) G77=no, but we still need fPIC:
+if test $FC_BASENAME = ifort -a ${UNAME_SYSTEM} != Darwin; then
+  hd_shlib_fflags='-fPIC'
+fi
+if test "x$hd_shlib_cflags" != x; then
+  CFLAGS="$CFLAGS $hd_shlib_cflags"
+fi
+if test "x$hd_shlib_cxxflags" != x; then
+  CXXFLAGS="$CXXFLAGS $hd_shlib_cxxflags"
+fi
+if test "x$hd_shlib_fflags" != x; then
+  FFLAGS="$FFLAGS $hd_shlib_fflags"
+fi
+
+AC_SUBST(HD_LIB_STYLE_F77)
+AC_SUBST(LD_FLAGS)
+AC_SUBST(SHLIB_LD)
+AC_SUBST(SHLIB_LD_CXX)
+AC_SUBST(SHLIB_SUFFIX)
+AC_SUBST(DYNPERL_SUFFIX)
+
+#-------------------------------------------------------------------------------
+dnl Checks for library functions.
+#-------------------------------------------------------------------------------
+#AC_FUNC_MEMCMP
+#AC_TYPE_SIGNAL
+#AC_FUNC_STRFTIME
+#AC_CHECK_FUNCS(getcwd socket strcspn strspn strstr strtod strtol)
+#-------------------------------------------------------------------------------
+#AC_CACHE_SAVE
+#AC_DEFUN(LHEA_CONFIG_ARGS, [
+#  changequote(,)
+#  for lhea_tmp in "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"; do
+#    lhea_arg=`echo $lhea_tmp | tr '\012' ' '`
+#    if test `echo $lhea_arg | grep -c '[^ 	]'` -ne 0; then
+#      lhea_argname=`echo $lhea_arg | sed 's:=.*::'`
+#      if test `echo $lhea_config_args_def | grep -c -- "$lhea_argname"` -eq 0;
+#      then
+#        lhea_config_args="$lhea_config_args $lhea_arg"
+#      elif test `echo $lhea_arg | grep -c -- '--prefix='` -gt 0; then
+#        lhea_config_args=`echo $lhea_config_args | sed "s:--prefix=[^ 	]*:$lhea_arg:"`
+#      fi
+#    fi
+#  done
+#  changequote([,])
+#])
+#
+#if test $prefix = NONE; then
+#  lhea_prefix=$ac_default_prefix
+#else
+#  lhea_prefix=$prefix
+#fi
+#
+## Remove from recursing command line arguments things which are very
+## LHEA-specific
+#changequote(,)
+#lhea_config_args_def=`echo $ac_configure_args | \
+#  sed "s:--[^ 	]*able-dispatch::" | \
+#  sed "s:--[^ 	]*able-register::" | \
+#  sed "s:--[^ 	]*able-strip::" | \
+#  sed "s:--without-bindir::" | sed "s:--with-bindir=[^ 	]*::" |
+#  sed "s:--without-cxx::" | sed "s:--with-cxx=[^ 	]*::" |
+#  sed "s:--without-f77::" | sed "s:--with-f77=[^ 	]*::" | \
+#  sed "s:'*--with-lhea-subdirs=$with_lhea_subdirs'*::" | \
+#  sed "s:--without-lhea-subdirs::" | \
+#  sed "s:--without-tcltk::" | sed "s:--with-tcltk=[^ 	]*::" |
+#  sed "s:[ 	][ 	]*: :g"`
+#changequote([,])
+#
+#lhea_config_args=$lhea_config_args_def
+#LHEA_CONFIG_ARGS(--cache-file=$cache_file)
+#lhea_config_args_def=$lhea_config_args
+#
+#-------------------------------------------------------------------------------
+# begin HEADAS-specific macros
+#-------------------------------------------------------------------------------
+#AC_DEFINE(printf, pil_printf)
+BSUF=
+HD_LN_SYM="ln -s"
+case ${UNAME_SYSTEM} in
+  CYGWIN*)
+    BSUF=.exe
+    HD_LN_SYM="ln"
+    EXT=win
+    PGPLOT_SYS=cygwin
+    PGPLOT_CONFIG=g77_gcc
+    WCSFLAV="Linux"
+    ;;
+  Darwin*)
+    EXT=darwin
+    PGPLOT_SYS=darwin
+    PGPLOT_CONFIG=g77_gcc_X
+#   PGPLOT_CONFIG=g77_gcc_noX
+#   PGPLOT_CONFIG=g77_elf
+    WCSFLAV="Linux"
+    ;;
+  IRIX*)
+    EXT=irix
+    PGPLOT_SYS=irix
+    PGPLOT_CONFIG=f77_cc
+    ;;
+  Linux*)
+    EXT=lnx
+    if test "x$SIZEOF_LONG" = x8; then
+       PGPLOT_SYS=linux64
+    else
+       PGPLOT_SYS=linux
+    fi
+    PGPLOT_CONFIG=g77_gcc
+#   PGPLOT_CONFIG=g77_elf
+    WCSFLAV="Linux"
+    ;;
+  OSF*)
+    EXT=osf
+    PGPLOT_SYS=osf1
+    PGPLOT_CONFIG=f77_cc
+    ;;
+  SunOS*)
+    EXT=sol
+    PGPLOT_SYS=sol2
+    pgcc=`echo ${CC} | sed 's:.*/::'`
+    PGPLOT_CONFIG="f77_${pgcc}"
+    if test $GCC = yes; then
+       WCSFLAV="SUN/GNU"
+    else
+       WCSFLAV="SUN/ANSI"
+    fi
+    ;;
+esac
+OSUF="o"
+V_CF=
+#-------------------------------------------------------------------------------
+# end HEADAS-specific macros
+#-------------------------------------------------------------------------------
+
+#AC_SUBST(CC)
+AC_SUBST(UNAME_SYSTEM)
+AC_SUBST(EXT)
+AC_SUBST(WCSFLAV)
+AC_SUBST(CFLAGS)
+AC_SUBST(CXXFLAGS)
+AC_SUBST(FFLAGS)
+AC_SUBST(V_CF)
+AC_SUBST(COPT)
+AC_SUBST(CXXOPT)
+AC_SUBST(FOPT)
+AC_SUBST(BSUF)
+AC_SUBST(HD_LN_SYM)
+AC_SUBST(OSUF)
+AC_SUBST(PGPLOT_CONFIG)
+AC_SUBST(PGPLOT_SYS)
+AC_SUBST(EXTF77PERL)
+AC_SUBST(EXTF77PERL_DIR)
+AC_SUBST(PGPLOTPERL)
+AC_SUBST(PGPLOTPERL_DIR)
+AC_CONFIG_FILES([hmakerc headas-setup Makefile])
+AC_OUTPUT
+
+if test -f ./headas-setup; then
+  chmod +x ./headas-setup
+fi

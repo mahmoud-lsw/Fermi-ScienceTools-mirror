@@ -1,0 +1,209 @@
+.TH "InitI" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+InitI \- 
+.PP
+Structure that contains all the necessary parameters\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <orbitSimStruct\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBstart_MJD\fP"
+.br
+.RI "\fIstarting time in MJD \fP"
+.ti -1c
+.RI "double \fBstop_MJD\fP"
+.br
+.RI "\fIstopping time in MJD \fP"
+.ti -1c
+.RI "std::string \fBTLname\fP"
+.br
+.RI "\fITimeline file name, path included\&. \fP"
+.ti -1c
+.RI "std::string \fBTLtype\fP"
+.br
+.RI "\fITimeline type (TAKO, ASFLOWN, or SINGLE) \fP"
+.ti -1c
+.RI "std::string \fBEPHname\fP"
+.br
+.RI "\fIEphemeris file name, path included\&. \fP"
+.ti -1c
+.RI "std::string \fBEPHfunc\fP"
+.br
+.RI "\fIfunction name to read/propagate ephemeris \fP"
+.ti -1c
+.RI "double \fBUnits\fP"
+.br
+.RI "\fIconversion factor to convert in Km \fP"
+.ti -1c
+.RI "double \fBResolution\fP"
+.br
+.ti -1c
+.RI "double \fBIra\fP"
+.br
+.RI "\fIInitial RA\&. \fP"
+.ti -1c
+.RI "double \fBIdec\fP"
+.br
+.RI "\fIInitial DEC\&. \fP"
+.ti -1c
+.RI "std::string \fBOutFile\fP"
+.br
+.ti -1c
+.RI "std::string \fBOptFile\fP"
+.br
+.RI "\fIOptional file used for ascii dump\&. \fP"
+.ti -1c
+.RI "std::string \fBsaafile\fP"
+.br
+.RI "\fISAA file definition\&. \fP"
+.ti -1c
+.RI "int \fBoccflag\fP"
+.br
+.RI "\fIFlag which is used to decide if Earth avoidance should be enabled, default is yes\&. \fP"
+.ti -1c
+.RI "double \fBEAA\fP"
+.br
+.RI "\fIEarth Avoidance Angle value, default is 30 degrees\&. \fP"
+.ti -1c
+.RI "double \fBELT_OFF_START\fP"
+.br
+.RI "\fIEarth LIMB TRACING exclusion start time (MJD) \fP"
+.ti -1c
+.RI "double \fBELT_OFF_STOP\fP"
+.br
+.RI "\fIEarth LIMB TRACING exclusion stop time (MJD) \fP"
+.ti -1c
+.RI "int \fBchat\fP"
+.br
+.RI "\fIVerbosity level\&. \fP"
+.ti -1c
+.RI "bool \fBdebug\fP"
+.br
+.RI "\fIDebug mode\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure that contains all the necessary parameters\&. 
+
+This structure contains all the parameters needed by the orbit simulator
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: May 04, 2009 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file orbitSimStruct\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBInitI::chat\fP"
+.PP
+Verbosity level\&. 
+.PP
+Definition at line 68 of file orbitSimStruct\&.h\&.
+.SS "bool \fBInitI::debug\fP"
+.PP
+Debug mode\&. 
+.PP
+Definition at line 70 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::EAA\fP"
+.PP
+Earth Avoidance Angle value, default is 30 degrees\&. 
+.PP
+Definition at line 62 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::ELT_OFF_START\fP"
+.PP
+Earth LIMB TRACING exclusion start time (MJD) 
+.PP
+Definition at line 64 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::ELT_OFF_STOP\fP"
+.PP
+Earth LIMB TRACING exclusion stop time (MJD) 
+.PP
+Definition at line 66 of file orbitSimStruct\&.h\&.
+.SS "std::string \fBInitI::EPHfunc\fP"
+.PP
+function name to read/propagate ephemeris 
+.PP
+Definition at line 42 of file orbitSimStruct\&.h\&.
+.SS "std::string \fBInitI::EPHname\fP"
+.PP
+Ephemeris file name, path included\&. 
+.PP
+Definition at line 40 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::Idec\fP"
+.PP
+Initial DEC\&. 
+.PP
+Definition at line 51 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::Ira\fP"
+.PP
+Initial RA\&. 
+.PP
+Definition at line 49 of file orbitSimStruct\&.h\&.
+.SS "int \fBInitI::occflag\fP"
+.PP
+Flag which is used to decide if Earth avoidance should be enabled, default is yes\&. 
+.PP
+Definition at line 60 of file orbitSimStruct\&.h\&.
+.SS "std::string \fBInitI::OptFile\fP"
+.PP
+Optional file used for ascii dump\&. 
+.PP
+Definition at line 56 of file orbitSimStruct\&.h\&.
+.SS "std::string \fBInitI::OutFile\fP"Output file where attitude will be written in FT2 format 
+.PP
+Definition at line 54 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::Resolution\fP"Ephemeris resolution, and therefore orbit simulator resolution in minutes 
+.PP
+Definition at line 47 of file orbitSimStruct\&.h\&.
+.SS "std::string \fBInitI::saafile\fP"
+.PP
+SAA file definition\&. 
+.PP
+Definition at line 58 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::start_MJD\fP"
+.PP
+starting time in MJD 
+.PP
+Definition at line 32 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::stop_MJD\fP"
+.PP
+stopping time in MJD 
+.PP
+Definition at line 34 of file orbitSimStruct\&.h\&.
+.SS "std::string \fBInitI::TLname\fP"
+.PP
+Timeline file name, path included\&. 
+.PP
+Definition at line 36 of file orbitSimStruct\&.h\&.
+.SS "std::string \fBInitI::TLtype\fP"
+.PP
+Timeline type (TAKO, ASFLOWN, or SINGLE) 
+.PP
+Definition at line 38 of file orbitSimStruct\&.h\&.
+.SS "double \fBInitI::Units\fP"
+.PP
+conversion factor to convert in Km 
+.PP
+Definition at line 44 of file orbitSimStruct\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

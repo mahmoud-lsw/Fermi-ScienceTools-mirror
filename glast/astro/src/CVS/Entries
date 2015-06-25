@@ -1,0 +1,23 @@
+/EarthCoordinate.cxx/1.1.1.7.6.1/Wed Feb  4 02:01:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/EarthOrbit.cxx/1.1.1.2/Sun Mar 20 19:24:53 2011/-kb/TScienceTools-v10r0p5-fssc-20150518
+/GPS.cxx/1.1.1.8.2.1/Fri Oct 25 15:07:04 2013/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Geomag.cxx/1.1.1.2/Sun Mar 20 19:24:53 2011/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Geomag.h/1.1.1.2/Sun Mar 20 19:24:53 2011/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Geomag.inc/1.1.1.1/Thu Oct 25 18:44:15 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/HTM.cxx/1.1.1.2/Sun Mar 20 19:24:53 2011/-kb/TScienceTools-v10r0p5-fssc-20150518
+/IGRF_data.cxx/1.1.1.1/Mon Jun 25 17:19:32 2012//TScienceTools-v10r0p5-fssc-20150518
+/IGRField.cxx/1.5.6.2/Mon Mar  2 22:36:16 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/JulianDate.cxx/1.1.1.8.6.1/Wed Feb  4 02:01:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Makefile/1.9/Wed Sep 19 17:22:45 2012//TScienceTools-v10r0p5-fssc-20150518
+/PointingHistory.cxx/1.1.1.12/Mon Jul 29 14:57:49 2013/-kb/TScienceTools-v10r0p5-fssc-20150518
+/PointingInfo.cxx/1.1.1.5/Mon Jan 14 16:40:46 2013/-kb/TScienceTools-v10r0p5-fssc-20150518
+/PointingTransform.cxx/1.1.1.2/Sun Mar 20 19:24:53 2011/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Quaternion.cxx/1.1.1.4/Sun Mar 20 19:24:53 2011/-kb/TScienceTools-v10r0p5-fssc-20150518
+/SkyDir.cxx/1.1.1.6/Sun Mar 20 19:24:53 2011/-kb/TScienceTools-v10r0p5-fssc-20150518
+/SkyProj.cxx/1.1.1.8.2.2/Sun Apr 26 06:54:07 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/SkyStat.cxx/1.1.1.1/Thu Oct 25 18:44:15 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/SolarSystem.cxx/1.1.1.2/Sun Mar 20 19:24:53 2011/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/igrf_sub////
+D/jplephem////
+D/test////
+D/wcslib////

@@ -1,0 +1,11 @@
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:03:06 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_gcutils.py/1.1.2.1/Fri Feb 27 05:03:06 2015//TScienceTools-v10r0p5-fssc-20150518
+/_util.py/1.1.2.1/Fri Feb 27 05:03:06 2015//TScienceTools-v10r0p5-fssc-20150518
+/_version.py/1.1.2.1/Fri Feb 27 05:03:06 2015//TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1/Tue Oct 16 19:21:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/decorator.py/1.1.2.1/Fri Feb 27 05:03:06 2015//TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:03:06 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/six.py/1.1.2.1/Fri Feb 27 05:03:06 2015//TScienceTools-v10r0p5-fssc-20150518
+D/blas////
+D/lapack////
+D/tests////

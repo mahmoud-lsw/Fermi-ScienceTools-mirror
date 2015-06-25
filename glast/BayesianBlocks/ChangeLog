@@ -1,0 +1,771 @@
+------------------------------------------------------------
+User: jchiang  Sun Aug 11 16:23:54 PDT 2013
+BayesianBlocks/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Sun Aug 11 16:23:54 PDT 2013
+BayesianBlocks
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Sun Aug 11 16:22:37 PDT 2013
+ScienceTools-scons/BayesianBlocks/python
+
+Modified Files:
+	bb_analysis.py create_lc_file.py 
+Added Files:
+	FitsNTuple.py 
+Log Message:
+add FitsNTuple.py, handle ft1 files that have TSTART and TSTOP as strings
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-05, operation: add
+Package: BayesianBlocks
+User: jchiang  Fri Jul 26 21:23:10 2013
+Files:
+  BayesianBlocks/ChangeLog  1.39
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.6
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.4
+  BayesianBlocks/doc/release.notes  1.6
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.3
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.2
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-04, operation: add
+Package: BayesianBlocks
+User: jchiang  Sat Jun 15 21:37:17 2013
+Files:
+  BayesianBlocks/ChangeLog  1.39
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.6
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.4
+  BayesianBlocks/doc/release.notes  1.6
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.3
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.2
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-03, operation: add
+Package: BayesianBlocks
+User: heather  Fri Jun  7 08:54:14 2013
+Files:
+  BayesianBlocks/ChangeLog  1.39
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.6
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.4
+  BayesianBlocks/doc/release.notes  1.6
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.3
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.2
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-02, operation: add
+Package: BayesianBlocks
+User: jchiang  Thu Jun  6 10:10:30 2013
+Files:
+  BayesianBlocks/ChangeLog  1.39
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.6
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.4
+  BayesianBlocks/doc/release.notes  1.6
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.3
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.2
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-01, operation: add
+Package: BayesianBlocks
+User: jchiang  Wed Jun  5 05:59:53 2013
+Files:
+  BayesianBlocks/ChangeLog  1.39
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.6
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.4
+  BayesianBlocks/doc/release.notes  1.6
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.3
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.2
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-32-00, operation: add
+Package: BayesianBlocks
+User: jchiang  Mon Jun  3 16:35:31 2013
+Files:
+  BayesianBlocks/ChangeLog  1.39
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.6
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.4
+  BayesianBlocks/doc/release.notes  1.6
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.3
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.2
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-02, operation: add
+Package: BayesianBlocks
+User: jchiang  Tue Mar  5 09:59:13 2013
+Files:
+  BayesianBlocks/ChangeLog  1.39
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.6
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.4
+  BayesianBlocks/doc/release.notes  1.6
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.3
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.2
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: BayesianBlocks-04-01-01, operation: add
+Package: BayesianBlocks
+User: jchiang  Mon Feb 11 10:43:11 2013
+Files:
+  BayesianBlocks/ChangeLog  1.39
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.6
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.4
+  BayesianBlocks/doc/release.notes  1.6
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.3
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.2
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+User: jchiang  Mon Feb 11 10:43:05 PST 2013
+BayesianBlocks/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Mon Feb 11 10:43:05 PST 2013
+BayesianBlocks
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Mon Feb 11 10:41:51 PST 2013
+BayesianBlocks/src
+
+Modified Files:
+	BayesianBlocks.cxx 
+Log Message:
+use TSTART, TSTOP from ft1 file to set outer cell boundaries in event mode; update C++ code to do this
+    *
+------------------------------------------------------------
+User: jchiang  Mon Feb 11 10:41:51 PST 2013
+BayesianBlocks/python
+
+Modified Files:
+	bb_analysis.py 
+Log Message:
+use TSTART, TSTOP from ft1 file to set outer cell boundaries in event mode; update C++ code to do this
+    *
+------------------------------------------------------------
+User: jchiang  Mon Feb 11 10:41:51 PST 2013
+BayesianBlocks/BayesianBlocks
+
+Modified Files:
+	BayesianBlocks.h 
+Log Message:
+use TSTART, TSTOP from ft1 file to set outer cell boundaries in event mode; update C++ code to do this
+    *
+------------------------------------------------------------
+TAG
+Tag name: BayesianBlocks-04-01-00, operation: add
+Package: BayesianBlocks
+User: jchiang  Tue Jan 22 09:37:24 2013
+Files:
+  BayesianBlocks/ChangeLog  1.33
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.5
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.3
+  BayesianBlocks/doc/release.notes  1.5
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.4
+  BayesianBlocks/python/bb_analysis.py  1.2
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+User: jchiang  Tue Jan 22 09:37:18 PST 2013
+BayesianBlocks/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Tue Jan 22 09:37:18 PST 2013
+BayesianBlocks
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Tue Jan 22 09:36:41 PST 2013
+BayesianBlocks/python
+
+Modified Files:
+	create_lc_file.py 
+Log Message:
+use TSTART, TSTOP from ft1 file to set outer boundaries of Voronoi cells rather than using reflection of midpoint to neighboring event
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-01, operation: add
+Package: BayesianBlocks
+User: glastrm  Thu Jan  3 16:54:10 2013
+Files:
+  BayesianBlocks/ChangeLog  1.26
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.4
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.3
+  BayesianBlocks/doc/release.notes  1.4
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.3
+  BayesianBlocks/python/bb_analysis.py  1.2
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-31-00, operation: add
+Package: BayesianBlocks
+User: jchiang  Tue Dec 18 17:02:52 2012
+Files:
+  BayesianBlocks/ChangeLog  1.26
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.4
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.3
+  BayesianBlocks/doc/release.notes  1.4
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.3
+  BayesianBlocks/python/bb_analysis.py  1.2
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-30-01, operation: add
+Package: BayesianBlocks
+User: glastrm  Tue Sep 11 11:17:49 2012
+Files:
+  BayesianBlocks/ChangeLog  1.26
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.4
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.3
+  BayesianBlocks/doc/release.notes  1.4
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.3
+  BayesianBlocks/python/bb_analysis.py  1.2
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: BayesianBlocks-04-00-03, operation: add
+Package: BayesianBlocks
+User: jchiang  Wed Aug 29 12:15:09 2012
+Files:
+  BayesianBlocks/ChangeLog  1.26
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.4
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.3
+  BayesianBlocks/doc/release.notes  1.4
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/create_lc_file.py  1.3
+  BayesianBlocks/python/bb_analysis.py  1.2
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.3
+
+    *
+------------------------------------------------------------
+User: jchiang  Wed Aug 29 12:15:03 PDT 2012
+BayesianBlocks/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Wed Aug 29 12:15:03 PDT 2012
+BayesianBlocks
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-30-00, operation: add
+Package: BayesianBlocks
+User: jchiang  Wed Aug 29 08:32:28 2012
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-29-00, operation: add
+Package: BayesianBlocks
+User: jchiang  Thu Jun 21 21:39:53 2012
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-28-00, operation: add
+Package: BayesianBlocks
+User: jchiang  Fri Apr  6 09:56:31 2012
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+User: jchiang  Sat Mar 10 07:35:40 PST 2012
+ScienceTools-scons/BayesianBlocks/BayesianBlocks
+
+Modified Files:
+	BayesianBlocks.h 
+Log Message:
+slight formatting correction
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-27-01, operation: add
+Package: BayesianBlocks
+User: jchiang  Wed Feb 15 19:16:38 2012
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+User: cohen  Tue Feb  7 06:32:47 PST 2012
+ScienceTools-scons/BayesianBlocks/src
+
+Modified Files:
+	BayesianBlocks.i 
+Log Message:
+fix cstd import for swig
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-27-00, operation: add
+Package: BayesianBlocks
+User: jchiang  Thu Jan 26 17:25:59 2012
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-26-02, operation: add
+Package: BayesianBlocks
+User: jchiang  Fri Dec 16 17:25:10 2011
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-26-01, operation: add
+Package: BayesianBlocks
+User: jchiang  Tue Dec 13 16:50:04 2011
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-26-00, operation: add
+Package: BayesianBlocks
+User: jchiang  Mon Dec  5 15:56:03 2011
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-25-02, operation: add
+Package: BayesianBlocks
+User: jchiang  Sun Oct  9 21:04:01 2011
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+User: jchiang  Sun Sep 18 22:07:49 PDT 2011
+ScienceTools-scons/BayesianBlocks/python
+
+Modified Files:
+	bb_analysis.py create_lc_file.py 
+Log Message:
+add ebounds(ft1file)
+    *
+------------------------------------------------------------
+User: jchiang  Sun Sep 18 20:59:35 PDT 2011
+ScienceTools-scons/BayesianBlocks/python
+
+Modified Files:
+	create_lc_file.py 
+Log Message:
+minor change in comment formatting
+    *
+------------------------------------------------------------
+User: jchiang  Sun Sep 18 20:58:05 PDT 2011
+ScienceTools-scons/BayesianBlocks/python
+
+Added Files:
+	bb_analysis.py create_lc_file.py 
+Log Message:
+add scripts to perform exposure-corrected BayesianBlocks analysis in unbinned mode
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-25-01, operation: add
+Package: BayesianBlocks
+User: jchiang  Sat Sep 10 08:33:39 2011
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: BayesianBlocks-04-00-02, operation: add
+Package: BayesianBlocks
+User: jchiang  Tue Sep  6 10:37:08 2011
+Files:
+  BayesianBlocks/ChangeLog  1.8
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.3
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.2
+  BayesianBlocks/doc/release.notes  1.3
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.2
+
+    *
+------------------------------------------------------------
+User: jchiang  Tue Sep  6 10:37:02 PDT 2011
+BayesianBlocks/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Tue Sep  6 10:37:02 PDT 2011
+BayesianBlocks
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jchiang  Tue Sep  6 08:44:12 PDT 2011
+ScienceTools-scons/BayesianBlocks/src
+
+Modified Files:
+	BayesianBlocks.i 
+Log Message:
+disable FPE handling option for non-linux platforms
+    *
+------------------------------------------------------------
+User: jchiang  Tue Sep  6 08:44:11 PDT 2011
+ScienceTools-scons/BayesianBlocks/BayesianBlocks
+
+Modified Files:
+	BayesianBlocks.h 
+Log Message:
+disable FPE handling option for non-linux platforms
+    *
+------------------------------------------------------------
+TAG
+Tag name: BayesianBlocks-04-00-01, operation: add
+Package: BayesianBlocks
+User: heather  Tue Sep  6 07:44:30 2011
+Files:
+  BayesianBlocks/ChangeLog  1.1
+  BayesianBlocks/BayesianBlocksLib.py  1.1.1.1
+  BayesianBlocks/SConscript  1.2
+  BayesianBlocks/BayesianBlocks/BayesianBlocks.h  1.1.1.1
+  BayesianBlocks/doc/release.notes  1.2
+  BayesianBlocks/doc/Doxyfile  1.1.1.1
+  BayesianBlocks/python/test_BB.py  1.1.1.1
+  BayesianBlocks/python/BayesianBlocks_python.py  1.1.1.1
+  BayesianBlocks/python/test_BB_speed.py  1.1.1.1
+  BayesianBlocks/src/mainpage.h  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.cxx  1.1.1.1
+  BayesianBlocks/src/BayesianBlocks.i  1.1.1.1
+
+    *
+------------------------------------------------------------
+User: heather  Tue Sep  6 07:44:08 PDT 2011
+BayesianBlocks/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+preparing to tag HEAD
+    *
+------------------------------------------------------------
+User: heather  Tue Sep  6 07:44:08 PDT 2011
+BayesianBlocks
+
+Modified Files:
+	SConscript 
+Log Message:
+preparing to tag HEAD
+    *
+------------------------------------------------------------
+User: jchiang  Fri Sep  2 17:55:59 PDT 2011
+BayesianBlocks
+
+Log Message:
+Initial import of re-implemented BayesianBlocks for inclusion in ScienceTools
+
+Status:
+
+Vendor Tag:	BayesianBlocks-04-00-00
+Release Tags:	JC
+		
+N BayesianBlocks/SConscript
+N BayesianBlocks/BayesianBlocksLib.py
+N BayesianBlocks/src/BayesianBlocks.cxx
+N BayesianBlocks/src/mainpage.h
+N BayesianBlocks/src/BayesianBlocks.i
+N BayesianBlocks/BayesianBlocks/BayesianBlocks.h
+N BayesianBlocks/python/test_BB.py
+N BayesianBlocks/python/BayesianBlocks_python.py
+N BayesianBlocks/python/test_BB_speed.py
+N BayesianBlocks/doc/Doxyfile
+N BayesianBlocks/doc/release.notes
+
+No conflicts created by this import
+
+    *

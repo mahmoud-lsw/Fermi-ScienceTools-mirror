@@ -1,0 +1,28 @@
+/BayesianBinner.cxx/1.1.1.2/Thu Aug  7 01:24:46 2008/-kb/TScienceTools-v10r0p5-fssc-20150518
+/BinConfig.cxx/1.1.1.5/Mon Sep 10 18:39:07 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ConstSnBinner.cxx/1.1.1.1/Thu Oct 25 18:44:25 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/CountCube.cxx/1.1.1.4/Wed Jun 16 11:42:14 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/CountMap.cxx/1.1.1.4/Wed Jun 16 11:42:14 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/DataProduct.cxx/1.1.1.7/Mon Sep 10 18:39:07 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/GlastGbmBinConfig.cxx/1.1.1.3/Mon Mar  1 20:05:43 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/GlastGbmBinConfig.h/1.1.1.2/Mon Sep 10 18:39:07 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/GlastLatBinConfig.cxx/1.1.1.2/Fri Oct 31 19:08:04 2008/-kb/TScienceTools-v10r0p5-fssc-20150518
+/GlastLatBinConfig.h/1.1.1.2/Mon Sep 10 18:39:07 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Gti.cxx/1.1.1.2/Tue Jan 17 17:17:59 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/HealpixBinner.cxx/1.2.6.3/Sun Apr 26 06:54:04 2015//TScienceTools-v10r0p5-fssc-20150518
+/HealpixMap.cxx/1.1.1.2.2.4/Fri Mar 13 01:01:37 2015//TScienceTools-v10r0p5-fssc-20150518
+/Hist.cxx/1.1.1.1/Thu Oct 25 18:44:25 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Hist1D.cxx/1.1.1.1/Thu Oct 25 18:44:25 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Hist2D.cxx/1.1.1.1/Thu Oct 25 18:44:25 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Hist3D.cxx/1.1.1.2/Mon Sep 10 18:39:07 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/LightCurve.cxx/1.1.1.5/Wed Jun 16 11:42:14 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/LinearBinner.cxx/1.1.1.1/Thu Oct 25 18:44:25 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/LogBinner.cxx/1.1.1.1/Thu Oct 25 18:44:25 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Makefile/1.9/Tue Apr 16 21:02:48 2013//TScienceTools-v10r0p5-fssc-20150518
+/MultiSpec.cxx/1.1.1.5/Wed Jun 16 11:42:14 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/OrderedBinner.cxx/1.1.1.1/Thu Oct 25 18:44:26 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/RecordBinFiller.cxx/1.1.1.1/Thu Oct 25 18:44:26 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/SingleSpec.cxx/1.1.1.5/Wed Jun 16 11:42:14 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/gtbin////
+D/gtbindef////
+D/test////

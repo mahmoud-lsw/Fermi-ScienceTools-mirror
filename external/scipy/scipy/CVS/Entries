@@ -1,0 +1,23 @@
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:02:55 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:02:55 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:02:55 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/version.py/1.1.2.1.8.1/Fri Feb 27 05:02:55 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/_build_utils////
+D/cluster////
+D/constants////
+D/fftpack////
+D/integrate////
+D/interpolate////
+D/io////
+D/lib////
+D/linalg////
+D/misc////
+D/ndimage////
+D/odr////
+D/optimize////
+D/signal////
+D/sparse////
+D/spatial////
+D/special////
+D/stats////
+D/weave////

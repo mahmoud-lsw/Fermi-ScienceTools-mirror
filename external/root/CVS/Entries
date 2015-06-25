@@ -1,0 +1,40 @@
+/#.cvsignore#/1.1.1.1/Thu Feb  7 21:31:15 2013//TScienceTools-v10r0p5-fssc-20150518
+/.cvsignore/1.1.1.2/Thu Feb  7 21:31:15 2013/-kb/TScienceTools-v10r0p5-fssc-20150518
+/CMakeLists.txt/1.1.1.1/Wed Jan 23 16:00:42 2013//TScienceTools-v10r0p5-fssc-20150518
+/LICENSE/1.1.1.1/Thu Oct 25 19:34:37 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Makefile/1.2/Wed Aug 21 17:22:59 2013/-kb/TScienceTools-v10r0p5-fssc-20150518
+/configure/1.9.2.1/Tue Jun 17 19:33:30 2014/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/README////
+D/bindings////
+D/build////
+D/cint////
+D/cmake////
+D/config////
+D/core////
+D/doc////
+D/docbook////
+D/etc////
+D/fonts////
+D/geom////
+D/graf2d////
+D/graf3d////
+D/gui////
+D/hist////
+D/html////
+D/icons////
+D/io////
+D/macros////
+D/main////
+D/man////
+D/math////
+D/misc////
+D/montecarlo////
+D/net////
+D/proof////
+D/roofit////
+D/rootx////
+D/sql////
+D/test////
+D/tmva////
+D/tree////
+D/tutorials////

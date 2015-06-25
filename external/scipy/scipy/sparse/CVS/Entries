@@ -1,0 +1,28 @@
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_csparsetools.c/1.1.2.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_csparsetools.pyx/1.1.2.1/Fri Feb 27 05:01:52 2015//TScienceTools-v10r0p5-fssc-20150518
+/_csparsetools.pyx.in/1.1.2.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/base.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bsr.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/compressed.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/construct.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/coo.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/csc.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/csr.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/data.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dia.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dok.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/extract.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/generate_sparsetools.py/1.1.2.1/Fri Feb 27 05:01:52 2015//TScienceTools-v10r0p5-fssc-20150518
+/lil.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/sparsetools.py/1.1.2.1/Fri Feb 27 05:01:52 2015//TScienceTools-v10r0p5-fssc-20150518
+/spfuncs.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/sputils.py/1.1.2.1.8.1/Fri Feb 27 05:01:52 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/benchmarks////
+D/csgraph////
+D/linalg////
+D/sparsetools////
+D/tests////

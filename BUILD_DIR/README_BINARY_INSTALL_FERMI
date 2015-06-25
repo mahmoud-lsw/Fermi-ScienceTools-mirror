@@ -1,0 +1,101 @@
+The following is the step-by-step procedure to download and install
+the binary version of the Fermi Science Tools:
+
+Download the appropriate tarball from the website.
+
+Unload the tarball in the directory where you would like the
+software installed. The appropriate unix command is tar xvzf xxxxx,
+where xxxxx is the name of the tarball. Thus if you run the tar
+command from the 'software' directory, you will find a new
+subdirectory with the tools and various auxillary files in the
+'software' directory. The directory that is created will have the 
+name ScienceTools-<version>, where version is a string that identifies
+released version of the Fermi science tools. The following instructions 
+are also found in a README_INSTALL file in this subdirectory. 
+
+
+
+For the binary release you will need to:
+     Unpack the tar file as described above.
+
+go to the
+      ScienceTools/<PLATFORM>>/BUILD_DIR directory:
+
+      cd ScienceTools/<PLATFORM>/BUILD_DIR/
+
+      where <PLATFORM> = e.g. "i686-apple-darwin8.11.1" or
+      "x86_64-unknown-linux-gnu-libc2.3.4"
+
+and run the main configure script, which will probe your system for
+libraries, header files, compilers, etc., and then generate the main
+Makefile.
+
+To produce a default configuration, the configure script may simply be
+invoked by (we recommend capturing the screen output from configure as
+below):
+
+./configure >& config.out & (C Shell variants)
+
+./configure > config.out 2>&1 & (Bourne Shell variants)
+
+to finish the installation.
+If you don't know which shell you are using the command
+
+echo $shell 
+
+will show you the shell that you are running. 
+
+
+     
+Next set up the environment for your unix shell. In the following
+cases replace the string <installed-directory> in the commands below
+by the absolute path to the subdirectory created by unloading the
+tarball.
+          o For tcsh/csh, type:
+
+            setenv FERMI_DIR <installed-directory>
+            source $FERMI_DIR/fermi-init.csh
+
+          o For bash/sh, type:
+
+            export FERMI_DIR=<installed-directory>
+            source $FERMI_DIR/fermi-init.sh
+
+   Note: For MAC users running OSX 10.4 (Tiger) you will need to set an addtional 
+         environment variable to run the science tools. This will mean
+         that IDL cannot be run in the same window as the science tools.
+   For C Shell variants
+
+    setenv DYLD_INSERT_LIBRARIES $FERMI_DIR/lib/libf2c.so
+
+   or if you are using a version of the Bourne shell then 
+
+    export DYLD_INSERT_LIBRARIES=$FERMI_DIR/lib/libf2c.so
+    
+    
+In some cases the user may see an error message of the form
+
+"dyld: Library not loaded: /opt/local/lib/libfreetype.6.dylib"
+
+This is often the result of using a different package manager than the
+one we have for our build system. Since the ScienceTools need some
+external libraries (notably libfreetype).  You will need to install
+these in some way.  We usually recommend a package manager (for Mac,
+this would be MacPorts, Fink or HomeBrew).  Our development machines
+use MacPorts or Fink and that defines the default locations that the
+tools will look for libraries. If you have libfreetype installed
+somewhere else you can just add the path to your DYLD_LIBRARY_PATH or
+make a link from your location to /opt/local/lib/ . If you have trouble
+with either of these check with your system administrator. You could
+also install them from source if you prefer not to use a package
+manager. 
+    
+
+
+
+After running these commands the FERMI science tools will be in
+your path and all environment variables will be set as needed.
+
+      The help files can be accessed in two ways 
+          o by typing fhelp <tool>
+          o Through the Reference Manual

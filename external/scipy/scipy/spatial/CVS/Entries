@@ -1,0 +1,19 @@
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:03:00 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_plotutils.py/1.1.2.1/Fri Feb 27 05:03:00 2015//TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:03:00 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1.8.1/Fri Feb 27 05:03:00 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ckdtree.c/1.1.2.1.8.1/Fri Feb 27 05:03:01 2015//TScienceTools-v10r0p5-fssc-20150518
+/ckdtree.pyx/1.1.2.1/Fri Feb 27 05:03:01 2015//TScienceTools-v10r0p5-fssc-20150518
+/common.h/1.1.2.1/Tue Oct 16 19:22:13 2012//TScienceTools-v10r0p5-fssc-20150518
+/distance.py/1.1.2.1.8.1/Fri Feb 27 05:03:00 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/kdtree.py/1.1.2.1.8.1/Fri Feb 27 05:03:00 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/qhull.c/1.1.2.1.8.1/Fri Feb 27 05:03:00 2015//TScienceTools-v10r0p5-fssc-20150518
+/qhull.pxd/1.1.2.1/Fri Feb 27 05:03:01 2015//TScienceTools-v10r0p5-fssc-20150518
+/qhull.pyx/1.1.2.1/Fri Feb 27 05:03:01 2015//TScienceTools-v10r0p5-fssc-20150518
+/qhull_blas.h/1.1.2.1.8.1/Fri Feb 27 05:03:00 2015//TScienceTools-v10r0p5-fssc-20150518
+/setlist.pxd/1.1.2.1/Fri Feb 27 05:03:01 2015//TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:03:00 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/benchmarks////
+D/qhull////
+D/src////
+D/tests////

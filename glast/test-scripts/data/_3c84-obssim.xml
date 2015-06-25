@@ -1,0 +1,38 @@
+<source_library title="Example_Sources">
+
+<source name="_3c84" flux="2.94e-3">
+   <spectrum escale="MeV">
+      <particle name="gamma">
+         <power_law emin="20.0" emax="300000.0" gamma="2.16"/>
+      </particle>
+      <celestial_dir ra="4.99236e+01" dec="4.15085e+01"/>
+   </spectrum>
+</source>
+
+<source name="_3c66b" flux="2.0e-3b">
+   <spectrum escale="MeV">
+      <particle name="gamma">
+         <power_law emin="20.0" emax="300000.0" gamma="1.93"/>
+      </particle>
+      <celestial_dir ra="3.54943e+01" dec="4.29099e+01"/>
+   </spectrum>
+</source>
+
+<source name="Galactic_diffuse">
+   <spectrum escale="MeV">
+<!-- Total photon flux from the map (#/m2/s) = 18.58 (10MeV-655GeV)
+     Fits file (plate-carree only) = $(EXTFILESSYS)/galdiffuse/GP_gamma.fits
+-->
+     <SpectrumClass name="MapCube" params="1.115, $(FERMI_DIR)/refdata/fermi/galdiffuse/GP_gamma.fits"/>
+     <use_spectrum frame="galaxy"/>
+   </spectrum>
+</source>
+
+<source name="Extragalactic_diffuse">
+   <spectrum escale="MeV">
+       <SpectrumClass name="Isotropic" params="0.969, 2.1, 20., 2e5"/>
+       <use_spectrum frame="galaxy"/>
+   </spectrum>
+</source>
+
+</source_library> 

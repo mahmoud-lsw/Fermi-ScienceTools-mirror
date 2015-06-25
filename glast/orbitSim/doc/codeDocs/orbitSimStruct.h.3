@@ -1,0 +1,135 @@
+.TH "orbitSim/orbitSim/orbitSimStruct.h" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+orbitSim/orbitSim/orbitSimStruct.h \- 
+.PP
+This file contains all structures definition used by the orbit Simulator\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBInitI\fP"
+.br
+.RI "\fIStructure that contains all the necessary parameters\&. \fP"
+.ti -1c
+.RI "struct \fBSurProf\fP"
+.br
+.RI "\fIStructure that contains parameters for the profile survey\&. \fP"
+.ti -1c
+.RI "struct \fBAtTime\fP"
+.br
+.RI "\fIStructure that contains time parameters\&. \fP"
+.ti -1c
+.RI "struct \fBatElemTle\fP"
+.br
+.RI "\fIStructure that contains Two Line Elements (TLE) parameters\&. \fP"
+.ti -1c
+.RI "struct \fBvector\fP"
+.br
+.RI "\fIStructure that contains 3D vector plus its magnitude\&. \fP"
+.ti -1c
+.RI "struct \fBAtEulerAng\fP"
+.br
+.RI "\fIStructure that contains 3 Euler angles\&. \fP"
+.ti -1c
+.RI "struct \fBAtPolarVect\fP"
+.br
+.RI "\fIThree-dimensional Vector in Polar coordinate\&. \fP"
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBatElemTle\fP \fBatElemTle\fP"
+.br
+.RI "\fIStructure that contains Two Line Elements (TLE) parameters\&. \fP"
+.ti -1c
+.RI "typedef struct \fBvector\fP \fBvector\fP"
+.br
+.RI "\fIStructure that contains 3D vector plus its magnitude\&. \fP"
+.ti -1c
+.RI "typedef double \fBAtVect\fP [3]"
+.br
+.RI "\fIThree-dimensional Cartesian Vector\&. \fP"
+.ti -1c
+.RI "typedef double \fBAtRotMat\fP [3][3]"
+.br
+.RI "\fI3 x 3 Rotation Matrix \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains all structures definition used by the orbit Simulator\&. 
+
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005
+.RE
+.PP
+\fBHeader:\fP
+.RS 4
+/nfs/slac/g/glast/ground/cvs/ScienceTools-scons/orbitSim/orbitSim/orbitSimStruct\&.h,v 1\&.3 2009/05/06 15:25:37 vernaleo Exp 
+.RE
+.PP
+
+.PP
+Definition in file \fBorbitSimStruct\&.h\fP\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBatElemTle\fP  \fBatElemTle\fP"
+.PP
+Structure that contains Two Line Elements (TLE) parameters\&. This structure contains all the parameters contained in the NORAD Two Line Element file
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.SS "typedef double \fBAtRotMat\fP[3][3]"
+.PP
+3 x 3 Rotation Matrix 
+.PP
+Definition at line 198 of file orbitSimStruct\&.h\&.
+.SS "typedef double \fBAtVect\fP[3]"
+.PP
+Three-dimensional Cartesian Vector\&. 
+.PP
+Definition at line 195 of file orbitSimStruct\&.h\&.
+.SS "typedef struct \fBvector\fP \fBvector\fP"
+.PP
+Structure that contains 3D vector plus its magnitude\&. \fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Mar 14, 2007 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

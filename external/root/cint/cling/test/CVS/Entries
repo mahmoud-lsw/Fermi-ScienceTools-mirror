@@ -1,0 +1,11 @@
+/CMakeLists.txt/1.1.1.1/Wed Jan 23 16:01:27 2013//TScienceTools-v10r0p5-fssc-20150518
+/Makefile/1.1.1.1/Wed Jan 23 16:01:27 2013//TScienceTools-v10r0p5-fssc-20150518
+/lit.cfg/1.1.1.1/Wed Jan 23 16:01:27 2013/-kb/TScienceTools-v10r0p5-fssc-20150518
+/lit.site.cfg.in/1.1.1.1/Wed Jan 23 16:01:27 2013/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/ErrorRecovery////
+D/Extensions////
+D/Interfaces////
+D/LibraryCall////
+D/Prompt////
+D/Recursion////
+D/SourceCall////

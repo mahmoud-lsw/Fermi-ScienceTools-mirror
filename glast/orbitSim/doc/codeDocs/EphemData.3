@@ -1,0 +1,167 @@
+.TH "EphemData" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EphemData \- 
+.PP
+Structure that contains all ephemeredis information\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DynamicStruct\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEphemData\fP ()"
+.br
+.RI "\fIDefault Constructor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBMJD\fP"
+.br
+.RI "\fItime stamp in MJD format \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBX\fP"
+.br
+.RI "\fIarray for the X position in EC system \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBY\fP"
+.br
+.RI "\fIarray for the Y position in EC system \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBZ\fP"
+.br
+.RI "\fIarray for the Z position in EC system \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBLat\fP"
+.br
+.RI "\fIarray for the Latitude in EC system \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBLong\fP"
+.br
+.RI "\fIarray for the Longitude in EC system \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBAlt\fP"
+.br
+.RI "\fIarray for the Height in EC system \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBVelRA\fP"
+.br
+.RI "\fIarray for the velocity compenent in RA in EC system \fP"
+.ti -1c
+.RI "\fBstd::vector\fP< double > \fBVelDEC\fP"
+.br
+.RI "\fIarray for the velocity compenent in DEC in EC system \fP"
+.ti -1c
+.RI "double \fBPeriod\fP"
+.br
+.RI "\fIEphemeredis Period, not used with the available Ephemeredis\&. \fP"
+.ti -1c
+.RI "double \fBSemiMajorAxis\fP"
+.br
+.RI "\fISemiMajorAxis, not used with the available Ephemeredis\&. \fP"
+.ti -1c
+.RI "int \fBent\fP"
+.br
+.RI "\fINumber of entries in each array\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure that contains all ephemeredis information\&. 
+
+This structure contains ephemeredis information
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file DynamicStruct\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBEphemData::EphemData\fP ()\fC [inline]\fP"
+.PP
+Default Constructor\&. 
+.PP
+Definition at line 39 of file DynamicStruct\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBstd::vector\fP<double> \fBEphemData::Alt\fP"
+.PP
+array for the Height in EC system 
+.PP
+Definition at line 54 of file DynamicStruct\&.h\&.
+.SS "int \fBEphemData::ent\fP"
+.PP
+Number of entries in each array\&. 
+.PP
+Definition at line 64 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBEphemData::Lat\fP"
+.PP
+array for the Latitude in EC system 
+.PP
+Definition at line 50 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBEphemData::Long\fP"
+.PP
+array for the Longitude in EC system 
+.PP
+Definition at line 52 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBEphemData::MJD\fP"
+.PP
+time stamp in MJD format 
+.PP
+Definition at line 39 of file DynamicStruct\&.h\&.
+.SS "double \fBEphemData::Period\fP"
+.PP
+Ephemeredis Period, not used with the available Ephemeredis\&. 
+.PP
+Definition at line 60 of file DynamicStruct\&.h\&.
+.SS "double \fBEphemData::SemiMajorAxis\fP"
+.PP
+SemiMajorAxis, not used with the available Ephemeredis\&. 
+.PP
+Definition at line 60 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBEphemData::VelDEC\fP"
+.PP
+array for the velocity compenent in DEC in EC system 
+.PP
+Definition at line 58 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBEphemData::VelRA\fP"
+.PP
+array for the velocity compenent in RA in EC system 
+.PP
+Definition at line 56 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBEphemData::X\fP"
+.PP
+array for the X position in EC system 
+.PP
+Definition at line 44 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBEphemData::Y\fP"
+.PP
+array for the Y position in EC system 
+.PP
+Definition at line 46 of file DynamicStruct\&.h\&.
+.SS "\fBstd::vector\fP<double> \fBEphemData::Z\fP"
+.PP
+array for the Z position in EC system 
+.PP
+Definition at line 48 of file DynamicStruct\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

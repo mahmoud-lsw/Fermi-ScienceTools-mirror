@@ -1,0 +1,26 @@
+/cdist-X1.txt/1.1.2.1/Fri Feb 27 05:03:15 2015//TScienceTools-v10r0p5-fssc-20150518
+/cdist-X2.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/degenerate_pointset.npz/1.1.2.1/Fri Feb 27 05:03:16 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/iris.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-boolean-inp.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-chebychev-ml-iris.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-chebychev-ml.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-cityblock-ml-iris.txt/1.1.2.1/Fri Feb 27 05:03:15 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-cityblock-ml.txt/1.1.2.1/Fri Feb 27 05:03:15 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-correlation-ml-iris.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-correlation-ml.txt/1.1.2.1/Fri Feb 27 05:03:15 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-cosine-ml-iris.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-cosine-ml.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-double-inp.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-euclidean-ml-iris.txt/1.1.2.1/Fri Feb 27 05:03:15 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-euclidean-ml.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-hamming-ml.txt/1.1.2.1/Fri Feb 27 05:03:15 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-jaccard-ml.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-minkowski-3.2-ml-iris.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-minkowski-3.2-ml.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-minkowski-5.8-ml-iris.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-seuclidean-ml-iris.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-seuclidean-ml.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/pdist-spearman-ml.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+/random-bool-data.txt/1.1.2.1/Fri Feb 27 05:03:16 2015//TScienceTools-v10r0p5-fssc-20150518
+D

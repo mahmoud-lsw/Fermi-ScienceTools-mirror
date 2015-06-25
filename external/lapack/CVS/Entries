@@ -1,0 +1,15 @@
+/CMakeLists.txt/1.2/Fri Nov 16 19:32:09 2012//TScienceTools-v10r0p5-fssc-20150518
+/CTestConfig.cmake/1.2/Fri Nov 16 19:32:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/CTestCustom.cmake.in/1.2/Fri Nov 16 19:32:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/LICENSE/1.2/Fri Nov 16 19:32:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Makefile/1.7.2.1/Thu Sep 25 18:17:53 2014//TScienceTools-v10r0p5-fssc-20150518
+/README/1.2/Fri Nov 16 19:32:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/lapack.pc.in/1.2/Fri Nov 16 19:32:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/lapack_build.cmake/1.2/Fri Nov 16 19:32:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/lapack_testing.py/1.2/Fri Nov 16 19:32:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/make.inc/1.2/Fri Nov 16 19:32:09 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/BLAS////
+D/CMAKE////
+D/DOCS////
+D/INSTALL////
+D/SRC////

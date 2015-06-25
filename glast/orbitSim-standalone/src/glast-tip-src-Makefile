@@ -1,0 +1,33 @@
+HD_COMPONENT_NAME	= glast
+
+HD_COMPONENT_VERS	= 
+
+HD_LIBRARY_ROOT		= tip
+
+CERN_ROOT_SRC_cxx	= RootTable.cxx
+
+HD_LIBRARY_SRC_cxx	= \
+                          FileSummary.cxx \
+                          FitsFileManager.cxx \
+                          FitsHeader.cxx \
+                          FitsPrimProps.cxx \
+                          FitsTable.cxx \
+                          FitsTipFile.cxx \
+                          Header.cxx \
+                          IFileSvc.cxx \
+                          KeyRecord.cxx \
+                          LinearInterp.cxx \
+                          TipException.cxx \
+                          TipFile.cxx
+
+HD_CXXFLAGS		= ${HD_STD_CXXFLAGS}
+
+# <HACK>
+# Needed to get Likelihood to compile.
+HD_INC_SUBDIR           = src
+HD_INSTALL_HEADERS      = FitsTipFile.h
+# </HACK>
+
+HD_INSTALL_LIBRARIES	= ${HD_LIBRARY_ROOT}
+
+include ${HD_STD_MAKEFILE}

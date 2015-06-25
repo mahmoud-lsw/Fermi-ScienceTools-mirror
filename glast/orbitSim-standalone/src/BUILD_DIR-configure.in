@@ -1,0 +1,937 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT
+
+AC_REVISION($Revision: 1.1 $)
+
+AC_PREREQ(2.59)
+
+AC_CANONICAL_TARGET([])
+
+libc_version=
+if test `echo $host | grep -c linux` -ne 0; then
+   if test -f /bin/sh; then
+     changequote(,)
+     libc_ldd=`ldd /bin/sh | grep -w libc`
+     if test "x$libc_ldd" != "x"; then
+       libc=`echo $libc_ldd | sed 's:.*=>[ ]::' | sed 's:[ ].*::'`
+       if test "x$libc" != "x"; then
+         if test -x "$libc"; then
+           version=`$libc | grep -i version | grep -i release | grep -i library | sed 's:^[^0-9]*::' | sed 's:[^0-9]*$::' | sed 's:[ ].*::'`
+         fi
+         if test "x$version" != "x"; then
+           libc_version=-libc$version
+         fi
+       fi
+     fi
+     changequote([,])
+   fi
+fi
+if test "x$libc_version" != "x"; then
+  host=$host$libc_version
+  AC_MSG_RESULT(modified Linux system type is $host)
+fi
+
+UNAME_SYSTEM=`(uname -s) 2>/dev/null` || UNAME_SYSTEM=unknown
+
+#-------------------------------------------------------------------------------
+
+h_all_components="heacore tcltk external attitude heatools heagen demo suzaku swift ftools Xspec integral xmm glast"
+h_components=
+
+#-------------------------------------------------------------------------------
+# Option --with-components allows configuration to be specified on command line.
+AC_ARG_WITH(
+  components,
+  [AS_HELP_STRING([--with-components],
+    [Specify a subset of existing HEADAS components to configure (enclosed in
+     quotes).  Current choices are: "heacore tcltk external attitude heatools heagen demo suzaku swift ftools Xspec integral xmm glast". 
+     Default is all existing components.])],
+  h_components=$withval
+)
+
+AC_ARG_ENABLE(
+  register,
+  [AS_HELP_STRING([--disable-register],
+   [Do not send registration info to GSFC (not recommended)])],
+  lhea_register=$enableval,
+  lhea_register=yes
+)
+
+AC_ARG_ENABLE(
+  shared,
+  [AS_HELP_STRING([--disable-shared],
+   [Do not build shared libraries (not recommended)])],
+  h_shared=$enableval,
+  h_shared=yes,
+  h_shared=no
+)
+AC_ARG_ENABLE(
+  static,
+  [AS_HELP_STRING([--enable-static],
+   [Do not build shared libraries (not recommended)])],
+  [ if test $enableval = yes; then h_shared=no; fi ]
+)
+
+h_symbols=no
+AC_ARG_ENABLE(
+  symbols,
+  [AS_HELP_STRING([--enable-symbols],
+   [Do not strip symbols from binaries (for debugging)])],
+  [ if test $enableval = yes; then h_symbols=yes; fi ],
+)
+
+h_hera_build=no
+AC_ARG_ENABLE(
+  hera,
+  [AS_HELP_STRING([--enable-hera],
+   [Build for HERA project (GSFC only)])],
+  [ if test $enableval = yes; then h_hera_build=yes; fi ]
+)
+
+fv_build=no
+AC_ARG_ENABLE(
+  fv-standalone,
+  [AS_HELP_STRING([--enable-fv-standalone],
+   [Build stand-alone fv GUI (GSFC only)])],
+  [ if test $enableval = yes; then fv_build=yes; fi ]
+)
+if test $fv_build = yes; then
+  h_shared=no
+  if test `echo $host | grep -c darwin` -ne 0; then
+    CFLAGS="-arch i386 -arch ppc"
+    export CFLAGS
+  fi
+fi
+
+# configurable optimization
+h_copt=
+AC_ARG_WITH(
+  copt,
+  [AS_HELP_STRING([--with-copt],
+   [Set C compiler optimization (e.g. "-O" or "-fast")])],
+  h_copt=$withval
+)
+h_cxxopt=
+AC_ARG_WITH(
+  cxxopt,
+  [AS_HELP_STRING([--with-cxxopt],
+   [Set C++ compiler optimization (e.g. "-O" or "-fast")])],
+  h_cxxopt=$withval
+)
+h_fopt=
+AC_ARG_WITH(
+  fopt,
+  [AS_HELP_STRING([--with-fopt],
+   [Set Fortran compiler optimization (e.g. "-O" or "-fast")])],
+  h_fopt=$withval
+)
+
+#-------------------------------------------------------------------------------
+# Remove leading and trailing whitespace from component list.
+h_components=`echo $h_components | sed 's%^[ 	]*%%; s%[ 	]$%%'`
+
+# Get details about this script and its location.
+h_this_script=`echo $0 | sed 's%.*/%%'`
+h_this_dir=`echo $0 | sed "s%$h_this_script\$%%"`
+if test "x$h_this_dir" = x; then h_this_dir=.; fi
+
+# Top of source tree.
+h_top=`cd $h_this_dir/..; pwd`
+
+if test `echo $h_top | grep -c " "` -ne 0; then
+  AC_MSG_RESULT(Path has one or more directory names which include spaces:)
+  AC_MSG_RESULT($h_top)
+  AC_MSG_ERROR(Directory paths with spaces are not allowed in HEASOFT!)
+fi
+
+HD_SRC=$h_top
+
+h_components_found=
+if test "x$h_components" = x; then
+  for dir in $h_all_components; do
+    if test -d $h_top/$dir; then
+      AC_MSG_RESULT(Found component $dir)
+      h_components_found="$h_components_found $dir"
+    else
+      AC_MSG_RESULT(Could not find component $dir - skipping $dir)
+    fi
+  done
+else
+  for dir in $h_components; do
+    if test -d $h_top/$dir; then
+      AC_MSG_RESULT(Found component $dir)
+      if test -f $h_top/$dir/BUILD_DIR/hd_config_info; then
+        AC_MSG_RESULT(Found $dir/BUILD_DIR/hd_config_info)
+        h_components_found="$h_components_found $dir"
+      else
+        AC_MSG_RESULT(Could not find $dir/BUILD_DIR/hd_config_info - skipping $dir)
+      fi
+    else
+      AC_MSG_ERROR(Could not find component $dir)
+    fi
+  done
+fi
+h_components=$h_components_found
+
+# Set the prefix to use in all recursive configures.
+if test $prefix = NONE; then
+  prefix=`cd $h_this_dir/..; pwd`
+fi
+
+# Set the exec-prefix to use in all recursive configures.
+if test $exec_prefix = NONE; then
+  exec_prefix="$prefix/$host"
+fi
+
+# Name of the utility which scans configuration files for dependencies.
+hd_scanenv="$h_this_dir/hd_scanenv"
+hd_conf_file="hd_config_info"
+
+# Determine which components should be configured on this go-around
+HD_SELECTED=
+HD_SELECTED_DIRS=
+if test "x$h_components" != xno; then
+  # Loop over components, and make a list of configuration files which
+  # includes dependencies of the original components as well as the
+  # original components.
+  for h_dep in $h_components; do
+    h_config_comp_list=
+    h_config_dir_list=
+    while test "x$h_dep" != x; do
+
+      changequote(,)
+      # Get next component from the back of the list.
+      h_comp=`echo $h_dep | sed 's%.*[ 	][ 	]*%%'`
+  
+      # Remove this component from the back of the list.
+      h_dep=`echo $h_dep | sed -ne "s%[ 	][ 	]*$h_comp\$%%p"`
+      changequote([,])
+      
+      # Find the configuration directory.
+      if test -f $h_top/$h_comp/BUILD_DIR/$hd_conf_file; then
+        h_dir=$h_top/$h_comp/BUILD_DIR
+      else
+        AC_MSG_WARN(Unable to find a configuration dir for $h_comp)
+        h_dir=
+      fi
+
+      # From the configuration directory, extract dependencies. These are the
+      # names of other components needed by the current component.
+      if test "x$h_dir" != x; then
+        h_tmp=`$hd_scanenv $h_dir/$hd_conf_file DEPENDENCIES`
+      else
+        h_tmp=
+      fi
+
+      if test "x$h_tmp" != x; then
+        AC_MSG_RESULT(Component $h_comp requires $h_tmp)
+        h_dep="$h_dep $h_tmp"
+      fi
+
+      # Put the current configuration directory into the output
+      # configuration directory list.
+      if test "x$h_dir" != x; then
+        h_config_comp_list="$h_comp $h_config_comp_list"
+      fi
+
+      # Put the current configuration directory into the output
+      # configuration directory list.
+      if test "x$h_dir" != x; then
+        h_config_dir_list="$h_dir $h_config_dir_list"
+      fi
+
+    done
+    HD_SELECTED="$HD_SELECTED $h_config_comp_list"
+    HD_SELECTED_DIRS="$HD_SELECTED_DIRS $h_config_dir_list"
+  done
+fi
+
+#  while test "x$h_tmp" != x; do
+#    changequote(,)
+#    # Get next component from the back of the list.
+#    h_comp=`echo $h_tmp | sed 's%.*[ 	][ 	]*%%'`
+#
+#    # Remove this component from the back of the list.
+#    h_tmp=`echo $h_tmp | sed -ne "s%[ 	][ 	]*$h_comp\$%%p"`
+#    changequote([,])
+#
+#    # Put this component on the grand list of components.
+#    HD_SELECTED="$HD_SELECTED$h_comp "
+#
+#    # Find the configuration directory.
+#    if test -f $h_top/$h_comp/BUILD_DIR/$hd_conf_file; then
+#      h_dir=$h_top/$h_comp/BUILD_DIR
+#    else
+#      AC_MSG_ERROR(Unable to find a configuration dir for $h_comp)
+#    fi
+#
+#    # From the configuration directory, extract dependencies. These are the
+#    # names of other components needed by the current component.
+#    h_dep=`$hd_scanenv $h_dir/$hd_conf_file DEPENDENCIES`
+#
+#    # Put these dependencies onto the back the list of components so
+#    # that they too can be handled in this loop.
+#    if test "x$h_dep" != x; then h_tmp="$h_tmp $h_dep"; fi
+#
+#    # Put the current configuration directory into the output
+#    # configuration directory list.
+#    h_config_dir_list="$h_dir $h_config_dir_list"
+#  done
+
+# Eliminate duplicates from list of selected components.
+h_tmp=
+for h_comp in $HD_SELECTED; do
+  if test `echo $h_tmp | tr ' ' '\012' | grep -c "^$h_comp$"` -eq 0; then
+    h_tmp="$h_tmp$h_comp "
+  fi
+done
+HD_SELECTED=$h_tmp
+
+# Eliminate duplicates from configuration directory list.
+h_tmp=
+for h_comp in $HD_SELECTED_DIRS; do
+  if test `echo $h_tmp | tr ' ' '\012' | grep -c "^$h_comp$"` -eq 0; then
+    h_tmp="$h_tmp$h_comp "
+  fi
+done
+HD_SELECTED_DIRS=$h_tmp
+
+#-------------------------------------------------------------------------------
+# Settings dependent on component selections:
+#-------------------------------------------------------------------------------
+# - Disable heacore perl modules unless swift or demo are present.
+# - Set cxx_required=yes and ccfits_required if Xspec is present.
+# - Set cxx_required=yes if attitude, integral, suzaku, or swift are present.
+# - Set f77_required=yes if attitude, demo, ftools, suzaku, swift or Xspec
+#   are present.
+# - Set flags for tcltk components appropriate for existing packages (to
+#   minimize/eliminate unnecessary configuration & compilation).
+# - Set x11_required=yes where necessary.
+
+ccfits_required=no
+cxx_required=no
+f77_required=no
+heacore_perlmods_required=no
+hoops_required=no
+
+pgplot_required=no
+pgplot_perlmod_required=no
+tkpgplot_required=no
+plt_required=no
+tcl_required=no
+tk_required=no
+tclreadline_required=no
+xpa_required=no
+extra_gui_libs_required=no
+iwidgets220_required=no
+
+x11_required=no
+
+for dir in $h_components; do
+  if test `echo $dir | grep -c attitude` -ne 0; then
+     cxx_required=yes
+     f77_required=yes
+  fi
+  if test `echo $dir | grep -c demo` -ne 0; then
+     f77_required=yes
+     heacore_perlmods_required=yes
+  fi
+  if test `echo $dir | grep -c external` -ne 0; then
+     cxx_required=yes
+     x11_required=yes
+  fi
+  if test `echo $dir | grep -c ftools` -ne 0; then
+     f77_required=yes
+     if test -d $h_top/ftools/asca; then
+       pgplot_required=yes
+       plt_required=yes
+       x11_required=yes
+     fi
+     if test -d $h_top/ftools/futils; then
+       pgplot_required=yes
+       plt_required=yes
+       x11_required=yes
+     fi
+     if test -d $h_top/ftools/gro; then
+       pgplot_required=yes
+       x11_required=yes
+     fi
+     if test -d $h_top/ftools/guis -a `echo $host | grep -c cygwin` -eq 0; then
+       extra_gui_libs_required=yes
+       tcl_required=yes
+       tk_required=yes
+       wcslib_required=yes
+       xpa_required=yes
+       x11_required=yes
+     fi
+     if test -d $h_top/ftools/guis/xdf; then
+       iwidgets220_required=yes
+     fi
+     if test -d $h_top/ftools/heasarc; then
+       pgplot_required=yes
+       plt_required=yes
+       x11_required=yes
+     fi
+     if test -d $h_top/ftools/image; then
+       ast_required=yes
+       pgplot_required=yes
+       plt_required=yes
+       tcl_required=yes
+       tclreadline_required=yes
+       tk_required=yes
+       x11_required=yes
+       tkpgplot_required=yes
+     fi
+     if test -d $h_top/ftools/qdp; then
+       pgplot_required=yes
+       plt_required=yes
+       x11_required=yes
+     fi
+     if test -d $h_top/ftools/spectral; then
+       pgplot_required=yes
+       plt_required=yes
+       tcl_required=yes
+       x11_required=yes
+     fi
+     if test -d $h_top/ftools/timing; then
+       pgplot_required=yes
+       plt_required=yes
+       x11_required=yes
+     fi
+     if test -d $h_top/ftools/xselect; then
+       pgplot_required=yes
+       plt_required=yes
+       tcl_required=yes
+       tk_required=yes
+       x11_required=yes
+     fi
+  fi
+  if test `echo $dir | grep -c heagen` -ne 0; then
+     heasp_required=yes
+  fi
+  if test `echo $dir | grep -c heatools` -ne 0; then
+     heacore_perlmods_required=yes
+     wcslib_required=yes
+  fi
+  if test `echo $dir | grep -c glast` -ne 0; then
+     cxx_required=yes
+     hoops_required=yes
+     tcl_required=yes
+     tk_required=yes
+  fi
+  if test `echo $dir | grep -c integral` -ne 0; then
+     cxx_required=yes
+  fi
+  if test `echo $dir | grep -c suzaku` -ne 0; then
+     cxx_required=yes
+     f77_required=yes
+  fi
+  if test `echo $dir | grep -c swift` -ne 0; then
+     cxx_required=yes
+     f77_required=yes
+     heacore_perlmods_required=yes
+     pgplot_required=yes
+     pgplot_perlmod_required=yes
+     wcslib_required=yes
+     x11_required=yes
+  fi
+  if test `echo $dir | grep -c Xspec` -ne 0; then
+     ccfits_required=yes
+     cxx_required=yes
+     f77_required=yes
+     pgplot_required=yes
+     plt_required=yes
+     tcl_required=yes
+     tclreadline_required=yes
+     x11_required=yes
+     if test `echo $host | grep -c osf` -ne 0; then
+        AC_MSG_ERROR(Xspec 12 is not supported on OSF!)
+     fi
+     if test "x$h_shared" = xno; then
+        AC_MSG_ERROR(Xspec 12 requires shared libraries!)
+     fi
+  fi
+done
+
+#-------------------------------------------------------------------------------
+dnl Checks for programs.
+#-------------------------------------------------------------------------------
+
+# Try first to find a proprietary C compiler, then gcc
+if test "x${UNAME_SYSTEM}" = xOSF1 -o "x${UNAME_SYSTEM}" = xSunOS -o "x${UNAME_SYSTEM}" = xIRIX; then
+  if test "x$CC" = x; then
+    AC_CHECK_PROGS(CC, cc)
+  fi
+fi
+# Set up flags to use the selected compiler
+AC_PROG_CC
+if test "$cross_compiling" = yes; then
+  AC_MSG_WARN(Cannot run a simple C executable on your system:)
+  AC_MSG_WARN(There may be something wrong with your compiler,)
+  AC_MSG_WARN(or perhaps you're trying to cross-compile?)
+  AC_MSG_WARN(Cross-compiling is not supported within HEADAS.)
+  AC_MSG_WARN(Please make sure your compiler is working.)
+  AC_MSG_WARN(Contact the FTOOLS help desk for further assistance.)
+  AC_MSG_ERROR(Cross-compiling is not allowed.)
+fi
+if test "x$GCC" = x; then
+  GCC=no
+fi
+export CC
+export GCC
+if test "x$GCC" = xyes; then
+   GCCVERSION="`$CC -dumpversion 2>&1`"
+fi
+
+# command line choice for F77
+if test "x$with_f77" = x; then
+  with_f77=yes
+fi
+if test $with_f77 = no; then
+  if test "x$f77_required" = xyes; then
+    AC_MSG_ERROR(A Fortran compiler is required to build one or more selected components!)
+  else
+    AC_MSG_WARN(Skipping check for Fortran compiler!)
+    AC_MSG_WARN(Parts of HEADAS will not build without a Fortran compiler!)
+    F77=:
+    AC_SUBST(F77)
+    G77=no
+  fi
+else
+  if test $with_f77 != yes; then
+    F77=$with_f77
+  elif test "x$FC" = x -a "x$F77" = x; then
+    if test "x$GCC" = xyes; then
+      # Only pair up gfortran with GCC 4.x:
+      changequote(,)
+      gcc4_test=`echo $GCCVERSION | grep -c '^[4]\.[0123456789]'`
+      changequote([,])
+      if test ${UNAME_SYSTEM} = Linux; then
+        if test $gcc4_test -ne 0; then
+          AC_CHECK_PROGS(F77, gfortran g77 f77 ifort g95)
+        else
+          AC_CHECK_PROGS(F77, g77 gfortran f77 ifort g95)
+        fi
+      elif test ${UNAME_SYSTEM} = Darwin; then
+        if test $gcc4_test -ne 0; then
+          AC_CHECK_PROGS(F77, g95 gfortran g77 f77 ifort)
+        else
+          AC_CHECK_PROGS(F77, g77 g95 gfortran f77 ifort)
+        fi
+      elif test ${UNAME_SYSTEM} = SunOS; then
+        AC_CHECK_PROGS(F77, gfortran g95 g77 f77 ifort)
+      else
+        AC_CHECK_PROGS(F77, f95 f90 f77)
+      fi
+    else
+      AC_CHECK_PROGS(F77, f95 f90 f77)
+    fi
+  elif test "x$FC" != x; then
+    F77=$FC
+  fi
+  F77_BASENAME=`basename $F77`
+  F77_DIRNAME=`dirname $F77`
+  # if using Solaris Workshop 7.0 compilers or higher, we only have f90
+  if test "x${UNAME_SYSTEM}" = "xSunOS" -a "x${F77_BASENAME}" != "xf90"; then
+    if test `$F77 -V 2> /dev/null | grep -c f90` -ne 0 ; then
+      if test "x${F77_DIRNAME}" != "x" -a "x${F77_DIRNAME}" != "x."; then
+        F77="${F77_DIRNAME}/f90"
+      else
+        F77=f90
+      fi
+      AC_MSG_WARN(f77 is really 'f90 -f77'.  Setting FC=f90)
+    fi
+  fi
+  # SGI/IRIX f90 not currently supported
+  if test "x${UNAME_SYSTEM}" = "xIRIX" -a "x${F77_BASENAME}" = "xf90"; then
+      AC_MSG_ERROR(IRIX Fortran 90 is not currently supported; please use f77)
+  fi
+  AC_PROG_F77
+  if test "x$G77" = x; then
+    G77=no
+  fi
+fi
+FC=$F77
+if test "x$FC" = x; then
+   if test "x$f77_required" = xyes; then
+      AC_MSG_ERROR(A Fortran compiler is required to build one or more selected components!)
+   fi
+else
+   FC_BASENAME=`basename $FC`
+   if test "x$FC_BASENAME" = xf77.sh; then
+      AC_MSG_ERROR($FC is not a valid Fortran compiler!)
+   fi
+fi
+AC_SUBST(FC)
+AC_SUBST(FC_BASENAME)
+# Additional G77 test for e.g. SuSE 10.x Linux, where the C preprocessor
+# needed for the AC_PROG_F77 test is not packaged with the g77 compiler:
+if test "x${FC_BASENAME}" = xg77 -a $G77 = no; then
+   G77VSTRING=`g77 --version | head -1 | grep -i 'gnu fortran'`
+   if test -z "$G77VSTRING"; then
+      G77=no
+   else
+      G77=yes
+   fi
+fi
+if test $with_f77 != no; then
+  case ${UNAME_SYSTEM} in
+    CYGWIN*)
+      if test $G77 = no; then
+       AC_MSG_ERROR([HEADAS software requires GNU Fortran on Cygwin!])
+      fi
+    ;;
+    Darwin*)
+      if test $G77 = no -a $FC_BASENAME != ifort; then
+       AC_MSG_WARN([HEADAS software prefers GNU Fortran on Darwin!])
+       AC_MSG_WARN(PROCEED AT YOUR OWN RISK!)
+      fi
+    ;;
+    Linux*)
+      if test $G77 = no -a $FC_BASENAME != ifort; then
+       AC_MSG_WARN([HEADAS software prefers GNU Fortran on Linux!])
+       AC_MSG_WARN(PROCEED AT YOUR OWN RISK!)
+      fi
+    ;;
+  esac
+fi
+if test "$cross_compiling" = yes; then
+  AC_MSG_WARN(Cannot run a simple F77 executable on your system:)
+  AC_MSG_WARN(There may be something wrong with your compiler,)
+  AC_MSG_WARN(or perhaps you're trying to cross-compile?)
+  AC_MSG_WARN(Cross-compiling is not supported within HEADAS.)
+  AC_MSG_WARN(Please make sure your compiler is working.)
+  AC_MSG_WARN(Contact the FTOOLS help desk for further assistance.)
+  AC_MSG_ERROR(Cross-compiling is not allowed.)
+fi
+AC_SUBST(G77)
+export FC
+export F77
+export G77
+
+# command line choice for C++
+if test "x$with_cxx" = xno; then
+  if test "x$cxx_required" = xyes; then
+    AC_MSG_ERROR(C++ is required to build one or more selected components!)
+  else
+    AC_MSG_NOTICE(Not looking for a C++ compiler.  C++ macros disabled.)
+    CXX=:
+    AC_SUBST(CXX)
+    GXX=no
+  fi
+else
+  if test "x$CXX" = x; then
+    if test "x${UNAME_SYSTEM}" = xSunOS; then
+      AC_CHECK_PROGS(CXX, CC g++ c++)
+    else
+      AC_CHECK_PROGS(CXX, g++ c++ icc cxx)
+    fi
+  fi
+  # Modify LD_LIBRARY_PATH to circumvent problem with g++ 3.0.x:
+  echo "int main(){return(0);}" > /tmp/$$.c
+  $CXX -v -o /tmp/$$.out /tmp/$$.c 2> /tmp/$$.log
+  if test `cat /tmp/$$.log | grep -c collect2` -ne 0; then
+      cxx_lib_path=`grep collect2 /tmp/$$.log | tr " " "\012" | grep "^\-L" | sed 's:-L::' | tr "\012" ":"`
+  else
+      cxx_lib_path=`grep ld /tmp/$$.log | tr " " "\012" | grep "^\-L" | sed 's:-L::' | tr "\012" ":"`
+  fi
+  if test "x$cxx_lib_path" != x; then
+    OLD_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+    LD_LIBRARY_PATH=$cxx_lib_path$LD_LIBRARY_PATH
+    export LD_LIBRARY_PATH
+  fi
+  if test "x$with_cxx" != x -a "x$with_cxx" != xyes; then
+    CXX=$with_cxx
+  fi
+  AC_PROG_CXX
+  if test "x$GXX" = x; then
+    GXX=no
+  else
+    if test `echo "$HD_SELECTED" | grep -c Xspec` -ne 0; then
+      GXXVERSION="`$CXX -dumpversion 2>&1`"
+      # XSPEC/CCFITS: Fail if not using 2.95.[3-9] dated 200109DD or newer
+      changequote(,)
+      cxx_test1=`cat /tmp/$$.log | grep -c 'C++ version [12]\.[012345678]'`
+      cxx_test2=`cat /tmp/$$.log | grep -c 'C++ version [12]\.9[012346]'`
+      cxx_test3=`cat /tmp/$$.log | grep -c 'C++ version 2\.95\.[012]'`
+      cxx_test4=`cat /tmp/$$.log | grep -c 'C++ version 2\.95\.[3456789] 20010[12345678]'`
+      changequote([,])
+      if test $cxx_test1 -ne 0 -o $cxx_test2 -ne 0 -o $cxx_test3 -ne 0 -o $cxx_test4 -ne 0; then
+        AC_MSG_ERROR(g++ version $GXXVERSION unsupported by Xspec)
+      fi
+    fi
+  fi
+  rm -f /tmp/$$.*
+fi
+if test "$cross_compiling" = yes; then
+  AC_MSG_WARN(Cannot run a simple G++ executable on your system:)
+  AC_MSG_WARN(There may be something wrong with your compiler,)
+  AC_MSG_WARN(or perhaps you're trying to cross-compile?)
+  AC_MSG_WARN(Cross-compiling is not supported within HEADAS.)
+  AC_MSG_WARN(Please make sure your compiler is working.)
+  AC_MSG_WARN(Contact the FTOOLS help desk for further assistance.)
+  AC_MSG_ERROR(Cross-compiling is not allowed.)
+fi
+AC_SUBST(GXX)
+export GXX
+export CXX
+
+# Reset LD_LIBRARY_PATH:
+if test "x$OLD_LD_LIBRARY_PATH" != x; then
+  LD_LIBRARY_PATH=$OLD_LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH
+fi
+
+# Default behavior for C++ in headas components:
+#  - attitude: Enable C++, cxx_required=yes
+#              Fail if C++ was explicitly disabled on cmd line
+#  - heacore:  Disable C++ unless explicitly enabled on cmd line, or if
+#              a selected component requires it (e.g. if ccfits_required=yes).
+#  - Xspec:    Enable C++, cxx_required=yes
+#              Requires C++ in the heacore also (for CCfits).
+#              Fail if C++ was explicitly disabled on cmd line.
+#  - integral: Enable C++, cxx_required=yes
+#              Fail if C++ was explicitly disabled on cmd line
+#  - suzaku:   Enable C++, cxx_required=yes
+#              Fail if C++ was explicitly disabled on cmd line
+#  - swift:    Enable C++, cxx_required=yes
+#              Fail if C++ was explicitly disabled on cmd line
+#
+# Packages which currently have no C++:
+#  - heatools
+#  - heagen
+#  - demo
+#  - tcltk
+#  - xmm
+
+suzaku_cxx=$with_cxx
+attitude_cxx=$with_cxx
+demo_cxx=$with_cxx
+external_cxx=$with_cxx
+ftools_cxx=$with_cxx
+glast_cxx=$with_cxx
+heacore_cxx=$with_cxx
+heagen_cxx=$with_cxx
+heatools_cxx=$with_cxx
+integral_cxx=$with_cxx
+swift_cxx=$with_cxx
+tcltk_cxx=$with_cxx
+xmm_cxx=$with_cxx
+Xspec_cxx=$with_cxx
+
+if test "x$with_cxx" = x; then
+  suzaku_cxx=yes
+  attitude_cxx=yes
+  demo_cxx=no
+  external_cxx=yes
+  ftools_cxx=no
+  glast_cxx=yes
+  if test "x$ccfits_required" = xyes -o "x$hoops_required" = xyes; then
+    heacore_cxx=yes
+  else
+    heacore_cxx=no
+  fi
+  heagen_cxx=no
+  heatools_cxx=no
+  integral_cxx=yes
+  swift_cxx=yes
+  tcltk_cxx=no
+  xmm_cxx=no
+  Xspec_cxx=yes
+fi
+
+#-------------------------------------------------------------------------------
+# Readline: Force our readline to build if --enable-readline option is given:
+#-------------------------------------------------------------------------------
+
+AC_ARG_ENABLE(readline,[],
+  [if test "x$enableval" = xno; then
+     force_readline_build=no
+   else
+     force_readline_build=yes
+   fi],
+  [force_readline_build=no]
+)
+
+# Force readline to build on Darwin, where libreadline is a symbolic
+# link to "libedit", a ~buggy replacement which we cannot currently use:
+if test `echo $host | grep -c darwin` -ne 0; then
+  force_readline_build=yes
+fi
+
+# If not forcing readline to build, check for libreadline on the system:
+if test "x$force_readline_build" = xno; then
+  AC_CHECK_LIB([readline],[main],
+               [build_readline=no],
+               [build_readline=yes
+                AC_MSG_RESULT(Will build our readline instead.)],
+               [-lncurses])
+else
+  build_readline=yes
+fi
+if test "x$fv_build" = xyes; then
+  build_readline=no
+fi
+
+#-------------------------------------------------------------------------------
+# Piece together appropriate heacore & tcltk package components based on
+# the needs of selected headas components (order is important here):
+#-------------------------------------------------------------------------------
+
+if test "$build_readline" = yes; then
+  h_heacore_components="readline cfitsio ape heaio heautils heainit"
+else
+  h_heacore_components="cfitsio ape heaio heautils heainit"
+fi
+if test "$heasp_required" = yes; then
+  h_heacore_components="$h_heacore_components heasp"
+fi
+if test "$ast_required" = yes; then
+  h_heacore_components="$h_heacore_components ast"
+fi
+if test "$wcslib_required" = yes; then
+  h_heacore_components="$h_heacore_components wcslib"
+fi
+if test "$ccfits_required" = yes; then
+  h_heacore_components="$h_heacore_components CCfits"
+fi
+if test "$hoops_required" = yes; then
+  h_heacore_components="$h_heacore_components hoops"
+fi
+if test "$heacore_perlmods_required" = yes; then
+  h_heacore_components="$h_heacore_components fitsperl pilperl hdutilsperl hdinitperl"
+fi
+
+h_tcltk_components=
+
+if test "$tcl_required" = yes; then
+  h_tcltk_components="tcl"
+fi
+if test "$tk_required" = yes; then
+  h_tcltk_components="$h_tcltk_components tk"
+fi
+if test "$tclreadline_required" = yes; then
+  h_tcltk_components="$h_tcltk_components tclreadline"
+fi
+if test "$xpa_required" = yes; then
+  h_tcltk_components="$h_tcltk_components xpa"
+fi
+if test "$pgplot_required" = yes; then
+  h_tcltk_components="$h_tcltk_components pgplot"
+fi
+if test "$plt_required" = yes; then
+  h_tcltk_components="$h_tcltk_components plt"
+fi
+if test "$extra_gui_libs_required" = yes; then
+  h_tcltk_components="$h_tcltk_components pow itcl itk"
+  if test "$iwidgets220_required" = yes; then
+    h_tcltk_components="$h_tcltk_components iwidgets220"
+  fi
+  h_tcltk_components="$h_tcltk_components iwidgets tix"
+fi
+if test "$pgplot_perlmod_required" = yes; then
+  h_tcltk_components="$h_tcltk_components extf77perl pgplotperl"
+fi
+
+# Remove leading whitespace (if any) from tcltk component list.
+h_tcltk_components=`echo $h_tcltk_components | sed 's%^ *%%'`
+
+h_external_components="clhep cppunit fftw python pmw swig xerces"
+
+#-------------------------------------------------------------------------------
+dnl Check for header from X11 Development Package (if necessary):
+#-------------------------------------------------------------------------------
+
+if test "$x11_required" = yes; then
+  # Prepend the standard location X11 bin directory (if it exists) to PATH
+  # to assist AC_PATH_X in finding headers & libraries:
+  if test -d /usr/X11R6/bin; then
+    if test "x$PATH" != x; then
+      PATH=$PATH:/usr/X11R6/bin
+    else
+      PATH=/usr/X11R6/bin
+    fi
+    export PATH
+  fi
+  AC_PATH_X
+  if test "x$no_x" = xyes; then
+    AC_MSG_ERROR(One or more components requires X11!)
+  fi
+  AC_CHECK_HEADER([X11/Xlib.h],[],[AC_MSG_ERROR(X11 Development package is required in order to build HEASOFT!)],[])
+fi
+
+#-------------------------------------------------------------------------------
+# Recursively configure all selected components.
+#-------------------------------------------------------------------------------
+for h_dir in $HD_SELECTED_DIRS; do
+  h_comp=`$hd_scanenv $h_dir/$hd_conf_file COMPONENT`
+  h_config_heacore=`$hd_scanenv $h_dir/$hd_conf_file HEACORE`
+  h_config_heatools=`$hd_scanenv $h_dir/$hd_conf_file HEATOOLS`
+  h_config_cmd=`$hd_scanenv $h_dir/$hd_conf_file CONFIGURE_CMD`
+  if test $? -ne 0 -o "x$h_config_cmd" = x; then
+    AC_MSG_ERROR(Unable to determine how to run configure for $h_comp)
+  fi
+
+  AC_MSG_RESULT(--------------------------------------------------------------------------------)
+  eval echo \"$h_config_cmd\"
+  (eval $h_config_cmd)
+  if test $? -ne 0; then
+     AC_MSG_ERROR(Configure failed in $h_dir!)
+  fi
+
+  AC_MSG_RESULT(--------------------------------------------------------------------------------)
+done
+
+BSUF=
+case ${UNAME_SYSTEM} in
+  CYGWIN*)
+    BSUF=.exe
+    EXT=win
+    ;;
+  Darwin*)
+    EXT=darwin
+    ;;
+  IRIX*)
+    AC_MSG_ERROR(IRIX is not currently supported)
+    EXT=irix
+    ;;
+  Linux*)
+    EXT=lnx
+    ;;
+  OSF*)
+    EXT=osf
+    ;;
+  SunOS*)
+    EXT=sol
+  ;;
+esac
+AC_SUBST(BSUF)
+AC_SUBST(EXT)
+
+AC_PATH_PROGS(PERL, perl5 perl)
+$PERL -v 2> /dev/null > /tmp/$$.log
+changequote(,)
+perl_test1=`cat /tmp/$$.log | grep -c '[1234]\.[0123456789]'`
+perl_test2=`cat /tmp/$$.log | grep -c '5\.00[01234]'`
+changequote([,])
+if test $perl_test1 -ne 0 -o $perl_test2 -ne 0; then
+  AC_MSG_ERROR(Perl version 5.005 or better is required!)
+fi
+rm -f /tmp/$$.*
+AC_SUBST(PERL)
+AC_SUBST(UNAME_SYSTEM)
+
+AC_SUBST(HD_SELECTED)
+AC_SUBST(HD_SRC)
+
+AC_CONFIG_FILES([Makefile headas-setup])
+AC_OUTPUT
+
+if test -f headas-setup; then chmod +x headas-setup; fi
+
+#if test $lhea_register = yes; then
+#  chmod +x ./hd_register.sh
+#  ./hd_register.sh 2> /dev/null
+#fi
+
+echo "Done"

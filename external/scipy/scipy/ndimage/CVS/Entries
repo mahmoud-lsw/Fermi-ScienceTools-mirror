@@ -1,0 +1,14 @@
+/LICENSE.txt/1.1.2.1/Fri Feb 27 05:02:34 2015//TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_ni_support.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/filters.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/fourier.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/interpolation.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/io.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/measurements.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/morphology.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:02:34 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/src////
+D/tests////
+D/utils////

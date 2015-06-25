@@ -1,0 +1,32 @@
+/Makefile.am/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Makefile.in/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bluestein.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/buffered.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/codelet-dft.h/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/conf.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ct.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ct.h/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ctsq.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dft.h/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dftw-direct.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dftw-generic.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dftw-genericbuf.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/direct.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/generic.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/indirect-transpose.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/indirect.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/kdft-dif.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/kdft-difsq.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/kdft-dit.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/kdft.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/nop.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/plan.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/problem.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/rader.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/rank-geq2.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/solve.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/vrank-geq1.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/zero.c/1.1.1.1/Thu Oct 25 19:24:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/codelets////
+D/k7////
+D/simd////

@@ -1,0 +1,31 @@
+/MakeBuildDirs.bat/1.1.1.1/Thu Oct 25 19:30:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/Xerces-all.mak/1.1.1.1/Thu Oct 25 19:30:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/readme.txt/1.1.1.1/Thu Oct 25 19:30:56 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/CreateDOMDocument////
+D/DOMCount////
+D/DOMMemTest////
+D/DOMPrint////
+D/DOMRangeTest////
+D/DOMTest////
+D/DOMTraversal////
+D/DOMTypeInfoTest////
+D/DeprecatedDOMCount////
+D/EncodingTest////
+D/EnumVal////
+D/InitTermTest////
+D/MemHandlerTest////
+D/MemParse////
+D/PParse////
+D/PSVIWriter////
+D/Redirect////
+D/SAX2Count////
+D/SAX2Print////
+D/SAXCount////
+D/SAXPrint////
+D/SCMPrint////
+D/SEnumVal////
+D/StdInParse////
+D/ThreadTest////
+D/XSValueTest////
+D/XSerializerTest////
+D/XercesLib////

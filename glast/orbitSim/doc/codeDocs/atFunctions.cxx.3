@@ -1,0 +1,668 @@
+.TH "orbitSim/src/atFunctions.cxx" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+orbitSim/src/atFunctions.cxx \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'orbitSim/atFunctions\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBatInvRotMat\fP (\fBAtRotMat\fP rm, \fBAtRotMat\fP rm2)"
+.br
+.RI "\fIFunction that inverts a rotation matrix\&. \fP"
+.ti -1c
+.RI "int \fBatRMProd\fP (\fBAtRotMat\fP rm0, \fBAtRotMat\fP rm1, \fBAtRotMat\fP rm2)"
+.br
+.RI "\fIFunction that calculates the product of two matrices\&. \fP"
+.ti -1c
+.RI "int \fBatEarthOccult\fP (\fBAtVect\fP satVect, \fBAtVect\fP xVect, \fBAtVect\fP sunVect, int *flag, double *el)"
+.br
+.RI "\fIFunction that examines Earth occultation of specified direction\&. \fP"
+.ti -1c
+.RI "int \fBatInvVect\fP (\fBAtVect\fP x, \fBAtVect\fP y)"
+.br
+.RI "\fIFunction creates an inverse vector starting from a given one\&. \fP"
+.ti -1c
+.RI "double \fBatNorm\fP (\fBAtVect\fP x)"
+.br
+.RI "\fIFunction that calculates the norm of a vector\&. \fP"
+.ti -1c
+.RI "double \fBatScalProd\fP (\fBAtVect\fP x, \fBAtVect\fP y)"
+.br
+.RI "\fIFunction that calculates the scalar product of two vectors\&. \fP"
+.ti -1c
+.RI "int \fBatAngDistance\fP (\fBAtVect\fP x, \fBAtVect\fP y, double *r)"
+.br
+.RI "\fIFunction that calculates the angular distance of two points as specified by two vectors\&. \fP"
+.ti -1c
+.RI "int \fBatSetRotMatZX\fP (\fBAtVect\fP zAxis, \fBAtVect\fP xAxis, \fBAtRotMat\fP rm)"
+.br
+.RI "\fIFunction that finds the rotation matrix defined by New Z-axis and a vector in (+)X-Z half plane\&. \fP"
+.ti -1c
+.RI "int \fBatVectProd\fP (\fBAtVect\fP x, \fBAtVect\fP y, \fBAtVect\fP z)"
+.br
+.RI "\fIFunction that calculates the vector product of two vectors\&. \fP"
+.ti -1c
+.RI "int \fBatEllipsoido\fP (\fBAtPolarVect\fP *xp, double *latt, double *heigh)"
+.br
+.RI "\fIFunction that converts polar geodetic coordinate\&. \fP"
+.ti -1c
+.RI "int \fBatGeodetic\fP (double mjd, \fBAtVect\fP x, \fBAtVect\fP y)"
+.br
+.RI "\fIFunction that converts sidereal equatorial coord to geodetic coordinate\&. \fP"
+.ti -1c
+.RI "int \fBatSetGeoRM\fP (double mjd, \fBAtRotMat\fP rm)"
+.br
+.RI "\fIFunction that converts sidereal equatorial coord to geodetic coordinate\&. \fP"
+.ti -1c
+.RI "int \fBatSidereal\fP (double mjd, double *gsttod)"
+.br
+.RI "\fIFunction that calculates Greenwich sidereal time\&. \fP"
+.ti -1c
+.RI "int \fBatSetRotMat\fP (\fBAtVect\fP axis, double roll, \fBAtRotMat\fP rm)"
+.br
+.RI "\fIFunction that calculates matrix for rotation of coordinate with axis and roll angle\&. \fP"
+.ti -1c
+.RI "int \fBatVectToPol\fP (\fBAtVect\fP x, \fBAtPolarVect\fP *y)"
+.br
+.RI "\fIFunction that converts the coordinate from Cartesian to Polar\&. \fP"
+.ti -1c
+.RI "int \fBatNormVect\fP (\fBAtVect\fP x, \fBAtVect\fP y)"
+.br
+.RI "\fIFunction that normalizes a vector\&. \fP"
+.ti -1c
+.RI "int \fBatRotVect\fP (\fBAtRotMat\fP rm, \fBAtVect\fP x, \fBAtVect\fP y)"
+.br
+.RI "\fIFunction that rotates a vector using a specified rotation matrix\&. \fP"
+.ti -1c
+.RI "int \fBatSun\fP (double mjd, \fBAtVect\fP pos)"
+.br
+.RI "\fIFunction that calculates the Sun position in ECI at the specified mjd time\&. \fP"
+.ti -1c
+.RI "int \fBatPolToVect\fP (\fBAtPolarVect\fP *x, \fBAtVect\fP y)"
+.br
+.RI "\fIFunction that converts Polar coordinates to Cartesian\&. \fP"
+.ti -1c
+.RI "int \fBatMJulian\fP (\fBAtTime\fP *time, double *mjd)"
+.br
+.RI "\fIFunction that converts \fBAtTime\fP structure in mjd time\&. \fP"
+.ti -1c
+.RI "int \fBatPrecession\fP (double mjd0, \fBAtVect\fP x0, double mjd, \fBAtVect\fP x)"
+.br
+.RI "\fIFunction that converts equatorial coordinate systems correcting for precession at time mjd, knowing the position at at a previous time mjd0\&. \fP"
+.ti -1c
+.RI "int \fBatPrecessRM\fP (double mjd0, double mjd, \fBAtRotMat\fP rm)"
+.br
+.RI "\fIFunction that finds Rotation Matrix for conversion of equatorial coordinate systems correcting for precession\&. \fP"
+.ti -1c
+.RI "int \fBatMultVect\fP (double f, \fBAtVect\fP x, \fBAtVect\fP z)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int \fBatAngDistance\fP (\fBAtVect\fPx, \fBAtVect\fPy, double *r)"
+.PP
+Function that calculates the angular distance of two points as specified by two vectors\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - input vector 
+.br
+\fIy\fP - input vector 
+.br
+\fIr\fP - angular distance between x and y in radian; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 146 of file atFunctions\&.cxx\&.
+.SS "int \fBatEarthOccult\fP (\fBAtVect\fPsatVect, \fBAtVect\fPxVect, \fBAtVect\fPsunVect, int *flag, double *el)"
+.PP
+Function that examines Earth occultation of specified direction\&. \fBParameters:\fP
+.RS 4
+\fIsatVect\fP - satellite pos\&. in equatorial coord, input 
+.br
+\fIxVect\fP - direction to be examined, input 
+.br
+\fIsunVect\fP - vector to the sun, inout 
+.br
+\fIflag\fP - condition 0:sky, 1:dark, 2:bright earth; output 
+.br
+\fIel\fP - elevation angle of z from the earth edge; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 72 of file atFunctions\&.cxx\&.
+.SS "int \fBatEllipsoido\fP (\fBAtPolarVect\fP *xp, double *latt, double *heigh)"
+.PP
+Function that converts polar geodetic coordinate\&. This routine converts polar geodetic coordinate latitude radial distance to the geographic latitude and altitude from the earth surface correcting for the ellipsoidal shape of the earth
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxp\fP - vector in celestial coordinate, input value 
+.br
+\fIlatt\fP - latitude on the earth surface, output value 
+.br
+\fIheigh\fP - altitude from the earth surface, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 201 of file atFunctions\&.cxx\&.
+.SS "int \fBatGeodetic\fP (doublemjd, \fBAtVect\fPx, \fBAtVect\fPy)"
+.PP
+Function that converts sidereal equatorial coord to geodetic coordinate\&. \fBParameters:\fP
+.RS 4
+\fImjd\fP - time in MJD, input value 
+.br
+\fIx\fP - vector in sidereal equatorial coordinate, input value 
+.br
+\fIy\fP - vector in geodetic coordinate at mjd, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 236 of file atFunctions\&.cxx\&.
+.SS "int \fBatInvRotMat\fP (\fBAtRotMat\fPrm, \fBAtRotMat\fPrm2)"
+.PP
+Function that inverts a rotation matrix\&. \fBParameters:\fP
+.RS 4
+\fIrm\fP - rotation matrix, input 
+.br
+\fIrm2\fP - inverted rotation matrix, output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 29 of file atFunctions\&.cxx\&.
+.SS "int \fBatInvVect\fP (\fBAtVect\fPx, \fBAtVect\fPy)"
+.PP
+Function creates an inverse vector starting from a given one\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - input vector 
+.br
+\fIy\fP - inverted vector; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 112 of file atFunctions\&.cxx\&.
+.SS "int \fBatMJulian\fP (\fBAtTime\fP *time, double *mjd)"
+.PP
+Function that converts \fBAtTime\fP structure in mjd time\&. \fBParameters:\fP
+.RS 4
+\fItime\fP - \fBAtTime\fP struture 
+.br
+\fImjd\fP - mjd time
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 459 of file atFunctions\&.cxx\&.
+.SS "int \fBatMultVect\fP (doublef, \fBAtVect\fPx, \fBAtVect\fPz)"
+.PP
+Definition at line 519 of file atFunctions\&.cxx\&.
+.SS "double \fBatNorm\fP (\fBAtVect\fPx)"
+.PP
+Function that calculates the norm of a vector\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - input vector
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 124 of file atFunctions\&.cxx\&.
+.SS "int \fBatNormVect\fP (\fBAtVect\fPx, \fBAtVect\fPy)"
+.PP
+Function that normalizes a vector\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - cartesian vector, input value 
+.br
+\fIy\fP - normalized vector, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 346 of file atFunctions\&.cxx\&.
+.SS "int \fBatPolToVect\fP (\fBAtPolarVect\fP *x, \fBAtVect\fPy)"
+.PP
+Function that converts Polar coordinates to Cartesian\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - polar vector, input value 
+.br
+\fIy\fP - cartesian vector, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 444 of file atFunctions\&.cxx\&.
+.SS "int \fBatPrecession\fP (doublemjd0, \fBAtVect\fPx0, doublemjd, \fBAtVect\fPx)"
+.PP
+Function that converts equatorial coordinate systems correcting for precession at time mjd, knowing the position at at a previous time mjd0\&. \fBParameters:\fP
+.RS 4
+\fImjd0\fP - initial time in mjd, input value 
+.br
+\fIx0\fP - initial position, input value 
+.br
+\fImjd\fP - current time in mjd, input value 
+.br
+\fIx\fP - current position at mjd, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 480 of file atFunctions\&.cxx\&.
+.SS "int \fBatPrecessRM\fP (doublemjd0, doublemjd, \fBAtRotMat\fPrm)"
+.PP
+Function that finds Rotation Matrix for conversion of equatorial coordinate systems correcting for precession\&. \fBParameters:\fP
+.RS 4
+\fImjd0\fP - initial time in mjd, input value 
+.br
+\fImjd\fP - current time in mjd, input value 
+.br
+\fIrm\fP - rotation matrix to correct precession, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 498 of file atFunctions\&.cxx\&.
+.SS "int \fBatRMProd\fP (\fBAtRotMat\fPrm0, \fBAtRotMat\fPrm1, \fBAtRotMat\fPrm2)"
+.PP
+Function that calculates the product of two matrices\&. \fBParameters:\fP
+.RS 4
+\fIrm0\fP - rotation matrix to be multiplied, input 
+.br
+\fIrm1\fP - rotation matrix to multiply, input 
+.br
+\fIrm2\fP - product, output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 48 of file atFunctions\&.cxx\&.
+.SS "int \fBatRotVect\fP (\fBAtRotMat\fPrm, \fBAtVect\fPx, \fBAtVect\fPy)"
+.PP
+Function that rotates a vector using a specified rotation matrix\&. \fBParameters:\fP
+.RS 4
+\fIrm\fP - rotation matrix, input value 
+.br
+\fIx\fP - vector, input value 
+.br
+\fIy\fP - rotateed vector, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 372 of file atFunctions\&.cxx\&.
+.SS "double \fBatScalProd\fP (\fBAtVect\fPx, \fBAtVect\fPy)"
+.PP
+Function that calculates the scalar product of two vectors\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - input vector 
+.br
+\fIy\fP - input vector
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 135 of file atFunctions\&.cxx\&.
+.SS "int \fBatSetGeoRM\fP (doublemjd, \fBAtRotMat\fPrm)"
+.PP
+Function that converts sidereal equatorial coord to geodetic coordinate\&. \fBParameters:\fP
+.RS 4
+\fImjd\fP - time in MJD, input value 
+.br
+\fIrm\fP - rotation matrix from J2000 to geographic, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 256 of file atFunctions\&.cxx\&.
+.SS "int \fBatSetRotMat\fP (\fBAtVect\fPaxis, doubleroll, \fBAtRotMat\fPrm)"
+.PP
+Function that calculates matrix for rotation of coordinate with axis and roll angle\&. \fBParameters:\fP
+.RS 4
+\fIaxis\fP - rotation axis of coord, should be non zero, input value 
+.br
+\fIroll\fP - roll angle around axis (radian), input value 
+.br
+\fIrm\fP - rotation matrix, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 294 of file atFunctions\&.cxx\&.
+.SS "int \fBatSetRotMatZX\fP (\fBAtVect\fPzAxis, \fBAtVect\fPxAxis, \fBAtRotMat\fPrm)"
+.PP
+Function that finds the rotation matrix defined by New Z-axis and a vector in (+)X-Z half plane\&. \fBParameters:\fP
+.RS 4
+\fIzAxis\fP - input vector defining new z-axis 
+.br
+\fIxAxis\fP - input vector in new +X-Z half plane 
+.br
+\fIrm\fP - rotation matrix; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 164 of file atFunctions\&.cxx\&.
+.SS "int \fBatSidereal\fP (doublemjd, double *gsttod)"
+.PP
+Function that calculates Greenwich sidereal time\&. \fBParameters:\fP
+.RS 4
+\fImjd\fP - time in MJD, input value 
+.br
+\fIgsttod\fP - Greenwich sidereal time (radian) at mjd true of date, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 274 of file atFunctions\&.cxx\&.
+.SS "int \fBatSun\fP (doublemjd, \fBAtVect\fPpos)"
+.PP
+Function that calculates the Sun position in ECI at the specified mjd time\&. \fBParameters:\fP
+.RS 4
+\fImjd\fP - time in MJD, input value 
+.br
+\fIpos\fP - vector to the Sun in AU, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 390 of file atFunctions\&.cxx\&.
+.SS "int \fBatVectProd\fP (\fBAtVect\fPx, \fBAtVect\fPy, \fBAtVect\fPz)"
+.PP
+Function that calculates the vector product of two vectors\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - input vector 
+.br
+\fIy\fP - input vector 
+.br
+\fIz\fP - vector product; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 188 of file atFunctions\&.cxx\&.
+.SS "int \fBatVectToPol\fP (\fBAtVect\fPx, \fBAtPolarVect\fP *y)"
+.PP
+Function that converts the coordinate from Cartesian to Polar\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - cartesian vector, input value 
+.br
+\fIy\fP - polar vector, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 322 of file atFunctions\&.cxx\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

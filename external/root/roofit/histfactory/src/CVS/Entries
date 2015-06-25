@@ -1,0 +1,23 @@
+/Channel.cxx/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/ConfigParser.cxx/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/Data.cxx/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/EstimateSummary.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/FlexibleInterpVar.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/Helper.cxx/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/Helper.h/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistFactoryModelUtils.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistFactoryNavigation.cxx/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistFactorySimultaneous.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistoToWorkspaceFactory.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/HistoToWorkspaceFactoryFast.cxx/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/LinInterpVar.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/MakeModelAndMeasurements.cxx/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/MakeModelAndMeasurementsFast.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/Measurement.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/ParamHistFunc.cxx/1.1.1.2/Sat Feb  2 01:18:53 2013//TScienceTools-v10r0p5-fssc-20150518
+/PiecewiseInterpolation.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/PreprocessFunction.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/RooBarlowBeestonLL.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/Sample.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+/Systematics.cxx/1.1.1.1/Wed Jan 23 16:01:00 2013//TScienceTools-v10r0p5-fssc-20150518
+D

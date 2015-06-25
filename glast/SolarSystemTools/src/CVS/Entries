@@ -1,0 +1,15 @@
+/BinnedExposureSun.cxx/1.1.1.1/Mon Jun 25 17:19:30 2012//TScienceTools-v10r0p5-fssc-20150518
+/CosineBinner2D.cxx/1.1.1.2/Mon Sep 10 18:39:14 2012//TScienceTools-v10r0p5-fssc-20150518
+/ExposureCubeSun.cxx/1.1.1.2/Mon Sep 10 18:39:14 2012//TScienceTools-v10r0p5-fssc-20150518
+/ExposureSun.cxx/1.1.1.2/Mon Sep 10 18:39:14 2012//TScienceTools-v10r0p5-fssc-20150518
+/FitsSolarProfile.cxx/1.1.1.2/Mon Sep 10 18:39:14 2012//TScienceTools-v10r0p5-fssc-20150518
+/HealpixExposureSun.cxx/1.1.1.2/Mon Sep 10 18:39:14 2012//TScienceTools-v10r0p5-fssc-20150518
+/LikeExposureSun.cxx/1.1.1.2/Mon Sep 10 18:39:14 2012//TScienceTools-v10r0p5-fssc-20150518
+/Makefile/1.2/Wed Aug  7 14:54:38 2013//TScienceTools-v10r0p5-fssc-20150518
+/SolarProfile.cxx/1.1.1.2/Mon Sep 10 18:39:14 2012//TScienceTools-v10r0p5-fssc-20150518
+/SolarTemplate.cxx/1.1.1.2.6.1/Sat Mar  1 02:12:37 2014//TScienceTools-v10r0p5-fssc-20150518
+D/gtexpcubesun////
+D/gtexphpsun////
+D/gtltsumsun////
+D/gtsuntemp////
+D/makeSolarExposureCube////

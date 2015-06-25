@@ -1,0 +1,328 @@
+COMPONENT=external
+VERSION=
+
+CONFIGURE_CMD='cd $h_dir; ./configure --with-heatop=$prefix --with-heacore=$h_config_heacore --enable-shared=$h_shared --enable-symbols=$h_symbols --with-copt="$h_copt" --with-cxxopt="$h_cxxopt" --with-fopt="$h_fopt" --with-components="$h_external_components" --enable-hera=$h_hera_build --x-libraries=$x_libraries --x-includes=$x_includes --enable-mac_32bit=$h_mac_32bit_build --with-root=$h_build_root'
+
+HEACORE=heacore
+TCLTK=tcltk
+
+DEPENDENCIES="$HEACORE $TCLTK"
+
+#==============================================================================
+# DISTRIBUTE
+#==============================================================================
+
+DISTRIBUTE_VERS=0.7.3
+DISTRIBUTE_VERS_SHORT=0.7.3
+
+if [ "x$DISTRIBUTE_VERS_SHORT" = x ]; then
+  DISTRIBUTE=distribute
+else
+  DISTRIBUTE=distribute$DISTRIBUTE_VERS_SHORT
+fi
+
+DISTRIBUTE_DIR=$HD_SRC/distribute
+
+#==============================================================================
+# D2TO1
+#==============================================================================
+
+D2TO1_VERS=0.2.11
+D2TO1_VERS_SHORT=0.2.11
+
+if [ "x$D2TO1_VERS_SHORT" = x ]; then
+  D2TO1=d2to1
+else
+  D2TO1=d2to1$D2TO1_VERS_SHORT
+fi
+
+D2TO1_DIR=$HD_SRC/d2to1
+
+#==============================================================================
+# STSCIDISTUTILS
+#==============================================================================
+
+STSCIDISTUTILS_VERS=0.3.6
+STSCIDISTUTILS_VERS_SHORT=0.3.6
+
+if [ "x$STSCIDISTUTILS_VERS_SHORT" = x ]; then
+  STSCIDISTUTILS=stsci.distutils
+else
+  STSCIDISTUTILS=stsci.distutils$STSCI.DISTUTILS_VERS_SHORT
+fi
+
+STSCIDISTUTILS_DIR=$HD_SRC/stsci.distutils
+
+#==============================================================================
+# LAPACK
+#==============================================================================
+
+LAPACK_VERS=3.4.1
+LAPACK_VERS_SHORT=3.4.1
+
+if [ "x$LAPACK_VERS_SHORT" = x ]; then
+  LAPACK=lapack
+else
+  LAPACK=lapack$LAPACK_VERS_SHORT
+fi
+
+LAPACK_DIR=$HD_SRC/lapack
+
+#==============================================================================
+# CLHEP
+#==============================================================================
+
+CLHEP_VERS=2.1.0.1
+
+if [ "x$CLHEP_VERS" = x ]; then
+  CLHEP=CLHEP
+else
+  CLHEP=CLHEP-$CLHEP_VERS
+fi
+
+CLHEP_DIR=$HD_SRC/clhep
+
+clhep_CONFIGURE_CMD="export CXX=\$CXX; cd $CLHEP_DIR; ./configure --enable-shared=\$h_shared --enable-symbols=\$SYMBOLS --prefix=\$exec_prefix --exec-prefix=\$exec_prefix --x-libraries=\$x_libraries --x-includes=\$x_includes"
+
+#==============================================================================
+# CPPUNIT
+#==============================================================================
+
+# CPPUNIT_VERS=1.10.2
+
+CPPUNIT=cppunit
+CPPUNIT_DIR=$HD_SRC/cppunit
+
+cppunit_CONFIGURE_CMD="cd $CPPUNIT_DIR; ./configure --enable-shared=\$h_shared --prefix=\$exec_prefix --exec-prefix=\$exec_prefix --x-libraries=\$x_libraries --x-includes=\$x_includes LDFLAGS=-ldl"
+
+#==============================================================================
+# F2C
+#==============================================================================
+
+# f2c was obtained directly from netlib. This code, with local
+# changes, matches the version used by SLAC.
+
+# F2C_VERS=3.4-gl2
+
+F2C=f2c
+F2C_DIR=$HD_SRC/f2c
+
+f2c_CONFIGURE_CMD="true"
+
+#==============================================================================
+# FFTW
+#==============================================================================
+
+FFTW_VERS=3.1.2
+FFTW_VERS_SHORT=3
+
+if [ "x$FFTW_VERS_SHORT" = x ]; then
+  FFTW=fftw
+else
+  FFTW=fftw$FFTW_VERS_SHORT
+fi
+
+FFTW_DIR=$HD_SRC/fftw
+
+fftw_CONFIGURE_CMD="cd $FFTW_DIR; ./configure --enable-portable-binary --enable-shared=\$h_shared --enable-symbols=\$SYMBOLS --prefix=\$exec_prefix --exec-prefix=\$exec_prefix --x-libraries=\$x_libraries --x-includes=\$x_includes"
+
+#==============================================================================
+# GTVERSION
+#==============================================================================
+
+GTVERSION_VERS=1.0.0
+GTVERSION_VERS_SHORT=1.0.0
+
+if [ "x$GTVERSION_VERS_SHORT" = x ]; then
+  GTVERSION=gtversion
+else
+  GTVERSION=gtversion$GTVERSION_VERS_SHORT
+fi
+
+GTVERSION_DIR=$GTVERSION/gtversion
+
+#==============================================================================
+# PYTHON
+#==============================================================================
+
+PYTHON_VERS=2.7.2
+PYTHON_VERS_SHORT=2.7
+
+if [ "x$PYTHON_VERS_SHORT" = x ]; then
+  PYTHON=python
+else
+  PYTHON=python$PYTHON_VERS_SHORT
+fi
+
+PYTHON_DIR=$HD_SRC/python
+
+python_CONFIGURE_CMD="cd $PYTHON_DIR; LD_LIBRARY_PATH=\$TCL_DIR:\$TK_DIR ./configure MACOSX_DEPLOYMENT_TARGET=\$mac_osx_version --enable-shared=\$h_shared --disable-toolbox-glue --prefix=\$exec_prefix --exec-prefix=\$exec_prefix --with-readline=\$READLINE_DIR"
+
+#==============================================================================
+# PMW
+#==============================================================================
+
+PMW_VERS=1.3.2
+PMW_VERS_SHORT=1.3
+
+if [ "x$PMW_VERS_SHORT" = x ]; then
+  PMW=pmw
+else
+  PMW=pmw$PMW_VERS_SHORT
+fi
+
+PMW_DIR=$HD_SRC/pmw
+
+#==============================================================================
+# NumPy
+#==============================================================================
+
+NUMPY_VERS=1.6.1
+NUMPY_VERS_SHORT=1.6.1
+
+if [ "x$NUMPY_VERS_SHORT" = x ]; then
+  NUMPY=numpy
+else
+  NUMPY=numpy$NUMPY_VERS_SHORT
+fi
+
+NUMPY_DIR=$HD_SRC/numpy
+
+#==============================================================================
+# Pyfits
+#==============================================================================
+
+PYFITS_VERS=3.2.0
+PYFITS_VERS_SHORT=3.2.0
+
+if [ "x$PYFITS_VERS_SHORT" = x ]; then
+  PYFITS=pyfits
+else
+  PYFITS=pyfits$PYFITS_VERS_SHORT
+fi
+
+PYFITS_DIR=$HD_SRC/pyfits
+
+#==============================================================================
+# Pywcs
+#==============================================================================
+
+PYWCS_VERS=1.11-4.8.2
+PYWCS_VERS_SHORT=1.11
+
+if [ "x$PYWCS_VERS_SHORT" = x ]; then
+  PYWCS=pywcs
+else
+  PYWCS=pywcs$PYWCS_VERS_SHORT
+fi
+
+PYWCS_DIR=$HD_SRC/pywcs
+
+#==============================================================================
+# SCIPy
+#==============================================================================
+
+SCIPY_VERS=0.10.1
+SCIPY_VERS_SHORT=0.10.1
+
+if [ "x$SCIPY_VERS_SHORT" = x ]; then
+  SCIPY=scipy
+else
+  SCIPY=scipy$SCIPY_VERS_SHORT
+fi
+
+SCIPY_DIR=$HD_SRC/scipy
+
+#==============================================================================
+# Matplotlib
+#==============================================================================
+
+MATPLOTLIB_VERS=0.98.3
+MATPLOTLIB_VERS_SHORT=0.98
+
+if [ "x$MATPLOTLIB_VERS_SHORT" = x ]; then
+  MATPLOTLIB=matplotlib
+else
+  MATPLOTLIB=matplotlib$MATPLOTLIB_VERS_SHORT
+fi
+
+MATPLOTLIB_DIR=$HD_SRC/matplotlib
+
+#==============================================================================
+# ROOT
+#==============================================================================
+
+ROOT_VERS=5.26.00
+
+if [ "x$ROOT_VERS" = x ]; then
+  ROOT=root
+else
+  ROOT=root$ROOT_VERS
+fi
+
+ROOT_DIR=$HD_SRC/root
+PYTHON_DIR=$HD_SRC/python
+
+root_CONFIGURE_CMD="ROOTSYS=\$exec_prefix; export ROOTSYS; cd $ROOT_DIR; ./configure --disable-xrootd --disable-mathmore --enable-roofit --enable-minuit2 --disable-opengl --with-python-incdir=$PYTHON_DIR/Include --with-python-libdir=$PYTHON_DIR --enable-builtin-pcre"
+
+#==============================================================================
+# MINUIT2
+#==============================================================================
+
+MINUIT2=Minuit2
+MINUIT2_DIR=$HD_SRC/minuit2
+
+minuit2_CONFIGURE_CMD="cd $MINUIT2_DIR; ./configure --enable-shared=\$h_shared --enable-symbols=\$SYMBOLS --prefix=\$exec_prefix --exec-prefix=\$exec_prefix"
+
+#==============================================================================
+# SWIG
+#==============================================================================
+
+SWIG_VERS=1.3.31
+
+if [ "x$SWIG_VERS" = x ]; then
+  SWIG=swig
+else
+  SWIG=swig$SWIG_VERS
+fi
+
+SWIG_DIR=$HD_SRC/swig
+
+swig_CONFIGURE_CMD="cd $SWIG_DIR; ./configure --enable-shared=\$h_shared --enable-symbols=\$SYMBOLS --prefix=\$exec_prefix --exec-prefix=\$exec_prefix --x-libraries=\$x_libraries --x-includes=\$x_includes"
+
+#==============================================================================
+# XERCES
+#==============================================================================
+
+# XERCESC_VERSION=2.8.0
+
+XERCES=xerces-c
+XERCES_DIR=$HD_SRC/xerces/src/xercesc
+
+# The 'macosx'-conditional section below is required to get xercesc to
+# build in 64-bit mode on Snow Leopard (which is always 64-bit). Note
+# that the Science Tools no longer support 32-bit versions of OS X,
+# i.e. Leopard and earlier.
+xerces_CONFIGURE_CMD="XERCESCROOT=\$HD_SRC/xerces;export XERCESCROOT; \
+cd $XERCES_DIR; \
+if test \$xerces_platform = 'macosx'; then \
+  ./runConfigure -P\$exec_prefix -p\$xerces_platform -b 64; \
+else \
+  ./runConfigure -P\$exec_prefix -p\$xerces_platform; \
+fi"
+
+#==============================================================================
+# pyds9
+#==============================================================================
+
+PYDS9_VERS=1.7.0
+PYDS9_VERS_SHORT=1.7
+
+if [ "x$PYDS9_VERS_SHORT" = x ]; then
+  PYDS9=pyds9
+else
+  PYDS9=pyds9$PYDS9_VERS_SHORT
+fi
+
+PYDS9_DIR=$HD_SRC/pyds9
+

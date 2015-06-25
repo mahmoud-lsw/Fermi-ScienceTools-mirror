@@ -1,0 +1,8 @@
+#
+# Standard Pass 4 cuts.
+#
+# See http://confluence.slac.stanford.edu/display/DC2/Trigger+and+Filter+settings+and+Event+classes
+#
+# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/fitsGen/data/pass4_cuts,v 1.3 2007/07/09 21:03:42 jchiang Exp $
+#
+((GltWord&10)>0) && ((GltWord&7)!=3)  && (FilterStatus_HI==0) && (CTBBestEnergyProb>0.1) && (CTBCORE>0.1) && (CTBSummedCTBGAM>0.5)

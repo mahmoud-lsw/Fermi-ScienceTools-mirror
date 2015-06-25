@@ -1,0 +1,22 @@
+/README.txt/1.1/Tue Oct 23 06:31:48 2012//TScienceTools-v10r0p5-fssc-20150518
+/animate_decay_tk_blit.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/animation_blit_fltk.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/animation_blit_gtk.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/animation_blit_gtk2.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/animation_blit_qt.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/animation_blit_qt4.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/animation_blit_tk.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/animation_blit_wx.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/draggable_legend.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dynamic_collection.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dynamic_image_gtkagg.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dynamic_image_wxagg2.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/gtk_timeout.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/histogram_tkagg.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/movie_demo.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/simple_anim_gtk.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/simple_anim_tkagg.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/simple_idle_wx.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/simple_timer_wx.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/strip_chart_demo.py/1.1/Tue Oct 23 06:31:48 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+D

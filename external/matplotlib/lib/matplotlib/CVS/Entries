@@ -1,0 +1,67 @@
+/__init__.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/_cm.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/_mathtext_data.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/_pylab_helpers.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/afm.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/animation.py/1.1/Tue Oct 23 06:31:41 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/artist.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/axes.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/axis.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/backend_bases.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/bezier.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/blocking_input.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/cbook.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/cm.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/collections.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/colorbar.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/colors.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/container.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/contour.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/dates.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/docstring.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dviread.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/figure.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/finance.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/font_manager.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/fontconfig_pattern.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/gridspec.py/1.1/Tue Oct 23 06:31:41 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/hatch.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/image.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/legend.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/legend_handler.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/lines.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/markers.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/mathtext.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/mlab.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/mpl.py/1.1.1.1/Mon Sep  8 11:52:22 2008//TScienceTools-v10r0p5-fssc-20150518
+/offsetbox.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/patches.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/path.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/patheffects.py/1.1/Tue Oct 23 06:31:41 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/pylab.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/pyparsing.py/1.1.1.1/Mon Sep  8 11:52:22 2008//TScienceTools-v10r0p5-fssc-20150518
+/pyplot.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/quiver.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/rcsetup.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/sankey.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/scale.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/spines.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/table.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/texmanager.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/text.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/textpath.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ticker.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/tight_bbox.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/tight_layout.py/1.1/Tue Oct 23 06:31:40 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/transforms.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+/type1font.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/units.py/1.2/Tue Oct 23 06:31:40 2012//TScienceTools-v10r0p5-fssc-20150518
+/widgets.py/1.2/Tue Oct 23 06:31:41 2012//TScienceTools-v10r0p5-fssc-20150518
+D/backends////
+D/delaunay////
+D/mpl-data////
+D/projections////
+D/sphinxext////
+D/testing////
+D/tests////
+D/tri////

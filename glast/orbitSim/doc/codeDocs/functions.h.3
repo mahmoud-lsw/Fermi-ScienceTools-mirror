@@ -1,0 +1,1449 @@
+.TH "orbitSim/orbitSim/functions.h" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+orbitSim/orbitSim/functions.h \- 
+.PP
+This file contains some utilities functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'orbitSim/orbitSimStruct\&.h'\fP
+.br
+\fC#include 'orbitSim/DynamicStruct\&.h'\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBminInDay\fP   1440\&.0"
+.br
+.RI "\fIMinutes in a day\&. \fP"
+.ti -1c
+.RI "#define \fBsecInDay\fP   86400\&.0"
+.br
+.RI "\fISeconds in a day\&. \fP"
+.ti -1c
+.RI "#define \fBMOON_RADIUS\fP   1738\&."
+.br
+.RI "\fIMoon Radius\&. \fP"
+.ti -1c
+.RI "#define \fBAU\fP   149597870\&."
+.br
+.RI "\fIastronomical unit \fP"
+.ti -1c
+.RI "#define \fBEPS\fP   1\&.e-12"
+.br
+.RI "\fItolerance or errors \fP"
+.ti -1c
+.RI "#define \fBMJD_B1950\fP   33281\&.923"
+.br
+.RI "\fIMJD date for the epoch 1950\&. \fP"
+.ti -1c
+.RI "#define \fBMJD_J2000\fP   51544\&.500"
+.br
+.RI "\fIMJD date for the epoch 2000\&. \fP"
+.ti -1c
+.RI "#define \fBSLEW_RATE\fP   7\&.5"
+.br
+.RI "\fIGLAST Slew rate in degrees per minutes\&. \fP"
+.ti -1c
+.RI "#define \fBSUN_LIMIT\fP   10\&.0"
+.br
+.RI "\fIGLAST Sun Limit in degrees\&. \fP"
+.ti -1c
+.RI "#define \fBMJDREF\fP   51910\&.00"
+.br
+.RI "\fIStarting time in MJD format for GLAST clocks\&. \fP"
+.ti -1c
+.RI "#define \fB_xmnpda\fP   1440\&.0"
+.br
+.RI "\fIminutes in a day \fP"
+.ti -1c
+.RI "#define \fB_secday\fP   86400\&.0"
+.br
+.RI "\fIseconds in a day \fP"
+.ti -1c
+.RI "#define \fB_omega_E\fP   1\&.00273790934"
+.br
+.RI "\fIEarth rotations/siderial day\&. \fP"
+.ti -1c
+.RI "#define \fB_tothrd\fP   (2\&.0/3\&.0)"
+.br
+.RI "\fItwo thirds \fP"
+.ti -1c
+.RI "#define \fBJ2\fP   1\&.0826158E-3"
+.br
+.RI "\fIJ2 Harmonic (WGS '72) \fP"
+.ti -1c
+.RI "#define \fBXJ3\fP   -2\&.53881E-6"
+.br
+.RI "\fIJ3 Harmonic (WGS '72) \fP"
+.ti -1c
+.RI "#define \fB_J4value\fP   -1\&.65597E-6"
+.br
+.RI "\fIJ4 Harmonic (WGS '72) \fP"
+.ti -1c
+.RI "#define \fB_e6a\fP   1\&.0E-6"
+.br
+.RI "\fINumerical constant for 1\&.0E-6\&. \fP"
+.ti -1c
+.RI "#define \fB_pi\fP   3\&.1415926535897932384626433279"
+.br
+.RI "\fIpi with many more digits \fP"
+.ti -1c
+.RI "#define \fB_ae\fP   1\&.0"
+.br
+.RI "\fINumerical constant\&. \fP"
+.ti -1c
+.RI "#define \fBge\fP   398600\&.8"
+.br
+.RI "\fIEarth gravitational constant\&. \fP"
+.ti -1c
+.RI "#define \fBxkmper\fP   6378\&.137"
+.br
+.RI "\fIEarth equatorial radius - kilometers\&. \fP"
+.ti -1c
+.RI "#define \fBCK2\fP   (1\&.0826158E-3 / 2\&.0)"
+.br
+.RI "\fIEarth Geopotential constant\&. \fP"
+.ti -1c
+.RI "#define \fBCK4\fP   (-3\&.0 * -1\&.65597E-6 / 8\&.0)"
+.br
+.RI "\fIEarth Geopotential constant\&. \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsgp4\fP (double t, \fBvector\fP *pos, \fBvector\fP *vel, \fBatElemTle\fP *satdata)"
+.br
+.RI "\fIFunction that calculates the spacecraft position and velocity\&. \fP"
+.ti -1c
+.RI "void \fBcorrectTm\fP (\fBAtTime\fP *tz)"
+.br
+.RI "\fIFunction that re-calculates the elements of an \fBAtTime\fP structure when a fraction of time is added to one of its members\&. \fP"
+.ti -1c
+.RI "double \fBcube\fP (double x)"
+.br
+.RI "\fIFunction that calculates the cube of a number in double precision\&. \fP"
+.ti -1c
+.RI "double \fBsqr\fP (double x)"
+.br
+.RI "\fIFunction that calculates the square root of a number in double precision\&. \fP"
+.ti -1c
+.RI "double \fBfmod2p\fP (double x)"
+.br
+.RI "\fIFunction that calculates the modulus in 2*pi of an angle\&. \fP"
+.ti -1c
+.RI "double \fBmodulus\fP (double arg1, double arg2)"
+.br
+.RI "\fIFunction that calculates the modulus of an input value\&. \fP"
+.ti -1c
+.RI "int \fBreadTLE\fP (const int Nl, char *CheckSatName, char ln[][100], \fBatElemTle\fP *tle, double sta, double sto, double resol)"
+.br
+.RI "\fIFunction reads the content of a TLE file\&. \fP"
+.ti -1c
+.RI "double \fBdo_cal2mjd\fP (int iyyy, int mm, int id, int hour, int min, int sec)"
+.br
+.RI "\fIFunction that converts calendar time, as in year, month, day of the month, hours, minutes, seconds into MJD time format\&. \fP"
+.ti -1c
+.RI "void \fBdo_mjd2cal\fP (double MJD, int *iyyy, int *mm, int *id, int *hour, int *min, int *sec)"
+.br
+.RI "\fIFunction that converts MJD time format into calendar time, that is year, month, day of the month, hours, minute, seconds\&. \fP"
+.ti -1c
+.RI "double \fBdo_utcj2mjd\fP (int iyyy, int doy, int hour, int min, int sec)"
+.br
+.RI "\fIFunction that converts UTC time, as in year, day of the year, hours, minutes, seconds into MJD time format\&. \fP"
+.ti -1c
+.RI "void \fBdo_mjd2utc\fP (double mjd, int *yyy, int *doy, int *hh, int *mm, int *ss)"
+.br
+.RI "\fIFunction that converts MJD time in UTC time as in year, day of the year, hours, minutes, seconds\&. \fP"
+.ti -1c
+.RI "double \fBdo_met2mjd\fP (double mjd)"
+.br
+.RI "\fIFunction that converts Mission Elapsed Time in MJD time format\&. \fP"
+.ti -1c
+.RI "double \fBdo_mjd2met\fP (double met)"
+.br
+.RI "\fIFunction that converts MJD time to Mission Elapsed Time\&. \fP"
+.ti -1c
+.RI "void \fBprecessionRM\fP (double mjd, \fBAtRotMat\fP Rm)"
+.br
+.RI "\fIFunction that calculates the Rotation Matrix at the specified time\&. \fP"
+.ti -1c
+.RI "int \fBmatch_str\fP (const char *string, const char *pattern)"
+.br
+.RI "\fIFunction that checks if a specified string matches a specified string pattern\&. The match can take place anywhere in the passed string; however, if the first character in the string pattern is '^', the match MUST take place at the beginning, while if the last character is '$', only the terminal part of the two strings must match\&. The function returns zero if the match is not satisfied\&. \fP"
+.ti -1c
+.RI "char * \fBcapitalize_str\fP (const char *str, const int len)"
+.br
+.RI "\fIFunction that converts the passed string to capital case\&. This function is called by match_str in order to make a case insensitive match\&. \fP"
+.ti -1c
+.RI "int \fBmatch2str\fP (const char *string, const char *pattern1, const char *pattern2)"
+.br
+.RI "\fIFunction that verifies is two passed pattern strings separated by empty spaces (>= 0) are present in the passed string\&. The function behavior is similar to match_str\&. \fP"
+.ti -1c
+.RI "int \fBcheckManeuver\fP (const char *str)"
+.br
+.RI "\fIThis function is a replacement for: (match((const char*) ln, '^[0-9]{4}-[0-9]{3}-[0-9]{2}:[0-9]{2}:[0-9]{2}\&.[0-9]{6}[ ]*[|][ ]*[A-Za-z]+[ ]*[|][ ]*Maneuver[ ]*[|]') == 1) since regular expressions are not available in Win32\&. \fP"
+.ti -1c
+.RI "int \fBcheckManZenith\fP (const char *str)"
+.br
+.RI "\fIThis function is a replacement for: match((const char*) ln, '^[0-9]{4}-[0-9]{3}-[0-9]{2}:[0-9]{2}:[0-9]{2}\&.[0-9]{6}[ ]*[|][ ]*Maneuver[ ]*[|][ ]*Zenith[ ]*Point[ ]*[|]') since regular expressions are not available in Win32\&. \fP"
+.ti -1c
+.RI "int \fBcheckDate\fP (char *str)"
+.br
+.RI "\fIThis function verifies that the passed string does match '^[0-9]{4}-[0-9]{3}-[0-9]{2}:[0-9]{2}:[0-9]{2}\&.[0-9]{6}', which is the format for a date string in UTC\&. The function is called by both checkManZenith and checkManeuver\&. \fP"
+.ti -1c
+.RI "int \fBchkStr\fP (char *str)"
+.br
+.RI "\fIFunction that checks is a passed string contains any other character other than digits\&. The function is called by doCmd to check that parameters such as rocking offset or epoch are indeed numbers\&. \fP"
+.ti -1c
+.RI "double \fBgetMJD\fP (char *ln)"
+.br
+.RI "\fIFunction that extracts the time stamp from a line taken from an AS-FLOWN timeline\&. The time in UTC, is then converted in mjd format\&. \fP"
+.ti -1c
+.RI "double \fBInterPVect\fP (double y1, double y2, double x1, double x2, double x0)"
+.br
+.RI "\fIFunction that calculates the interpolated y value when the location of two points in the plane is specified together with the x value of the interpolated point\&. This function is called by MakeSurvey, DoSlew, MakePointed getPhase to get an Ephemeredis point outside the time boundary\&. \fP"
+.ti -1c
+.RI "void \fBTransposeM\fP (\fBAtRotMat\fP rm, \fBAtRotMat\fP Trm)"
+.br
+.RI "\fIFunction that calculates the transpose of a matrix\&. \fP"
+.ti -1c
+.RI "void \fBsetUnit\fP (\fBAtRotMat\fP rm)"
+.br
+.RI "\fIFunction that creates a unit matrix\&. \fP"
+.ti -1c
+.RI "void \fBRotateOnX\fP (double a, \fBAtRotMat\fP rm, \fBAtRotMat\fP Rmat)"
+.br
+.RI "\fIFunction that rotates a given matrix counter-clockwise along the local x-axis of a given angle\&. \fP"
+.ti -1c
+.RI "void \fBRotateOnY\fP (double a, \fBAtRotMat\fP rm, \fBAtRotMat\fP Rmat)"
+.br
+.RI "\fIFunction that rotates a given matrix counter-clockwise along the local y-axis of a given angle\&. \fP"
+.ti -1c
+.RI "void \fBRotateOnZ\fP (double a, \fBAtRotMat\fP rm, \fBAtRotMat\fP Rmat)"
+.br
+.RI "\fIFunction that rotates a given matrix counter-clockwise along the local z-axis of a given angle\&. \fP"
+.ti -1c
+.RI "void \fBgetconsts\fP (\fBAtVect\fP pos1, \fBAtVect\fP pos2, double *consts)"
+.br
+.RI "\fIFunction that calculates the two constants that defines a great circle passing for both the start and the ending point of a slew maneuvering\&. \fP"
+.ti -1c
+.RI "void \fBgetXYZ\fP (\fBAtVect\fP xyz1, \fBAtVect\fP xyz2, double theta1, double theta2, double *consts, \fBAtVect\fP xyz, double fact)"
+.br
+.RI "\fIFunction that does the actual calculation for the slew profile\&. \fP"
+.ti -1c
+.RI "double \fBgetDet\fP (\fBAtVect\fP ra, \fBAtVect\fP rb, \fBAtVect\fP rc)"
+.br
+.RI "\fIFunction that calculates the determinant of a 3 x 3 matrix whose rows are given by the 3 passed cartesian vectors\&. \fP"
+.ti -1c
+.RI "void \fBrade2xyz\fP (double ra, double dec, \fBAtVect\fP xyz)"
+.br
+.RI "\fIFunction that creates a cartesian unit vector based on ra and dec\&. \fP"
+.ti -1c
+.RI "void \fBangularSep\fP (double pra, double pdec, double ra, double dec, double *theta)"
+.br
+.RI "\fIFunction that calculates the angular separation along a great circle of two pints when RA and DEC is specified for each of them\&. \fP"
+.ti -1c
+.RI "void \fBgetslewtime\fP (double pra, double pdec, double ra, double dec, double res, double *slewt)"
+.br
+.RI "\fIFunction that calculates the time in minutes or fraction of minutes necessary to lsew along a great circle from point 1 to point 2\&. \fP"
+.ti -1c
+.RI "int \fBfind_minmax\fP (double *lon, double *lat, int num_saa, double *minLon, double *maxLon, double *minLat, double *maxLat)"
+.br
+.RI "\fIFunction that determines the minimum and maximum latitude and longitude values for the saa polygon\&. These values are used later to quickly eliminate points as being potential points in the saa polygon\&. \fP"
+.ti -1c
+.RI "int \fBcalculate_slopes\fP (double *lon, double *lat, int num_saa, double *slopes, double *intercepts)"
+.br
+.RI "\fIFunction that determines the slope and intercept for every line which makes up the saa polynomial\&. (Note: longitude is y axis, latitude the x axis) \fP"
+.ti -1c
+.RI "int \fBpt_in_polygon\fP (double dlat, double dlon, double lattable[], double lontable[], double slopes[], double intercepts[], int num_saa, double minLon, double maxLon, double minLat, double maxLat)"
+.br
+.RI "\fIFunction that determines if a specified point is inside the saa polygon determined by the passed longitude/latitude arrays\&. \fP"
+.ti -1c
+.RI "void \fBGetPos\fP (double mjd, \fBAtVect\fP vSat, \fBAtVect\fP vNVel, double SurvOfs, double *RVal)"
+.br
+.RI "\fIFunction that finds the attitude of the spacecraft during any SURVEY observation\&. \fP"
+.ti -1c
+.RI "void \fBGetPointedPos\fP (double mjd, \fBAtVect\fP vSat, \fBAtVect\fP vNVelS, double ra, double dec, double *RaDe)"
+.br
+.RI "\fIFunction that finds the attitude of the spacecraft during any POINTED observation\&. \fP"
+.ti -1c
+.RI "double \fBGetPointedRock\fP (double *RaDec)"
+.br
+.ti -1c
+.RI "void \fBGetQuat\fP (const double &xra, const double &xdec, const double &yra, const double &ydec, const double &zra, const double &zdec, double *quat)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains some utilities functions\&. 
+
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005
+.RE
+.PP
+\fBHeader:\fP
+.RS 4
+/nfs/slac/g/glast/ground/cvs/ScienceTools-scons/orbitSim/orbitSim/functions\&.h,v 1\&.4 2009/06/23 17:51:24 vernaleo Exp 
+.RE
+.PP
+
+.PP
+Definition in file \fBfunctions\&.h\fP\&.
+.SH "Define Documentation"
+.PP 
+.SS "#define \fB_ae\fP   1\&.0"
+.PP
+Numerical constant\&. 
+.PP
+Definition at line 77 of file functions\&.h\&.
+.SS "#define \fB_e6a\fP   1\&.0E-6"
+.PP
+Numerical constant for 1\&.0E-6\&. 
+.PP
+Definition at line 73 of file functions\&.h\&.
+.SS "#define \fB_J4value\fP   -1\&.65597E-6"
+.PP
+J4 Harmonic (WGS '72) 
+.PP
+Definition at line 71 of file functions\&.h\&.
+.SS "#define \fB_omega_E\fP   1\&.00273790934"
+.PP
+Earth rotations/siderial day\&. 
+.PP
+Definition at line 63 of file functions\&.h\&.
+.SS "#define \fB_pi\fP   3\&.1415926535897932384626433279"
+.PP
+pi with many more digits 
+.PP
+Definition at line 75 of file functions\&.h\&.
+.SS "#define \fB_secday\fP   86400\&.0"
+.PP
+seconds in a day 
+.PP
+Definition at line 61 of file functions\&.h\&.
+.SS "#define \fB_tothrd\fP   (2\&.0/3\&.0)"
+.PP
+two thirds 
+.PP
+Definition at line 65 of file functions\&.h\&.
+.SS "#define \fB_xmnpda\fP   1440\&.0"
+.PP
+minutes in a day 
+.PP
+Definition at line 59 of file functions\&.h\&.
+.SS "#define \fBAU\fP   149597870\&."
+.PP
+astronomical unit 
+.PP
+Definition at line 37 of file functions\&.h\&.
+.SS "#define \fBCK2\fP   (1\&.0826158E-3 / 2\&.0)"
+.PP
+Earth Geopotential constant\&. 
+.PP
+Definition at line 84 of file functions\&.h\&.
+.SS "#define \fBCK4\fP   (-3\&.0 * -1\&.65597E-6 / 8\&.0)"
+.PP
+Earth Geopotential constant\&. 
+.PP
+Definition at line 86 of file functions\&.h\&.
+.SS "#define \fBEPS\fP   1\&.e-12"
+.PP
+tolerance or errors 
+.PP
+Definition at line 39 of file functions\&.h\&.
+.SS "#define \fBge\fP   398600\&.8"
+.PP
+Earth gravitational constant\&. 
+.PP
+Definition at line 80 of file functions\&.h\&.
+.SS "#define \fBJ2\fP   1\&.0826158E-3"
+.PP
+J2 Harmonic (WGS '72) 
+.PP
+Definition at line 67 of file functions\&.h\&.
+.SS "#define \fBminInDay\fP   1440\&.0"
+.PP
+Minutes in a day\&. 
+.PP
+Definition at line 29 of file functions\&.h\&.
+.SS "#define \fBMJD_B1950\fP   33281\&.923"
+.PP
+MJD date for the epoch 1950\&. 
+.PP
+Definition at line 41 of file functions\&.h\&.
+.SS "#define \fBMJD_J2000\fP   51544\&.500"
+.PP
+MJD date for the epoch 2000\&. 
+.PP
+Definition at line 43 of file functions\&.h\&.
+.SS "#define \fBMJDREF\fP   51910\&.00"
+.PP
+Starting time in MJD format for GLAST clocks\&. 
+.PP
+Definition at line 52 of file functions\&.h\&.
+.SS "#define \fBMOON_RADIUS\fP   1738\&."
+.PP
+Moon Radius\&. 
+.PP
+Definition at line 34 of file functions\&.h\&.
+.SS "#define \fBsecInDay\fP   86400\&.0"
+.PP
+Seconds in a day\&. 
+.PP
+Definition at line 31 of file functions\&.h\&.
+.SS "#define \fBSLEW_RATE\fP   7\&.5"
+.PP
+GLAST Slew rate in degrees per minutes\&. 
+.PP
+Definition at line 48 of file functions\&.h\&.
+.SS "#define \fBSUN_LIMIT\fP   10\&.0"
+.PP
+GLAST Sun Limit in degrees\&. 
+.PP
+Definition at line 50 of file functions\&.h\&.
+.SS "#define \fBXJ3\fP   -2\&.53881E-6"
+.PP
+J3 Harmonic (WGS '72) 
+.PP
+Definition at line 69 of file functions\&.h\&.
+.SS "#define \fBxkmper\fP   6378\&.137"
+.PP
+Earth equatorial radius - kilometers\&. 
+.PP
+Definition at line 82 of file functions\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBangularSep\fP (doublepra, doublepdec, doublera, doubledec, double *theta)"
+.PP
+Function that calculates the angular separation along a great circle of two pints when RA and DEC is specified for each of them\&. \fBParameters:\fP
+.RS 4
+\fIpra\fP - RA of point 1; input 
+.br
+\fIpdec\fP - DEC of point 1; input 
+.br
+\fIra\fP - RA of point 2; input 
+.br
+\fIdec\fP - DEC of point 2; input 
+.br
+\fItheta\fP - angular separation; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1256 of file functUtil\&.cxx\&.
+.SS "int \fBcalculate_slopes\fP (double *lon, double *lat, intnum_saa, double *slopes, double *intercepts)"
+.PP
+Function that determines the slope and intercept for every line which makes up the saa polynomial\&. (Note: longitude is y axis, latitude the x axis) \fBParameters:\fP
+.RS 4
+\fIlon\fP - array of longitude points 
+.br
+\fIlat\fP - array of latitude points 
+.br
+\fInum_saa\fP - size of each of the above arrays 
+.br
+\fIslopes\fP - array containing slopes 
+.br
+\fIintercepts\fP - array containing intercepts
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1587 of file functUtil\&.cxx\&.
+.SS "char* \fBcapitalize_str\fP (const char *str, const intlen)"
+.PP
+Function that converts the passed string to capital case\&. This function is called by match_str in order to make a case insensitive match\&. \fBParameters:\fP
+.RS 4
+\fIstring\fP - input string 
+.br
+\fIlen\fP - string length
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: July 31, 2007 
+.RE
+.PP
+
+.PP
+Definition at line 375 of file functUtil\&.cxx\&.
+.SS "int \fBcheckDate\fP (char *str)"
+.PP
+This function verifies that the passed string does match '^[0-9]{4}-[0-9]{3}-[0-9]{2}:[0-9]{2}:[0-9]{2}\&.[0-9]{6}', which is the format for a date string in UTC\&. The function is called by both checkManZenith and checkManeuver\&. \fBParameters:\fP
+.RS 4
+\fIstring\fP - input string
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: July 31, 2007 
+.RE
+.PP
+
+.PP
+Definition at line 571 of file functUtil\&.cxx\&.
+.SS "int \fBcheckManeuver\fP (const char *str)"
+.PP
+This function is a replacement for: (match((const char*) ln, '^[0-9]{4}-[0-9]{3}-[0-9]{2}:[0-9]{2}:[0-9]{2}\&.[0-9]{6}[ ]*[|][ ]*[A-Za-z]+[ ]*[|][ ]*Maneuver[ ]*[|]') == 1) since regular expressions are not available in Win32\&. \fBParameters:\fP
+.RS 4
+\fIstring\fP - input string
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: July 31, 2007 
+.RE
+.PP
+
+.PP
+Definition at line 468 of file functUtil\&.cxx\&.
+.SS "int \fBcheckManZenith\fP (const char *str)"
+.PP
+This function is a replacement for: match((const char*) ln, '^[0-9]{4}-[0-9]{3}-[0-9]{2}:[0-9]{2}:[0-9]{2}\&.[0-9]{6}[ ]*[|][ ]*Maneuver[ ]*[|][ ]*Zenith[ ]*Point[ ]*[|]') since regular expressions are not available in Win32\&. \fBParameters:\fP
+.RS 4
+\fIstring\fP - input string
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: July 31, 2007 
+.RE
+.PP
+
+.PP
+Definition at line 508 of file functUtil\&.cxx\&.
+.SS "int \fBchkStr\fP (char *str)"
+.PP
+Function that checks is a passed string contains any other character other than digits\&. The function is called by doCmd to check that parameters such as rocking offset or epoch are indeed numbers\&. \fBParameters:\fP
+.RS 4
+\fIstr\fP - input string
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 620 of file functUtil\&.cxx\&.
+.SS "void \fBcorrectTm\fP (\fBAtTime\fP *tz)"
+.PP
+Function that re-calculates the elements of an \fBAtTime\fP structure when a fraction of time is added to one of its members\&. This routine is called by tlederive when any given time resolution is added to one of its members, mostly the minute of second member\&. The routine re-calculates all its member incrementing those that needed to be incremented
+.PP
+\fBParameters:\fP
+.RS 4
+\fItz\fP - structure \fBAtTime\fP that needs to be re-arranged
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1840 of file functUtil\&.cxx\&.
+.SS "double \fBcube\fP (doublex)"
+.PP
+Function that calculates the cube of a number in double precision\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - input value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1898 of file functUtil\&.cxx\&.
+.SS "double \fBdo_cal2mjd\fP (intiyyy, intmm, intid, inthour, intmin, intsec)"
+.PP
+Function that converts calendar time, as in year, month, day of the month, hours, minutes, seconds into MJD time format\&. \fBParameters:\fP
+.RS 4
+\fIiyyy\fP - year 
+.br
+\fImm\fP - month 
+.br
+\fIid\fP - day of the month 
+.br
+\fIhour\fP - hours 
+.br
+\fImin\fP - minutes 
+.br
+\fIsec\fP - seconds
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file functUtil\&.cxx\&.
+.SS "double \fBdo_met2mjd\fP (doublemjd)"
+.PP
+Function that converts Mission Elapsed Time in MJD time format\&. \fBParameters:\fP
+.RS 4
+\fImjd\fP - mjd time, input value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 211 of file functUtil\&.cxx\&.
+.SS "void \fBdo_mjd2cal\fP (doubleMJD, int *iyyy, int *mm, int *id, int *hour, int *min, int *sec)"
+.PP
+Function that converts MJD time format into calendar time, that is year, month, day of the month, hours, minute, seconds\&. \fBParameters:\fP
+.RS 4
+\fIMJD\fP - time in mjd as input value 
+.br
+\fIiyyy\fP - year 
+.br
+\fImm\fP - month 
+.br
+\fIid\fP - day of the month 
+.br
+\fIhour\fP - hours 
+.br
+\fImin\fP - minutes 
+.br
+\fIsec\fP - seconds
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 75 of file functUtil\&.cxx\&.
+.SS "double \fBdo_mjd2met\fP (doublemet)"
+.PP
+Function that converts MJD time to Mission Elapsed Time\&. \fBParameters:\fP
+.RS 4
+\fImjd\fP - mjd time, input value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+J\&. Vernaleo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Sep 08, 2008 
+.PP
+Last Modified: Sep 08, 2008 
+.RE
+.PP
+
+.PP
+Definition at line 219 of file functUtil\&.cxx\&.
+.SS "void \fBdo_mjd2utc\fP (doublemjd, int *yyy, int *doy, int *hh, int *mm, int *ss)"
+.PP
+Function that converts MJD time in UTC time as in year, day of the year, hours, minutes, seconds\&. \fBParameters:\fP
+.RS 4
+\fImjd\fP - mjd time, input value 
+.br
+\fIyyy\fP - year 
+.br
+\fIdoy\fP - day of the year 
+.br
+\fIhh\fP - hours 
+.br
+\fImm\fP - minutes 
+.br
+\fIss\fP - seconds
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 130 of file functUtil\&.cxx\&.
+.SS "double \fBdo_utcj2mjd\fP (intiyyy, intdoy, inthour, intmin, intsec)"
+.PP
+Function that converts UTC time, as in year, day of the year, hours, minutes, seconds into MJD time format\&. \fBParameters:\fP
+.RS 4
+\fIiyyy\fP - year 
+.br
+\fIdoy\fP - day of the year 
+.br
+\fIhour\fP - hours 
+.br
+\fImin\fP - minutes 
+.br
+\fIsec\fP - seconds
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 156 of file functUtil\&.cxx\&.
+.SS "int \fBfind_minmax\fP (double *lon, double *lat, intnum_saa, double *minLon, double *maxLon, double *minLat, double *maxLat)"
+.PP
+Function that determines the minimum and maximum latitude and longitude values for the saa polygon\&. These values are used later to quickly eliminate points as being potential points in the saa polygon\&. \fBParameters:\fP
+.RS 4
+\fIlon\fP - array of longitude points 
+.br
+\fIlat\fP - array of latitude points 
+.br
+\fInum_saa\fP - size of each of the above arrays 
+.br
+\fIminLon\fP - minimum in Longitude 
+.br
+\fImaxLon\fP - maximum in Longitude 
+.br
+\fIminLat\fP - minimum in Latitude 
+.br
+\fImaxLat\fP - maximum in Latitude
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1558 of file functUtil\&.cxx\&.
+.SS "double \fBfmod2p\fP (doublex)"
+.PP
+Function that calculates the modulus in 2*pi of an angle\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - input value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1912 of file functUtil\&.cxx\&.
+.SS "void \fBgetconsts\fP (\fBAtVect\fPpos1, \fBAtVect\fPpos2, double *consts)"
+.PP
+Function that calculates the two constants that defines a great circle passing for both the start and the ending point of a slew maneuvering\&. This function finds the constants that specify the great circle passing for both position 1 and 2\&. The great circle is defined as: x*sinC2+y*cosC2+z/(sqrt((1/C1)^2 - 1))=0\&. The great circle found is then used to calculate the slew profile\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpos1\fP - cartesian vector to position 1; input 
+.br
+\fIpos2\fP - cartesian vector to position 2; input 
+.br
+\fIconsts\fP - two-dimensional array for the great circle definition; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1113 of file functUtil\&.cxx\&.
+.SS "double \fBgetDet\fP (\fBAtVect\fPra, \fBAtVect\fPrb, \fBAtVect\fPrc)"
+.PP
+Function that calculates the determinant of a 3 x 3 matrix whose rows are given by the 3 passed cartesian vectors\&. \fBParameters:\fP
+.RS 4
+\fIra\fP - position vector for row 1 
+.br
+\fIrb\fP - position vector for row 2 
+.br
+\fIrc\fP - position vector for row 3
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1225 of file functUtil\&.cxx\&.
+.SS "double \fBgetMJD\fP (char *ln)"
+.PP
+Function that extracts the time stamp from a line taken from an AS-FLOWN timeline\&. The time in UTC, is then converted in mjd format\&. \fBParameters:\fP
+.RS 4
+\fIln\fP - input characters
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 227 of file functUtil\&.cxx\&.
+.SS "void \fBGetPointedPos\fP (doublemjd, \fBAtVect\fPvSat, \fBAtVect\fPvNVelS, doublera, doubledec, double *RaDe)"
+.PP
+Function that finds the attitude of the spacecraft during any POINTED observation\&. This function calculates the attitude of the spacecraft while performing POINTED mode observation\&. The attitude is found by calculating the rotation matrix that transforms the local spacecraft system of reference into the ECI system, and viceversa\&. This overall rotation matrix is found through a series of individual rotations\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fImjd\fP - time stamp in MJD format; input 
+.br
+\fIvSat\fP - vector in ECI system of the sapcecraft; input 
+.br
+\fIvNVelS\fP - normalized velocity vector in the ECI system; input 
+.br
+\fIra\fP - RA where the spacecraft z-axis is pointing; input 
+.br
+\fIdec\fP - DEC where the spacecraft z-axis is pointing; input 
+.br
+\fIRaDe\fP - array containing all the attitude information; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1321 of file functUtil\&.cxx\&.
+.SS "double \fBGetPointedRock\fP (double *RaDec)"
+.SS "void \fBGetPos\fP (doublemjd, \fBAtVect\fPvSat, \fBAtVect\fPvNVel, doubleSurvOfs, double *RVal)"
+.PP
+Function that finds the attitude of the spacecraft during any SURVEY observation\&. This function calculates the attitude of the spacecraft while performing SURVEY mode observation\&. The attitude is found by calculating the rotation matrix that transforms the local spacecraft system of reference into the ECI system, and viceversa\&. This overall rotation matrix is found through a series of individual rotations\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fImjd\fP - time stamp in MJD format; input 
+.br
+\fIvSat\fP - vector in ECI system of the sapcecraft; input 
+.br
+\fIvNVel\fP - normalized velocity vector in the ECI system; input 
+.br
+\fISurvOfs\fP - Survey rocking offset; input 
+.br
+\fIRVal\fP - array containing all the attitude information; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 678 of file functUtil\&.cxx\&.
+.SS "void \fBGetQuat\fP (const double &xra, const double &xdec, const double &yra, const double &ydec, const double &zra, const double &zdec, double *quat)"
+.SS "void \fBgetslewtime\fP (doublepra, doublepdec, doublera, doubledec, doubleres, double *slewt)"
+.PP
+Function that calculates the time in minutes or fraction of minutes necessary to lsew along a great circle from point 1 to point 2\&. \fBParameters:\fP
+.RS 4
+\fIpra\fP - RA of point 1; input 
+.br
+\fIpdec\fP - DEC of point 1; input 
+.br
+\fIra\fP - RA of point 2; input 
+.br
+\fIdec\fP - DEC of point 2; input 
+.br
+\fIres\fP - time resolution as fraction of a day; input 
+.br
+\fIslewt\fP - slew time; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1265 of file functUtil\&.cxx\&.
+.SS "void \fBgetXYZ\fP (\fBAtVect\fPxyz1, \fBAtVect\fPxyz2, doubletheta1, doubletheta2, double *consts, \fBAtVect\fPxyz, doublefact)"
+.PP
+Function that does the actual calculation for the slew profile\&. This routine calculates where the spacecraft should be along the great circle assuming that it leaves position 1, and covers equal angles in equal times\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxyz1\fP - Initial position 1; input 
+.br
+\fIxyz2\fP - Final position 2; input 
+.br
+\fItheta1\fP - angular separation in radians from position 1; input 
+.br
+\fItheta2\fP - angular separation in radians from position 2; input 
+.br
+\fIconsts\fP - constants that identify the great circle passing from point 1 and 2; input 
+.br
+\fIxyz\fP - calculated position; output 
+.br
+\fIfact\fP - signs for the square root in the function for the great circle
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1142 of file functUtil\&.cxx\&.
+.SS "double \fBInterPVect\fP (doubley1, doubley2, doublex1, doublex2, doublex0)"
+.PP
+Function that calculates the interpolated y value when the location of two points in the plane is specified together with the x value of the interpolated point\&. This function is called by MakeSurvey, DoSlew, MakePointed getPhase to get an Ephemeredis point outside the time boundary\&. \fBParameters:\fP
+.RS 4
+\fIy1\fP - y coordinate of point 1; input 
+.br
+\fIy2\fP - y coordinate of point 2; input 
+.br
+\fIx1\fP - x coordinate of point 1; input 
+.br
+\fIx2\fP - x coordinate of point 2; input 
+.br
+\fIx0\fP - x coordinate of interpolated point; input
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 663 of file functUtil\&.cxx\&.
+.SS "int \fBmatch2str\fP (const char *string, const char *pattern1, const char *pattern2)"
+.PP
+Function that verifies is two passed pattern strings separated by empty spaces (>= 0) are present in the passed string\&. The function behavior is similar to match_str\&. \fBParameters:\fP
+.RS 4
+\fIstring\fP - input string 
+.br
+\fIpattern1\fP - pattern string 1 
+.br
+\fIpattern2\fP - pattern string 2
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: July 31, 2007 
+.RE
+.PP
+
+.PP
+Definition at line 394 of file functUtil\&.cxx\&.
+.SS "int \fBmatch_str\fP (const char *string, const char *pattern)"
+.PP
+Function that checks if a specified string matches a specified string pattern\&. The match can take place anywhere in the passed string; however, if the first character in the string pattern is '^', the match MUST take place at the beginning, while if the last character is '$', only the terminal part of the two strings must match\&. The function returns zero if the match is not satisfied\&. \fBParameters:\fP
+.RS 4
+\fIstring\fP - input string 
+.br
+\fIpattern\fP - input regular expression pattern
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: July 31, 2007 
+.RE
+.PP
+
+.PP
+Definition at line 255 of file functUtil\&.cxx\&.
+.SS "double \fBmodulus\fP (doublearg1, doublearg2)"
+.PP
+Function that calculates the modulus of an input value\&. \fBParameters:\fP
+.RS 4
+\fIarg1\fP - input value 
+.br
+\fIarg2\fP - modulus
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1918 of file functUtil\&.cxx\&.
+.SS "void \fBprecessionRM\fP (doublemjd, \fBAtRotMat\fPRm)"
+.PP
+Function that calculates the Rotation Matrix at the specified time\&. \fBParameters:\fP
+.RS 4
+\fImjd\fP - time in mjd, input value 
+.br
+\fIRm\fP - rotation matrix to correct precession, output value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 2146 of file functUtil\&.cxx\&.
+.SS "int \fBpt_in_polygon\fP (doubledlat, doubledlon, doublelattable[], doublelontable[], doubleslopes[], doubleintercepts[], intnum_saa, doubleminLon, doublemaxLon, doubleminLat, doublemaxLat)"
+.PP
+Function that determines if a specified point is inside the saa polygon determined by the passed longitude/latitude arrays\&. \fBParameters:\fP
+.RS 4
+\fIdlat\fP - latitude for the specified point 
+.br
+\fIdlon\fP - longitude for the specified point 
+.br
+\fIlattable\fP - array of latitude points 
+.br
+\fIlontable\fP - array of longitude points 
+.br
+\fIslopes\fP - array containing slopes 
+.br
+\fIintercepts\fP - array containing intercepts 
+.br
+\fInum_saa\fP - size of each of the above arrays 
+.br
+\fIminLon\fP - minimum in Longitude 
+.br
+\fImaxLon\fP - maximum in Longitude 
+.br
+\fIminLat\fP - minimum in Latitude 
+.br
+\fImaxLat\fP - maximum in Latitude
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1613 of file functUtil\&.cxx\&.
+.SS "void \fBrade2xyz\fP (doublera, doubledec, \fBAtVect\fPxyz)"
+.PP
+Function that creates a cartesian unit vector based on ra and dec\&. \fBParameters:\fP
+.RS 4
+\fIra\fP - input RA 
+.br
+\fIdec\fP - input declination 
+.br
+\fIxyz\fP - unit vector generated from ra and dec
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1240 of file functUtil\&.cxx\&.
+.SS "int \fBreadTLE\fP (const intNl, char *CheckSatName, charln[][100], \fBatElemTle\fP *tle, doublesta, doublesto, doubleresol)"
+.PP
+Function reads the content of a TLE file\&. This functions reads the content of lines that match the specified satellite name, in this case GLAST\&. The parameters contained in these lines are then read into the TLE structure\&. If the epoch of the TLE parameters is before the specified start time, and error is called, and a NULL Ephemeredis structure is returned\&. Also, if the TLE epoch is older than 30 days a warning is issued\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fINl\fP - number of lines contained in the array ln 
+.br
+\fICheckSatName\fP - Satellite Name, in this case GLAST 
+.br
+\fIln\fP - array of chars containing the TLE parameters 
+.br
+\fItle\fP - structure for the TLE parameters 
+.br
+\fIsta\fP - start time in mjd 
+.br
+\fIsto\fP - end time in mjd 
+.br
+\fIresol\fP - time resolution\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1676 of file functUtil\&.cxx\&.
+.SS "void \fBRotateOnX\fP (doublea, \fBAtRotMat\fPrm, \fBAtRotMat\fPRmat)"
+.PP
+Function that rotates a given matrix counter-clockwise along the local x-axis of a given angle\&. \fBParameters:\fP
+.RS 4
+\fIa\fP - input angle in radians 
+.br
+\fIrm\fP - input matrix 
+.br
+\fIRmat\fP - rotated matrix; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1028 of file functUtil\&.cxx\&.
+.SS "void \fBRotateOnY\fP (doublea, \fBAtRotMat\fPrm, \fBAtRotMat\fPRmat)"
+.PP
+Function that rotates a given matrix counter-clockwise along the local y-axis of a given angle\&. \fBParameters:\fP
+.RS 4
+\fIa\fP - input angle in radians 
+.br
+\fIrm\fP - input matrix 
+.br
+\fIRmat\fP - rotated matrix; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1055 of file functUtil\&.cxx\&.
+.SS "void \fBRotateOnZ\fP (doublea, \fBAtRotMat\fPrm, \fBAtRotMat\fPRmat)"
+.PP
+Function that rotates a given matrix counter-clockwise along the local z-axis of a given angle\&. \fBParameters:\fP
+.RS 4
+\fIa\fP - input angle in radians 
+.br
+\fIrm\fP - input matrix 
+.br
+\fIRmat\fP - rotated matrix; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1080 of file functUtil\&.cxx\&.
+.SS "void \fBsetUnit\fP (\fBAtRotMat\fPrm)"
+.PP
+Function that creates a unit matrix\&. \fBParameters:\fP
+.RS 4
+\fIrm\fP - input matrix
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 1010 of file functUtil\&.cxx\&.
+.SS "void \fBsgp4\fP (doublet, \fBvector\fP *pos, \fBvector\fP *vel, \fBatElemTle\fP *satdata)"
+.PP
+Function that calculates the spacecraft position and velocity\&. This routine calculates spacecraft position and velocity based of a set of parameters contained in the NORAD Two Line Element file\&. sgp4 stands for Simplified General Perturbator no\&.4
+.PP
+\fBParameters:\fP
+.RS 4
+\fIt\fP - time elapsed since the TLE epoch 
+.br
+\fIpos\fP - vector containing the spacecraft position in the ECI system 
+.br
+\fIvel\fP - vector containing the spacecraft velocity in the ECI system 
+.br
+\fIsatdata\fP - strcuture containing all parameters coming from the TLE file
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1934 of file functUtil\&.cxx\&.
+.SS "double \fBsqr\fP (doublex)"
+.PP
+Function that calculates the square root of a number in double precision\&. \fBParameters:\fP
+.RS 4
+\fIx\fP - input value
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1905 of file functUtil\&.cxx\&.
+.SS "void \fBTransposeM\fP (\fBAtRotMat\fPrm, \fBAtRotMat\fPTrm)"
+.PP
+Function that calculates the transpose of a matrix\&. \fBParameters:\fP
+.RS 4
+\fIrm\fP - input matrix 
+.br
+\fITrm\fP - transpose matrix; output
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.RE
+.PP
+
+.PP
+Definition at line 997 of file functUtil\&.cxx\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

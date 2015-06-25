@@ -1,0 +1,13 @@
+/Makefile/1.1.2.1/Tue Oct 16 19:22:21 2012//TScienceTools-v10r0p5-fssc-20150518
+/fftw_dct.c/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/fftw_double_ref.npz/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/fftw_single_ref.npz/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/gen_fftw_ref.py/1.1.2.1.8.1/Fri Feb 27 05:02:43 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/gendata.m/1.1.2.1/Tue Oct 16 19:22:21 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/gendata.py/1.1.2.1.8.1/Fri Feb 27 05:02:43 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/test.npz/1.1.2.1/Tue Oct 16 19:22:21 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/test_basic.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/test_helper.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/test_pseudo_diffs.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/test_real_transforms.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D

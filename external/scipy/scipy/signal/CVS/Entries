@@ -1,0 +1,35 @@
+/C_bspline_util.c/1.1.2.1/Tue Oct 16 19:22:22 2012//TScienceTools-v10r0p5-fssc-20150518
+/D_bspline_util.c/1.1.2.1/Tue Oct 16 19:22:22 2012//TScienceTools-v10r0p5-fssc-20150518
+/S_bspline_util.c/1.1.2.1/Tue Oct 16 19:22:22 2012//TScienceTools-v10r0p5-fssc-20150518
+/Z_bspline_util.c/1.1.2.1/Tue Oct 16 19:22:22 2012//TScienceTools-v10r0p5-fssc-20150518
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:02:45 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_arraytools.py/1.1.2.1.8.1/Fri Feb 27 05:02:45 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_peak_finding.py/1.1.2.1/Fri Feb 27 05:02:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/_savitzky_golay.py/1.1.2.1/Fri Feb 27 05:02:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/_spectral.c/1.1.2.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/_spectral.pyx/1.1.2.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bspline_util.c/1.1.2.1/Tue Oct 16 19:22:22 2012//TScienceTools-v10r0p5-fssc-20150518
+/bsplines.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cont2discrete.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/correlate_nd.c.src/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dltisys.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/filter_design.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/fir_filter_design.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/firfilter.c/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/lfilter.c.src/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ltisys.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/medianfilter.c/1.1.2.1/Tue Oct 16 19:22:22 2012//TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/signaltools.py/1.1.2.1.8.1/Fri Feb 27 05:02:45 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/sigtools.h/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/sigtoolsmodule.c/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/spectral.py/1.1.2.1/Fri Feb 27 05:02:44 2015//TScienceTools-v10r0p5-fssc-20150518
+/splinemodule.c/1.1.2.1.8.1/Fri Feb 27 05:02:45 2015//TScienceTools-v10r0p5-fssc-20150518
+/waveforms.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/wavelets.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/windows.py/1.1.2.1.8.1/Fri Feb 27 05:02:44 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/benchmarks////
+D/docs////
+D/tests////

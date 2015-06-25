@@ -1,0 +1,23 @@
+/__init__.py/1.1.2.1.8.1/Fri Feb 27 05:03:08 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bento.info/1.1.2.1.8.1/Fri Feb 27 05:03:08 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bscript/1.1.2.1.8.1/Fri Feb 27 05:03:08 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/calc_lwork.f/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/clapack.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dummy_clapack.pyf/1.1.2.1/Fri Feb 27 05:03:08 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_aux.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_esv.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_evc.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_gesv.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_gevc.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_gsevc.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_le.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_lec.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_lls.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_llsc.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_sevc.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_svdc.pyf.src/1.1.2.1/Tue Oct 16 19:22:27 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/flapack_user.pyf.src/1.1.2.1/Tue Oct 16 19:22:26 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/scons_support.py/1.1.2.1.8.1/Fri Feb 27 05:03:08 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/setup.py/1.1.2.1.8.1/Fri Feb 27 05:03:08 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/tests////

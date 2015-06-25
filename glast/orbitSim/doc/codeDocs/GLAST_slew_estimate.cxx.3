@@ -1,0 +1,102 @@
+.TH "orbitSim/src/GLAST_slew_estimate.cxx" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+orbitSim/src/GLAST_slew_estimate.cxx \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include 'orbitSim/atFunctions\&.h'\fP
+.br
+\fC#include 'orbitSim/GLAST_slew_estimate\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBend\fP   90"
+.br
+.ti -1c
+.RI "#define \fBlpi\fP   3\&.1415926535897234"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBVaryingEigAxisSlewAngleEst\fP (double ra_s, double dec_s, double ra_i, double dec_i, double ra_f, double dec_f, double *xz_slew_angle, double *y_slew_angle)"
+.br
+.ti -1c
+.RI "double \fBinterp_Angle2Time\fP (double y_slew_angle, double xz_slew_angle, double \fBtotal_time\fP[][\fBend\fP+1], double \fBtheta_y_mesh\fP[][\fBend\fP+1], double \fBtheta_xz_mesh\fP[][\fBend\fP+1])"
+.br
+.ti -1c
+.RI "double \fBGLAST_slew_estimate\fP (double ra_s, double dec_s, double ra_i, double dec_i, double ra_f, double dec_f)"
+.br
+.ti -1c
+.RI "void \fBMultMatVec\fP (\fBAtRotMat\fP m, \fBAtVect\fP v, \fBAtVect\fP result)"
+.br
+.ti -1c
+.RI "void \fBMultRM\fP (\fBAtRotMat\fP m, double a, \fBAtRotMat\fP result)"
+.br
+.ti -1c
+.RI "double \fBinterp_Angle2Time\fP (double input_x, double input_y, double mesh_data[\fBend\fP+1][\fBend\fP+1], double mesh_x[\fBend\fP+1][\fBend\fP+1], double mesh_y[\fBend\fP+1][\fBend\fP+1])"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "double \fBtotal_time\fP [\fBend\fP+1][\fBend\fP+1]"
+.br
+.ti -1c
+.RI "double \fBtheta_y_mesh\fP [\fBend\fP+1][\fBend\fP+1]"
+.br
+.ti -1c
+.RI "double \fBtheta_xz_mesh\fP [\fBend\fP+1][\fBend\fP+1]"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBend\fP   90"
+.PP
+Definition at line 17 of file GLAST_slew_estimate\&.cxx\&.
+.SS "#define \fBlpi\fP   3\&.1415926535897234"
+.PP
+Definition at line 19 of file GLAST_slew_estimate\&.cxx\&.
+.SH "Function Documentation"
+.PP 
+.SS "double \fBGLAST_slew_estimate\fP (doublera_s, doubledec_s, doublera_i, doubledec_i, doublera_f, doubledec_f)"
+.PP
+Definition at line 329 of file GLAST_slew_estimate\&.cxx\&.
+.SS "double \fBinterp_Angle2Time\fP (doubley_slew_angle, doublexz_slew_angle, doubletotal_time[][end+1], doubletheta_y_mesh[][end+1], doubletheta_xz_mesh[][end+1])"
+.SS "double \fBinterp_Angle2Time\fP (doubleinput_x, doubleinput_y, doublemesh_data[end+1][end+1], doublemesh_x[end+1][end+1], doublemesh_y[end+1][end+1])"
+.PP
+Definition at line 707 of file GLAST_slew_estimate\&.cxx\&.
+.SS "void \fBMultMatVec\fP (\fBAtRotMat\fPm, \fBAtVect\fPv, \fBAtVect\fPresult)"
+.PP
+Definition at line 361 of file GLAST_slew_estimate\&.cxx\&.
+.SS "void \fBMultRM\fP (\fBAtRotMat\fPm, doublea, \fBAtRotMat\fPresult)"
+.PP
+Definition at line 369 of file GLAST_slew_estimate\&.cxx\&.
+.SS "void \fBVaryingEigAxisSlewAngleEst\fP (doublera_s, doubledec_s, doublera_i, doubledec_i, doublera_f, doubledec_f, double *xz_slew_angle, double *y_slew_angle)"
+.PP
+Definition at line 408 of file GLAST_slew_estimate\&.cxx\&.
+.SH "Variable Documentation"
+.PP 
+.SS "double \fBtheta_xz_mesh\fP[\fBend\fP+1][\fBend\fP+1]"
+.PP
+Definition at line 225 of file GLAST_slew_estimate\&.cxx\&.
+.SS "double \fBtheta_y_mesh\fP[\fBend\fP+1][\fBend\fP+1]"
+.PP
+Definition at line 130 of file GLAST_slew_estimate\&.cxx\&.
+.SS "double \fBtotal_time\fP[\fBend\fP+1][\fBend\fP+1]"
+.PP
+Definition at line 35 of file GLAST_slew_estimate\&.cxx\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

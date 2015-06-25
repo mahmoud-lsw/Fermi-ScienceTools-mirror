@@ -1,0 +1,354 @@
+.TH "orbitSim/src/OrbSim.cxx" 3 "Mon May 5 2014" "gtorbsim" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+orbitSim/src/OrbSim.cxx \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'orbitSim/orbitSimStruct\&.h'\fP
+.br
+\fC#include 'orbitSim/OrbSim\&.h'\fP
+.br
+\fC#include 'orbitSim/atFunctions\&.h'\fP
+.br
+\fC#include 'orbitSim/functions\&.h'\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdexcept>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <iomanip>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include 'st_stream/Stream\&.h'\fP
+.br
+\fC#include 'st_stream/StreamFormatter\&.h'\fP
+.br
+\fC#include 'st_stream/st_stream\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "st_stream::StreamFormatter \fBlosf\fP ('OrbSim','', 2)"
+.br
+.RI "\fIStream to control output through verbosity level\&. \fP"
+.ti -1c
+.RI "int \fBparseInit\fP (const char *fname, \fBInitI\fP *inA)"
+.br
+.RI "\fIFunction that parses an init file\&. \fP"
+.ti -1c
+.RI "char * \fBprocessline\fP (char *ln, char find)"
+.br
+.RI "\fIFunction that returns anything contained after a specified separator character\&. The function returns NULL if the first character is '#'\&. \fP"
+.ti -1c
+.RI "\fBAttitude\fP * \fBmakeAttTako\fP (\fBInitI\fP *ini, \fBEphemData\fP *ephem)"
+.br
+.RI "\fIFunction that calculates attitude based on TAKO Timeline\&. \fP"
+.ti -1c
+.RI "\fBAttitude\fP * \fBmakeAttAsFl\fP (\fBInitI\fP *ini, \fBEphemData\fP *ephem)"
+.br
+.RI "\fIFunction that calculates attitude based on AS-FLOWN Timeline\&. \fP"
+.ti -1c
+.RI "double \fBparseAsFline\fP (char *ln, int *mode, double *val1, double *val2)"
+.br
+.RI "\fIFunction that parses a line from an AS_FLOWN Timeline\&. \fP"
+.ti -1c
+.RI "\fBAttitude\fP * \fBdoCmd\fP (\fBInitI\fP *ini, \fBEphemData\fP *ephem)"
+.br
+.RI "\fIFunction that calculates attitude based on a SINGLE command\&. \fP"
+.ti -1c
+.RI "void \fBparseProfile\fP (char *ln, \fBSurProf\fP *profile)"
+.br
+.RI "\fIFunction that parses a line from an AS-FLOWN Timeline\&. \fP"
+.ti -1c
+.RI "void \fBgetNPole\fP (\fBAtVect\fP P1, \fBAtVect\fP P2, double *polCoor)"
+.br
+.RI "\fIFunction that returns the coordinates of the orbital pole\&. These coordinates (RA and DEC) are calculated by first calculating the vectorial product of the passed vectors which represent respectively the position vector and the local velocity vector\&. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBAttitude\fP* \fBdoCmd\fP (\fBInitI\fP *ini, \fBEphemData\fP *ephem)"
+.PP
+Function that calculates attitude based on a SINGLE command\&. This function calculates the attitude profile for three types of target are used: 
+.PD 0
+
+.IP "1." 4
+pointed 
+.IP "2." 4
+simple survey 
+.IP "3." 4
+profiled survey 
+.PP
+Functions called to do the actual attitude calculations are: 
+.PD 0
+
+.IP "1." 4
+MakeAtt2 - for Pointed 
+.IP "2." 4
+doSurvey - for Fixed Survey mode observation\&. This function does also the offset change at the beginning of every orbit identified as going from -z to + z axis\&. 
+.IP "3." 4
+MakeProfiled - for Profiled Survey 
+.PP
+.PP
+\fBParameters:\fP
+.RS 4
+\fIini\fP - structure containing all the needed parameters\&. 
+.br
+\fIephem\fP - precalculated ephemeredis data\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1331 of file OrbSim\&.cxx\&.
+.SS "void \fBgetNPole\fP (\fBAtVect\fPP1, \fBAtVect\fPP2, double *polCoor)"
+.PP
+Function that returns the coordinates of the orbital pole\&. These coordinates (RA and DEC) are calculated by first calculating the vectorial product of the passed vectors which represent respectively the position vector and the local velocity vector\&. \fBParameters:\fP
+.RS 4
+\fIP1\fP - position vector 
+.br
+\fIP2\fP - velocity vector 
+.br
+\fIpolCoor\fP - 2-dimensional array that contains the returned coord\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2010 
+.PP
+Last Modified: Nov 15, 2010 
+.RE
+.PP
+
+.PP
+Definition at line 1664 of file OrbSim\&.cxx\&.
+.SS "st_stream::StreamFormatter \fBlosf\fP ('OrbSim', '', 2)"
+.PP
+Stream to control output through verbosity level\&. 
+.SS "\fBAttitude\fP* \fBmakeAttAsFl\fP (\fBInitI\fP *ini, \fBEphemData\fP *ephem)"
+.PP
+Function that calculates attitude based on AS-FLOWN Timeline\&. This function parses the content of an AS-FLOWN Timeline file, and for each target calculates the attitude profile\&. Three types of target are used: 
+.PD 0
+
+.IP "1." 4
+pointed 
+.IP "2." 4
+simple survey 
+.IP "3." 4
+profiled survey 
+.PP
+Once the target has been identified, with the necessary parameters (ra & dec for pointed, offset or profile for survey) an appropriate function is called to calculate the attitude: 
+.PD 0
+
+.IP "1." 4
+MakeAtt2 for Pointed or Simple Survey 
+.IP "2." 4
+MakeProfiled for Profiled Survey 
+.PP
+If a target starts before the beginning of the period of interest then the attitude structure is reallocated, Ephemeredis are recalculated, and its attitude profile is calculated\&. The same is also true for any target that start before the end of the period of interest\&. After parsing targets for the period of interest, saa entry/exit are calculated, and also Earth Limb tracing is performed for any intervals of time a given source is occulted by the Earth\&. Finally, attitude only for the period of time of interest is returned\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIini\fP - structure containing all the needed parameters\&. 
+.br
+\fIephem\fP - precalculated ephemeredis data\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 927 of file OrbSim\&.cxx\&.
+.SS "\fBAttitude\fP* \fBmakeAttTako\fP (\fBInitI\fP *ini, \fBEphemData\fP *ephem)"
+.PP
+Function that calculates attitude based on TAKO Timeline\&. This function parses the content of a TAKO Timeline file, and for each pointinf command, snapshot, calculates the attitude profile\&. Each target is identified by using the separator '// ------------------------'\&. Three types of target are used: 
+.PD 0
+
+.IP "1." 4
+pointed 
+.IP "2." 4
+simple survey 
+.IP "3." 4
+profiled survey 
+.PP
+Once the target has been identified, with the necessary parameters (ra & dec for pointed, offset or profile for survey) an appropriate function is called to calculate the attitude: 
+.PD 0
+
+.IP "1." 4
+MakeAtt for Pointed or Simple Survey 
+.IP "2." 4
+MakeProfiled for Profiled Survey 
+.PP
+If a target starts before the beginning of the period of interest then the attitude structure is reallocated, Ephemeredis are recalculated, and its attitude profile is calculated\&. The same is also true for any target that starts before the end of the period of interest\&. After parsing targets for the period of interest, saa entry/exit are calculated, and also Earth Limb tracing is performed for any intervals of time a given source is occulted by the Earth\&. Finally, attitude only for the period of time of interest is returned\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIini\fP - structure containing all the needed parameters\&. 
+.br
+\fIephem\fP - precalculated ephemeredis data\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: March 28, 2007 
+.RE
+.PP
+
+.PP
+Definition at line 389 of file OrbSim\&.cxx\&.
+.SS "double \fBparseAsFline\fP (char *ln, int *mode, double *val1, double *val2)"
+.PP
+Function that parses a line from an AS_FLOWN Timeline\&. This function is called by makeAttAsFl to parse a line in the AS-FLOWN Timeline\&. Depending of the line, the function identifies the mode as 1 for SURVEY (both Fixed and Profiled) or 2 for POINTED including Automatic Re-pointing\&.
+.PP
+A time stamp in the MJD format is returned\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIln\fP - line\&. 
+.br
+\fImode\fP - this parameter specifies if a given target is a POINTED or SURVEY mode observation\&. 
+.br
+\fIval1\fP - paramters specifying Target RA 
+.br
+\fIval2\fP - paramters specifying Target DEC
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1290 of file OrbSim\&.cxx\&.
+.SS "int \fBparseInit\fP (const char *fname, \fBInitI\fP *inA)"
+.PP
+Function that parses an init file\&. This function parses the content of a file, specified as argument, into an \fBInitI\fP structure\&.
+.PP
+Possible returned velues are: 
+.PD 0
+
+.IP "1." 4
+0 when any of the 14 parameters are not found 
+.IP "2." 4
+1 otherwise 
+.PP
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file OrbSim\&.cxx\&.
+.SS "void \fBparseProfile\fP (char *ln, \fBSurProf\fP *profile)"
+.PP
+Function that parses a line from an AS-FLOWN Timeline\&. This function is called by makeAttAsFl to parse a line in the AS-FLOWN Timeline that contains all the specifications of the profile survey\&. Notice that if the profile epoch is in the future, then the next survey target is considered to be a FIXED Survey, PROFILED if in the past\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIln\fP - line\&. 
+.br
+\fIprofile\fP - profile structure\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 1613 of file OrbSim\&.cxx\&.
+.SS "char* \fBprocessline\fP (char *ln, charfind)"
+.PP
+Function that returns anything contained after a specified separator character\&. The function returns NULL if the first character is '#'\&. \fBParameters:\fP
+.RS 4
+\fIln\fP - line of characters 
+.br
+\fIfind\fP - separator character \&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Giuseppe Romeo 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+Created: Nov 15, 2005 
+.PP
+Last Modified: Feb 08, 2006 
+.RE
+.PP
+
+.PP
+Definition at line 348 of file OrbSim\&.cxx\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for gtorbsim from the source code\&.

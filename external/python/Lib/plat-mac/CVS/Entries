@@ -1,0 +1,32 @@
+/Audio_mac.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/EasyDialogs.py/1.1.1.3.6.1/Fri Feb 27 05:03:32 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/FrameWork.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/MiniAEFrame.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/PixMapWrapper.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/aepack.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/aetools.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/aetypes.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/applesingle.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/appletrawmain.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/appletrunner.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/argvemulator.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bgenlocations.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/buildtools.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/bundlebuilder.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/cfmfile.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/dialogs.rsrc/1.1.1.1/Thu Oct 25 19:26:42 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/errors.rsrc/1.1.1.1/Thu Oct 25 19:26:42 2007/-kb/TScienceTools-v10r0p5-fssc-20150518
+/findertools.py/1.1.1.3.6.1/Fri Feb 27 05:03:32 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/gensuitemodule.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/ic.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/icopen.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/macerrors.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/macfs.py/1.2.2.1/Wed Mar  4 17:37:39 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/macostools.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/macresource.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/pimp.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+/plistlib.py/1.2.2.1/Wed Mar  4 17:37:39 2015/-kb/TScienceTools-v10r0p5-fssc-20150518
+/terminalcommand.py/1.1.1.2/Thu Sep 16 14:47:35 2010/-kb/TScienceTools-v10r0p5-fssc-20150518
+/videoreader.py/1.1.1.3/Wed Feb 22 19:03:10 2012/-kb/TScienceTools-v10r0p5-fssc-20150518
+D/Carbon////
+D/lib-scriptpackages////
